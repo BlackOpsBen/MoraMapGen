@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Memory Profiler | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Memory Profiler | MoraMapGen ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/Library/PackageCache/com.unity.memoryprofiler@1.0.0/Documentation~/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="MoraMapGen">
+            MoraMapGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="memory-profiler">Memory Profiler</h1>
+
+<p>The Memory Profiler is a tool you can use to inspect the memory usage of your Unity application and the Unity Editor. The package adds a Memory Profiler window to the Unity Editor, which you can use to capture, inspect, and compare <a href="snapshots.html">Snapshots</a> of memory. Snapshots are a record of how the memory your application uses was organized when the Memory Profiler captured the snapshot.</p>
+<p><img src="images/index-page-screenshot.png" alt="The Memory Profiler window">
+The Memory Profiler window</p>
+<p>The Memory Profiler window also provides an overview of native and managed memory allocations, to assess your application's memory use and identify potential issues such as memory leaks.</p>
+<p>This package is separate to the built-in <a href="https://docs.unity3d.com/Manual/ProfilerMemory.html">Memory Profiler module</a>, and each is useful for different purposes. The Memory Profiler package is designed to provide more detailed information about your application's memory allocations.</p>
+<h2 id="installing-memory-profiler">Installing Memory Profiler</h2>
+<p>To install this package, follow the instructions in the <a href="https://docs.unity3d.com/Manual/upm-ui.html">Package Manager documentation</a>.</p>
+<p>In Unity version 2021.3 or later, select the <code>+</code> button in the Package Manager window, select the option <strong>Add By Name</strong> and enter <code>com.unity.memoryprofiler</code> to install the package. For more information, see <a href="https://docs.unity3d.com/Manual/upm-ui-quick.html">Adding a registry package by name</a>. You can also use the following link to open the Unity Editor and install the Memory Profiler via the package manager directly:</p>
+<p><a href="com.unity3d.kharma:upmpackage/com.unity.memoryprofiler">Open the Unity Editor and install the Memory Profiler</a></p>
+<h2 id="requirements">Requirements</h2>
+<p>This version of the Memory Profiler is compatible with the following versions of the Unity Editor:</p>
+<table>
+<thead>
+<tr>
+<th>Unity Version</th>
+<th>Package Version</th>
+<th>Minimum Unity Version</th>
+<th>Recommended Unity Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2022.2 or newer</td>
+<td>1.0.x</td>
+<td>2022.2.0a16</td>
+<td>2022.2.0b1  or newer</td>
+</tr>
+<tr>
+<td>2021.x</td>
+<td>0.7.x</td>
+<td>2021.1.0a1</td>
+<td>2021.3.3f1 or newer</td>
+</tr>
+<tr>
+<td>2020.x</td>
+<td>0.7.x</td>
+<td>2020.1.0a1</td>
+<td>2020.3.35f1 or newer</td>
+</tr>
+<tr>
+<td>2019.x</td>
+<td>0.7.x</td>
+<td>2019.3.0f1</td>
+<td>2019.4.29f1 or newer</td>
+</tr>
+</tbody>
+</table>
+<p>When you install the Memory Profiler package, Unity automatically installs the <a href="https://docs.unity3d.com/Packages/com.unity.editorcoroutines@0.0/manual/index.html">Editor Coroutines</a> package as a dependency.</p>
+<h2 id="known-issues">Known Issues</h2>
+<ul>
+<li>The Memory Profiler reports the wrong Total Committed Memory value for Android devices on Unity versions before 2021.1.0a1 or before 2020.2.0b8. It reports the total RAM that the device has, not the total amount of RAM used. <a href="https://issuetracker.unity3d.com/product/unity/issues/guid/1267773/">(Case 1267773)</a></li>
+</ul>
+<h3 id="data-concerns-when-sharing-snapshots">Data concerns when sharing snapshots</h3>
+<p>The memory snapshots you take with the Memory Profiler UI or the <a href="https://docs.unity3d.com/Documentation/ScriptReference/Profiling.Memory.Experimental.MemoryProfiler.html">Memory Profiler API</a> contain the entire contents of the managed heap of the Player or Editor instance you are capturing.</p>
+<p>You can see most of the data through the Memory Profiler UI, with the exception of managed allocations that do not have a garbage collection handle. These allocations might be related to Mono type data, leaked managed data, or allocations that the garbage collector has already collected and released but the memory section they were located in hasn’t been overwritten with new data. The latter happens because garbage-collected memory is not &quot;stomped&quot; for performance reasons.</p>
+<p>The kind of data that you can explore in areas such as the <strong>All Managed Objects</strong> view gives you an idea of what data could be included in the memory snapshot. The Memory profiler includes any object instance of a class, all fields on that object, as well as the class’ statics excluding literals such as const values.</p>
+<p>The Memory Profiler stores fields depending on the data type:</p>
+<ul>
+<li>It stores <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types">value types</a> by their value</li>
+<li>It stores <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types">reference types</a> as pointer addresses. The UI resolves any pointer address as a link to the object the address points to.</li>
+</ul>
+<p>For example, string type fields might indicate via their name what the string they point to means. So searching for a field named &quot;Password&quot;, &quot;Credentials&quot; or &quot;Token&quot; might identify strings with sensitive data. If Unity has garbage collected the object that points to the string, or even the string itself, the data might still be there. However, it is no longer easily identifiable, unless you have a rough idea of what you're looking for or part of the string value to search for.</p>
+<p><strong>Note:</strong> The previous section only mentions string data as potentially problematic, but this issue isn't exclusive to strings and might happen in other forms as well, such as field or type names.</p>
+<p>One way to safeguard against accidentally disclosing personally-identifying information, credentials or similar confidential data when you share snapshot files outside of your teams, is to put that data into constant fields. Constant fields bake that data into the binary executable, which the Memory Profiler does not capture. However, a binary executable might be de-compiled by users and expose the data that way.</p>
+<p>You can only take a memory snapshot in development Players, so these fields might be non-const in release builds, which will make it more difficult to get to the data, but not entirely impossible.</p>
+<p>If you have any further questions regarding this topic, use the <a href="https://forum.unity.com/threads/data-concerns-when-sharing-snapshots.718916/">Unity Forum thread</a> to discuss this issue.</p>
+<h2 id="additional-resources">Additional resources</h2>
+<ul>
+<li><a href="https://docs.unity3d.com/Manual/Profiler.html">Profiler overview</a> - Documentation about how to use Unity's built-in profiler.</li>
+<li><a href="https://resources.unity.com/games/ultimate-guide-to-profiling-unity-games">Ultimate guide to profiling Unity games</a> - A guide describing how to profile an application including best practices, recommended workflows and advice.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/Library/PackageCache/com.unity.memoryprofiler@1.0.0/Documentation~/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

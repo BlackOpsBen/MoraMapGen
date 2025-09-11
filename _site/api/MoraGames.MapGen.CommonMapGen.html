@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CommonMapGen | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CommonMapGen | MoraMapGen ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+            MoraMapGen
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MoraGames.MapGen.CommonMapGen">
+
+
+
+  <h1 id="MoraGames_MapGen_CommonMapGen" data-uid="MoraGames.MapGen.CommonMapGen" class="text-break">
+Class CommonMapGen  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MoraMapGen.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CommonMapGen</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CommonMapGen</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_AssignIds_" data-uid="MoraGames.MapGen.CommonMapGen.AssignIds*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_AssignIds_MoraGames_MapGen_GameMap_" data-uid="MoraGames.MapGen.CommonMapGen.AssignIds(MoraGames.MapGen.GameMap)">
+  AssignIds(GameMap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AssignIds(GameMap context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMap.html">GameMap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_CollapseExteriorCeiling_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_CollapseExteriorCeiling_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling(MoraGames.MapGen.GameMapManager)">
+  CollapseExteriorCeiling(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CollapseExteriorCeiling(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_CollapseRemainingTiles_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseRemainingTiles*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_CollapseRemainingTiles_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseRemainingTiles(MoraGames.MapGen.GameMapManager)">
+  CollapseRemainingTiles(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CollapseRemainingTiles(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_CollapseTile_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseTile*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_CollapseTile_MoraGames_MapGen_GameMapManager_MoraGames_MapGen_RoomShapeSO_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.CommonMapGen.CollapseTile(MoraGames.MapGen.GameMapManager,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int,UnityEngine.Vector2Int)">
+  CollapseTile(GameMapManager, RoomShapeSO, Vector2Int, Vector2Int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TileGridSpace CollapseTile(GameMapManager context, RoomShapeSO roomShape, Vector2Int startingCoords, Vector2Int dimensions)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+    <dt><code>roomShape</code> <a class="xref" href="MoraGames.MapGen.RoomShapeSO.html">RoomShapeSO</a></dt>
+    <dd></dd>
+    <dt><code>startingCoords</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>dimensions</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_CommonMapGenCoroutine_" data-uid="MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_CommonMapGenCoroutine_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine(MoraGames.MapGen.GameMapManager)">
+  CommonMapGenCoroutine(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator CommonMapGenCoroutine(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_ConnectAllRoomsRandom_" data-uid="MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_ConnectAllRoomsRandom_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom(MoraGames.MapGen.GameMapManager)">
+  ConnectAllRoomsRandom(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ConnectAllRoomsRandom(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_FindAllValidDoorEdges_" data-uid="MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_FindAllValidDoorEdges_MoraGames_MapGen_GameMap_" data-uid="MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges(MoraGames.MapGen.GameMap)">
+  FindAllValidDoorEdges(GameMap)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FindAllValidDoorEdges(GameMap context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMap.html">GameMap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetNearestConnectingTiles_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetNearestConnectingTiles_MoraGames_MapGen_Area_MoraGames_MapGen_Area_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.Area,MoraGames.MapGen.Area)">
+  GetNearestConnectingTiles(Area, Area)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConnectingTiles GetNearestConnectingTiles(Area startingRoom, Area nextRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>nextRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetNearestConnectingTiles_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetNearestConnectingTiles_MoraGames_MapGen_Area_MoraGames_MapGen_Area_MoraGames_MapGen_ConnectingTiles___System_Collections_Generic_List_MoraGames_MapGen_PotentialConnection__" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.Area,MoraGames.MapGen.Area,MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})">
+  GetNearestConnectingTiles(Area, Area, ConnectingTiles[], List&lt;PotentialConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConnectingTiles GetNearestConnectingTiles(Area startingRoom, Area nextRoom, ConnectingTiles[] invalidConnections, List&lt;PotentialConnection&gt; possibleCombos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>nextRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>invalidConnections</code> <a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a>[]</dt>
+    <dd></dd>
+    <dt><code>possibleCombos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.PotentialConnection.html">PotentialConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_MoraGames_MapGen_Area_System_Collections_Generic_List_MoraGames_MapGen_Area__" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.Area,System.Collections.Generic.List{MoraGames.MapGen.Area})">
+  GetNearestRooms(Area, List&lt;Area&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Area&gt; GetNearestRooms(Area context, List&lt;Area&gt; validRooms)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>validRooms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_MoraGames_MapGen_Area_System_Collections_Generic_List_MoraGames_MapGen_Area__System_Int32_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.Area,System.Collections.Generic.List{MoraGames.MapGen.Area},System.Int32)">
+  GetNearestRooms(Area, List&lt;Area&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Area&gt; GetNearestRooms(Area context, List&lt;Area&gt; validRooms, int tieThreshold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>validRooms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tieThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetNearestRooms_MoraGames_MapGen_Area_System_Collections_Generic_List_MoraGames_MapGen_Area__System_Int32__" data-uid="MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.Area,System.Collections.Generic.List{MoraGames.MapGen.Area},System.Int32@)">
+  GetNearestRooms(Area, List&lt;Area&gt;, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Area&gt; GetNearestRooms(Area context, List&lt;Area&gt; validRooms, out int distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>validRooms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetOrthoDistance_" data-uid="MoraGames.MapGen.CommonMapGen.GetOrthoDistance*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetOrthoDistance_UnityEngine_Vector2Int_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.CommonMapGen.GetOrthoDistance(UnityEngine.Vector2Int,UnityEngine.Vector2Int)">
+  GetOrthoDistance(Vector2Int, Vector2Int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetOrthoDistance(Vector2Int posA, Vector2Int posB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>posA</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>posB</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetRandomConnectingTiles_" data-uid="MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetRandomConnectingTiles_MoraGames_MapGen_Area_MoraGames_MapGen_Area_MoraGames_MapGen_ConnectingTiles___System_Collections_Generic_List_MoraGames_MapGen_PotentialConnection__" data-uid="MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.Area,MoraGames.MapGen.Area,MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})">
+  GetRandomConnectingTiles(Area, Area, ConnectingTiles[], List&lt;PotentialConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConnectingTiles GetRandomConnectingTiles(Area startingRoom, Area nextRoom, ConnectingTiles[] invalidConnections, List&lt;PotentialConnection&gt; possibleCombos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startingRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>nextRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>invalidConnections</code> <a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a>[]</dt>
+    <dd></dd>
+    <dt><code>possibleCombos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.PotentialConnection.html">PotentialConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetRoomDistance_" data-uid="MoraGames.MapGen.CommonMapGen.GetRoomDistance*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetRoomDistance_MoraGames_MapGen_Area_MoraGames_MapGen_Area_" data-uid="MoraGames.MapGen.CommonMapGen.GetRoomDistance(MoraGames.MapGen.Area,MoraGames.MapGen.Area)">
+  GetRoomDistance(Area, Area)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetRoomDistance(Area context, Area otherRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>otherRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_GetRoomsWithinDistance_" data-uid="MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_GetRoomsWithinDistance_MoraGames_MapGen_Area_System_Collections_Generic_List_MoraGames_MapGen_Area__System_Int32_" data-uid="MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.Area,System.Collections.Generic.List{MoraGames.MapGen.Area},System.Int32)">
+  GetRoomsWithinDistance(Area, List&lt;Area&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Area&gt; GetRoomsWithinDistance(Area context, List&lt;Area&gt; validRooms, int distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>validRooms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_MakeConnectingPath_" data-uid="MoraGames.MapGen.CommonMapGen.MakeConnectingPath*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_MakeConnectingPath_MoraGames_MapGen_GameMapManager_MoraGames_MapGen_ConnectingTiles_MoraGames_MapGen_SearchTile_" data-uid="MoraGames.MapGen.CommonMapGen.MakeConnectingPath(MoraGames.MapGen.GameMapManager,MoraGames.MapGen.ConnectingTiles,MoraGames.MapGen.SearchTile)">
+  MakeConnectingPath(GameMapManager, ConnectingTiles, SearchTile)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MakeConnectingPath(GameMapManager context, ConnectingTiles connection, SearchTile pathEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+    <dt><code>connection</code> <a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+    <dt><code>pathEnd</code> <a class="xref" href="MoraGames.MapGen.SearchTile.html">SearchTile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_NarrowDownPathEdge_" data-uid="MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_NarrowDownPathEdge_MoraGames_MapGen_GameMap_UnityEngine_Vector2Int_MoraGames_MapGen_Edge_" data-uid="MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge(MoraGames.MapGen.GameMap,UnityEngine.Vector2Int,MoraGames.MapGen.Edge)">
+  NarrowDownPathEdge(GameMap, Vector2Int, Edge)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void NarrowDownPathEdge(GameMap worldMap, Vector2Int gridPos, Edge edge)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>worldMap</code> <a class="xref" href="MoraGames.MapGen.GameMap.html">GameMap</a></dt>
+    <dd></dd>
+    <dt><code>gridPos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>edge</code> <a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_PairCorridorsToIds_" data-uid="MoraGames.MapGen.CommonMapGen.PairCorridorsToIds*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_PairCorridorsToIds_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.PairCorridorsToIds(MoraGames.MapGen.GameMapManager)">
+  PairCorridorsToIds(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PairCorridorsToIds(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_PairRoomsToIds_" data-uid="MoraGames.MapGen.CommonMapGen.PairRoomsToIds*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_PairRoomsToIds_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.PairRoomsToIds(MoraGames.MapGen.GameMapManager)">
+  PairRoomsToIds(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PairRoomsToIds(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_ReCollapseEdgeToType_" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_ReCollapseEdgeToType_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType(MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)">
+  ReCollapseEdgeToType(TileGridSpace, Edge, EnvType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReCollapseEdgeToType(TileGridSpace tile, Edge edge, EnvType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>edge</code> <a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_ReCollapseTileCompletely_" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_ReCollapseTileCompletely_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType)">
+  ReCollapseTileCompletely(TileGridSpace, EnvType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReCollapseTileCompletely(TileGridSpace tile, EnvType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_ReCollapseTileCompletely_" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_ReCollapseTileCompletely_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[])">
+  ReCollapseTileCompletely(TileGridSpace, EnvType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReCollapseTileCompletely(TileGridSpace tile, EnvType[] pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>pixels</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_RemoveCorridors_" data-uid="MoraGames.MapGen.CommonMapGen.RemoveCorridors*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_RemoveCorridors_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.RemoveCorridors(MoraGames.MapGen.GameMapManager)">
+  RemoveCorridors(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RemoveCorridors(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_SpawnGameObjects_" data-uid="MoraGames.MapGen.CommonMapGen.SpawnGameObjects*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_SpawnGameObjects_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.SpawnGameObjects(MoraGames.MapGen.GameMapManager)">
+  SpawnGameObjects(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnGameObjects(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_System_Collections_Generic_Dictionary_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType____MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_Corner_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)">
+  StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt;, TileGridSpace, Corner, EnvType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt; store, TileGridSpace tile, Corner corner, EnvType toType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>store</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a>, <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>corner</code> <a class="xref" href="MoraGames.MapGen.Corner.html">Corner</a></dt>
+    <dd></dd>
+    <dt><code>toType</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_System_Collections_Generic_Dictionary_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType____MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)">
+  StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt;, TileGridSpace, Edge, EnvType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt; store, TileGridSpace tile, Edge edge, EnvType toType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>store</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a>, <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>edge</code> <a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></dt>
+    <dd></dd>
+    <dt><code>toType</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_StorePixelChanges_System_Collections_Generic_Dictionary_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType____MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[])">
+  StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt;, TileGridSpace, EnvType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StorePixelChanges(Dictionary&lt;TileGridSpace, EnvType[]&gt; store, TileGridSpace tile, EnvType[] pixels)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>store</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a>, <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>pixels</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_TryGetConnectingPathAstar_" data-uid="MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_TryGetConnectingPathAstar_MoraGames_MapGen_GameMapManager_MoraGames_MapGen_Area_MoraGames_MapGen_Area_MoraGames_MapGen_SearchTile__MoraGames_MapGen_ConnectingTiles__" data-uid="MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.GameMapManager,MoraGames.MapGen.Area,MoraGames.MapGen.Area,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@)">
+  TryGetConnectingPathAstar(GameMapManager, Area, Area, out SearchTile, out ConnectingTiles)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetConnectingPathAstar(GameMapManager context, Area roomA, Area roomB, out SearchTile pathEnd, out ConnectingTiles connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+    <dt><code>roomA</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>roomB</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>pathEnd</code> <a class="xref" href="MoraGames.MapGen.SearchTile.html">SearchTile</a></dt>
+    <dd></dd>
+    <dt><code>connection</code> <a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_TryMakeRandomValidConnection_" data-uid="MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_TryMakeRandomValidConnection_MoraGames_MapGen_Area_System_Collections_Generic_List_MoraGames_MapGen_Area__System_Int32_MoraGames_MapGen_SearchTile__MoraGames_MapGen_ConnectingTiles__MoraGames_MapGen_Area__" data-uid="MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.Area,System.Collections.Generic.List{MoraGames.MapGen.Area},System.Int32,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@,MoraGames.MapGen.Area@)">
+  TryMakeRandomValidConnection(Area, List&lt;Area&gt;, int, out SearchTile, out ConnectingTiles, out Area)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryMakeRandomValidConnection(Area context, List&lt;Area&gt; validRooms, int tieThreshold, out SearchTile pathEnd, out ConnectingTiles connection, out Area touchedRoom)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+    <dt><code>validRooms</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Area.html">Area</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tieThreshold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pathEnd</code> <a class="xref" href="MoraGames.MapGen.SearchTile.html">SearchTile</a></dt>
+    <dd></dd>
+    <dt><code>connection</code> <a class="xref" href="MoraGames.MapGen.ConnectingTiles.html">ConnectingTiles</a></dt>
+    <dd></dd>
+    <dt><code>touchedRoom</code> <a class="xref" href="MoraGames.MapGen.Area.html">Area</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_UncollapseTile_" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_UncollapseTile_MoraGames_MapGen_TileGridSpace_" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.TileGridSpace)">
+  UncollapseTile(TileGridSpace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UncollapseTile(TileGridSpace tile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_UncollapseTile_" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_UncollapseTile_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType)">
+  UncollapseTile(TileGridSpace, EnvType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UncollapseTile(TileGridSpace tile, EnvType resetNarrowingToType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>resetNarrowingToType</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_UncollapseTile_" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_UncollapseTile_MoraGames_MapGen_TileGridSpace_MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.TileGridSpace,MoraGames.MapGen.EnvType[])">
+  UncollapseTile(TileGridSpace, EnvType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UncollapseTile(TileGridSpace tile, EnvType[] resetNarrowingToTypes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="MoraGames.MapGen.TileGridSpace.html">TileGridSpace</a></dt>
+    <dd></dd>
+    <dt><code>resetNarrowingToTypes</code> <a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MoraGames_MapGen_CommonMapGen_ValidateMap_" data-uid="MoraGames.MapGen.CommonMapGen.ValidateMap*"></a>
+
+  <h3 id="MoraGames_MapGen_CommonMapGen_ValidateMap_MoraGames_MapGen_GameMapManager_" data-uid="MoraGames.MapGen.CommonMapGen.ValidateMap(MoraGames.MapGen.GameMapManager)">
+  ValidateMap(GameMapManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ValidateMap(GameMapManager context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="MoraGames.MapGen.GameMapManager.html">GameMapManager</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
