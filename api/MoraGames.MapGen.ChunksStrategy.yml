@@ -1,0 +1,874 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.ChunksStrategy
+  commentId: T:MoraGames.MapGen.ChunksStrategy
+  id: ChunksStrategy
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.ChunksStrategy.#ctor
+  - MoraGames.MapGen.ChunksStrategy.AddRoom(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int)
+  - MoraGames.MapGen.ChunksStrategy.CreateChunksGrid(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.ChunksStrategy.MergeChunks(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk})
+  - MoraGames.MapGen.ChunksStrategy.NumChunks
+  - MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk},System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace},System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ChunksStrategy
+  nameWithType: ChunksStrategy
+  fullName: MoraGames.MapGen.ChunksStrategy
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class ChunksStrategy : IMapGenStrategy'
+    content.vb: Public Class ChunksStrategy Implements IMapGenStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - MoraGames.MapGen.IMapGenStrategy
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  id: GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetMapGenCoroutine(MoraMapGen)
+  nameWithType: ChunksStrategy.GetMapGenCoroutine(MoraMapGen)
+  fullName: MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  example: []
+  syntax:
+    content: public IEnumerator GetMapGenCoroutine(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetMapGenCoroutine(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine*
+  implements:
+  - MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+- uid: MoraGames.MapGen.ChunksStrategy.CreateChunksGrid(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.ChunksStrategy.CreateChunksGrid(MoraGames.MapGen.MoraMapGen)
+  id: CreateChunksGrid(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: CreateChunksGrid(MoraMapGen)
+  nameWithType: ChunksStrategy.CreateChunksGrid(MoraMapGen)
+  fullName: MoraGames.MapGen.ChunksStrategy.CreateChunksGrid(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Grid2D<Chunk> CreateChunksGrid(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk}
+    content.vb: Public Shared Function CreateChunksGrid(context As MoraMapGen) As Grid2D(Of Chunk)
+  overload: MoraGames.MapGen.ChunksStrategy.CreateChunksGrid*
+- uid: MoraGames.MapGen.ChunksStrategy.MergeChunks(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk})
+  commentId: M:MoraGames.MapGen.ChunksStrategy.MergeChunks(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk})
+  id: MergeChunks(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk})
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: MergeChunks(MoraMapGen, Grid2D<Chunk>)
+  nameWithType: ChunksStrategy.MergeChunks(MoraMapGen, Grid2D<Chunk>)
+  fullName: MoraGames.MapGen.ChunksStrategy.MergeChunks(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.Grid2D<MoraGames.MapGen.Chunk>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void MergeChunks(MoraMapGen context, Grid2D<Chunk> chunksGrid)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: chunksGrid
+      type: MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk}
+    content.vb: Public Shared Sub MergeChunks(context As MoraMapGen, chunksGrid As Grid2D(Of Chunk))
+  overload: MoraGames.MapGen.ChunksStrategy.MergeChunks*
+  nameWithType.vb: ChunksStrategy.MergeChunks(MoraMapGen, Grid2D(Of Chunk))
+  fullName.vb: MoraGames.MapGen.ChunksStrategy.MergeChunks(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.Grid2D(Of MoraGames.MapGen.Chunk))
+  name.vb: MergeChunks(MoraMapGen, Grid2D(Of Chunk))
+- uid: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk},System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace},System.Single)
+  commentId: M:MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk},System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace},System.Single)
+  id: PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk},System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace},System.Single)
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: PickRoomShapePerChunk(MoraMapGen, Grid2D<Chunk>, List<GenGridSpace>, float)
+  nameWithType: ChunksStrategy.PickRoomShapePerChunk(MoraMapGen, Grid2D<Chunk>, List<GenGridSpace>, float)
+  fullName: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.Grid2D<MoraGames.MapGen.Chunk>, System.Collections.Generic.List<MoraGames.MapGen.GenGridSpace>, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator PickRoomShapePerChunk(MoraMapGen context, Grid2D<Chunk> chunksGrid, List<GenGridSpace> chunkTiles, float percentOfChunks)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: chunksGrid
+      type: MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk}
+    - id: chunkTiles
+      type: System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+    - id: percentOfChunks
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function PickRoomShapePerChunk(context As MoraMapGen, chunksGrid As Grid2D(Of Chunk), chunkTiles As List(Of GenGridSpace), percentOfChunks As Single) As IEnumerator
+  overload: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk*
+  nameWithType.vb: ChunksStrategy.PickRoomShapePerChunk(MoraMapGen, Grid2D(Of Chunk), List(Of GenGridSpace), Single)
+  fullName.vb: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.Grid2D(Of MoraGames.MapGen.Chunk), System.Collections.Generic.List(Of MoraGames.MapGen.GenGridSpace), Single)
+  name.vb: PickRoomShapePerChunk(MoraMapGen, Grid2D(Of Chunk), List(Of GenGridSpace), Single)
+- uid: MoraGames.MapGen.ChunksStrategy.AddRoom(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.ChunksStrategy.AddRoom(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int)
+  id: AddRoom(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: AddRoom(MoraMapGen, RoomShapeSO, Vector2Int)
+  nameWithType: ChunksStrategy.AddRoom(MoraMapGen, RoomShapeSO, Vector2Int)
+  fullName: MoraGames.MapGen.ChunksStrategy.AddRoom(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.RoomShapeSO, UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static DeterministicHashSet<GenGridSpace> AddRoom(MoraMapGen context, RoomShapeSO roomShape, Vector2Int startingCoords)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: roomShape
+      type: MoraGames.MapGen.RoomShapeSO
+    - id: startingCoords
+      type: UnityEngine.Vector2Int
+    return:
+      type: MoraGames.MapGen.DeterministicHashSet{MoraGames.MapGen.GenGridSpace}
+    content.vb: Public Shared Function AddRoom(context As MoraMapGen, roomShape As RoomShapeSO, startingCoords As Vector2Int) As DeterministicHashSet(Of GenGridSpace)
+  overload: MoraGames.MapGen.ChunksStrategy.AddRoom*
+- uid: MoraGames.MapGen.ChunksStrategy.#ctor
+  commentId: M:MoraGames.MapGen.ChunksStrategy.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: ChunksStrategy()
+  nameWithType: ChunksStrategy.ChunksStrategy()
+  fullName: MoraGames.MapGen.ChunksStrategy.ChunksStrategy()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public ChunksStrategy()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.ChunksStrategy.#ctor*
+  nameWithType.vb: ChunksStrategy.New()
+  fullName.vb: MoraGames.MapGen.ChunksStrategy.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.ChunksStrategy.NumChunks
+  commentId: P:MoraGames.MapGen.ChunksStrategy.NumChunks
+  id: NumChunks
+  parent: MoraGames.MapGen.ChunksStrategy
+  langs:
+  - csharp
+  - vb
+  name: NumChunks
+  nameWithType: ChunksStrategy.NumChunks
+  fullName: MoraGames.MapGen.ChunksStrategy.NumChunks
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int NumChunks { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NumChunks As Integer
+  overload: MoraGames.MapGen.ChunksStrategy.NumChunks*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.IMapGenStrategy
+  commentId: T:MoraGames.MapGen.IMapGenStrategy
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenStrategy.html
+  name: IMapGenStrategy
+  nameWithType: IMapGenStrategy
+  fullName: MoraGames.MapGen.IMapGenStrategy
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  name: GetMapGenCoroutine
+  nameWithType: ChunksStrategy.GetMapGenCoroutine
+  fullName: MoraGames.MapGen.ChunksStrategy.GetMapGenCoroutine
+- uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.IMapGenStrategy
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  name: GetMapGenCoroutine(MoraMapGen)
+  nameWithType: IMapGenStrategy.GetMapGenCoroutine(MoraMapGen)
+  fullName: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  spec.csharp:
+  - uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+    name: GetMapGenCoroutine
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  - name: (
+  - uid: MoraGames.MapGen.MoraMapGen
+    name: MoraMapGen
+    isExternal: true
+    href: MoraGames.MapGen.MoraMapGen.html
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+    name: GetMapGenCoroutine
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  - name: (
+  - uid: MoraGames.MapGen.MoraMapGen
+    name: MoraMapGen
+    isExternal: true
+    href: MoraGames.MapGen.MoraMapGen.html
+  - name: )
+- uid: MoraGames.MapGen.MoraMapGen
+  commentId: T:MoraGames.MapGen.MoraMapGen
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MoraMapGen.html
+  name: MoraMapGen
+  nameWithType: MoraMapGen
+  fullName: MoraGames.MapGen.MoraMapGen
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MoraGames.MapGen.ChunksStrategy.CreateChunksGrid*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.CreateChunksGrid
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_CreateChunksGrid_MoraGames_MapGen_MoraMapGen_
+  name: CreateChunksGrid
+  nameWithType: ChunksStrategy.CreateChunksGrid
+  fullName: MoraGames.MapGen.ChunksStrategy.CreateChunksGrid
+- uid: MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk}
+  commentId: T:MoraGames.MapGen.Grid2D{MoraGames.MapGen.Chunk}
+  parent: MoraGames.MapGen
+  definition: MoraGames.MapGen.Grid2D`1
+  href: MoraGames.MapGen.Grid2D-1.html
+  name: Grid2D<Chunk>
+  nameWithType: Grid2D<Chunk>
+  fullName: MoraGames.MapGen.Grid2D<MoraGames.MapGen.Chunk>
+  nameWithType.vb: Grid2D(Of Chunk)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of MoraGames.MapGen.Chunk)
+  name.vb: Grid2D(Of Chunk)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Grid2D`1
+    name: Grid2D
+    isExternal: true
+    href: MoraGames.MapGen.Grid2D-1.html
+  - name: <
+  - uid: MoraGames.MapGen.Chunk
+    name: Chunk
+    isExternal: true
+    href: MoraGames.MapGen.Chunk.html
+  - name: '>'
+  spec.vb:
+  - uid: MoraGames.MapGen.Grid2D`1
+    name: Grid2D
+    isExternal: true
+    href: MoraGames.MapGen.Grid2D-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.Chunk
+    name: Chunk
+    isExternal: true
+    href: MoraGames.MapGen.Chunk.html
+  - name: )
+- uid: MoraGames.MapGen.Grid2D`1
+  commentId: T:MoraGames.MapGen.Grid2D`1
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html
+  name: Grid2D<T>
+  nameWithType: Grid2D<T>
+  fullName: MoraGames.MapGen.Grid2D<T>
+  nameWithType.vb: Grid2D(Of T)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T)
+  name.vb: Grid2D(Of T)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Grid2D`1
+    name: Grid2D
+    isExternal: true
+    href: MoraGames.MapGen.Grid2D-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MoraGames.MapGen.Grid2D`1
+    name: Grid2D
+    isExternal: true
+    href: MoraGames.MapGen.Grid2D-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MoraGames.MapGen.ChunksStrategy.MergeChunks*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.MergeChunks
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_MergeChunks_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_Grid2D_MoraGames_MapGen_Chunk__
+  name: MergeChunks
+  nameWithType: ChunksStrategy.MergeChunks
+  fullName: MoraGames.MapGen.ChunksStrategy.MergeChunks
+- uid: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_PickRoomShapePerChunk_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_Grid2D_MoraGames_MapGen_Chunk__System_Collections_Generic_List_MoraGames_MapGen_GenGridSpace__System_Single_
+  name: PickRoomShapePerChunk
+  nameWithType: ChunksStrategy.PickRoomShapePerChunk
+  fullName: MoraGames.MapGen.ChunksStrategy.PickRoomShapePerChunk
+- uid: System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GenGridSpace>
+  nameWithType: List<GenGridSpace>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.GenGridSpace>
+  nameWithType.vb: List(Of GenGridSpace)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.GenGridSpace)
+  name.vb: List(Of GenGridSpace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MoraGames.MapGen.ChunksStrategy.AddRoom*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.AddRoom
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_AddRoom_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_RoomShapeSO_UnityEngine_Vector2Int_
+  name: AddRoom
+  nameWithType: ChunksStrategy.AddRoom
+  fullName: MoraGames.MapGen.ChunksStrategy.AddRoom
+- uid: MoraGames.MapGen.RoomShapeSO
+  commentId: T:MoraGames.MapGen.RoomShapeSO
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.RoomShapeSO.html
+  name: RoomShapeSO
+  nameWithType: RoomShapeSO
+  fullName: MoraGames.MapGen.RoomShapeSO
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.DeterministicHashSet{MoraGames.MapGen.GenGridSpace}
+  commentId: T:MoraGames.MapGen.DeterministicHashSet{MoraGames.MapGen.GenGridSpace}
+  parent: MoraGames.MapGen
+  definition: MoraGames.MapGen.DeterministicHashSet`1
+  href: MoraGames.MapGen.DeterministicHashSet-1.html
+  name: DeterministicHashSet<GenGridSpace>
+  nameWithType: DeterministicHashSet<GenGridSpace>
+  fullName: MoraGames.MapGen.DeterministicHashSet<MoraGames.MapGen.GenGridSpace>
+  nameWithType.vb: DeterministicHashSet(Of GenGridSpace)
+  fullName.vb: MoraGames.MapGen.DeterministicHashSet(Of MoraGames.MapGen.GenGridSpace)
+  name.vb: DeterministicHashSet(Of GenGridSpace)
+  spec.csharp:
+  - uid: MoraGames.MapGen.DeterministicHashSet`1
+    name: DeterministicHashSet
+    isExternal: true
+    href: MoraGames.MapGen.DeterministicHashSet-1.html
+  - name: <
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: '>'
+  spec.vb:
+  - uid: MoraGames.MapGen.DeterministicHashSet`1
+    name: DeterministicHashSet
+    isExternal: true
+    href: MoraGames.MapGen.DeterministicHashSet-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: )
+- uid: MoraGames.MapGen.DeterministicHashSet`1
+  commentId: T:MoraGames.MapGen.DeterministicHashSet`1
+  isExternal: true
+  href: MoraGames.MapGen.DeterministicHashSet-1.html
+  name: DeterministicHashSet<T>
+  nameWithType: DeterministicHashSet<T>
+  fullName: MoraGames.MapGen.DeterministicHashSet<T>
+  nameWithType.vb: DeterministicHashSet(Of T)
+  fullName.vb: MoraGames.MapGen.DeterministicHashSet(Of T)
+  name.vb: DeterministicHashSet(Of T)
+  spec.csharp:
+  - uid: MoraGames.MapGen.DeterministicHashSet`1
+    name: DeterministicHashSet
+    isExternal: true
+    href: MoraGames.MapGen.DeterministicHashSet-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MoraGames.MapGen.DeterministicHashSet`1
+    name: DeterministicHashSet
+    isExternal: true
+    href: MoraGames.MapGen.DeterministicHashSet-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MoraGames.MapGen.ChunksStrategy.#ctor*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy__ctor
+  name: ChunksStrategy
+  nameWithType: ChunksStrategy.ChunksStrategy
+  fullName: MoraGames.MapGen.ChunksStrategy.ChunksStrategy
+  nameWithType.vb: ChunksStrategy.New
+  fullName.vb: MoraGames.MapGen.ChunksStrategy.New
+  name.vb: New
+- uid: MoraGames.MapGen.ChunksStrategy.NumChunks*
+  commentId: Overload:MoraGames.MapGen.ChunksStrategy.NumChunks
+  isExternal: true
+  href: MoraGames.MapGen.ChunksStrategy.html#MoraGames_MapGen_ChunksStrategy_NumChunks
+  name: NumChunks
+  nameWithType: ChunksStrategy.NumChunks
+  fullName: MoraGames.MapGen.ChunksStrategy.NumChunks
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

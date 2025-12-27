@@ -1,0 +1,1843 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.BakedArea
+  commentId: T:MoraGames.MapGen.BakedArea
+  id: BakedArea
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.BakedArea.#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.GenArea,MoraGames.MapGen.BakedAreaType)
+  - MoraGames.MapGen.BakedArea.AreaDefinition
+  - MoraGames.MapGen.BakedArea.AreaType
+  - MoraGames.MapGen.BakedArea.CentralGridSpace
+  - MoraGames.MapGen.BakedArea.ConnectedCorridorIds
+  - MoraGames.MapGen.BakedArea.ConnectedRoomIds
+  - MoraGames.MapGen.BakedArea.DoorSpaces
+  - MoraGames.MapGen.BakedArea.GenerateGraphConnections(MoraGames.MapGen.BakedMap)
+  - MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(System.Boolean,System.Boolean)
+  - MoraGames.MapGen.BakedArea.GetAllPropSpots(System.Boolean,System.Boolean)
+  - MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType,System.Boolean,System.Boolean)
+  - MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO,System.Boolean,System.Boolean)
+  - MoraGames.MapGen.BakedArea.GridSpaces
+  - MoraGames.MapGen.BakedArea.ID
+  - MoraGames.MapGen.BakedArea.Name
+  langs:
+  - csharp
+  - vb
+  name: BakedArea
+  nameWithType: BakedArea
+  fullName: MoraGames.MapGen.BakedArea
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public class BakedArea
+    content.vb: Public Class BakedArea
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  - MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  - MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  - MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+- uid: MoraGames.MapGen.BakedArea.#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.GenArea,MoraGames.MapGen.BakedAreaType)
+  commentId: M:MoraGames.MapGen.BakedArea.#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.GenArea,MoraGames.MapGen.BakedAreaType)
+  id: '#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.GenArea,MoraGames.MapGen.BakedAreaType)'
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: BakedArea(BakedMap, GenArea, BakedAreaType)
+  nameWithType: BakedArea.BakedArea(BakedMap, GenArea, BakedAreaType)
+  fullName: MoraGames.MapGen.BakedArea.BakedArea(MoraGames.MapGen.BakedMap, MoraGames.MapGen.GenArea, MoraGames.MapGen.BakedAreaType)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public BakedArea(BakedMap bakedMap, GenArea area, BakedAreaType areaType)
+    parameters:
+    - id: bakedMap
+      type: MoraGames.MapGen.BakedMap
+    - id: area
+      type: MoraGames.MapGen.GenArea
+    - id: areaType
+      type: MoraGames.MapGen.BakedAreaType
+    content.vb: Public Sub New(bakedMap As BakedMap, area As GenArea, areaType As BakedAreaType)
+  overload: MoraGames.MapGen.BakedArea.#ctor*
+  nameWithType.vb: BakedArea.New(BakedMap, GenArea, BakedAreaType)
+  fullName.vb: MoraGames.MapGen.BakedArea.New(MoraGames.MapGen.BakedMap, MoraGames.MapGen.GenArea, MoraGames.MapGen.BakedAreaType)
+  name.vb: New(BakedMap, GenArea, BakedAreaType)
+- uid: MoraGames.MapGen.BakedArea.GenerateGraphConnections(MoraGames.MapGen.BakedMap)
+  commentId: M:MoraGames.MapGen.BakedArea.GenerateGraphConnections(MoraGames.MapGen.BakedMap)
+  id: GenerateGraphConnections(MoraGames.MapGen.BakedMap)
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GenerateGraphConnections(BakedMap)
+  nameWithType: BakedArea.GenerateGraphConnections(BakedMap)
+  fullName: MoraGames.MapGen.BakedArea.GenerateGraphConnections(MoraGames.MapGen.BakedMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void GenerateGraphConnections(BakedMap context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.BakedMap
+    content.vb: Public Sub GenerateGraphConnections(context As BakedMap)
+  overload: MoraGames.MapGen.BakedArea.GenerateGraphConnections*
+- uid: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO,System.Boolean,System.Boolean)
+  commentId: M:MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO,System.Boolean,System.Boolean)
+  id: GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO,System.Boolean,System.Boolean)
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GetPropSpotsByChannel(PropChannelSO, bool, bool)
+  nameWithType: BakedArea.GetPropSpotsByChannel(PropChannelSO, bool, bool)
+  fullName: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO, bool, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<PropSpot> GetPropSpotsByChannel(PropChannelSO channel, bool randomOrder, bool includeUsed)
+    parameters:
+    - id: channel
+      type: MoraGames.MapGen.Props.PropChannelSO
+    - id: randomOrder
+      type: System.Boolean
+    - id: includeUsed
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.Props.PropSpot}
+    content.vb: Public Function GetPropSpotsByChannel(channel As PropChannelSO, randomOrder As Boolean, includeUsed As Boolean) As List(Of PropSpot)
+  overload: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel*
+  nameWithType.vb: BakedArea.GetPropSpotsByChannel(PropChannelSO, Boolean, Boolean)
+  fullName.vb: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO, Boolean, Boolean)
+  name.vb: GetPropSpotsByChannel(PropChannelSO, Boolean, Boolean)
+- uid: MoraGames.MapGen.BakedArea.GetAllPropSpots(System.Boolean,System.Boolean)
+  commentId: M:MoraGames.MapGen.BakedArea.GetAllPropSpots(System.Boolean,System.Boolean)
+  id: GetAllPropSpots(System.Boolean,System.Boolean)
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GetAllPropSpots(bool, bool)
+  nameWithType: BakedArea.GetAllPropSpots(bool, bool)
+  fullName: MoraGames.MapGen.BakedArea.GetAllPropSpots(bool, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<PropSpot> GetAllPropSpots(bool randomOrder, bool includeUsed)
+    parameters:
+    - id: randomOrder
+      type: System.Boolean
+    - id: includeUsed
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.Props.PropSpot}
+    content.vb: Public Function GetAllPropSpots(randomOrder As Boolean, includeUsed As Boolean) As List(Of PropSpot)
+  overload: MoraGames.MapGen.BakedArea.GetAllPropSpots*
+  nameWithType.vb: BakedArea.GetAllPropSpots(Boolean, Boolean)
+  fullName.vb: MoraGames.MapGen.BakedArea.GetAllPropSpots(Boolean, Boolean)
+  name.vb: GetAllPropSpots(Boolean, Boolean)
+- uid: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(System.Boolean,System.Boolean)
+  commentId: M:MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(System.Boolean,System.Boolean)
+  id: GetAllProceduralPropSpots(System.Boolean,System.Boolean)
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GetAllProceduralPropSpots(bool, bool)
+  nameWithType: BakedArea.GetAllProceduralPropSpots(bool, bool)
+  fullName: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(bool, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<ProceduralPropSpot> GetAllProceduralPropSpots(bool randomOrder, bool includeUsed)
+    parameters:
+    - id: randomOrder
+      type: System.Boolean
+    - id: includeUsed
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.Props.ProceduralPropSpot}
+    content.vb: Public Function GetAllProceduralPropSpots(randomOrder As Boolean, includeUsed As Boolean) As List(Of ProceduralPropSpot)
+  overload: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots*
+  nameWithType.vb: BakedArea.GetAllProceduralPropSpots(Boolean, Boolean)
+  fullName.vb: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(Boolean, Boolean)
+  name.vb: GetAllProceduralPropSpots(Boolean, Boolean)
+- uid: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType,System.Boolean,System.Boolean)
+  commentId: M:MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType,System.Boolean,System.Boolean)
+  id: GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType,System.Boolean,System.Boolean)
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GetProceduralPropSpotByType(PropPlacementType, bool, bool)
+  nameWithType: BakedArea.GetProceduralPropSpotByType(PropPlacementType, bool, bool)
+  fullName: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType, bool, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<ProceduralPropSpot> GetProceduralPropSpotByType(PropPlacementType placementType, bool randomOrder, bool includeUsed)
+    parameters:
+    - id: placementType
+      type: MoraGames.MapGen.Props.PropPlacementType
+    - id: randomOrder
+      type: System.Boolean
+    - id: includeUsed
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.Props.ProceduralPropSpot}
+    content.vb: Public Function GetProceduralPropSpotByType(placementType As PropPlacementType, randomOrder As Boolean, includeUsed As Boolean) As List(Of ProceduralPropSpot)
+  overload: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType*
+  nameWithType.vb: BakedArea.GetProceduralPropSpotByType(PropPlacementType, Boolean, Boolean)
+  fullName.vb: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType, Boolean, Boolean)
+  name.vb: GetProceduralPropSpotByType(PropPlacementType, Boolean, Boolean)
+- uid: MoraGames.MapGen.BakedArea.Name
+  commentId: P:MoraGames.MapGen.BakedArea.Name
+  id: Name
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: BakedArea.Name
+  fullName: MoraGames.MapGen.BakedArea.Name
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: MoraGames.MapGen.BakedArea.Name*
+- uid: MoraGames.MapGen.BakedArea.ID
+  commentId: P:MoraGames.MapGen.BakedArea.ID
+  id: ID
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: BakedArea.ID
+  fullName: MoraGames.MapGen.BakedArea.ID
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int ID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ID As Integer
+  overload: MoraGames.MapGen.BakedArea.ID*
+- uid: MoraGames.MapGen.BakedArea.AreaType
+  commentId: P:MoraGames.MapGen.BakedArea.AreaType
+  id: AreaType
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: AreaType
+  nameWithType: BakedArea.AreaType
+  fullName: MoraGames.MapGen.BakedArea.AreaType
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public BakedAreaType AreaType { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.BakedAreaType
+    content.vb: Public ReadOnly Property AreaType As BakedAreaType
+  overload: MoraGames.MapGen.BakedArea.AreaType*
+- uid: MoraGames.MapGen.BakedArea.DoorSpaces
+  commentId: P:MoraGames.MapGen.BakedArea.DoorSpaces
+  id: DoorSpaces
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: DoorSpaces
+  nameWithType: BakedArea.DoorSpaces
+  fullName: MoraGames.MapGen.BakedArea.DoorSpaces
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<BakedGridSpace> DoorSpaces { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.BakedGridSpace}
+    content.vb: Public ReadOnly Property DoorSpaces As List(Of BakedGridSpace)
+  overload: MoraGames.MapGen.BakedArea.DoorSpaces*
+- uid: MoraGames.MapGen.BakedArea.GridSpaces
+  commentId: P:MoraGames.MapGen.BakedArea.GridSpaces
+  id: GridSpaces
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: GridSpaces
+  nameWithType: BakedArea.GridSpaces
+  fullName: MoraGames.MapGen.BakedArea.GridSpaces
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public BakedGridSpace[] GridSpaces { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.BakedGridSpace[]
+    content.vb: Public ReadOnly Property GridSpaces As BakedGridSpace()
+  overload: MoraGames.MapGen.BakedArea.GridSpaces*
+- uid: MoraGames.MapGen.BakedArea.CentralGridSpace
+  commentId: P:MoraGames.MapGen.BakedArea.CentralGridSpace
+  id: CentralGridSpace
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: CentralGridSpace
+  nameWithType: BakedArea.CentralGridSpace
+  fullName: MoraGames.MapGen.BakedArea.CentralGridSpace
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public BakedGridSpace CentralGridSpace { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.BakedGridSpace
+    content.vb: Public ReadOnly Property CentralGridSpace As BakedGridSpace
+  overload: MoraGames.MapGen.BakedArea.CentralGridSpace*
+- uid: MoraGames.MapGen.BakedArea.AreaDefinition
+  commentId: P:MoraGames.MapGen.BakedArea.AreaDefinition
+  id: AreaDefinition
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: AreaDefinition
+  nameWithType: BakedArea.AreaDefinition
+  fullName: MoraGames.MapGen.BakedArea.AreaDefinition
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public AreaDefinitionSO AreaDefinition { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.AreaDefinitionSO
+    content.vb: Public ReadOnly Property AreaDefinition As AreaDefinitionSO
+  overload: MoraGames.MapGen.BakedArea.AreaDefinition*
+- uid: MoraGames.MapGen.BakedArea.ConnectedRoomIds
+  commentId: P:MoraGames.MapGen.BakedArea.ConnectedRoomIds
+  id: ConnectedRoomIds
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: ConnectedRoomIds
+  nameWithType: BakedArea.ConnectedRoomIds
+  fullName: MoraGames.MapGen.BakedArea.ConnectedRoomIds
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<int> ConnectedRoomIds { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public ReadOnly Property ConnectedRoomIds As List(Of Integer)
+  overload: MoraGames.MapGen.BakedArea.ConnectedRoomIds*
+- uid: MoraGames.MapGen.BakedArea.ConnectedCorridorIds
+  commentId: P:MoraGames.MapGen.BakedArea.ConnectedCorridorIds
+  id: ConnectedCorridorIds
+  parent: MoraGames.MapGen.BakedArea
+  langs:
+  - csharp
+  - vb
+  name: ConnectedCorridorIds
+  nameWithType: BakedArea.ConnectedCorridorIds
+  fullName: MoraGames.MapGen.BakedArea.ConnectedCorridorIds
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public List<int> ConnectedCorridorIds { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int32}
+    content.vb: Public ReadOnly Property ConnectedCorridorIds As List(Of Integer)
+  overload: MoraGames.MapGen.BakedArea.ConnectedCorridorIds*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  parent: MoraGames.MapGen.BakedAreaGraphExtensions
+  definition: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  name: GetFarthestAreas(BakedArea, BakedMap, out List<BakedArea>, BakedAreaType?)
+  nameWithType: BakedAreaGraphExtensions.GetFarthestAreas(BakedArea, BakedMap, out List<BakedArea>, BakedAreaType?)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>, MoraGames.MapGen.BakedAreaType?)
+  nameWithType.vb: BakedAreaGraphExtensions.GetFarthestAreas(BakedArea, BakedMap, List(Of BakedArea), BakedAreaType?)
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea), MoraGames.MapGen.BakedAreaType?)
+  name.vb: GetFarthestAreas(BakedArea, BakedMap, List(Of BakedArea), BakedAreaType?)
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+    name: GetFarthestAreas
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedAreaType
+    name: BakedAreaType
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaType.html
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+    name: GetFarthestAreas
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedAreaType
+    name: BakedAreaType
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaType.html
+  - name: '?'
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  parent: MoraGames.MapGen.BakedAreaGraphExtensions
+  definition: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  name: GetImmediateGraphConnections(BakedArea, BakedMap, List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.GetImmediateGraphConnections(BakedArea, BakedMap, List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.GetImmediateGraphConnections(BakedArea, BakedMap, List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: GetImmediateGraphConnections(BakedArea, BakedMap, List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: GetImmediateGraphConnections
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: GetImmediateGraphConnections
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  parent: MoraGames.MapGen.BakedAreaGraphExtensions
+  definition: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  name: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  parent: MoraGames.MapGen.BakedAreaGraphExtensions
+  definition: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  name: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>, List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>, List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>, System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea), List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea), System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea), List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  name: GetFarthestAreas(BakedArea, BakedMap, out List<BakedArea>, BakedAreaType?)
+  nameWithType: BakedAreaGraphExtensions.GetFarthestAreas(BakedArea, BakedMap, out List<BakedArea>, BakedAreaType?)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>, MoraGames.MapGen.BakedAreaType?)
+  nameWithType.vb: BakedAreaGraphExtensions.GetFarthestAreas(BakedArea, BakedMap, List(Of BakedArea), BakedAreaType?)
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea), MoraGames.MapGen.BakedAreaType?)
+  name.vb: GetFarthestAreas(BakedArea, BakedMap, List(Of BakedArea), BakedAreaType?)
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+    name: GetFarthestAreas
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedAreaType
+    name: BakedAreaType
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaType.html
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})
+    name: GetFarthestAreas
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedAreaType
+    name: BakedAreaType
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaType.html
+  - name: '?'
+  - name: )
+- uid: MoraGames.MapGen.BakedAreaGraphExtensions
+  commentId: T:MoraGames.MapGen.BakedAreaGraphExtensions
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html
+  name: BakedAreaGraphExtensions
+  nameWithType: BakedAreaGraphExtensions
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions
+- uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  name: GetImmediateGraphConnections(BakedArea, BakedMap, List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.GetImmediateGraphConnections(BakedArea, BakedMap, List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.GetImmediateGraphConnections(BakedArea, BakedMap, List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: GetImmediateGraphConnections(BakedArea, BakedMap, List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: GetImmediateGraphConnections
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: GetImmediateGraphConnections
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  name: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  commentId: M:MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  name: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>, List<BakedArea>)
+  nameWithType: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List<BakedArea>, List<BakedArea>)
+  fullName: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, out System.Collections.Generic.List<MoraGames.MapGen.BakedArea>, System.Collections.Generic.List<MoraGames.MapGen.BakedArea>)
+  nameWithType.vb: BakedAreaGraphExtensions.TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea), List(Of BakedArea))
+  fullName.vb: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea, MoraGames.MapGen.BakedMap, MoraGames.MapGen.BakedArea, System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea), System.Collections.Generic.List(Of MoraGames.MapGen.BakedArea))
+  name.vb: TryGetGraphToArea(BakedArea, BakedMap, BakedArea, List(Of BakedArea), List(Of BakedArea))
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})
+    name: TryGetGraphToArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedAreaGraphExtensions.html#MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__
+  - name: (
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    isExternal: true
+    href: MoraGames.MapGen.BakedArea.html
+  - name: )
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.#ctor*
+  commentId: Overload:MoraGames.MapGen.BakedArea.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea__ctor_MoraGames_MapGen_BakedMap_MoraGames_MapGen_GenArea_MoraGames_MapGen_BakedAreaType_
+  name: BakedArea
+  nameWithType: BakedArea.BakedArea
+  fullName: MoraGames.MapGen.BakedArea.BakedArea
+  nameWithType.vb: BakedArea.New
+  fullName.vb: MoraGames.MapGen.BakedArea.New
+  name.vb: New
+- uid: MoraGames.MapGen.BakedMap
+  commentId: T:MoraGames.MapGen.BakedMap
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedMap.html
+  name: BakedMap
+  nameWithType: BakedMap
+  fullName: MoraGames.MapGen.BakedMap
+- uid: MoraGames.MapGen.GenArea
+  commentId: T:MoraGames.MapGen.GenArea
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.GenArea.html
+  name: GenArea
+  nameWithType: GenArea
+  fullName: MoraGames.MapGen.GenArea
+- uid: MoraGames.MapGen.BakedAreaType
+  commentId: T:MoraGames.MapGen.BakedAreaType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedAreaType.html
+  name: BakedAreaType
+  nameWithType: BakedAreaType
+  fullName: MoraGames.MapGen.BakedAreaType
+- uid: MoraGames.MapGen.BakedArea.GenerateGraphConnections*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GenerateGraphConnections
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GenerateGraphConnections_MoraGames_MapGen_BakedMap_
+  name: GenerateGraphConnections
+  nameWithType: BakedArea.GenerateGraphConnections
+  fullName: MoraGames.MapGen.BakedArea.GenerateGraphConnections
+- uid: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GetPropSpotsByChannel
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GetPropSpotsByChannel_MoraGames_MapGen_Props_PropChannelSO_System_Boolean_System_Boolean_
+  name: GetPropSpotsByChannel
+  nameWithType: BakedArea.GetPropSpotsByChannel
+  fullName: MoraGames.MapGen.BakedArea.GetPropSpotsByChannel
+- uid: MoraGames.MapGen.Props.PropChannelSO
+  commentId: T:MoraGames.MapGen.Props.PropChannelSO
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropChannelSO.html
+  name: PropChannelSO
+  nameWithType: PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{MoraGames.MapGen.Props.PropSpot}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.Props.PropSpot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PropSpot>
+  nameWithType: List<PropSpot>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.Props.PropSpot>
+  nameWithType.vb: List(Of PropSpot)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.Props.PropSpot)
+  name.vb: List(Of PropSpot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.Props.PropSpot
+    name: PropSpot
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropSpot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.Props.PropSpot
+    name: PropSpot
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropSpot.html
+  - name: )
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MoraGames.MapGen.BakedArea.GetAllPropSpots*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GetAllPropSpots
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GetAllPropSpots_System_Boolean_System_Boolean_
+  name: GetAllPropSpots
+  nameWithType: BakedArea.GetAllPropSpots
+  fullName: MoraGames.MapGen.BakedArea.GetAllPropSpots
+- uid: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GetAllProceduralPropSpots_System_Boolean_System_Boolean_
+  name: GetAllProceduralPropSpots
+  nameWithType: BakedArea.GetAllProceduralPropSpots
+  fullName: MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots
+- uid: System.Collections.Generic.List{MoraGames.MapGen.Props.ProceduralPropSpot}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.Props.ProceduralPropSpot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ProceduralPropSpot>
+  nameWithType: List<ProceduralPropSpot>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.Props.ProceduralPropSpot>
+  nameWithType.vb: List(Of ProceduralPropSpot)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.Props.ProceduralPropSpot)
+  name.vb: List(Of ProceduralPropSpot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.Props.ProceduralPropSpot
+    name: ProceduralPropSpot
+    isExternal: true
+    href: MoraGames.MapGen.Props.ProceduralPropSpot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.Props.ProceduralPropSpot
+    name: ProceduralPropSpot
+    isExternal: true
+    href: MoraGames.MapGen.Props.ProceduralPropSpot.html
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GetProceduralPropSpotByType_MoraGames_MapGen_Props_PropPlacementType_System_Boolean_System_Boolean_
+  name: GetProceduralPropSpotByType
+  nameWithType: BakedArea.GetProceduralPropSpotByType
+  fullName: MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType
+- uid: MoraGames.MapGen.Props.PropPlacementType
+  commentId: T:MoraGames.MapGen.Props.PropPlacementType
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropPlacementType.html
+  name: PropPlacementType
+  nameWithType: PropPlacementType
+  fullName: MoraGames.MapGen.Props.PropPlacementType
+- uid: MoraGames.MapGen.BakedArea.Name*
+  commentId: Overload:MoraGames.MapGen.BakedArea.Name
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_Name
+  name: Name
+  nameWithType: BakedArea.Name
+  fullName: MoraGames.MapGen.BakedArea.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MoraGames.MapGen.BakedArea.ID*
+  commentId: Overload:MoraGames.MapGen.BakedArea.ID
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_ID
+  name: ID
+  nameWithType: BakedArea.ID
+  fullName: MoraGames.MapGen.BakedArea.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.BakedArea.AreaType*
+  commentId: Overload:MoraGames.MapGen.BakedArea.AreaType
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_AreaType
+  name: AreaType
+  nameWithType: BakedArea.AreaType
+  fullName: MoraGames.MapGen.BakedArea.AreaType
+- uid: MoraGames.MapGen.BakedArea.DoorSpaces*
+  commentId: Overload:MoraGames.MapGen.BakedArea.DoorSpaces
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_DoorSpaces
+  name: DoorSpaces
+  nameWithType: BakedArea.DoorSpaces
+  fullName: MoraGames.MapGen.BakedArea.DoorSpaces
+- uid: System.Collections.Generic.List{MoraGames.MapGen.BakedGridSpace}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.BakedGridSpace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<BakedGridSpace>
+  nameWithType: List<BakedGridSpace>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.BakedGridSpace>
+  nameWithType.vb: List(Of BakedGridSpace)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.BakedGridSpace)
+  name.vb: List(Of BakedGridSpace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.BakedGridSpace
+    name: BakedGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.BakedGridSpace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.BakedGridSpace
+    name: BakedGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.BakedGridSpace.html
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.GridSpaces*
+  commentId: Overload:MoraGames.MapGen.BakedArea.GridSpaces
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_GridSpaces
+  name: GridSpaces
+  nameWithType: BakedArea.GridSpaces
+  fullName: MoraGames.MapGen.BakedArea.GridSpaces
+- uid: MoraGames.MapGen.BakedGridSpace[]
+  isExternal: true
+  href: MoraGames.MapGen.BakedGridSpace.html
+  name: BakedGridSpace[]
+  nameWithType: BakedGridSpace[]
+  fullName: MoraGames.MapGen.BakedGridSpace[]
+  nameWithType.vb: BakedGridSpace()
+  fullName.vb: MoraGames.MapGen.BakedGridSpace()
+  name.vb: BakedGridSpace()
+  spec.csharp:
+  - uid: MoraGames.MapGen.BakedGridSpace
+    name: BakedGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.BakedGridSpace.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.BakedGridSpace
+    name: BakedGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.BakedGridSpace.html
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.CentralGridSpace*
+  commentId: Overload:MoraGames.MapGen.BakedArea.CentralGridSpace
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_CentralGridSpace
+  name: CentralGridSpace
+  nameWithType: BakedArea.CentralGridSpace
+  fullName: MoraGames.MapGen.BakedArea.CentralGridSpace
+- uid: MoraGames.MapGen.BakedGridSpace
+  commentId: T:MoraGames.MapGen.BakedGridSpace
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedGridSpace.html
+  name: BakedGridSpace
+  nameWithType: BakedGridSpace
+  fullName: MoraGames.MapGen.BakedGridSpace
+- uid: MoraGames.MapGen.BakedArea.AreaDefinition*
+  commentId: Overload:MoraGames.MapGen.BakedArea.AreaDefinition
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_AreaDefinition
+  name: AreaDefinition
+  nameWithType: BakedArea.AreaDefinition
+  fullName: MoraGames.MapGen.BakedArea.AreaDefinition
+- uid: MoraGames.MapGen.AreaDefinitionSO
+  commentId: T:MoraGames.MapGen.AreaDefinitionSO
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html
+  name: AreaDefinitionSO
+  nameWithType: AreaDefinitionSO
+  fullName: MoraGames.MapGen.AreaDefinitionSO
+- uid: MoraGames.MapGen.BakedArea.ConnectedRoomIds*
+  commentId: Overload:MoraGames.MapGen.BakedArea.ConnectedRoomIds
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_ConnectedRoomIds
+  name: ConnectedRoomIds
+  nameWithType: BakedArea.ConnectedRoomIds
+  fullName: MoraGames.MapGen.BakedArea.ConnectedRoomIds
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: MoraGames.MapGen.BakedArea.ConnectedCorridorIds*
+  commentId: Overload:MoraGames.MapGen.BakedArea.ConnectedCorridorIds
+  isExternal: true
+  href: MoraGames.MapGen.BakedArea.html#MoraGames_MapGen_BakedArea_ConnectedCorridorIds
+  name: ConnectedCorridorIds
+  nameWithType: BakedArea.ConnectedCorridorIds
+  fullName: MoraGames.MapGen.BakedArea.ConnectedCorridorIds

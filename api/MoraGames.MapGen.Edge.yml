@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Edge
+  commentId: T:MoraGames.MapGen.Edge
+  id: Edge
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.Edge.Bottom
+  - MoraGames.MapGen.Edge.Left
+  - MoraGames.MapGen.Edge.Right
+  - MoraGames.MapGen.Edge.Top
+  - MoraGames.MapGen.Edge.Uninitialized
+  langs:
+  - csharp
+  - vb
+  name: Edge
+  nameWithType: Edge
+  fullName: MoraGames.MapGen.Edge
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public enum Edge
+    content.vb: Public Enum Edge
+- uid: MoraGames.MapGen.Edge.Uninitialized
+  commentId: F:MoraGames.MapGen.Edge.Uninitialized
+  id: Uninitialized
+  parent: MoraGames.MapGen.Edge
+  langs:
+  - csharp
+  - vb
+  name: Uninitialized
+  nameWithType: Edge.Uninitialized
+  fullName: MoraGames.MapGen.Edge.Uninitialized
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: Uninitialized = 0
+    return:
+      type: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.Edge.Bottom
+  commentId: F:MoraGames.MapGen.Edge.Bottom
+  id: Bottom
+  parent: MoraGames.MapGen.Edge
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: Edge.Bottom
+  fullName: MoraGames.MapGen.Edge.Bottom
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: Bottom = 1
+    return:
+      type: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.Edge.Left
+  commentId: F:MoraGames.MapGen.Edge.Left
+  id: Left
+  parent: MoraGames.MapGen.Edge
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Edge.Left
+  fullName: MoraGames.MapGen.Edge.Left
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: Left = 2
+    return:
+      type: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.Edge.Top
+  commentId: F:MoraGames.MapGen.Edge.Top
+  id: Top
+  parent: MoraGames.MapGen.Edge
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: Edge.Top
+  fullName: MoraGames.MapGen.Edge.Top
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: Top = 3
+    return:
+      type: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.Edge.Right
+  commentId: F:MoraGames.MapGen.Edge.Right
+  id: Right
+  parent: MoraGames.MapGen.Edge
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Edge.Right
+  fullName: MoraGames.MapGen.Edge.Right
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: Right = 4
+    return:
+      type: MoraGames.MapGen.Edge
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.Edge
+  commentId: T:MoraGames.MapGen.Edge
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MoraGames.MapGen.Edge

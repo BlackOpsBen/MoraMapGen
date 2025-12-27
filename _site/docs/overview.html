@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Overview | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Overview | MoraMapGen ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="overview">Overview</h1>
+
+<h2 id="how-this-works">How This Works</h2>
+<p>This tool creates unique level layouts consisting of rooms and corridors using a procedural generation technique called &quot;Wave Function Collapse&quot; (WFC).
+A set of sprites defines all the possible options of room and corridor pieces.</p>
+<p><img src="../images/overview/Sprite_Templates.png" alt="Sprite sheet"></p>
+<p>These sprites are then placed in a grid to create all kinds of layouts:</p>
+<table>
+<thead>
+<tr>
+<th><img src="../images/overview/Example_Layout_1.PNG" alt="Example layout 1"></th>
+<th><img src="../images/overview/Example_Layout_2.PNG" alt="Example layout 2"></th>
+<th><img src="../images/overview/Example_Layout_3.PNG" alt="Example layout 3"></th>
+<th><img src="../images/overview/Example_Layout_4.PNG" alt="Example layout 4"></th>
+</tr>
+</thead>
+</table>
+<p>Then prefabs are placed to turn the layout into a useable level:</p>
+<p><img src="../images/overview/Example_Map_A-B.gif" alt="Example comparisson of sprite templates vs skinned layout">
+<img src="../images/overview/Example_Perspective.PNG" alt="Example perspective view"></p>
+<p>The generation process follows these steps:</p>
+<ol>
+<li>WFC Algorithm: Generates a 2D layout using sprite templates.</li>
+<li>Area Assignment: Assigns Area Definitions to rooms and corridors.</li>
+<li>Module Spawning: Places 3D module prefabs (walls, floors, ceilings, and doors.)</li>
+<li>Prop Placement: Spawns decorative and functional prop prefabs.</li>
+<li>Baking: Creates the BakedMap data structure for runtime access.</li>
+</ol>
+<h2 id="file-structure">File Structure</h2>
+<p><img src="../images/overview/File_Structure_Main.png" alt="File structure in assets folder"></p>
+<h3 id="demo-folder">Demo Folder</h3>
+<p>Contains various example scenes that are ready for you to simply press &quot;Play&quot; to see them in action.</p>
+<h3 id="icons-folder">Icons folder</h3>
+<p>Contains the images used as custom icons to differentiate the different ScriptableObject and Monobehaviour assets for easier readability in the editor.</p>
+<h3 id="resources">Resources</h3>
+<p>Contains a sprite sheet that is used to determine the possible tile templates for generating rooms and corridors. You can edit the sprite sheet to add or remove tiles to suit your needs.</p>
+<h3 id="scripts">Scripts</h3>
+<p>Contains all of the code for this asset. One of the only scripts you will need to use is &quot;MoraMapGen&quot; which is a Monobehaviour that you add to your scene.
+<img src="../images/overview/File_Structure_Scripts.png" alt="Scripts folder file structure"></p>
+<h3 id="tests">Tests</h3>
+<p>Contains Unit Tests that can be run via the Test Runner window to validate the generation system.</p>
+<h2 id="object-structure">Object Structure</h2>
+<p>The MoraMapGen system uses a hierarchical asset structure:
+MoraMapGen component &gt; Settings asset &gt; Area Options asset &gt; Area Definition assets &gt; Tile Module Definition assets &gt; Module prefabs</p>
+<h2 id="data-flow">Data Flow</h2>
+<h3 id="generation-time">Generation Time:</h3>
+<p>The system creates a GenMap containing all generation data.</p>
+<h3 id="after-generation">After Generation:</h3>
+<p>The system &quot;bakes&quot; the map into a BakedMap for efficient runtime access.</p>
+<h3 id="runtime-access">Runtime Access:</h3>
+<p>Use MoraMapGen.BakedMap to access rooms, corridors, waypoints, and more.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/overview.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

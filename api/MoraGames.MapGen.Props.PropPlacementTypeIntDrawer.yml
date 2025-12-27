@@ -1,0 +1,159 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+  commentId: T:MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+  id: PropPlacementTypeIntDrawer
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor
+  - MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: PropPlacementTypeIntDrawer
+  nameWithType: PropPlacementTypeIntDrawer
+  fullName: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class PropPlacementTypeIntDrawer : PropertyDrawer'
+    content.vb: Public Class PropPlacementTypeIntDrawer Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PropPlacementTypeIntDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: UnityEngine.Rect
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: label
+      type: UnityEngine.GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, [property] As SerializedProperty, label As GUIContent)
+  overload: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI*
+- uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor
+  commentId: M:MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+  langs:
+  - csharp
+  - vb
+  name: PropPlacementTypeIntDrawer()
+  nameWithType: PropPlacementTypeIntDrawer.PropPlacementTypeIntDrawer()
+  fullName: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.PropPlacementTypeIntDrawer()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropPlacementTypeIntDrawer()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor*
+  nameWithType.vb: PropPlacementTypeIntDrawer.New()
+  fullName.vb: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI*
+  commentId: Overload:MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.html#MoraGames_MapGen_Props_PropPlacementTypeIntDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  name: OnGUI
+  nameWithType: PropPlacementTypeIntDrawer.OnGUI
+  fullName: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.OnGUI
+- uid: UnityEngine.Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEditor.SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: UnityEngine.GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.html#MoraGames_MapGen_Props_PropPlacementTypeIntDrawer__ctor
+  name: PropPlacementTypeIntDrawer
+  nameWithType: PropPlacementTypeIntDrawer.PropPlacementTypeIntDrawer
+  fullName: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.PropPlacementTypeIntDrawer
+  nameWithType.vb: PropPlacementTypeIntDrawer.New
+  fullName.vb: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.New
+  name.vb: New

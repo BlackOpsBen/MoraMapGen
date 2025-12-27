@@ -1,0 +1,834 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot
+  commentId: T:MoraGames.MapGen.Props.ProceduralPropSpot
+  id: ProceduralPropSpot
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.ProceduralPropSpot.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,MoraGames.MapGen.Props.PropPlacementType,UnityEngine.Transform)
+  - MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed
+  - MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset
+  - MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform
+  - MoraGames.MapGen.Props.ProceduralPropSpot.Position
+  - MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+  - MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+  - MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+  - MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets(MoraGames.MapGen.RNG.PropOffsets)
+  - MoraGames.MapGen.Props.ProceduralPropSpot.Use(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPropSpot
+  nameWithType: ProceduralPropSpot
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class ProceduralPropSpot : IPropSpot'
+    content.vb: Public Class ProceduralPropSpot Implements IPropSpot
+  inheritance:
+  - System.Object
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,MoraGames.MapGen.Props.PropPlacementType,UnityEngine.Transform)
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,MoraGames.MapGen.Props.PropPlacementType,UnityEngine.Transform)
+  id: '#ctor(UnityEngine.Vector3,UnityEngine.Quaternion,MoraGames.MapGen.Props.PropPlacementType,UnityEngine.Transform)'
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPropSpot(Vector3, Quaternion, PropPlacementType, Transform)
+  nameWithType: ProceduralPropSpot.ProceduralPropSpot(Vector3, Quaternion, PropPlacementType, Transform)
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.ProceduralPropSpot(UnityEngine.Vector3, UnityEngine.Quaternion, MoraGames.MapGen.Props.PropPlacementType, UnityEngine.Transform)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public ProceduralPropSpot(Vector3 pos, Quaternion rot, PropPlacementType type, Transform parent)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector3
+    - id: rot
+      type: UnityEngine.Quaternion
+    - id: type
+      type: MoraGames.MapGen.Props.PropPlacementType
+    - id: parent
+      type: UnityEngine.Transform
+    content.vb: Public Sub New(pos As Vector3, rot As Quaternion, type As PropPlacementType, parent As Transform)
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.#ctor*
+  nameWithType.vb: ProceduralPropSpot.New(Vector3, Quaternion, PropPlacementType, Transform)
+  fullName.vb: MoraGames.MapGen.Props.ProceduralPropSpot.New(UnityEngine.Vector3, UnityEngine.Quaternion, MoraGames.MapGen.Props.PropPlacementType, UnityEngine.Transform)
+  name.vb: New(Vector3, Quaternion, PropPlacementType, Transform)
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets(MoraGames.MapGen.RNG.PropOffsets)
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets(MoraGames.MapGen.RNG.PropOffsets)
+  id: SetOffsets(MoraGames.MapGen.RNG.PropOffsets)
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: SetOffsets(PropOffsets)
+  nameWithType: ProceduralPropSpot.SetOffsets(PropOffsets)
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets(MoraGames.MapGen.RNG.PropOffsets)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public void SetOffsets(PropOffsets offsets)
+    parameters:
+    - id: offsets
+      type: MoraGames.MapGen.RNG.PropOffsets
+    content.vb: Public Sub SetOffsets(offsets As PropOffsets)
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets*
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Use(UnityEngine.GameObject)
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.Use(UnityEngine.GameObject)
+  id: Use(UnityEngine.GameObject)
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: Use(GameObject)
+  nameWithType: ProceduralPropSpot.Use(GameObject)
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Use(UnityEngine.GameObject)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public void Use(GameObject prop)
+    parameters:
+    - id: prop
+      type: UnityEngine.GameObject
+    content.vb: Public Sub Use(prop As GameObject)
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.Use*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed
+  id: CheckIfUsed
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: CheckIfUsed()
+  nameWithType: ProceduralPropSpot.CheckIfUsed()
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public bool CheckIfUsed()
+    return:
+      type: System.Boolean
+    content.vb: Public Function CheckIfUsed() As Boolean
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform
+  id: GetTransform
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: GetTransform()
+  nameWithType: ProceduralPropSpot.GetTransform()
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public Transform GetTransform()
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public Function GetTransform() As Transform
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.GetTransform
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset
+  id: GetRandomOffset
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: GetRandomOffset()
+  nameWithType: ProceduralPropSpot.GetRandomOffset()
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public Vector3 GetRandomOffset()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetRandomOffset() As Vector3
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Position
+  commentId: P:MoraGames.MapGen.Props.ProceduralPropSpot.Position
+  id: Position
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: ProceduralPropSpot.Position
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Position
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public Vector3 Position { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property Position As Vector3
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.Position*
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+  commentId: P:MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+  id: Rotation
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: ProceduralPropSpot.Rotation
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public Quaternion Rotation { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public ReadOnly Property Rotation As Quaternion
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.Rotation*
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+  commentId: P:MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+  id: PropPlacementType
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: PropPlacementType
+  nameWithType: ProceduralPropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public PropPlacementType PropPlacementType { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.Props.PropPlacementType
+    content.vb: Public ReadOnly Property PropPlacementType As PropPlacementType
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+  commentId: P:MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+  id: PropChannel
+  parent: MoraGames.MapGen.Props.ProceduralPropSpot
+  langs:
+  - csharp
+  - vb
+  name: PropChannel
+  nameWithType: ProceduralPropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public PropChannelSO PropChannel { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.Props.PropChannelSO
+    content.vb: Public ReadOnly Property PropChannel As PropChannelSO
+  overload: MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.PropChannel
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.Props.IPropSpot
+  commentId: T:MoraGames.MapGen.Props.IPropSpot
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html
+  name: IPropSpot
+  nameWithType: IPropSpot
+  fullName: MoraGames.MapGen.Props.IPropSpot
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot__ctor_UnityEngine_Vector3_UnityEngine_Quaternion_MoraGames_MapGen_Props_PropPlacementType_UnityEngine_Transform_
+  name: ProceduralPropSpot
+  nameWithType: ProceduralPropSpot.ProceduralPropSpot
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.ProceduralPropSpot
+  nameWithType.vb: ProceduralPropSpot.New
+  fullName.vb: MoraGames.MapGen.Props.ProceduralPropSpot.New
+  name.vb: New
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Quaternion
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: MoraGames.MapGen.Props.PropPlacementType
+  commentId: T:MoraGames.MapGen.Props.PropPlacementType
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropPlacementType.html
+  name: PropPlacementType
+  nameWithType: PropPlacementType
+  fullName: MoraGames.MapGen.Props.PropPlacementType
+- uid: UnityEngine.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_SetOffsets_MoraGames_MapGen_RNG_PropOffsets_
+  name: SetOffsets
+  nameWithType: ProceduralPropSpot.SetOffsets
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.SetOffsets
+- uid: MoraGames.MapGen.RNG.PropOffsets
+  commentId: T:MoraGames.MapGen.RNG.PropOffsets
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsets.html
+  name: PropOffsets
+  nameWithType: PropOffsets
+  fullName: MoraGames.MapGen.RNG.PropOffsets
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Use*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.Use
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_Use_UnityEngine_GameObject_
+  name: Use
+  nameWithType: ProceduralPropSpot.Use
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Use
+- uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  name: Use(GameObject)
+  nameWithType: IPropSpot.Use(GameObject)
+  fullName: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+    name: Use
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+    name: Use
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_CheckIfUsed
+  name: CheckIfUsed
+  nameWithType: ProceduralPropSpot.CheckIfUsed
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.CheckIfUsed
+- uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  name: CheckIfUsed()
+  nameWithType: IPropSpot.CheckIfUsed()
+  fullName: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+    name: CheckIfUsed
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+    name: CheckIfUsed
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_GetTransform
+  name: GetTransform
+  nameWithType: ProceduralPropSpot.GetTransform
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.GetTransform
+- uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.GetTransform
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  name: GetTransform()
+  nameWithType: IPropSpot.GetTransform()
+  fullName: MoraGames.MapGen.Props.IPropSpot.GetTransform()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+    name: GetTransform
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+    name: GetTransform
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_GetRandomOffset
+  name: GetRandomOffset
+  nameWithType: ProceduralPropSpot.GetRandomOffset
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.GetRandomOffset
+- uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  name: GetRandomOffset()
+  nameWithType: IPropSpot.GetRandomOffset()
+  fullName: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+    name: GetRandomOffset
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+    name: GetRandomOffset
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Position*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.Position
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_Position
+  name: Position
+  nameWithType: ProceduralPropSpot.Position
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Position
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.Rotation*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_Rotation
+  name: Rotation
+  nameWithType: ProceduralPropSpot.Rotation
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.Rotation
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_PropPlacementType
+  name: PropPlacementType
+  nameWithType: ProceduralPropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+  commentId: P:MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_PropPlacementType
+  name: PropPlacementType
+  nameWithType: IPropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpot.html#MoraGames_MapGen_Props_ProceduralPropSpot_PropChannel
+  name: PropChannel
+  nameWithType: ProceduralPropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpot.PropChannel
+- uid: MoraGames.MapGen.Props.IPropSpot.PropChannel
+  commentId: P:MoraGames.MapGen.Props.IPropSpot.PropChannel
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_PropChannel
+  name: PropChannel
+  nameWithType: IPropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.IPropSpot.PropChannel
+- uid: MoraGames.MapGen.Props.PropChannelSO
+  commentId: T:MoraGames.MapGen.Props.PropChannelSO
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropChannelSO.html
+  name: PropChannelSO
+  nameWithType: PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO

@@ -1,0 +1,132 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.BlueprintRotation
+  commentId: T:MoraGames.MapGen.BlueprintRotation
+  id: BlueprintRotation
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.BlueprintRotation.c180
+  - MoraGames.MapGen.BlueprintRotation.c90
+  - MoraGames.MapGen.BlueprintRotation.cc90
+  - MoraGames.MapGen.BlueprintRotation.none
+  langs:
+  - csharp
+  - vb
+  name: BlueprintRotation
+  nameWithType: BlueprintRotation
+  fullName: MoraGames.MapGen.BlueprintRotation
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public enum BlueprintRotation
+    content.vb: Public Enum BlueprintRotation
+- uid: MoraGames.MapGen.BlueprintRotation.c90
+  commentId: F:MoraGames.MapGen.BlueprintRotation.c90
+  id: c90
+  parent: MoraGames.MapGen.BlueprintRotation
+  langs:
+  - csharp
+  - vb
+  name: c90
+  nameWithType: BlueprintRotation.c90
+  fullName: MoraGames.MapGen.BlueprintRotation.c90
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: c90 = 0
+    return:
+      type: MoraGames.MapGen.BlueprintRotation
+- uid: MoraGames.MapGen.BlueprintRotation.c180
+  commentId: F:MoraGames.MapGen.BlueprintRotation.c180
+  id: c180
+  parent: MoraGames.MapGen.BlueprintRotation
+  langs:
+  - csharp
+  - vb
+  name: c180
+  nameWithType: BlueprintRotation.c180
+  fullName: MoraGames.MapGen.BlueprintRotation.c180
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: c180 = 1
+    return:
+      type: MoraGames.MapGen.BlueprintRotation
+- uid: MoraGames.MapGen.BlueprintRotation.cc90
+  commentId: F:MoraGames.MapGen.BlueprintRotation.cc90
+  id: cc90
+  parent: MoraGames.MapGen.BlueprintRotation
+  langs:
+  - csharp
+  - vb
+  name: cc90
+  nameWithType: BlueprintRotation.cc90
+  fullName: MoraGames.MapGen.BlueprintRotation.cc90
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: cc90 = 2
+    return:
+      type: MoraGames.MapGen.BlueprintRotation
+- uid: MoraGames.MapGen.BlueprintRotation.none
+  commentId: F:MoraGames.MapGen.BlueprintRotation.none
+  id: none
+  parent: MoraGames.MapGen.BlueprintRotation
+  langs:
+  - csharp
+  - vb
+  name: none
+  nameWithType: BlueprintRotation.none
+  fullName: MoraGames.MapGen.BlueprintRotation.none
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: none = 3
+    return:
+      type: MoraGames.MapGen.BlueprintRotation
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.BlueprintRotation
+  commentId: T:MoraGames.MapGen.BlueprintRotation
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BlueprintRotation.html
+  name: BlueprintRotation
+  nameWithType: BlueprintRotation
+  fullName: MoraGames.MapGen.BlueprintRotation

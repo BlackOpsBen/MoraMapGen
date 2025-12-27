@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.AreaDefinitionSO
+  commentId: T:MoraGames.MapGen.AreaDefinitionSO
+  id: AreaDefinitionSO
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.AreaDefinitionSO.#ctor
+  - MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)
+  - MoraGames.MapGen.AreaDefinitionSO.PropCategories
+  - MoraGames.MapGen.AreaDefinitionSO.PropDensity
+  - MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+  langs:
+  - csharp
+  - vb
+  name: AreaDefinitionSO
+  nameWithType: AreaDefinitionSO
+  fullName: MoraGames.MapGen.AreaDefinitionSO
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class AreaDefinitionSO : ScriptableObject'
+    content.vb: Public Class AreaDefinitionSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)
+  commentId: M:MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)
+  id: GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)
+  parent: MoraGames.MapGen.AreaDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: GetPropChannelDensity(PropChannelSO)
+  nameWithType: AreaDefinitionSO.GetPropChannelDensity(PropChannelSO)
+  fullName: MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public float GetPropChannelDensity(PropChannelSO channel)
+    parameters:
+    - id: channel
+      type: MoraGames.MapGen.Props.PropChannelSO
+    return:
+      type: System.Single
+    content.vb: Public Function GetPropChannelDensity(channel As PropChannelSO) As Single
+  overload: MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity*
+- uid: MoraGames.MapGen.AreaDefinitionSO.#ctor
+  commentId: M:MoraGames.MapGen.AreaDefinitionSO.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.AreaDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: AreaDefinitionSO()
+  nameWithType: AreaDefinitionSO.AreaDefinitionSO()
+  fullName: MoraGames.MapGen.AreaDefinitionSO.AreaDefinitionSO()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public AreaDefinitionSO()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.AreaDefinitionSO.#ctor*
+  nameWithType.vb: AreaDefinitionSO.New()
+  fullName.vb: MoraGames.MapGen.AreaDefinitionSO.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+  commentId: P:MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+  id: TileModuleDefinitions
+  parent: MoraGames.MapGen.AreaDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: TileModuleDefinitions
+  nameWithType: AreaDefinitionSO.TileModuleDefinitions
+  fullName: MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public TileModuleDefinitionsSO TileModuleDefinitions { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.TileModuleDefinitionsSO
+    content.vb: Public ReadOnly Property TileModuleDefinitions As TileModuleDefinitionsSO
+  overload: MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions*
+- uid: MoraGames.MapGen.AreaDefinitionSO.PropDensity
+  commentId: P:MoraGames.MapGen.AreaDefinitionSO.PropDensity
+  id: PropDensity
+  parent: MoraGames.MapGen.AreaDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: PropDensity
+  nameWithType: AreaDefinitionSO.PropDensity
+  fullName: MoraGames.MapGen.AreaDefinitionSO.PropDensity
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public float PropDensity { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property PropDensity As Single
+  overload: MoraGames.MapGen.AreaDefinitionSO.PropDensity*
+- uid: MoraGames.MapGen.AreaDefinitionSO.PropCategories
+  commentId: P:MoraGames.MapGen.AreaDefinitionSO.PropCategories
+  id: PropCategories
+  parent: MoraGames.MapGen.AreaDefinitionSO
+  langs:
+  - csharp
+  - vb
+  name: PropCategories
+  nameWithType: AreaDefinitionSO.PropCategories
+  fullName: MoraGames.MapGen.AreaDefinitionSO.PropCategories
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public PropCategories PropCategories { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.Props.PropCategories
+    content.vb: Public ReadOnly Property PropCategories As PropCategories
+  overload: MoraGames.MapGen.AreaDefinitionSO.PropCategories*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity*
+  commentId: Overload:MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html#MoraGames_MapGen_AreaDefinitionSO_GetPropChannelDensity_MoraGames_MapGen_Props_PropChannelSO_
+  name: GetPropChannelDensity
+  nameWithType: AreaDefinitionSO.GetPropChannelDensity
+  fullName: MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity
+- uid: MoraGames.MapGen.Props.PropChannelSO
+  commentId: T:MoraGames.MapGen.Props.PropChannelSO
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropChannelSO.html
+  name: PropChannelSO
+  nameWithType: PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: MoraGames.MapGen.AreaDefinitionSO.#ctor*
+  commentId: Overload:MoraGames.MapGen.AreaDefinitionSO.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html#MoraGames_MapGen_AreaDefinitionSO__ctor
+  name: AreaDefinitionSO
+  nameWithType: AreaDefinitionSO.AreaDefinitionSO
+  fullName: MoraGames.MapGen.AreaDefinitionSO.AreaDefinitionSO
+  nameWithType.vb: AreaDefinitionSO.New
+  fullName.vb: MoraGames.MapGen.AreaDefinitionSO.New
+  name.vb: New
+- uid: MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions*
+  commentId: Overload:MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html#MoraGames_MapGen_AreaDefinitionSO_TileModuleDefinitions
+  name: TileModuleDefinitions
+  nameWithType: AreaDefinitionSO.TileModuleDefinitions
+  fullName: MoraGames.MapGen.AreaDefinitionSO.TileModuleDefinitions
+- uid: MoraGames.MapGen.TileModuleDefinitionsSO
+  commentId: T:MoraGames.MapGen.TileModuleDefinitionsSO
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.TileModuleDefinitionsSO.html
+  name: TileModuleDefinitionsSO
+  nameWithType: TileModuleDefinitionsSO
+  fullName: MoraGames.MapGen.TileModuleDefinitionsSO
+- uid: MoraGames.MapGen.AreaDefinitionSO.PropDensity*
+  commentId: Overload:MoraGames.MapGen.AreaDefinitionSO.PropDensity
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html#MoraGames_MapGen_AreaDefinitionSO_PropDensity
+  name: PropDensity
+  nameWithType: AreaDefinitionSO.PropDensity
+  fullName: MoraGames.MapGen.AreaDefinitionSO.PropDensity
+- uid: MoraGames.MapGen.AreaDefinitionSO.PropCategories*
+  commentId: Overload:MoraGames.MapGen.AreaDefinitionSO.PropCategories
+  isExternal: true
+  href: MoraGames.MapGen.AreaDefinitionSO.html#MoraGames_MapGen_AreaDefinitionSO_PropCategories
+  name: PropCategories
+  nameWithType: AreaDefinitionSO.PropCategories
+  fullName: MoraGames.MapGen.AreaDefinitionSO.PropCategories
+- uid: MoraGames.MapGen.Props.PropCategories
+  commentId: T:MoraGames.MapGen.Props.PropCategories
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropCategories.html
+  name: PropCategories
+  nameWithType: PropCategories
+  fullName: MoraGames.MapGen.Props.PropCategories

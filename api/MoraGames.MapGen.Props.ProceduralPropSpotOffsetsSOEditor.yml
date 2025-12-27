@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+  commentId: T:MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+  id: ProceduralPropSpotOffsetsSOEditor
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor
+  - MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPropSpotOffsetsSOEditor
+  nameWithType: ProceduralPropSpotOffsetsSOEditor
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class ProceduralPropSpotOffsetsSOEditor : Editor'
+    content.vb: Public Class ProceduralPropSpotOffsetsSOEditor Inherits Editor
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI()
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI*
+- uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor
+  commentId: M:MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+  langs:
+  - csharp
+  - vb
+  name: ProceduralPropSpotOffsetsSOEditor()
+  nameWithType: ProceduralPropSpotOffsetsSOEditor.ProceduralPropSpotOffsetsSOEditor()
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.ProceduralPropSpotOffsetsSOEditor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public ProceduralPropSpotOffsetsSOEditor()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor*
+  nameWithType.vb: ProceduralPropSpotOffsetsSOEditor.New()
+  fullName.vb: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.html#MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSOEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.OnInspectorGUI
+- uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.html#MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSOEditor__ctor
+  name: ProceduralPropSpotOffsetsSOEditor
+  nameWithType: ProceduralPropSpotOffsetsSOEditor.ProceduralPropSpotOffsetsSOEditor
+  fullName: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.ProceduralPropSpotOffsetsSOEditor
+  nameWithType.vb: ProceduralPropSpotOffsetsSOEditor.New
+  fullName.vb: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.New
+  name.vb: New

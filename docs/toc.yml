@@ -1,0 +1,34 @@
+- name: Overview
+  href: overview.md
+
+- name: Quick Start
+  href: quick-start.md
+
+- name: Complete Setup
+  href: complete_setup.md
+
+- name: MoraMapGen Inspector Reference
+  items:
+    - name: Generation Options
+      href: inspector-reference/generation-options.md
+    - name: Settings
+      href: inspector-reference/settings.md
+    - name: Debug Options
+      href: inspector-reference/debug-options.md
+    - name: Advanced Settings
+      href: inspector-reference/advanced-settings.md
+    - name: Room Shapes
+
+- name: Concepts
+  items:
+    - name: Room Shapes
+      href: room-shapes.md
+    - name: Area Options
+      href: area-options.md
+    - name: Area Definitions
+      href: area-definitions.md
+    - name: Tile Module Definitions
+      href: tile-module-definitions.md
+
+- name: Scripting API
+  href: ../api/

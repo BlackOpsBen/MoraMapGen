@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.FloorType
+  commentId: T:MoraGames.MapGen.FloorType
+  id: FloorType
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.FloorType.D
+  - MoraGames.MapGen.FloorType.I
+  - MoraGames.MapGen.FloorType.L
+  - MoraGames.MapGen.FloorType.T
+  - MoraGames.MapGen.FloorType.X
+  langs:
+  - csharp
+  - vb
+  name: FloorType
+  nameWithType: FloorType
+  fullName: MoraGames.MapGen.FloorType
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public enum FloorType
+    content.vb: Public Enum FloorType
+- uid: MoraGames.MapGen.FloorType.D
+  commentId: F:MoraGames.MapGen.FloorType.D
+  id: D
+  parent: MoraGames.MapGen.FloorType
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: FloorType.D
+  fullName: MoraGames.MapGen.FloorType.D
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: D = 0
+    return:
+      type: MoraGames.MapGen.FloorType
+- uid: MoraGames.MapGen.FloorType.I
+  commentId: F:MoraGames.MapGen.FloorType.I
+  id: I
+  parent: MoraGames.MapGen.FloorType
+  langs:
+  - csharp
+  - vb
+  name: I
+  nameWithType: FloorType.I
+  fullName: MoraGames.MapGen.FloorType.I
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: I = 1
+    return:
+      type: MoraGames.MapGen.FloorType
+- uid: MoraGames.MapGen.FloorType.L
+  commentId: F:MoraGames.MapGen.FloorType.L
+  id: L
+  parent: MoraGames.MapGen.FloorType
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: FloorType.L
+  fullName: MoraGames.MapGen.FloorType.L
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: L = 2
+    return:
+      type: MoraGames.MapGen.FloorType
+- uid: MoraGames.MapGen.FloorType.T
+  commentId: F:MoraGames.MapGen.FloorType.T
+  id: T
+  parent: MoraGames.MapGen.FloorType
+  langs:
+  - csharp
+  - vb
+  name: T
+  nameWithType: FloorType.T
+  fullName: MoraGames.MapGen.FloorType.T
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: T = 3
+    return:
+      type: MoraGames.MapGen.FloorType
+- uid: MoraGames.MapGen.FloorType.X
+  commentId: F:MoraGames.MapGen.FloorType.X
+  id: X
+  parent: MoraGames.MapGen.FloorType
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: FloorType.X
+  fullName: MoraGames.MapGen.FloorType.X
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: X = 4
+    return:
+      type: MoraGames.MapGen.FloorType
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.FloorType
+  commentId: T:MoraGames.MapGen.FloorType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.FloorType.html
+  name: FloorType
+  nameWithType: FloorType
+  fullName: MoraGames.MapGen.FloorType

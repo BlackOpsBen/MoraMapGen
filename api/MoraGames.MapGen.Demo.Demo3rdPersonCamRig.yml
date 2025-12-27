@@ -1,0 +1,144 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+  commentId: T:MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+  id: Demo3rdPersonCamRig
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor
+  - MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize(UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: Demo3rdPersonCamRig
+  nameWithType: Demo3rdPersonCamRig
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class Demo3rdPersonCamRig : MonoBehaviour'
+    content.vb: Public Class Demo3rdPersonCamRig Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize(UnityEngine.Transform)
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize(UnityEngine.Transform)
+  id: Initialize(UnityEngine.Transform)
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Transform)
+  nameWithType: Demo3rdPersonCamRig.Initialize(Transform)
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize(UnityEngine.Transform)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void Initialize(Transform follow)
+    parameters:
+    - id: follow
+      type: UnityEngine.Transform
+    content.vb: Public Sub Initialize(follow As Transform)
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize*
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+  langs:
+  - csharp
+  - vb
+  name: Demo3rdPersonCamRig()
+  nameWithType: Demo3rdPersonCamRig.Demo3rdPersonCamRig()
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Demo3rdPersonCamRig()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public Demo3rdPersonCamRig()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor*
+  nameWithType.vb: Demo3rdPersonCamRig.New()
+  fullName.vb: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.html#MoraGames_MapGen_Demo_Demo3rdPersonCamRig_Initialize_UnityEngine_Transform_
+  name: Initialize
+  nameWithType: Demo3rdPersonCamRig.Initialize
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Initialize
+- uid: UnityEngine.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonCamRig.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.html#MoraGames_MapGen_Demo_Demo3rdPersonCamRig__ctor
+  name: Demo3rdPersonCamRig
+  nameWithType: Demo3rdPersonCamRig.Demo3rdPersonCamRig
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.Demo3rdPersonCamRig
+  nameWithType.vb: Demo3rdPersonCamRig.New
+  fullName.vb: MoraGames.MapGen.Demo.Demo3rdPersonCamRig.New
+  name.vb: New

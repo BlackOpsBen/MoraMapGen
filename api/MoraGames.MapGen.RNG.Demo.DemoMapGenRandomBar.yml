@@ -1,0 +1,380 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  commentId: T:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  id: DemoMapGenRandomBar
+  parent: MoraGames.MapGen.RNG.Demo
+  children:
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill(System.Single)
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: DemoMapGenRandomBar
+  nameWithType: DemoMapGenRandomBar
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: 'public class DemoMapGenRandomBar : MonoBehaviour'
+    content.vb: Public Class DemoMapGenRandomBar Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty
+  id: IncrementQty
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: IncrementQty()
+  nameWithType: DemoMapGenRandomBar.IncrementQty()
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public void IncrementQty()
+    content.vb: Public Sub IncrementQty()
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty*
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty(System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty(System.Int32)
+  id: SetQty(System.Int32)
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: SetQty(int)
+  nameWithType: DemoMapGenRandomBar.SetQty(int)
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty(int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public void SetQty(int qty)
+    parameters:
+    - id: qty
+      type: System.Int32
+    content.vb: Public Sub SetQty(qty As Integer)
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty*
+  nameWithType.vb: DemoMapGenRandomBar.SetQty(Integer)
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty(Integer)
+  name.vb: SetQty(Integer)
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill(System.Single)
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill(System.Single)
+  id: SetFill(System.Single)
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: SetFill(float)
+  nameWithType: DemoMapGenRandomBar.SetFill(float)
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill(float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public void SetFill(float yScale)
+    parameters:
+    - id: yScale
+      type: System.Single
+    content.vb: Public Sub SetFill(yScale As Single)
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill*
+  nameWithType.vb: DemoMapGenRandomBar.SetFill(Single)
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill(Single)
+  name.vb: SetFill(Single)
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar
+  id: ResetBar
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: ResetBar()
+  nameWithType: DemoMapGenRandomBar.ResetBar()
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public void ResetBar()
+    content.vb: Public Sub ResetBar()
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar*
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: DemoMapGenRandomBar()
+  nameWithType: DemoMapGenRandomBar.DemoMapGenRandomBar()
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.DemoMapGenRandomBar()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public DemoMapGenRandomBar()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor*
+  nameWithType.vb: DemoMapGenRandomBar.New()
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+  commentId: P:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+  id: Fill
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: Fill
+  nameWithType: DemoMapGenRandomBar.Fill
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public RectTransform Fill { get; }
+    parameters: []
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public ReadOnly Property Fill As RectTransform
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill*
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+  commentId: P:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+  id: QtyLabel
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: QtyLabel
+  nameWithType: DemoMapGenRandomBar.QtyLabel
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public Text QtyLabel { get; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public ReadOnly Property QtyLabel As Text
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel*
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty
+  commentId: P:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty
+  id: Qty
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+  langs:
+  - csharp
+  - vb
+  name: Qty
+  nameWithType: DemoMapGenRandomBar.Qty
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public int Qty { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Qty As Integer
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty*
+references:
+- uid: MoraGames.MapGen.RNG.Demo
+  commentId: N:MoraGames.MapGen.RNG.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG.Demo
+  nameWithType: MoraGames.MapGen.RNG.Demo
+  fullName: MoraGames.MapGen.RNG.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.RNG.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.RNG.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_IncrementQty
+  name: IncrementQty
+  nameWithType: DemoMapGenRandomBar.IncrementQty
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.IncrementQty
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_SetQty_System_Int32_
+  name: SetQty
+  nameWithType: DemoMapGenRandomBar.SetQty
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetQty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_SetFill_System_Single_
+  name: SetFill
+  nameWithType: DemoMapGenRandomBar.SetFill
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.SetFill
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_ResetBar
+  name: ResetBar
+  nameWithType: DemoMapGenRandomBar.ResetBar
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.ResetBar
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar__ctor
+  name: DemoMapGenRandomBar
+  nameWithType: DemoMapGenRandomBar.DemoMapGenRandomBar
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.DemoMapGenRandomBar
+  nameWithType.vb: DemoMapGenRandomBar.New
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.New
+  name.vb: New
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_Fill
+  name: Fill
+  nameWithType: DemoMapGenRandomBar.Fill
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Fill
+- uid: UnityEngine.RectTransform
+  commentId: '!:UnityEngine.RectTransform'
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_QtyLabel
+  name: QtyLabel
+  nameWithType: DemoMapGenRandomBar.QtyLabel
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.QtyLabel
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomBar_Qty
+  name: Qty
+  nameWithType: DemoMapGenRandomBar.Qty
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.Qty

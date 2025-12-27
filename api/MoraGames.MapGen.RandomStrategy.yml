@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RandomStrategy
+  commentId: T:MoraGames.MapGen.RandomStrategy
+  id: RandomStrategy
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.RandomStrategy.#ctor
+  - MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.RandomStrategy.RemoveSmallRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  - MoraGames.MapGen.RandomStrategy.SplitLargeRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  langs:
+  - csharp
+  - vb
+  name: RandomStrategy
+  nameWithType: RandomStrategy
+  fullName: MoraGames.MapGen.RandomStrategy
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class RandomStrategy : IMapGenStrategy'
+    content.vb: Public Class RandomStrategy Implements IMapGenStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - MoraGames.MapGen.IMapGenStrategy
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  id: GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.RandomStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetMapGenCoroutine(MoraMapGen)
+  nameWithType: RandomStrategy.GetMapGenCoroutine(MoraMapGen)
+  fullName: MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  example: []
+  syntax:
+    content: public IEnumerator GetMapGenCoroutine(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetMapGenCoroutine(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine*
+  implements:
+  - MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+- uid: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  commentId: M:MoraGames.MapGen.RandomStrategy.RemoveSmallRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  id: RemoveSmallRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  parent: MoraGames.MapGen.RandomStrategy
+  langs:
+  - csharp
+  - vb
+  name: RemoveSmallRooms(MoraMapGen, List<GenGridSpace>)
+  nameWithType: RandomStrategy.RemoveSmallRooms(MoraMapGen, List<GenGridSpace>)
+  fullName: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms(MoraGames.MapGen.MoraMapGen, System.Collections.Generic.List<MoraGames.MapGen.GenGridSpace>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator RemoveSmallRooms(MoraMapGen context, List<GenGridSpace> tilesToOmit = null)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: tilesToOmit
+      type: System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function RemoveSmallRooms(context As MoraMapGen, tilesToOmit As List(Of GenGridSpace) = Nothing) As IEnumerator
+  overload: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms*
+  nameWithType.vb: RandomStrategy.RemoveSmallRooms(MoraMapGen, List(Of GenGridSpace))
+  fullName.vb: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms(MoraGames.MapGen.MoraMapGen, System.Collections.Generic.List(Of MoraGames.MapGen.GenGridSpace))
+  name.vb: RemoveSmallRooms(MoraMapGen, List(Of GenGridSpace))
+- uid: MoraGames.MapGen.RandomStrategy.SplitLargeRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  commentId: M:MoraGames.MapGen.RandomStrategy.SplitLargeRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  id: SplitLargeRooms(MoraGames.MapGen.MoraMapGen,System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace})
+  parent: MoraGames.MapGen.RandomStrategy
+  langs:
+  - csharp
+  - vb
+  name: SplitLargeRooms(MoraMapGen, List<GenGridSpace>)
+  nameWithType: RandomStrategy.SplitLargeRooms(MoraMapGen, List<GenGridSpace>)
+  fullName: MoraGames.MapGen.RandomStrategy.SplitLargeRooms(MoraGames.MapGen.MoraMapGen, System.Collections.Generic.List<MoraGames.MapGen.GenGridSpace>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator SplitLargeRooms(MoraMapGen context, List<GenGridSpace> tilesToOmit = null)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: tilesToOmit
+      type: System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function SplitLargeRooms(context As MoraMapGen, tilesToOmit As List(Of GenGridSpace) = Nothing) As IEnumerator
+  overload: MoraGames.MapGen.RandomStrategy.SplitLargeRooms*
+  nameWithType.vb: RandomStrategy.SplitLargeRooms(MoraMapGen, List(Of GenGridSpace))
+  fullName.vb: MoraGames.MapGen.RandomStrategy.SplitLargeRooms(MoraGames.MapGen.MoraMapGen, System.Collections.Generic.List(Of MoraGames.MapGen.GenGridSpace))
+  name.vb: SplitLargeRooms(MoraMapGen, List(Of GenGridSpace))
+- uid: MoraGames.MapGen.RandomStrategy.#ctor
+  commentId: M:MoraGames.MapGen.RandomStrategy.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.RandomStrategy
+  langs:
+  - csharp
+  - vb
+  name: RandomStrategy()
+  nameWithType: RandomStrategy.RandomStrategy()
+  fullName: MoraGames.MapGen.RandomStrategy.RandomStrategy()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public RandomStrategy()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.RandomStrategy.#ctor*
+  nameWithType.vb: RandomStrategy.New()
+  fullName.vb: MoraGames.MapGen.RandomStrategy.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.IMapGenStrategy
+  commentId: T:MoraGames.MapGen.IMapGenStrategy
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenStrategy.html
+  name: IMapGenStrategy
+  nameWithType: IMapGenStrategy
+  fullName: MoraGames.MapGen.IMapGenStrategy
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine*
+  commentId: Overload:MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine
+  isExternal: true
+  href: MoraGames.MapGen.RandomStrategy.html#MoraGames_MapGen_RandomStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  name: GetMapGenCoroutine
+  nameWithType: RandomStrategy.GetMapGenCoroutine
+  fullName: MoraGames.MapGen.RandomStrategy.GetMapGenCoroutine
+- uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.IMapGenStrategy
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  name: GetMapGenCoroutine(MoraMapGen)
+  nameWithType: IMapGenStrategy.GetMapGenCoroutine(MoraMapGen)
+  fullName: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  spec.csharp:
+  - uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+    name: GetMapGenCoroutine
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  - name: (
+  - uid: MoraGames.MapGen.MoraMapGen
+    name: MoraMapGen
+    isExternal: true
+    href: MoraGames.MapGen.MoraMapGen.html
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.IMapGenStrategy.GetMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+    name: GetMapGenCoroutine
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenStrategy.html#MoraGames_MapGen_IMapGenStrategy_GetMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  - name: (
+  - uid: MoraGames.MapGen.MoraMapGen
+    name: MoraMapGen
+    isExternal: true
+    href: MoraGames.MapGen.MoraMapGen.html
+  - name: )
+- uid: MoraGames.MapGen.MoraMapGen
+  commentId: T:MoraGames.MapGen.MoraMapGen
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MoraMapGen.html
+  name: MoraMapGen
+  nameWithType: MoraMapGen
+  fullName: MoraGames.MapGen.MoraMapGen
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms*
+  commentId: Overload:MoraGames.MapGen.RandomStrategy.RemoveSmallRooms
+  isExternal: true
+  href: MoraGames.MapGen.RandomStrategy.html#MoraGames_MapGen_RandomStrategy_RemoveSmallRooms_MoraGames_MapGen_MoraMapGen_System_Collections_Generic_List_MoraGames_MapGen_GenGridSpace__
+  name: RemoveSmallRooms
+  nameWithType: RandomStrategy.RemoveSmallRooms
+  fullName: MoraGames.MapGen.RandomStrategy.RemoveSmallRooms
+- uid: System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.GenGridSpace}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GenGridSpace>
+  nameWithType: List<GenGridSpace>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.GenGridSpace>
+  nameWithType.vb: List(Of GenGridSpace)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.GenGridSpace)
+  name.vb: List(Of GenGridSpace)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MoraGames.MapGen.RandomStrategy.SplitLargeRooms*
+  commentId: Overload:MoraGames.MapGen.RandomStrategy.SplitLargeRooms
+  isExternal: true
+  href: MoraGames.MapGen.RandomStrategy.html#MoraGames_MapGen_RandomStrategy_SplitLargeRooms_MoraGames_MapGen_MoraMapGen_System_Collections_Generic_List_MoraGames_MapGen_GenGridSpace__
+  name: SplitLargeRooms
+  nameWithType: RandomStrategy.SplitLargeRooms
+  fullName: MoraGames.MapGen.RandomStrategy.SplitLargeRooms
+- uid: MoraGames.MapGen.RandomStrategy.#ctor*
+  commentId: Overload:MoraGames.MapGen.RandomStrategy.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.RandomStrategy.html#MoraGames_MapGen_RandomStrategy__ctor
+  name: RandomStrategy
+  nameWithType: RandomStrategy.RandomStrategy
+  fullName: MoraGames.MapGen.RandomStrategy.RandomStrategy
+  nameWithType.vb: RandomStrategy.New
+  fullName.vb: MoraGames.MapGen.RandomStrategy.New
+  name.vb: New

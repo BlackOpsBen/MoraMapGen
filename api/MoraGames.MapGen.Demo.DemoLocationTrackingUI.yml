@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoLocationTrackingUI
+  commentId: T:MoraGames.MapGen.Demo.DemoLocationTrackingUI
+  id: DemoLocationTrackingUI
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor
+  langs:
+  - csharp
+  - vb
+  name: DemoLocationTrackingUI
+  nameWithType: DemoLocationTrackingUI
+  fullName: MoraGames.MapGen.Demo.DemoLocationTrackingUI
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoLocationTrackingUI : MonoBehaviour'
+    content.vb: Public Class DemoLocationTrackingUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoLocationTrackingUI
+  langs:
+  - csharp
+  - vb
+  name: DemoLocationTrackingUI()
+  nameWithType: DemoLocationTrackingUI.DemoLocationTrackingUI()
+  fullName: MoraGames.MapGen.Demo.DemoLocationTrackingUI.DemoLocationTrackingUI()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoLocationTrackingUI()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor*
+  nameWithType.vb: DemoLocationTrackingUI.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoLocationTrackingUI.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoLocationTrackingUI.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoLocationTrackingUI.html#MoraGames_MapGen_Demo_DemoLocationTrackingUI__ctor
+  name: DemoLocationTrackingUI
+  nameWithType: DemoLocationTrackingUI.DemoLocationTrackingUI
+  fullName: MoraGames.MapGen.Demo.DemoLocationTrackingUI.DemoLocationTrackingUI
+  nameWithType.vb: DemoLocationTrackingUI.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoLocationTrackingUI.New
+  name.vb: New

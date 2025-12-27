@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoDungeonKey
+  commentId: T:MoraGames.MapGen.Demo.DemoDungeonKey
+  id: DemoDungeonKey
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoDungeonKey.#ctor
+  - MoraGames.MapGen.Demo.DemoDungeonKey.OnKeyCollected
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonKey
+  nameWithType: DemoDungeonKey
+  fullName: MoraGames.MapGen.Demo.DemoDungeonKey
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoDungeonKey : MonoBehaviour'
+    content.vb: Public Class DemoDungeonKey Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoDungeonKey.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonKey.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoDungeonKey
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonKey()
+  nameWithType: DemoDungeonKey.DemoDungeonKey()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonKey.DemoDungeonKey()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoDungeonKey()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoDungeonKey.#ctor*
+  nameWithType.vb: DemoDungeonKey.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonKey.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.Demo.DemoDungeonKey.OnKeyCollected
+  commentId: E:MoraGames.MapGen.Demo.DemoDungeonKey.OnKeyCollected
+  id: OnKeyCollected
+  parent: MoraGames.MapGen.Demo.DemoDungeonKey
+  langs:
+  - csharp
+  - vb
+  name: OnKeyCollected
+  nameWithType: DemoDungeonKey.OnKeyCollected
+  fullName: MoraGames.MapGen.Demo.DemoDungeonKey.OnKeyCollected
+  type: Event
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public static event Action OnKeyCollected
+    return:
+      type: System.Action
+    content.vb: Public Shared Event OnKeyCollected As Action
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoDungeonKey.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonKey.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonKey.html#MoraGames_MapGen_Demo_DemoDungeonKey__ctor
+  name: DemoDungeonKey
+  nameWithType: DemoDungeonKey.DemoDungeonKey
+  fullName: MoraGames.MapGen.Demo.DemoDungeonKey.DemoDungeonKey
+  nameWithType.vb: DemoDungeonKey.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonKey.New
+  name.vb: New
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

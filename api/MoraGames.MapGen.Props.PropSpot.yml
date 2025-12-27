@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.PropSpot
+  commentId: T:MoraGames.MapGen.Props.PropSpot
+  id: PropSpot
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.PropSpot.#ctor
+  - MoraGames.MapGen.Props.PropSpot.CheckIfUsed
+  - MoraGames.MapGen.Props.PropSpot.EnvType
+  - MoraGames.MapGen.Props.PropSpot.GetRandomOffset
+  - MoraGames.MapGen.Props.PropSpot.GetTransform
+  - MoraGames.MapGen.Props.PropSpot.Offsets
+  - MoraGames.MapGen.Props.PropSpot.PropChannel
+  - MoraGames.MapGen.Props.PropSpot.PropPlacementType
+  - MoraGames.MapGen.Props.PropSpot.SetEnvType(MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.Props.PropSpot.Use(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: PropSpot
+  nameWithType: PropSpot
+  fullName: MoraGames.MapGen.Props.PropSpot
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class PropSpot : MonoBehaviour, IPropSpot'
+    content.vb: Public Class PropSpot Inherits MonoBehaviour Implements IPropSpot
+  inheritance:
+  - System.Object
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot
+- uid: MoraGames.MapGen.Props.PropSpot.SetEnvType(MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.Props.PropSpot.SetEnvType(MoraGames.MapGen.EnvType)
+  id: SetEnvType(MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: SetEnvType(EnvType)
+  nameWithType: PropSpot.SetEnvType(EnvType)
+  fullName: MoraGames.MapGen.Props.PropSpot.SetEnvType(MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public void SetEnvType(EnvType type)
+    parameters:
+    - id: type
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Sub SetEnvType(type As EnvType)
+  overload: MoraGames.MapGen.Props.PropSpot.SetEnvType*
+- uid: MoraGames.MapGen.Props.PropSpot.Use(UnityEngine.GameObject)
+  commentId: M:MoraGames.MapGen.Props.PropSpot.Use(UnityEngine.GameObject)
+  id: Use(UnityEngine.GameObject)
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: Use(GameObject)
+  nameWithType: PropSpot.Use(GameObject)
+  fullName: MoraGames.MapGen.Props.PropSpot.Use(UnityEngine.GameObject)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public void Use(GameObject prop)
+    parameters:
+    - id: prop
+      type: UnityEngine.GameObject
+    content.vb: Public Sub Use(prop As GameObject)
+  overload: MoraGames.MapGen.Props.PropSpot.Use*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+- uid: MoraGames.MapGen.Props.PropSpot.CheckIfUsed
+  commentId: M:MoraGames.MapGen.Props.PropSpot.CheckIfUsed
+  id: CheckIfUsed
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: CheckIfUsed()
+  nameWithType: PropSpot.CheckIfUsed()
+  fullName: MoraGames.MapGen.Props.PropSpot.CheckIfUsed()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public bool CheckIfUsed()
+    return:
+      type: System.Boolean
+    content.vb: Public Function CheckIfUsed() As Boolean
+  overload: MoraGames.MapGen.Props.PropSpot.CheckIfUsed*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+- uid: MoraGames.MapGen.Props.PropSpot.GetTransform
+  commentId: M:MoraGames.MapGen.Props.PropSpot.GetTransform
+  id: GetTransform
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: GetTransform()
+  nameWithType: PropSpot.GetTransform()
+  fullName: MoraGames.MapGen.Props.PropSpot.GetTransform()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public Transform GetTransform()
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public Function GetTransform() As Transform
+  overload: MoraGames.MapGen.Props.PropSpot.GetTransform*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.GetTransform
+- uid: MoraGames.MapGen.Props.PropSpot.GetRandomOffset
+  commentId: M:MoraGames.MapGen.Props.PropSpot.GetRandomOffset
+  id: GetRandomOffset
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: GetRandomOffset()
+  nameWithType: PropSpot.GetRandomOffset()
+  fullName: MoraGames.MapGen.Props.PropSpot.GetRandomOffset()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public Vector3 GetRandomOffset()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function GetRandomOffset() As Vector3
+  overload: MoraGames.MapGen.Props.PropSpot.GetRandomOffset*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+- uid: MoraGames.MapGen.Props.PropSpot.#ctor
+  commentId: M:MoraGames.MapGen.Props.PropSpot.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: PropSpot()
+  nameWithType: PropSpot.PropSpot()
+  fullName: MoraGames.MapGen.Props.PropSpot.PropSpot()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropSpot()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.PropSpot.#ctor*
+  nameWithType.vb: PropSpot.New()
+  fullName.vb: MoraGames.MapGen.Props.PropSpot.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.Props.PropSpot.PropPlacementType
+  commentId: P:MoraGames.MapGen.Props.PropSpot.PropPlacementType
+  id: PropPlacementType
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: PropPlacementType
+  nameWithType: PropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.PropSpot.PropPlacementType
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public PropPlacementType PropPlacementType { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.Props.PropPlacementType
+    content.vb: Public ReadOnly Property PropPlacementType As PropPlacementType
+  overload: MoraGames.MapGen.Props.PropSpot.PropPlacementType*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.PropSpot.PropChannel
+  commentId: P:MoraGames.MapGen.Props.PropSpot.PropChannel
+  id: PropChannel
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: PropChannel
+  nameWithType: PropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.PropSpot.PropChannel
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public PropChannelSO PropChannel { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.Props.PropChannelSO
+    content.vb: Public ReadOnly Property PropChannel As PropChannelSO
+  overload: MoraGames.MapGen.Props.PropSpot.PropChannel*
+  implements:
+  - MoraGames.MapGen.Props.IPropSpot.PropChannel
+- uid: MoraGames.MapGen.Props.PropSpot.Offsets
+  commentId: P:MoraGames.MapGen.Props.PropSpot.Offsets
+  id: Offsets
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: Offsets
+  nameWithType: PropSpot.Offsets
+  fullName: MoraGames.MapGen.Props.PropSpot.Offsets
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropOffsets Offsets { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.RNG.PropOffsets
+    content.vb: Public ReadOnly Property Offsets As PropOffsets
+  overload: MoraGames.MapGen.Props.PropSpot.Offsets*
+- uid: MoraGames.MapGen.Props.PropSpot.EnvType
+  commentId: P:MoraGames.MapGen.Props.PropSpot.EnvType
+  id: EnvType
+  parent: MoraGames.MapGen.Props.PropSpot
+  langs:
+  - csharp
+  - vb
+  name: EnvType
+  nameWithType: PropSpot.EnvType
+  fullName: MoraGames.MapGen.Props.PropSpot.EnvType
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public EnvType EnvType { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public ReadOnly Property EnvType As EnvType
+  overload: MoraGames.MapGen.Props.PropSpot.EnvType*
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.Props.IPropSpot
+  commentId: T:MoraGames.MapGen.Props.IPropSpot
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html
+  name: IPropSpot
+  nameWithType: IPropSpot
+  fullName: MoraGames.MapGen.Props.IPropSpot
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.PropSpot.SetEnvType*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.SetEnvType
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_SetEnvType_MoraGames_MapGen_EnvType_
+  name: SetEnvType
+  nameWithType: PropSpot.SetEnvType
+  fullName: MoraGames.MapGen.Props.PropSpot.SetEnvType
+- uid: MoraGames.MapGen.EnvType
+  commentId: T:MoraGames.MapGen.EnvType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.EnvType.html
+  name: EnvType
+  nameWithType: EnvType
+  fullName: MoraGames.MapGen.EnvType
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.Props.PropSpot.Use*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.Use
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_Use_UnityEngine_GameObject_
+  name: Use
+  nameWithType: PropSpot.Use
+  fullName: MoraGames.MapGen.Props.PropSpot.Use
+- uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  name: Use(GameObject)
+  nameWithType: IPropSpot.Use(GameObject)
+  fullName: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+    name: Use
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.Use(UnityEngine.GameObject)
+    name: Use
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_Use_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: UnityEngine.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: MoraGames.MapGen.Props.PropSpot.CheckIfUsed*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.CheckIfUsed
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_CheckIfUsed
+  name: CheckIfUsed
+  nameWithType: PropSpot.CheckIfUsed
+  fullName: MoraGames.MapGen.Props.PropSpot.CheckIfUsed
+- uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  name: CheckIfUsed()
+  nameWithType: IPropSpot.CheckIfUsed()
+  fullName: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+    name: CheckIfUsed
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.CheckIfUsed
+    name: CheckIfUsed
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_CheckIfUsed
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.Props.PropSpot.GetTransform*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.GetTransform
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_GetTransform
+  name: GetTransform
+  nameWithType: PropSpot.GetTransform
+  fullName: MoraGames.MapGen.Props.PropSpot.GetTransform
+- uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.GetTransform
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  name: GetTransform()
+  nameWithType: IPropSpot.GetTransform()
+  fullName: MoraGames.MapGen.Props.IPropSpot.GetTransform()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+    name: GetTransform
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetTransform
+    name: GetTransform
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetTransform
+  - name: (
+  - name: )
+- uid: UnityEngine.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: MoraGames.MapGen.Props.PropSpot.GetRandomOffset*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.GetRandomOffset
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_GetRandomOffset
+  name: GetRandomOffset
+  nameWithType: PropSpot.GetRandomOffset
+  fullName: MoraGames.MapGen.Props.PropSpot.GetRandomOffset
+- uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+  commentId: M:MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  name: GetRandomOffset()
+  nameWithType: IPropSpot.GetRandomOffset()
+  fullName: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+    name: GetRandomOffset
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.IPropSpot.GetRandomOffset
+    name: GetRandomOffset
+    isExternal: true
+    href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_GetRandomOffset
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: MoraGames.MapGen.Props.PropSpot.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot__ctor
+  name: PropSpot
+  nameWithType: PropSpot.PropSpot
+  fullName: MoraGames.MapGen.Props.PropSpot.PropSpot
+  nameWithType.vb: PropSpot.New
+  fullName.vb: MoraGames.MapGen.Props.PropSpot.New
+  name.vb: New
+- uid: MoraGames.MapGen.Props.PropSpot.PropPlacementType*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.PropPlacementType
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_PropPlacementType
+  name: PropPlacementType
+  nameWithType: PropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.PropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+  commentId: P:MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_PropPlacementType
+  name: PropPlacementType
+  nameWithType: IPropSpot.PropPlacementType
+  fullName: MoraGames.MapGen.Props.IPropSpot.PropPlacementType
+- uid: MoraGames.MapGen.Props.PropPlacementType
+  commentId: T:MoraGames.MapGen.Props.PropPlacementType
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropPlacementType.html
+  name: PropPlacementType
+  nameWithType: PropPlacementType
+  fullName: MoraGames.MapGen.Props.PropPlacementType
+- uid: MoraGames.MapGen.Props.PropSpot.PropChannel*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.PropChannel
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_PropChannel
+  name: PropChannel
+  nameWithType: PropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.PropSpot.PropChannel
+- uid: MoraGames.MapGen.Props.IPropSpot.PropChannel
+  commentId: P:MoraGames.MapGen.Props.IPropSpot.PropChannel
+  parent: MoraGames.MapGen.Props.IPropSpot
+  isExternal: true
+  href: MoraGames.MapGen.Props.IPropSpot.html#MoraGames_MapGen_Props_IPropSpot_PropChannel
+  name: PropChannel
+  nameWithType: IPropSpot.PropChannel
+  fullName: MoraGames.MapGen.Props.IPropSpot.PropChannel
+- uid: MoraGames.MapGen.Props.PropChannelSO
+  commentId: T:MoraGames.MapGen.Props.PropChannelSO
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropChannelSO.html
+  name: PropChannelSO
+  nameWithType: PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO
+- uid: MoraGames.MapGen.Props.PropSpot.Offsets*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.Offsets
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_Offsets
+  name: Offsets
+  nameWithType: PropSpot.Offsets
+  fullName: MoraGames.MapGen.Props.PropSpot.Offsets
+- uid: MoraGames.MapGen.RNG.PropOffsets
+  commentId: T:MoraGames.MapGen.RNG.PropOffsets
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsets.html
+  name: PropOffsets
+  nameWithType: PropOffsets
+  fullName: MoraGames.MapGen.RNG.PropOffsets
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: MoraGames.MapGen.Props.PropSpot.EnvType*
+  commentId: Overload:MoraGames.MapGen.Props.PropSpot.EnvType
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropSpot.html#MoraGames_MapGen_Props_PropSpot_EnvType
+  name: EnvType
+  nameWithType: PropSpot.EnvType
+  fullName: MoraGames.MapGen.Props.PropSpot.EnvType

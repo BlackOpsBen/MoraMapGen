@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.PropChannelSO
+  commentId: T:MoraGames.MapGen.Props.PropChannelSO
+  id: PropChannelSO
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.PropChannelSO.#ctor
+  langs:
+  - csharp
+  - vb
+  name: PropChannelSO
+  nameWithType: PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class PropChannelSO : ScriptableObject'
+    content.vb: Public Class PropChannelSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Props.PropChannelSO.#ctor
+  commentId: M:MoraGames.MapGen.Props.PropChannelSO.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.PropChannelSO
+  langs:
+  - csharp
+  - vb
+  name: PropChannelSO()
+  nameWithType: PropChannelSO.PropChannelSO()
+  fullName: MoraGames.MapGen.Props.PropChannelSO.PropChannelSO()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropChannelSO()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.PropChannelSO.#ctor*
+  nameWithType.vb: PropChannelSO.New()
+  fullName.vb: MoraGames.MapGen.Props.PropChannelSO.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.PropChannelSO.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.PropChannelSO.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropChannelSO.html#MoraGames_MapGen_Props_PropChannelSO__ctor
+  name: PropChannelSO
+  nameWithType: PropChannelSO.PropChannelSO
+  fullName: MoraGames.MapGen.Props.PropChannelSO.PropChannelSO
+  nameWithType.vb: PropChannelSO.New
+  fullName.vb: MoraGames.MapGen.Props.PropChannelSO.New
+  name.vb: New

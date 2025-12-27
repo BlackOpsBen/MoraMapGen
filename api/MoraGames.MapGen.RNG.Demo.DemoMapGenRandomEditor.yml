@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+  commentId: T:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+  id: DemoMapGenRandomEditor
+  parent: MoraGames.MapGen.RNG.Demo
+  children:
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor
+  - MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: DemoMapGenRandomEditor
+  nameWithType: DemoMapGenRandomEditor
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: 'public class DemoMapGenRandomEditor : Editor'
+    content.vb: Public Class DemoMapGenRandomEditor Inherits Editor
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: DemoMapGenRandomEditor.OnInspectorGUI()
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI*
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor
+  commentId: M:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+  langs:
+  - csharp
+  - vb
+  name: DemoMapGenRandomEditor()
+  nameWithType: DemoMapGenRandomEditor.DemoMapGenRandomEditor()
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.DemoMapGenRandomEditor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG.Demo
+  syntax:
+    content: public DemoMapGenRandomEditor()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor*
+  nameWithType.vb: DemoMapGenRandomEditor.New()
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.RNG.Demo
+  commentId: N:MoraGames.MapGen.RNG.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG.Demo
+  nameWithType: MoraGames.MapGen.RNG.Demo
+  fullName: MoraGames.MapGen.RNG.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.RNG.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.RNG.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: DemoMapGenRandomEditor.OnInspectorGUI
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.OnInspectorGUI
+- uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor*
+  commentId: Overload:MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.html#MoraGames_MapGen_RNG_Demo_DemoMapGenRandomEditor__ctor
+  name: DemoMapGenRandomEditor
+  nameWithType: DemoMapGenRandomEditor.DemoMapGenRandomEditor
+  fullName: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.DemoMapGenRandomEditor
+  nameWithType.vb: DemoMapGenRandomEditor.New
+  fullName.vb: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.New
+  name.vb: New

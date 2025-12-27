@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoNPC
+  commentId: T:MoraGames.MapGen.Demo.DemoNPC
+  id: DemoNPC
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoNPC.#ctor
+  langs:
+  - csharp
+  - vb
+  name: DemoNPC
+  nameWithType: DemoNPC
+  fullName: MoraGames.MapGen.Demo.DemoNPC
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoNPC : MonoBehaviour'
+    content.vb: Public Class DemoNPC Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoNPC.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoNPC.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoNPC
+  langs:
+  - csharp
+  - vb
+  name: DemoNPC()
+  nameWithType: DemoNPC.DemoNPC()
+  fullName: MoraGames.MapGen.Demo.DemoNPC.DemoNPC()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoNPC()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoNPC.#ctor*
+  nameWithType.vb: DemoNPC.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoNPC.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoNPC.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoNPC.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoNPC.html#MoraGames_MapGen_Demo_DemoNPC__ctor
+  name: DemoNPC
+  nameWithType: DemoNPC.DemoNPC
+  fullName: MoraGames.MapGen.Demo.DemoNPC.DemoNPC
+  nameWithType.vb: DemoNPC.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoNPC.New
+  name.vb: New

@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.ComplexFloor
+  commentId: T:MoraGames.MapGen.ComplexFloor
+  id: ComplexFloor
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.ComplexFloor.#ctor
+  - MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ComplexFloor
+  nameWithType: ComplexFloor
+  fullName: MoraGames.MapGen.ComplexFloor
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class ComplexFloor : MonoBehaviour'
+    content.vb: Public Class ComplexFloor Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  commentId: M:MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  id: Initialize(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  parent: MoraGames.MapGen.ComplexFloor
+  langs:
+  - csharp
+  - vb
+  name: Initialize(MapTileBlueprint, int)
+  nameWithType: ComplexFloor.Initialize(MapTileBlueprint, int)
+  fullName: MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.MapTileBlueprint, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void Initialize(MapTileBlueprint blueprint, int index)
+    parameters:
+    - id: blueprint
+      type: MoraGames.MapGen.MapTileBlueprint
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub Initialize(blueprint As MapTileBlueprint, index As Integer)
+  overload: MoraGames.MapGen.ComplexFloor.Initialize*
+  nameWithType.vb: ComplexFloor.Initialize(MapTileBlueprint, Integer)
+  fullName.vb: MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.MapTileBlueprint, Integer)
+  name.vb: Initialize(MapTileBlueprint, Integer)
+- uid: MoraGames.MapGen.ComplexFloor.#ctor
+  commentId: M:MoraGames.MapGen.ComplexFloor.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.ComplexFloor
+  langs:
+  - csharp
+  - vb
+  name: ComplexFloor()
+  nameWithType: ComplexFloor.ComplexFloor()
+  fullName: MoraGames.MapGen.ComplexFloor.ComplexFloor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public ComplexFloor()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.ComplexFloor.#ctor*
+  nameWithType.vb: ComplexFloor.New()
+  fullName.vb: MoraGames.MapGen.ComplexFloor.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.ComplexFloor.Initialize*
+  commentId: Overload:MoraGames.MapGen.ComplexFloor.Initialize
+  isExternal: true
+  href: MoraGames.MapGen.ComplexFloor.html#MoraGames_MapGen_ComplexFloor_Initialize_MoraGames_MapGen_MapTileBlueprint_System_Int32_
+  name: Initialize
+  nameWithType: ComplexFloor.Initialize
+  fullName: MoraGames.MapGen.ComplexFloor.Initialize
+- uid: MoraGames.MapGen.MapTileBlueprint
+  commentId: T:MoraGames.MapGen.MapTileBlueprint
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MapTileBlueprint.html
+  name: MapTileBlueprint
+  nameWithType: MapTileBlueprint
+  fullName: MoraGames.MapGen.MapTileBlueprint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.ComplexFloor.#ctor*
+  commentId: Overload:MoraGames.MapGen.ComplexFloor.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.ComplexFloor.html#MoraGames_MapGen_ComplexFloor__ctor
+  name: ComplexFloor
+  nameWithType: ComplexFloor.ComplexFloor
+  fullName: MoraGames.MapGen.ComplexFloor.ComplexFloor
+  nameWithType.vb: ComplexFloor.New
+  fullName.vb: MoraGames.MapGen.ComplexFloor.New
+  name.vb: New

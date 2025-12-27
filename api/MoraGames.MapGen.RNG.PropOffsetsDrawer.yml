@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer
+  commentId: T:MoraGames.MapGen.RNG.PropOffsetsDrawer
+  id: PropOffsetsDrawer
+  parent: MoraGames.MapGen.RNG
+  children:
+  - MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor
+  - MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  - MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: PropOffsetsDrawer
+  nameWithType: PropOffsetsDrawer
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: 'public class PropOffsetsDrawer : PropertyDrawer'
+    content.vb: Public Class PropOffsetsDrawer Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: MoraGames.MapGen.RNG.PropOffsetsDrawer
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: PropOffsetsDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  example: []
+  syntax:
+    content: public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    parameters:
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: label
+      type: UnityEngine.GUIContent
+    return:
+      type: System.Single
+    content.vb: Public Overrides Function GetPropertyHeight([property] As SerializedProperty, label As GUIContent) As Single
+  overload: MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight*
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  commentId: M:MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  id: OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  parent: MoraGames.MapGen.RNG.PropOffsetsDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PropOffsetsDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  example: []
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: UnityEngine.Rect
+    - id: property
+      type: UnityEditor.SerializedProperty
+    - id: label
+      type: UnityEngine.GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, [property] As SerializedProperty, label As GUIContent)
+  overload: MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI*
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor
+  commentId: M:MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.RNG.PropOffsetsDrawer
+  langs:
+  - csharp
+  - vb
+  name: PropOffsetsDrawer()
+  nameWithType: PropOffsetsDrawer.PropOffsetsDrawer()
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.PropOffsetsDrawer()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public PropOffsetsDrawer()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor*
+  nameWithType.vb: PropOffsetsDrawer.New()
+  fullName.vb: MoraGames.MapGen.RNG.PropOffsetsDrawer.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight*
+  commentId: Overload:MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsetsDrawer.html#MoraGames_MapGen_RNG_PropOffsetsDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  name: GetPropertyHeight
+  nameWithType: PropOffsetsDrawer.GetPropertyHeight
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.GetPropertyHeight
+- uid: UnityEditor.SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: UnityEditor.SerializedProperty
+- uid: UnityEngine.GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI*
+  commentId: Overload:MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsetsDrawer.html#MoraGames_MapGen_RNG_PropOffsetsDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  name: OnGUI
+  nameWithType: PropOffsetsDrawer.OnGUI
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.OnGUI
+- uid: UnityEngine.Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor*
+  commentId: Overload:MoraGames.MapGen.RNG.PropOffsetsDrawer.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsetsDrawer.html#MoraGames_MapGen_RNG_PropOffsetsDrawer__ctor
+  name: PropOffsetsDrawer
+  nameWithType: PropOffsetsDrawer.PropOffsetsDrawer
+  fullName: MoraGames.MapGen.RNG.PropOffsetsDrawer.PropOffsetsDrawer
+  nameWithType.vb: PropOffsetsDrawer.New
+  fullName.vb: MoraGames.MapGen.RNG.PropOffsetsDrawer.New
+  name.vb: New

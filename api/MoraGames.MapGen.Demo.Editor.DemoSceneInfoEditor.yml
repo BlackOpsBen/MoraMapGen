@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+  commentId: T:MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+  id: DemoSceneInfoEditor
+  parent: MoraGames.MapGen.Demo.Editor
+  children:
+  - MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor
+  - MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: DemoSceneInfoEditor
+  nameWithType: DemoSceneInfoEditor
+  fullName: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo.Editor
+  syntax:
+    content: 'public class DemoSceneInfoEditor : Editor'
+    content.vb: Public Class DemoSceneInfoEditor Inherits Editor
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI
+  commentId: M:MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: DemoSceneInfoEditor.OnInspectorGUI()
+  fullName: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo.Editor
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI*
+- uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor
+  commentId: M:MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+  langs:
+  - csharp
+  - vb
+  name: DemoSceneInfoEditor()
+  nameWithType: DemoSceneInfoEditor.DemoSceneInfoEditor()
+  fullName: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.DemoSceneInfoEditor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo.Editor
+  syntax:
+    content: public DemoSceneInfoEditor()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor*
+  nameWithType.vb: DemoSceneInfoEditor.New()
+  fullName.vb: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo.Editor
+  commentId: N:MoraGames.MapGen.Demo.Editor
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo.Editor
+  nameWithType: MoraGames.MapGen.Demo.Editor
+  fullName: MoraGames.MapGen.Demo.Editor
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo.Editor
+    name: Editor
+    isExternal: true
+    href: MoraGames.MapGen.Demo.Editor.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo.Editor
+    name: Editor
+    isExternal: true
+    href: MoraGames.MapGen.Demo.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI*
+  commentId: Overload:MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.html#MoraGames_MapGen_Demo_Editor_DemoSceneInfoEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: DemoSceneInfoEditor.OnInspectorGUI
+  fullName: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.OnInspectorGUI
+- uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.html#MoraGames_MapGen_Demo_Editor_DemoSceneInfoEditor__ctor
+  name: DemoSceneInfoEditor
+  nameWithType: DemoSceneInfoEditor.DemoSceneInfoEditor
+  fullName: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.DemoSceneInfoEditor
+  nameWithType.vb: DemoSceneInfoEditor.New
+  fullName.vb: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.New
+  name.vb: New

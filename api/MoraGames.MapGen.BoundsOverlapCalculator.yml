@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.BoundsOverlapCalculator
+  commentId: T:MoraGames.MapGen.BoundsOverlapCalculator
+  id: BoundsOverlapCalculator
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  - MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  langs:
+  - csharp
+  - vb
+  name: BoundsOverlapCalculator
+  nameWithType: BoundsOverlapCalculator
+  fullName: MoraGames.MapGen.BoundsOverlapCalculator
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static class BoundsOverlapCalculator
+    content.vb: Public Module BoundsOverlapCalculator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  commentId: M:MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  id: GetLeastOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  parent: MoraGames.MapGen.BoundsOverlapCalculator
+  langs:
+  - csharp
+  - vb
+  name: GetLeastOverlap(Bounds, Bounds)
+  nameWithType: BoundsOverlapCalculator.GetLeastOverlap(Bounds, Bounds)
+  fullName: MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap(UnityEngine.Bounds, UnityEngine.Bounds)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static float GetLeastOverlap(Bounds bounds1, Bounds bounds2)
+    parameters:
+    - id: bounds1
+      type: UnityEngine.Bounds
+    - id: bounds2
+      type: UnityEngine.Bounds
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetLeastOverlap(bounds1 As Bounds, bounds2 As Bounds) As Single
+  overload: MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap*
+- uid: MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  commentId: M:MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  id: GetBoundsOverlap(UnityEngine.Bounds,UnityEngine.Bounds)
+  parent: MoraGames.MapGen.BoundsOverlapCalculator
+  langs:
+  - csharp
+  - vb
+  name: GetBoundsOverlap(Bounds, Bounds)
+  nameWithType: BoundsOverlapCalculator.GetBoundsOverlap(Bounds, Bounds)
+  fullName: MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap(UnityEngine.Bounds, UnityEngine.Bounds)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Vector3 GetBoundsOverlap(Bounds bounds1, Bounds bounds2)
+    parameters:
+    - id: bounds1
+      type: UnityEngine.Bounds
+    - id: bounds2
+      type: UnityEngine.Bounds
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function GetBoundsOverlap(bounds1 As Bounds, bounds2 As Bounds) As Vector3
+  overload: MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap*
+  commentId: Overload:MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap
+  isExternal: true
+  href: MoraGames.MapGen.BoundsOverlapCalculator.html#MoraGames_MapGen_BoundsOverlapCalculator_GetLeastOverlap_UnityEngine_Bounds_UnityEngine_Bounds_
+  name: GetLeastOverlap
+  nameWithType: BoundsOverlapCalculator.GetLeastOverlap
+  fullName: MoraGames.MapGen.BoundsOverlapCalculator.GetLeastOverlap
+- uid: UnityEngine.Bounds
+  isExternal: true
+  name: Bounds
+  nameWithType: Bounds
+  fullName: UnityEngine.Bounds
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap*
+  commentId: Overload:MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap
+  isExternal: true
+  href: MoraGames.MapGen.BoundsOverlapCalculator.html#MoraGames_MapGen_BoundsOverlapCalculator_GetBoundsOverlap_UnityEngine_Bounds_UnityEngine_Bounds_
+  name: GetBoundsOverlap
+  nameWithType: BoundsOverlapCalculator.GetBoundsOverlap
+  fullName: MoraGames.MapGen.BoundsOverlapCalculator.GetBoundsOverlap
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3

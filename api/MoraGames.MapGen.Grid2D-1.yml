@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Grid2D`1
+  commentId: T:MoraGames.MapGen.Grid2D`1
+  id: Grid2D`1
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.Grid2D`1.#ctor(UnityEngine.Vector2Int)
+  - MoraGames.MapGen.Grid2D`1.AsArray
+  - MoraGames.MapGen.Grid2D`1.Dimensions
+  - MoraGames.MapGen.Grid2D`1.GetEnumerator
+  - MoraGames.MapGen.Grid2D`1.GetIndex(UnityEngine.Vector2Int)
+  - MoraGames.MapGen.Grid2D`1.InBounds(UnityEngine.Vector2Int)
+  - MoraGames.MapGen.Grid2D`1.Item(System.Int32,System.Int32)
+  - MoraGames.MapGen.Grid2D`1.Item(UnityEngine.Vector2Int)
+  langs:
+  - csharp
+  - vb
+  name: Grid2D<T>
+  nameWithType: Grid2D<T>
+  fullName: MoraGames.MapGen.Grid2D<T>
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class Grid2D<T> : IEnumerable'
+    typeParameters:
+    - id: T
+    content.vb: Public Class Grid2D(Of T) Implements IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: Grid2D(Of T)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T)
+  name.vb: Grid2D(Of T)
+- uid: MoraGames.MapGen.Grid2D`1.#ctor(UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.Grid2D`1.#ctor(UnityEngine.Vector2Int)
+  id: '#ctor(UnityEngine.Vector2Int)'
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: Grid2D(Vector2Int)
+  nameWithType: Grid2D<T>.Grid2D(Vector2Int)
+  fullName: MoraGames.MapGen.Grid2D<T>.Grid2D(UnityEngine.Vector2Int)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Grid2D(Vector2Int dimensions)
+    parameters:
+    - id: dimensions
+      type: UnityEngine.Vector2Int
+    content.vb: Public Sub New(dimensions As Vector2Int)
+  overload: MoraGames.MapGen.Grid2D`1.#ctor*
+  nameWithType.vb: Grid2D(Of T).New(Vector2Int)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).New(UnityEngine.Vector2Int)
+  name.vb: New(Vector2Int)
+- uid: MoraGames.MapGen.Grid2D`1.GetIndex(UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.Grid2D`1.GetIndex(UnityEngine.Vector2Int)
+  id: GetIndex(UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: GetIndex(Vector2Int)
+  nameWithType: Grid2D<T>.GetIndex(Vector2Int)
+  fullName: MoraGames.MapGen.Grid2D<T>.GetIndex(UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int GetIndex(Vector2Int pos)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Int32
+    content.vb: Public Function GetIndex(pos As Vector2Int) As Integer
+  overload: MoraGames.MapGen.Grid2D`1.GetIndex*
+  nameWithType.vb: Grid2D(Of T).GetIndex(Vector2Int)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).GetIndex(UnityEngine.Vector2Int)
+- uid: MoraGames.MapGen.Grid2D`1.InBounds(UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.Grid2D`1.InBounds(UnityEngine.Vector2Int)
+  id: InBounds(UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: InBounds(Vector2Int)
+  nameWithType: Grid2D<T>.InBounds(Vector2Int)
+  fullName: MoraGames.MapGen.Grid2D<T>.InBounds(UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool InBounds(Vector2Int pos)
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Function InBounds(pos As Vector2Int) As Boolean
+  overload: MoraGames.MapGen.Grid2D`1.InBounds*
+  nameWithType.vb: Grid2D(Of T).InBounds(Vector2Int)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).InBounds(UnityEngine.Vector2Int)
+- uid: MoraGames.MapGen.Grid2D`1.GetEnumerator
+  commentId: M:MoraGames.MapGen.Grid2D`1.GetEnumerator
+  id: GetEnumerator
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: Grid2D<T>.GetEnumerator()
+  fullName: MoraGames.MapGen.Grid2D<T>.GetEnumerator()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  example: []
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function GetEnumerator() As IEnumerator
+  overload: MoraGames.MapGen.Grid2D`1.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: Grid2D(Of T).GetEnumerator()
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).GetEnumerator()
+- uid: MoraGames.MapGen.Grid2D`1.AsArray
+  commentId: P:MoraGames.MapGen.Grid2D`1.AsArray
+  id: AsArray
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: AsArray
+  nameWithType: Grid2D<T>.AsArray
+  fullName: MoraGames.MapGen.Grid2D<T>.AsArray
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public T[] AsArray { get; }
+    parameters: []
+    return:
+      type: '{T}[]'
+    content.vb: Public ReadOnly Property AsArray As T()
+  overload: MoraGames.MapGen.Grid2D`1.AsArray*
+  nameWithType.vb: Grid2D(Of T).AsArray
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).AsArray
+- uid: MoraGames.MapGen.Grid2D`1.Dimensions
+  commentId: P:MoraGames.MapGen.Grid2D`1.Dimensions
+  id: Dimensions
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: Dimensions
+  nameWithType: Grid2D<T>.Dimensions
+  fullName: MoraGames.MapGen.Grid2D<T>.Dimensions
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int Dimensions { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property Dimensions As Vector2Int
+  overload: MoraGames.MapGen.Grid2D`1.Dimensions*
+  nameWithType.vb: Grid2D(Of T).Dimensions
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).Dimensions
+- uid: MoraGames.MapGen.Grid2D`1.Item(System.Int32,System.Int32)
+  commentId: P:MoraGames.MapGen.Grid2D`1.Item(System.Int32,System.Int32)
+  id: Item(System.Int32,System.Int32)
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: this[int, int]
+  nameWithType: Grid2D<T>.this[int, int]
+  fullName: MoraGames.MapGen.Grid2D<T>.this[int, int]
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public T this[int x, int y] { get; set; }
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Default Property this[](x As Integer, y As Integer) As T
+  overload: MoraGames.MapGen.Grid2D`1.Item*
+  nameWithType.vb: Grid2D(Of T).this[](Integer, Integer)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).this[](Integer, Integer)
+  name.vb: this[](Integer, Integer)
+- uid: MoraGames.MapGen.Grid2D`1.Item(UnityEngine.Vector2Int)
+  commentId: P:MoraGames.MapGen.Grid2D`1.Item(UnityEngine.Vector2Int)
+  id: Item(UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.Grid2D`1
+  langs:
+  - csharp
+  - vb
+  name: this[Vector2Int]
+  nameWithType: Grid2D<T>.this[Vector2Int]
+  fullName: MoraGames.MapGen.Grid2D<T>.this[UnityEngine.Vector2Int]
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public T this[Vector2Int pos] { get; set; }
+    parameters:
+    - id: pos
+      type: UnityEngine.Vector2Int
+    return:
+      type: '{T}'
+    content.vb: Public Default Property this[](pos As Vector2Int) As T
+  overload: MoraGames.MapGen.Grid2D`1.Item*
+  nameWithType.vb: Grid2D(Of T).this[](Vector2Int)
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).this[](UnityEngine.Vector2Int)
+  name.vb: this[](Vector2Int)
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MoraGames.MapGen.Grid2D`1.#ctor*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1__ctor_UnityEngine_Vector2Int_
+  name: Grid2D
+  nameWithType: Grid2D<T>.Grid2D
+  fullName: MoraGames.MapGen.Grid2D<T>.Grid2D
+  nameWithType.vb: Grid2D(Of T).New
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).New
+  name.vb: New
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.Grid2D`1.GetIndex*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.GetIndex
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_GetIndex_UnityEngine_Vector2Int_
+  name: GetIndex
+  nameWithType: Grid2D<T>.GetIndex
+  fullName: MoraGames.MapGen.Grid2D<T>.GetIndex
+  nameWithType.vb: Grid2D(Of T).GetIndex
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).GetIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.Grid2D`1.InBounds*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.InBounds
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_InBounds_UnityEngine_Vector2Int_
+  name: InBounds
+  nameWithType: Grid2D<T>.InBounds
+  fullName: MoraGames.MapGen.Grid2D<T>.InBounds
+  nameWithType.vb: Grid2D(Of T).InBounds
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).InBounds
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.Grid2D`1.GetEnumerator*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.GetEnumerator
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: Grid2D<T>.GetEnumerator
+  fullName: MoraGames.MapGen.Grid2D<T>.GetEnumerator
+  nameWithType.vb: Grid2D(Of T).GetEnumerator
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: MoraGames.MapGen.Grid2D`1.AsArray*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.AsArray
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_AsArray
+  name: AsArray
+  nameWithType: Grid2D<T>.AsArray
+  fullName: MoraGames.MapGen.Grid2D<T>.AsArray
+  nameWithType.vb: Grid2D(Of T).AsArray
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).AsArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Grid2D`1.Dimensions*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.Dimensions
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_Dimensions
+  name: Dimensions
+  nameWithType: Grid2D<T>.Dimensions
+  fullName: MoraGames.MapGen.Grid2D<T>.Dimensions
+  nameWithType.vb: Grid2D(Of T).Dimensions
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).Dimensions
+- uid: MoraGames.MapGen.Grid2D`1.Item*
+  commentId: Overload:MoraGames.MapGen.Grid2D`1.Item
+  isExternal: true
+  href: MoraGames.MapGen.Grid2D-1.html#MoraGames_MapGen_Grid2D_1_Item_System_Int32_System_Int32_
+  name: this
+  nameWithType: Grid2D<T>.this
+  fullName: MoraGames.MapGen.Grid2D<T>.this
+  nameWithType.vb: Grid2D(Of T).this[]
+  fullName.vb: MoraGames.MapGen.Grid2D(Of T).this[]
+  name.vb: this[]
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

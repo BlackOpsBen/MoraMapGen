@@ -1,0 +1,1916 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.MapTileManager
+  commentId: T:MoraGames.MapGen.MapTileManager
+  id: MapTileManager
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.MapTileManager.#ctor
+  - MoraGames.MapGen.MapTileManager.BackupBlueprints
+  - MoraGames.MapGen.MapTileManager.Blueprints
+  - MoraGames.MapGen.MapTileManager.BottomCenterPixelIndex
+  - MoraGames.MapGen.MapTileManager.BottomLeftPixelIndex
+  - MoraGames.MapGen.MapTileManager.BottomPixelIndexes
+  - MoraGames.MapGen.MapTileManager.BottomRightPixelIndex
+  - MoraGames.MapGen.MapTileManager.ColorConstantsDict
+  - MoraGames.MapGen.MapTileManager.Corners
+  - MoraGames.MapGen.MapTileManager.EdgeBlueprint
+  - MoraGames.MapGen.MapTileManager.EdgeDoorPlacements
+  - MoraGames.MapGen.MapTileManager.Edges
+  - MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint(MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.MapTileManager.GetBackupBlueprint(MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.MapTileManager.GetBlueprint(MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.MapTileManager.GetBlueprint(UnityEngine.Sprite)
+  - MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset(UnityEngine.Vector2Int)
+  - MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite)
+  - MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite,UnityEngine.Color[]@)
+  - MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion(MoraGames.MapGen.Edge)
+  - MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3(MoraGames.MapGen.Edge)
+  - MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner(MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge(MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType(MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.MapTileManager.GetOppositeCorner(MoraGames.MapGen.Corner)
+  - MoraGames.MapGen.MapTileManager.GetOppositeEdge(MoraGames.MapGen.Edge)
+  - MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner(MoraGames.MapGen.Corner)
+  - MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge(MoraGames.MapGen.Edge)
+  - MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,MoraGames.MapGen.BlueprintRotation)
+  - MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  - MoraGames.MapGen.MapTileManager.Initialize(MoraGames.MapGen.MoraMapGen,System.Int32,MoraGames.MapGen.AdvancedSettings)
+  - MoraGames.MapGen.MapTileManager.LeftCenterPixelIndex
+  - MoraGames.MapGen.MapTileManager.LeftPixelIndexes
+  - MoraGames.MapGen.MapTileManager.RightCenterPixelIndex
+  - MoraGames.MapGen.MapTileManager.RightPixelIndexes
+  - MoraGames.MapGen.MapTileManager.SubTilePositions
+  - MoraGames.MapGen.MapTileManager.TileModuleEdgeSize
+  - MoraGames.MapGen.MapTileManager.TileSize
+  - MoraGames.MapGen.MapTileManager.TopCenterPixelIndex
+  - MoraGames.MapGen.MapTileManager.TopLeftPixelIndex
+  - MoraGames.MapGen.MapTileManager.TopPixelIndexes
+  - MoraGames.MapGen.MapTileManager.TopRightPixelIndex
+  langs:
+  - csharp
+  - vb
+  name: MapTileManager
+  nameWithType: MapTileManager
+  fullName: MoraGames.MapGen.MapTileManager
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public class MapTileManager
+    content.vb: Public Class MapTileManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.MapTileManager.TileModuleEdgeSize
+  commentId: F:MoraGames.MapGen.MapTileManager.TileModuleEdgeSize
+  id: TileModuleEdgeSize
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TileModuleEdgeSize
+  nameWithType: MapTileManager.TileModuleEdgeSize
+  fullName: MoraGames.MapGen.MapTileManager.TileModuleEdgeSize
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int TileModuleEdgeSize
+    return:
+      type: System.Int32
+    content.vb: Public TileModuleEdgeSize As Integer
+- uid: MoraGames.MapGen.MapTileManager.TileSize
+  commentId: F:MoraGames.MapGen.MapTileManager.TileSize
+  id: TileSize
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TileSize
+  nameWithType: MapTileManager.TileSize
+  fullName: MoraGames.MapGen.MapTileManager.TileSize
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2 TileSize
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public TileSize As Vector2
+- uid: MoraGames.MapGen.MapTileManager.BottomPixelIndexes
+  commentId: F:MoraGames.MapGen.MapTileManager.BottomPixelIndexes
+  id: BottomPixelIndexes
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: BottomPixelIndexes
+  nameWithType: MapTileManager.BottomPixelIndexes
+  fullName: MoraGames.MapGen.MapTileManager.BottomPixelIndexes
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int[] BottomPixelIndexes
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly BottomPixelIndexes As Integer()
+- uid: MoraGames.MapGen.MapTileManager.LeftPixelIndexes
+  commentId: F:MoraGames.MapGen.MapTileManager.LeftPixelIndexes
+  id: LeftPixelIndexes
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: LeftPixelIndexes
+  nameWithType: MapTileManager.LeftPixelIndexes
+  fullName: MoraGames.MapGen.MapTileManager.LeftPixelIndexes
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int[] LeftPixelIndexes
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly LeftPixelIndexes As Integer()
+- uid: MoraGames.MapGen.MapTileManager.TopPixelIndexes
+  commentId: F:MoraGames.MapGen.MapTileManager.TopPixelIndexes
+  id: TopPixelIndexes
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TopPixelIndexes
+  nameWithType: MapTileManager.TopPixelIndexes
+  fullName: MoraGames.MapGen.MapTileManager.TopPixelIndexes
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int[] TopPixelIndexes
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly TopPixelIndexes As Integer()
+- uid: MoraGames.MapGen.MapTileManager.RightPixelIndexes
+  commentId: F:MoraGames.MapGen.MapTileManager.RightPixelIndexes
+  id: RightPixelIndexes
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: RightPixelIndexes
+  nameWithType: MapTileManager.RightPixelIndexes
+  fullName: MoraGames.MapGen.MapTileManager.RightPixelIndexes
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int[] RightPixelIndexes
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared ReadOnly RightPixelIndexes As Integer()
+- uid: MoraGames.MapGen.MapTileManager.BottomLeftPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.BottomLeftPixelIndex
+  id: BottomLeftPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: BottomLeftPixelIndex
+  nameWithType: MapTileManager.BottomLeftPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.BottomLeftPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int BottomLeftPixelIndex
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly BottomLeftPixelIndex As Integer
+- uid: MoraGames.MapGen.MapTileManager.BottomRightPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.BottomRightPixelIndex
+  id: BottomRightPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: BottomRightPixelIndex
+  nameWithType: MapTileManager.BottomRightPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.BottomRightPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int BottomRightPixelIndex
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly BottomRightPixelIndex As Integer
+- uid: MoraGames.MapGen.MapTileManager.TopLeftPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.TopLeftPixelIndex
+  id: TopLeftPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TopLeftPixelIndex
+  nameWithType: MapTileManager.TopLeftPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.TopLeftPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int TopLeftPixelIndex
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly TopLeftPixelIndex As Integer
+- uid: MoraGames.MapGen.MapTileManager.TopRightPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.TopRightPixelIndex
+  id: TopRightPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TopRightPixelIndex
+  nameWithType: MapTileManager.TopRightPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.TopRightPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static readonly int TopRightPixelIndex
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly TopRightPixelIndex As Integer
+- uid: MoraGames.MapGen.MapTileManager.BottomCenterPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.BottomCenterPixelIndex
+  id: BottomCenterPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: BottomCenterPixelIndex
+  nameWithType: MapTileManager.BottomCenterPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.BottomCenterPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public const int BottomCenterPixelIndex = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const BottomCenterPixelIndex As Integer = 1
+- uid: MoraGames.MapGen.MapTileManager.LeftCenterPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.LeftCenterPixelIndex
+  id: LeftCenterPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: LeftCenterPixelIndex
+  nameWithType: MapTileManager.LeftCenterPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.LeftCenterPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public const int LeftCenterPixelIndex = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const LeftCenterPixelIndex As Integer = 3
+- uid: MoraGames.MapGen.MapTileManager.TopCenterPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.TopCenterPixelIndex
+  id: TopCenterPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: TopCenterPixelIndex
+  nameWithType: MapTileManager.TopCenterPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.TopCenterPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public const int TopCenterPixelIndex = 7
+    return:
+      type: System.Int32
+    content.vb: Public Const TopCenterPixelIndex As Integer = 7
+- uid: MoraGames.MapGen.MapTileManager.RightCenterPixelIndex
+  commentId: F:MoraGames.MapGen.MapTileManager.RightCenterPixelIndex
+  id: RightCenterPixelIndex
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: RightCenterPixelIndex
+  nameWithType: MapTileManager.RightCenterPixelIndex
+  fullName: MoraGames.MapGen.MapTileManager.RightCenterPixelIndex
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public const int RightCenterPixelIndex = 5
+    return:
+      type: System.Int32
+    content.vb: Public Const RightCenterPixelIndex As Integer = 5
+- uid: MoraGames.MapGen.MapTileManager.Edges
+  commentId: F:MoraGames.MapGen.MapTileManager.Edges
+  id: Edges
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: Edges
+  nameWithType: MapTileManager.Edges
+  fullName: MoraGames.MapGen.MapTileManager.Edges
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Edge[] Edges
+    return:
+      type: MoraGames.MapGen.Edge[]
+    content.vb: Public Shared Edges As Edge()
+- uid: MoraGames.MapGen.MapTileManager.Corners
+  commentId: F:MoraGames.MapGen.MapTileManager.Corners
+  id: Corners
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: Corners
+  nameWithType: MapTileManager.Corners
+  fullName: MoraGames.MapGen.MapTileManager.Corners
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Corner[] Corners
+    return:
+      type: MoraGames.MapGen.Corner[]
+    content.vb: Public Shared Corners As Corner()
+- uid: MoraGames.MapGen.MapTileManager.Blueprints
+  commentId: F:MoraGames.MapGen.MapTileManager.Blueprints
+  id: Blueprints
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: Blueprints
+  nameWithType: MapTileManager.Blueprints
+  fullName: MoraGames.MapGen.MapTileManager.Blueprints
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static List<MapTileBlueprint> Blueprints
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+    content.vb: Public Shared Blueprints As List(Of MapTileBlueprint)
+- uid: MoraGames.MapGen.MapTileManager.BackupBlueprints
+  commentId: F:MoraGames.MapGen.MapTileManager.BackupBlueprints
+  id: BackupBlueprints
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: BackupBlueprints
+  nameWithType: MapTileManager.BackupBlueprints
+  fullName: MoraGames.MapGen.MapTileManager.BackupBlueprints
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static List<MapTileBlueprint> BackupBlueprints
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+    content.vb: Public Shared BackupBlueprints As List(Of MapTileBlueprint)
+- uid: MoraGames.MapGen.MapTileManager.ColorConstantsDict
+  commentId: F:MoraGames.MapGen.MapTileManager.ColorConstantsDict
+  id: ColorConstantsDict
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: ColorConstantsDict
+  nameWithType: MapTileManager.ColorConstantsDict
+  fullName: MoraGames.MapGen.MapTileManager.ColorConstantsDict
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Dictionary<Color, EnvType> ColorConstantsDict
+    return:
+      type: System.Collections.Generic.Dictionary{UnityEngine.Color,MoraGames.MapGen.EnvType}
+    content.vb: Public Shared ColorConstantsDict As Dictionary(Of Color, EnvType)
+- uid: MoraGames.MapGen.MapTileManager.EdgeBlueprint
+  commentId: F:MoraGames.MapGen.MapTileManager.EdgeBlueprint
+  id: EdgeBlueprint
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: EdgeBlueprint
+  nameWithType: MapTileManager.EdgeBlueprint
+  fullName: MoraGames.MapGen.MapTileManager.EdgeBlueprint
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint EdgeBlueprint
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared EdgeBlueprint As MapTileBlueprint
+- uid: MoraGames.MapGen.MapTileManager.SubTilePositions
+  commentId: F:MoraGames.MapGen.MapTileManager.SubTilePositions
+  id: SubTilePositions
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: SubTilePositions
+  nameWithType: MapTileManager.SubTilePositions
+  fullName: MoraGames.MapGen.MapTileManager.SubTilePositions
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Vector2Int[] SubTilePositions
+    return:
+      type: UnityEngine.Vector2Int[]
+    content.vb: Public Shared SubTilePositions As Vector2Int()
+- uid: MoraGames.MapGen.MapTileManager.EdgeDoorPlacements
+  commentId: F:MoraGames.MapGen.MapTileManager.EdgeDoorPlacements
+  id: EdgeDoorPlacements
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: EdgeDoorPlacements
+  nameWithType: MapTileManager.EdgeDoorPlacements
+  fullName: MoraGames.MapGen.MapTileManager.EdgeDoorPlacements
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Dictionary<Edge, Vector4> EdgeDoorPlacements
+    return:
+      type: System.Collections.Generic.Dictionary{MoraGames.MapGen.Edge,UnityEngine.Vector4}
+    content.vb: Public Shared EdgeDoorPlacements As Dictionary(Of Edge, Vector4)
+- uid: MoraGames.MapGen.MapTileManager.#ctor
+  commentId: M:MoraGames.MapGen.MapTileManager.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: MapTileManager()
+  nameWithType: MapTileManager.MapTileManager()
+  fullName: MoraGames.MapGen.MapTileManager.MapTileManager()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public MapTileManager()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.MapTileManager.#ctor*
+  nameWithType.vb: MapTileManager.New()
+  fullName.vb: MoraGames.MapGen.MapTileManager.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.MapTileManager.Initialize(MoraGames.MapGen.MoraMapGen,System.Int32,MoraGames.MapGen.AdvancedSettings)
+  commentId: M:MoraGames.MapGen.MapTileManager.Initialize(MoraGames.MapGen.MoraMapGen,System.Int32,MoraGames.MapGen.AdvancedSettings)
+  id: Initialize(MoraGames.MapGen.MoraMapGen,System.Int32,MoraGames.MapGen.AdvancedSettings)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize(MoraMapGen, int, AdvancedSettings)
+  nameWithType: MapTileManager.Initialize(MoraMapGen, int, AdvancedSettings)
+  fullName: MoraGames.MapGen.MapTileManager.Initialize(MoraGames.MapGen.MoraMapGen, int, MoraGames.MapGen.AdvancedSettings)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void Initialize(MoraMapGen worldMapManager, int tileModuleEdgeSize, AdvancedSettings advancedSettings)
+    parameters:
+    - id: worldMapManager
+      type: MoraGames.MapGen.MoraMapGen
+    - id: tileModuleEdgeSize
+      type: System.Int32
+    - id: advancedSettings
+      type: MoraGames.MapGen.AdvancedSettings
+    content.vb: Public Sub Initialize(worldMapManager As MoraMapGen, tileModuleEdgeSize As Integer, advancedSettings As AdvancedSettings)
+  overload: MoraGames.MapGen.MapTileManager.Initialize*
+  nameWithType.vb: MapTileManager.Initialize(MoraMapGen, Integer, AdvancedSettings)
+  fullName.vb: MoraGames.MapGen.MapTileManager.Initialize(MoraGames.MapGen.MoraMapGen, Integer, MoraGames.MapGen.AdvancedSettings)
+  name.vb: Initialize(MoraMapGen, Integer, AdvancedSettings)
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType)
+  id: GetBlueprints(MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetBlueprints(EnvType)
+  nameWithType: MapTileManager.GetBlueprints(EnvType)
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static List<MapTileBlueprint> GetBlueprints(EnvType envType)
+    parameters:
+    - id: envType
+      type: MoraGames.MapGen.EnvType
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+    content.vb: Public Shared Function GetBlueprints(envType As EnvType) As List(Of MapTileBlueprint)
+  overload: MoraGames.MapGen.MapTileManager.GetBlueprints*
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType[])
+  id: GetBlueprints(MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetBlueprints(EnvType[])
+  nameWithType: MapTileManager.GetBlueprints(EnvType[])
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static List<MapTileBlueprint> GetBlueprints(EnvType[] envTypes)
+    parameters:
+    - id: envTypes
+      type: MoraGames.MapGen.EnvType[]
+    return:
+      type: System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+    content.vb: Public Shared Function GetBlueprints(envTypes As EnvType()) As List(Of MapTileBlueprint)
+  overload: MoraGames.MapGen.MapTileManager.GetBlueprints*
+  nameWithType.vb: MapTileManager.GetBlueprints(EnvType())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetBlueprints(MoraGames.MapGen.EnvType())
+  name.vb: GetBlueprints(EnvType())
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprint(UnityEngine.Sprite)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetBlueprint(UnityEngine.Sprite)
+  id: GetBlueprint(UnityEngine.Sprite)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetBlueprint(Sprite)
+  nameWithType: MapTileManager.GetBlueprint(Sprite)
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprint(UnityEngine.Sprite)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint GetBlueprint(Sprite template)
+    parameters:
+    - id: template
+      type: UnityEngine.Sprite
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared Function GetBlueprint(template As Sprite) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GetBlueprint*
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprint(MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.MapTileManager.GetBlueprint(MoraGames.MapGen.EnvType[])
+  id: GetBlueprint(MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetBlueprint(EnvType[])
+  nameWithType: MapTileManager.GetBlueprint(EnvType[])
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprint(MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint GetBlueprint(EnvType[] pixelEnvTypes)
+    parameters:
+    - id: pixelEnvTypes
+      type: MoraGames.MapGen.EnvType[]
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared Function GetBlueprint(pixelEnvTypes As EnvType()) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GetBlueprint*
+  nameWithType.vb: MapTileManager.GetBlueprint(EnvType())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetBlueprint(MoraGames.MapGen.EnvType())
+  name.vb: GetBlueprint(EnvType())
+- uid: MoraGames.MapGen.MapTileManager.GetBackupBlueprint(MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.MapTileManager.GetBackupBlueprint(MoraGames.MapGen.EnvType[])
+  id: GetBackupBlueprint(MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetBackupBlueprint(EnvType[])
+  nameWithType: MapTileManager.GetBackupBlueprint(EnvType[])
+  fullName: MoraGames.MapGen.MapTileManager.GetBackupBlueprint(MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint GetBackupBlueprint(EnvType[] pixelEnvTypes)
+    parameters:
+    - id: pixelEnvTypes
+      type: MoraGames.MapGen.EnvType[]
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared Function GetBackupBlueprint(pixelEnvTypes As EnvType()) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GetBackupBlueprint*
+  nameWithType.vb: MapTileManager.GetBackupBlueprint(EnvType())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetBackupBlueprint(MoraGames.MapGen.EnvType())
+  name.vb: GetBackupBlueprint(EnvType())
+- uid: MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge(MoraGames.MapGen.Edge)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge(MoraGames.MapGen.Edge)
+  id: GetPixelIndexesByEdge(MoraGames.MapGen.Edge)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetPixelIndexesByEdge(Edge)
+  nameWithType: MapTileManager.GetPixelIndexesByEdge(Edge)
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge(MoraGames.MapGen.Edge)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static int[] GetPixelIndexesByEdge(Edge edge)
+    parameters:
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    return:
+      type: System.Int32[]
+    content.vb: Public Shared Function GetPixelIndexesByEdge(edge As Edge) As Integer()
+  overload: MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge*
+- uid: MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner(MoraGames.MapGen.Corner)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner(MoraGames.MapGen.Corner)
+  id: GetPixelIndexByCorner(MoraGames.MapGen.Corner)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetPixelIndexByCorner(Corner)
+  nameWithType: MapTileManager.GetPixelIndexByCorner(Corner)
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner(MoraGames.MapGen.Corner)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static int GetPixelIndexByCorner(Corner corner)
+    parameters:
+    - id: corner
+      type: MoraGames.MapGen.Corner
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetPixelIndexByCorner(corner As Corner) As Integer
+  overload: MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner*
+- uid: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint(MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint(MoraGames.MapGen.EnvType[])
+  id: GenerateBackupBlueprint(MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GenerateBackupBlueprint(EnvType[])
+  nameWithType: MapTileManager.GenerateBackupBlueprint(EnvType[])
+  fullName: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint(MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public MapTileBlueprint GenerateBackupBlueprint(EnvType[] pixelEnvTypes)
+    parameters:
+    - id: pixelEnvTypes
+      type: MoraGames.MapGen.EnvType[]
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Function GenerateBackupBlueprint(pixelEnvTypes As EnvType()) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint*
+  nameWithType.vb: MapTileManager.GenerateBackupBlueprint(EnvType())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint(MoraGames.MapGen.EnvType())
+  name.vb: GenerateBackupBlueprint(EnvType())
+- uid: MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite)
+  id: GetEnvTypes(UnityEngine.Sprite)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetEnvTypes(Sprite)
+  nameWithType: MapTileManager.GetEnvTypes(Sprite)
+  fullName: MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static EnvType[] GetEnvTypes(Sprite sprite)
+    parameters:
+    - id: sprite
+      type: UnityEngine.Sprite
+    return:
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Function GetEnvTypes(sprite As Sprite) As EnvType()
+  overload: MoraGames.MapGen.MapTileManager.GetEnvTypes*
+- uid: MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite,UnityEngine.Color[]@)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite,UnityEngine.Color[]@)
+  id: GetEnvTypes(UnityEngine.Sprite,UnityEngine.Color[]@)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetEnvTypes(Sprite, out Color[])
+  nameWithType: MapTileManager.GetEnvTypes(Sprite, out Color[])
+  fullName: MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite, out UnityEngine.Color[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static EnvType[] GetEnvTypes(Sprite sprite, out Color[] pixels)
+    parameters:
+    - id: sprite
+      type: UnityEngine.Sprite
+    - id: pixels
+      type: UnityEngine.Color[]
+    return:
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Function GetEnvTypes(sprite As Sprite, pixels As Color()) As EnvType()
+  overload: MoraGames.MapGen.MapTileManager.GetEnvTypes*
+  nameWithType.vb: MapTileManager.GetEnvTypes(Sprite, Color())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetEnvTypes(UnityEngine.Sprite, UnityEngine.Color())
+  name.vb: GetEnvTypes(Sprite, Color())
+- uid: MoraGames.MapGen.MapTileManager.GetOppositeEdge(MoraGames.MapGen.Edge)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetOppositeEdge(MoraGames.MapGen.Edge)
+  id: GetOppositeEdge(MoraGames.MapGen.Edge)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetOppositeEdge(Edge)
+  nameWithType: MapTileManager.GetOppositeEdge(Edge)
+  fullName: MoraGames.MapGen.MapTileManager.GetOppositeEdge(MoraGames.MapGen.Edge)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Edge GetOppositeEdge(Edge edge)
+    parameters:
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    return:
+      type: MoraGames.MapGen.Edge
+    content.vb: Public Shared Function GetOppositeEdge(edge As Edge) As Edge
+  overload: MoraGames.MapGen.MapTileManager.GetOppositeEdge*
+- uid: MoraGames.MapGen.MapTileManager.GetOppositeCorner(MoraGames.MapGen.Corner)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetOppositeCorner(MoraGames.MapGen.Corner)
+  id: GetOppositeCorner(MoraGames.MapGen.Corner)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetOppositeCorner(Corner)
+  nameWithType: MapTileManager.GetOppositeCorner(Corner)
+  fullName: MoraGames.MapGen.MapTileManager.GetOppositeCorner(MoraGames.MapGen.Corner)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Corner GetOppositeCorner(Corner corner)
+    parameters:
+    - id: corner
+      type: MoraGames.MapGen.Corner
+    return:
+      type: MoraGames.MapGen.Corner
+    content.vb: Public Shared Function GetOppositeCorner(corner As Corner) As Corner
+  overload: MoraGames.MapGen.MapTileManager.GetOppositeCorner*
+- uid: MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset(UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset(UnityEngine.Vector2Int)
+  id: GetEdgeByDirectionOffset(UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetEdgeByDirectionOffset(Vector2Int)
+  nameWithType: MapTileManager.GetEdgeByDirectionOffset(Vector2Int)
+  fullName: MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset(UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Edge GetEdgeByDirectionOffset(Vector2Int direcitonOffset)
+    parameters:
+    - id: direcitonOffset
+      type: UnityEngine.Vector2Int
+    return:
+      type: MoraGames.MapGen.Edge
+    content.vb: Public Shared Function GetEdgeByDirectionOffset(direcitonOffset As Vector2Int) As Edge
+  overload: MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset*
+- uid: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3(MoraGames.MapGen.Edge)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3(MoraGames.MapGen.Edge)
+  id: GetFacingDirectionAsVector3(MoraGames.MapGen.Edge)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetFacingDirectionAsVector3(Edge)
+  nameWithType: MapTileManager.GetFacingDirectionAsVector3(Edge)
+  fullName: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3(MoraGames.MapGen.Edge)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Vector3 GetFacingDirectionAsVector3(Edge facing)
+    parameters:
+    - id: facing
+      type: MoraGames.MapGen.Edge
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function GetFacingDirectionAsVector3(facing As Edge) As Vector3
+  overload: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3*
+- uid: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion(MoraGames.MapGen.Edge)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion(MoraGames.MapGen.Edge)
+  id: GetFacingDirectionAsQuaternion(MoraGames.MapGen.Edge)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetFacingDirectionAsQuaternion(Edge)
+  nameWithType: MapTileManager.GetFacingDirectionAsQuaternion(Edge)
+  fullName: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion(MoraGames.MapGen.Edge)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static Quaternion GetFacingDirectionAsQuaternion(Edge facing)
+    parameters:
+    - id: facing
+      type: MoraGames.MapGen.Edge
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public Shared Function GetFacingDirectionAsQuaternion(facing As Edge) As Quaternion
+  overload: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion*
+- uid: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  id: GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,System.Int32)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetRotatedBlueprint(MapTileBlueprint, int)
+  nameWithType: MapTileManager.GetRotatedBlueprint(MapTileBlueprint, int)
+  fullName: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint GetRotatedBlueprint(MapTileBlueprint blueprint, int numRotations)
+    parameters:
+    - id: blueprint
+      type: MoraGames.MapGen.MapTileBlueprint
+    - id: numRotations
+      type: System.Int32
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared Function GetRotatedBlueprint(blueprint As MapTileBlueprint, numRotations As Integer) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint*
+  nameWithType.vb: MapTileManager.GetRotatedBlueprint(MapTileBlueprint, Integer)
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint, Integer)
+  name.vb: GetRotatedBlueprint(MapTileBlueprint, Integer)
+- uid: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,MoraGames.MapGen.BlueprintRotation)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,MoraGames.MapGen.BlueprintRotation)
+  id: GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint,MoraGames.MapGen.BlueprintRotation)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetRotatedBlueprint(MapTileBlueprint, BlueprintRotation)
+  nameWithType: MapTileManager.GetRotatedBlueprint(MapTileBlueprint, BlueprintRotation)
+  fullName: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint(MoraGames.MapGen.MapTileBlueprint, MoraGames.MapGen.BlueprintRotation)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static MapTileBlueprint GetRotatedBlueprint(MapTileBlueprint blueprint, BlueprintRotation rotation)
+    parameters:
+    - id: blueprint
+      type: MoraGames.MapGen.MapTileBlueprint
+    - id: rotation
+      type: MoraGames.MapGen.BlueprintRotation
+    return:
+      type: MoraGames.MapGen.MapTileBlueprint
+    content.vb: Public Shared Function GetRotatedBlueprint(blueprint As MapTileBlueprint, rotation As BlueprintRotation) As MapTileBlueprint
+  overload: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint*
+- uid: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType[])
+  id: GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetPixelEnvTypesAsString(EnvType[])
+  nameWithType: MapTileManager.GetPixelEnvTypesAsString(EnvType[])
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static string GetPixelEnvTypesAsString(EnvType[] pixelEnvTypes)
+    parameters:
+    - id: pixelEnvTypes
+      type: MoraGames.MapGen.EnvType[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetPixelEnvTypesAsString(pixelEnvTypes As EnvType()) As String
+  overload: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString*
+  nameWithType.vb: MapTileManager.GetPixelEnvTypesAsString(EnvType())
+  fullName.vb: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString(MoraGames.MapGen.EnvType())
+  name.vb: GetPixelEnvTypesAsString(EnvType())
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge(MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge(MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  id: GetFullPixelArrayFromEdge(MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetFullPixelArrayFromEdge(Edge, EnvType)
+  nameWithType: MapTileManager.GetFullPixelArrayFromEdge(Edge, EnvType)
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge(MoraGames.MapGen.Edge, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static EnvType[] GetFullPixelArrayFromEdge(Edge edge, EnvType type)
+    parameters:
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    - id: type
+      type: MoraGames.MapGen.EnvType
+    return:
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Function GetFullPixelArrayFromEdge(edge As Edge, type As EnvType) As EnvType()
+  overload: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge*
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner(MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner(MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  id: GetFullPixelArrayFromCorner(MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetFullPixelArrayFromCorner(Corner, EnvType)
+  nameWithType: MapTileManager.GetFullPixelArrayFromCorner(Corner, EnvType)
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner(MoraGames.MapGen.Corner, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static EnvType[] GetFullPixelArrayFromCorner(Corner corner, EnvType toType)
+    parameters:
+    - id: corner
+      type: MoraGames.MapGen.Corner
+    - id: toType
+      type: MoraGames.MapGen.EnvType
+    return:
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Function GetFullPixelArrayFromCorner(corner As Corner, toType As EnvType) As EnvType()
+  overload: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner*
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType(MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType(MoraGames.MapGen.EnvType)
+  id: GetFullPixelArrayOfType(MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.MapTileManager
+  langs:
+  - csharp
+  - vb
+  name: GetFullPixelArrayOfType(EnvType)
+  nameWithType: MapTileManager.GetFullPixelArrayOfType(EnvType)
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType(MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static EnvType[] GetFullPixelArrayOfType(EnvType type)
+    parameters:
+    - id: type
+      type: MoraGames.MapGen.EnvType
+    return:
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Function GetFullPixelArrayOfType(type As EnvType) As EnvType()
+  overload: MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Edge[]
+  isExternal: true
+  href: MoraGames.MapGen.Edge.html
+  name: Edge[]
+  nameWithType: Edge[]
+  fullName: MoraGames.MapGen.Edge[]
+  nameWithType.vb: Edge()
+  fullName.vb: MoraGames.MapGen.Edge()
+  name.vb: Edge()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Edge
+    name: Edge
+    isExternal: true
+    href: MoraGames.MapGen.Edge.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.Edge
+    name: Edge
+    isExternal: true
+    href: MoraGames.MapGen.Edge.html
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Corner[]
+  isExternal: true
+  href: MoraGames.MapGen.Corner.html
+  name: Corner[]
+  nameWithType: Corner[]
+  fullName: MoraGames.MapGen.Corner[]
+  nameWithType.vb: Corner()
+  fullName.vb: MoraGames.MapGen.Corner()
+  name.vb: Corner()
+  spec.csharp:
+  - uid: MoraGames.MapGen.Corner
+    name: Corner
+    isExternal: true
+    href: MoraGames.MapGen.Corner.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.Corner
+    name: Corner
+    isExternal: true
+    href: MoraGames.MapGen.Corner.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.MapTileBlueprint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapTileBlueprint>
+  nameWithType: List<MapTileBlueprint>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.MapTileBlueprint>
+  nameWithType.vb: List(Of MapTileBlueprint)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.MapTileBlueprint)
+  name.vb: List(Of MapTileBlueprint)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.MapTileBlueprint
+    name: MapTileBlueprint
+    isExternal: true
+    href: MoraGames.MapGen.MapTileBlueprint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.MapTileBlueprint
+    name: MapTileBlueprint
+    isExternal: true
+    href: MoraGames.MapGen.MapTileBlueprint.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary{UnityEngine.Color,MoraGames.MapGen.EnvType}
+  commentId: T:System.Collections.Generic.Dictionary{UnityEngine.Color,MoraGames.MapGen.EnvType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Color, EnvType>
+  nameWithType: Dictionary<Color, EnvType>
+  fullName: System.Collections.Generic.Dictionary<UnityEngine.Color, MoraGames.MapGen.EnvType>
+  nameWithType.vb: Dictionary(Of Color, EnvType)
+  fullName.vb: System.Collections.Generic.Dictionary(Of UnityEngine.Color, MoraGames.MapGen.EnvType)
+  name.vb: Dictionary(Of Color, EnvType)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: MoraGames.MapGen.MapTileBlueprint
+  commentId: T:MoraGames.MapGen.MapTileBlueprint
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MapTileBlueprint.html
+  name: MapTileBlueprint
+  nameWithType: MapTileBlueprint
+  fullName: MoraGames.MapGen.MapTileBlueprint
+- uid: UnityEngine.Vector2Int[]
+  isExternal: true
+  name: Vector2Int[]
+  nameWithType: Vector2Int[]
+  fullName: UnityEngine.Vector2Int[]
+  nameWithType.vb: Vector2Int()
+  fullName.vb: UnityEngine.Vector2Int()
+  name.vb: Vector2Int()
+  spec.csharp:
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector2Int
+    name: Vector2Int
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{MoraGames.MapGen.Edge,UnityEngine.Vector4}
+  commentId: T:System.Collections.Generic.Dictionary{MoraGames.MapGen.Edge,UnityEngine.Vector4}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Edge, Vector4>
+  nameWithType: Dictionary<Edge, Vector4>
+  fullName: System.Collections.Generic.Dictionary<MoraGames.MapGen.Edge, UnityEngine.Vector4>
+  nameWithType.vb: Dictionary(Of Edge, Vector4)
+  fullName.vb: System.Collections.Generic.Dictionary(Of MoraGames.MapGen.Edge, UnityEngine.Vector4)
+  name.vb: Dictionary(Of Edge, Vector4)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: MoraGames.MapGen.Edge
+    name: Edge
+    isExternal: true
+    href: MoraGames.MapGen.Edge.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.Edge
+    name: Edge
+    isExternal: true
+    href: MoraGames.MapGen.Edge.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: )
+- uid: MoraGames.MapGen.MapTileManager.#ctor*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager__ctor
+  name: MapTileManager
+  nameWithType: MapTileManager.MapTileManager
+  fullName: MoraGames.MapGen.MapTileManager.MapTileManager
+  nameWithType.vb: MapTileManager.New
+  fullName.vb: MoraGames.MapGen.MapTileManager.New
+  name.vb: New
+- uid: MoraGames.MapGen.MapTileManager.Initialize*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.Initialize
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_Initialize_MoraGames_MapGen_MoraMapGen_System_Int32_MoraGames_MapGen_AdvancedSettings_
+  name: Initialize
+  nameWithType: MapTileManager.Initialize
+  fullName: MoraGames.MapGen.MapTileManager.Initialize
+- uid: MoraGames.MapGen.MoraMapGen
+  commentId: T:MoraGames.MapGen.MoraMapGen
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MoraMapGen.html
+  name: MoraMapGen
+  nameWithType: MoraMapGen
+  fullName: MoraGames.MapGen.MoraMapGen
+- uid: MoraGames.MapGen.AdvancedSettings
+  commentId: T:MoraGames.MapGen.AdvancedSettings
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.AdvancedSettings.html
+  name: AdvancedSettings
+  nameWithType: AdvancedSettings
+  fullName: MoraGames.MapGen.AdvancedSettings
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprints*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetBlueprints
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetBlueprints_MoraGames_MapGen_EnvType_
+  name: GetBlueprints
+  nameWithType: MapTileManager.GetBlueprints
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprints
+- uid: MoraGames.MapGen.EnvType
+  commentId: T:MoraGames.MapGen.EnvType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.EnvType.html
+  name: EnvType
+  nameWithType: EnvType
+  fullName: MoraGames.MapGen.EnvType
+- uid: MoraGames.MapGen.EnvType[]
+  isExternal: true
+  href: MoraGames.MapGen.EnvType.html
+  name: EnvType[]
+  nameWithType: EnvType[]
+  fullName: MoraGames.MapGen.EnvType[]
+  nameWithType.vb: EnvType()
+  fullName.vb: MoraGames.MapGen.EnvType()
+  name.vb: EnvType()
+  spec.csharp:
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.MapTileManager.GetBlueprint*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetBlueprint
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetBlueprint_UnityEngine_Sprite_
+  name: GetBlueprint
+  nameWithType: MapTileManager.GetBlueprint
+  fullName: MoraGames.MapGen.MapTileManager.GetBlueprint
+- uid: UnityEngine.Sprite
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: MoraGames.MapGen.MapTileManager.GetBackupBlueprint*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetBackupBlueprint
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetBackupBlueprint_MoraGames_MapGen_EnvType___
+  name: GetBackupBlueprint
+  nameWithType: MapTileManager.GetBackupBlueprint
+  fullName: MoraGames.MapGen.MapTileManager.GetBackupBlueprint
+- uid: MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetPixelIndexesByEdge_MoraGames_MapGen_Edge_
+  name: GetPixelIndexesByEdge
+  nameWithType: MapTileManager.GetPixelIndexesByEdge
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelIndexesByEdge
+- uid: MoraGames.MapGen.Edge
+  commentId: T:MoraGames.MapGen.Edge
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetPixelIndexByCorner_MoraGames_MapGen_Corner_
+  name: GetPixelIndexByCorner
+  nameWithType: MapTileManager.GetPixelIndexByCorner
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelIndexByCorner
+- uid: MoraGames.MapGen.Corner
+  commentId: T:MoraGames.MapGen.Corner
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Corner.html
+  name: Corner
+  nameWithType: Corner
+  fullName: MoraGames.MapGen.Corner
+- uid: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GenerateBackupBlueprint_MoraGames_MapGen_EnvType___
+  name: GenerateBackupBlueprint
+  nameWithType: MapTileManager.GenerateBackupBlueprint
+  fullName: MoraGames.MapGen.MapTileManager.GenerateBackupBlueprint
+- uid: MoraGames.MapGen.MapTileManager.GetEnvTypes*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetEnvTypes
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetEnvTypes_UnityEngine_Sprite_
+  name: GetEnvTypes
+  nameWithType: MapTileManager.GetEnvTypes
+  fullName: MoraGames.MapGen.MapTileManager.GetEnvTypes
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.MapTileManager.GetOppositeEdge*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetOppositeEdge
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetOppositeEdge_MoraGames_MapGen_Edge_
+  name: GetOppositeEdge
+  nameWithType: MapTileManager.GetOppositeEdge
+  fullName: MoraGames.MapGen.MapTileManager.GetOppositeEdge
+- uid: MoraGames.MapGen.MapTileManager.GetOppositeCorner*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetOppositeCorner
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetOppositeCorner_MoraGames_MapGen_Corner_
+  name: GetOppositeCorner
+  nameWithType: MapTileManager.GetOppositeCorner
+  fullName: MoraGames.MapGen.MapTileManager.GetOppositeCorner
+- uid: MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetEdgeByDirectionOffset_UnityEngine_Vector2Int_
+  name: GetEdgeByDirectionOffset
+  nameWithType: MapTileManager.GetEdgeByDirectionOffset
+  fullName: MoraGames.MapGen.MapTileManager.GetEdgeByDirectionOffset
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetFacingDirectionAsVector3_MoraGames_MapGen_Edge_
+  name: GetFacingDirectionAsVector3
+  nameWithType: MapTileManager.GetFacingDirectionAsVector3
+  fullName: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsVector3
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetFacingDirectionAsQuaternion_MoraGames_MapGen_Edge_
+  name: GetFacingDirectionAsQuaternion
+  nameWithType: MapTileManager.GetFacingDirectionAsQuaternion
+  fullName: MoraGames.MapGen.MapTileManager.GetFacingDirectionAsQuaternion
+- uid: UnityEngine.Quaternion
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetRotatedBlueprint
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetRotatedBlueprint_MoraGames_MapGen_MapTileBlueprint_System_Int32_
+  name: GetRotatedBlueprint
+  nameWithType: MapTileManager.GetRotatedBlueprint
+  fullName: MoraGames.MapGen.MapTileManager.GetRotatedBlueprint
+- uid: MoraGames.MapGen.BlueprintRotation
+  commentId: T:MoraGames.MapGen.BlueprintRotation
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BlueprintRotation.html
+  name: BlueprintRotation
+  nameWithType: BlueprintRotation
+  fullName: MoraGames.MapGen.BlueprintRotation
+- uid: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetPixelEnvTypesAsString_MoraGames_MapGen_EnvType___
+  name: GetPixelEnvTypesAsString
+  nameWithType: MapTileManager.GetPixelEnvTypesAsString
+  fullName: MoraGames.MapGen.MapTileManager.GetPixelEnvTypesAsString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetFullPixelArrayFromEdge_MoraGames_MapGen_Edge_MoraGames_MapGen_EnvType_
+  name: GetFullPixelArrayFromEdge
+  nameWithType: MapTileManager.GetFullPixelArrayFromEdge
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromEdge
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetFullPixelArrayFromCorner_MoraGames_MapGen_Corner_MoraGames_MapGen_EnvType_
+  name: GetFullPixelArrayFromCorner
+  nameWithType: MapTileManager.GetFullPixelArrayFromCorner
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayFromCorner
+- uid: MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType*
+  commentId: Overload:MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType
+  isExternal: true
+  href: MoraGames.MapGen.MapTileManager.html#MoraGames_MapGen_MapTileManager_GetFullPixelArrayOfType_MoraGames_MapGen_EnvType_
+  name: GetFullPixelArrayOfType
+  nameWithType: MapTileManager.GetFullPixelArrayOfType
+  fullName: MoraGames.MapGen.MapTileManager.GetFullPixelArrayOfType

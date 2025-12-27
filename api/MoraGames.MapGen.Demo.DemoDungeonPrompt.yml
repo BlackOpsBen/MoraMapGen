@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoDungeonPrompt
+  commentId: T:MoraGames.MapGen.Demo.DemoDungeonPrompt
+  id: DemoDungeonPrompt
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonPrompt
+  nameWithType: DemoDungeonPrompt
+  fullName: MoraGames.MapGen.Demo.DemoDungeonPrompt
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoDungeonPrompt : MonoBehaviour'
+    content.vb: Public Class DemoDungeonPrompt Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoDungeonPrompt
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonPrompt()
+  nameWithType: DemoDungeonPrompt.DemoDungeonPrompt()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonPrompt.DemoDungeonPrompt()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoDungeonPrompt()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor*
+  nameWithType.vb: DemoDungeonPrompt.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonPrompt.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonPrompt.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonPrompt.html#MoraGames_MapGen_Demo_DemoDungeonPrompt__ctor
+  name: DemoDungeonPrompt
+  nameWithType: DemoDungeonPrompt.DemoDungeonPrompt
+  fullName: MoraGames.MapGen.Demo.DemoDungeonPrompt.DemoDungeonPrompt
+  nameWithType.vb: DemoDungeonPrompt.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonPrompt.New
+  name.vb: New

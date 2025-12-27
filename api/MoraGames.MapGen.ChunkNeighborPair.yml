@@ -1,0 +1,357 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.ChunkNeighborPair
+  commentId: T:MoraGames.MapGen.ChunkNeighborPair
+  id: ChunkNeighborPair
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.ChunkNeighborPair.#ctor(MoraGames.MapGen.Chunk,MoraGames.MapGen.Chunk)
+  - MoraGames.MapGen.ChunkNeighborPair.chunkA
+  - MoraGames.MapGen.ChunkNeighborPair.chunkB
+  langs:
+  - csharp
+  - vb
+  name: ChunkNeighborPair
+  nameWithType: ChunkNeighborPair
+  fullName: MoraGames.MapGen.ChunkNeighborPair
+  type: Struct
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public struct ChunkNeighborPair
+    content.vb: Public Structure ChunkNeighborPair
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MoraGames.MapGen.ChunkNeighborPair.chunkA
+  commentId: F:MoraGames.MapGen.ChunkNeighborPair.chunkA
+  id: chunkA
+  parent: MoraGames.MapGen.ChunkNeighborPair
+  langs:
+  - csharp
+  - vb
+  name: chunkA
+  nameWithType: ChunkNeighborPair.chunkA
+  fullName: MoraGames.MapGen.ChunkNeighborPair.chunkA
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Chunk chunkA
+    return:
+      type: MoraGames.MapGen.Chunk
+    content.vb: Public chunkA As Chunk
+- uid: MoraGames.MapGen.ChunkNeighborPair.chunkB
+  commentId: F:MoraGames.MapGen.ChunkNeighborPair.chunkB
+  id: chunkB
+  parent: MoraGames.MapGen.ChunkNeighborPair
+  langs:
+  - csharp
+  - vb
+  name: chunkB
+  nameWithType: ChunkNeighborPair.chunkB
+  fullName: MoraGames.MapGen.ChunkNeighborPair.chunkB
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Chunk chunkB
+    return:
+      type: MoraGames.MapGen.Chunk
+    content.vb: Public chunkB As Chunk
+- uid: MoraGames.MapGen.ChunkNeighborPair.#ctor(MoraGames.MapGen.Chunk,MoraGames.MapGen.Chunk)
+  commentId: M:MoraGames.MapGen.ChunkNeighborPair.#ctor(MoraGames.MapGen.Chunk,MoraGames.MapGen.Chunk)
+  id: '#ctor(MoraGames.MapGen.Chunk,MoraGames.MapGen.Chunk)'
+  parent: MoraGames.MapGen.ChunkNeighborPair
+  langs:
+  - csharp
+  - vb
+  name: ChunkNeighborPair(Chunk, Chunk)
+  nameWithType: ChunkNeighborPair.ChunkNeighborPair(Chunk, Chunk)
+  fullName: MoraGames.MapGen.ChunkNeighborPair.ChunkNeighborPair(MoraGames.MapGen.Chunk, MoraGames.MapGen.Chunk)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public ChunkNeighborPair(Chunk chunkA, Chunk chunkB)
+    parameters:
+    - id: chunkA
+      type: MoraGames.MapGen.Chunk
+    - id: chunkB
+      type: MoraGames.MapGen.Chunk
+    content.vb: Public Sub New(chunkA As Chunk, chunkB As Chunk)
+  overload: MoraGames.MapGen.ChunkNeighborPair.#ctor*
+  nameWithType.vb: ChunkNeighborPair.New(Chunk, Chunk)
+  fullName.vb: MoraGames.MapGen.ChunkNeighborPair.New(MoraGames.MapGen.Chunk, MoraGames.MapGen.Chunk)
+  name.vb: New(Chunk, Chunk)
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Chunk
+  commentId: T:MoraGames.MapGen.Chunk
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Chunk.html
+  name: Chunk
+  nameWithType: Chunk
+  fullName: MoraGames.MapGen.Chunk
+- uid: MoraGames.MapGen.ChunkNeighborPair.#ctor*
+  commentId: Overload:MoraGames.MapGen.ChunkNeighborPair.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.ChunkNeighborPair.html#MoraGames_MapGen_ChunkNeighborPair__ctor_MoraGames_MapGen_Chunk_MoraGames_MapGen_Chunk_
+  name: ChunkNeighborPair
+  nameWithType: ChunkNeighborPair.ChunkNeighborPair
+  fullName: MoraGames.MapGen.ChunkNeighborPair.ChunkNeighborPair
+  nameWithType.vb: ChunkNeighborPair.New
+  fullName.vb: MoraGames.MapGen.ChunkNeighborPair.New
+  name.vb: New

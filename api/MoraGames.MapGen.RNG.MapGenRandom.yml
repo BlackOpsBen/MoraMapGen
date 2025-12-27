@@ -1,0 +1,2417 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RNG.MapGenRandom
+  commentId: T:MoraGames.MapGen.RNG.MapGenRandom
+  id: MapGenRandom
+  parent: MoraGames.MapGen.RNG
+  children:
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Int32,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Single,System.Single,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Int32,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01(System.Random,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Chance(System.Random,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.Chance(System.String,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.GetRng(System.String)
+  - MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  - MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.Random,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  - MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  - MoraGames.MapGen.RNG.MapGenRandom.Init(System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Int32,System.Int32,System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Single,System.Single,System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Int32,System.Int32,System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Single,System.Single,System.Single,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.Random,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.String,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  - MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.Random,System.Collections.Generic.IList{``0})
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.String,System.Collections.Generic.IList{``0})
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Int32,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Int32,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.Random)
+  - MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.String)
+  - MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Int32,System.Int32)
+  - MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.UnityValue
+  - MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Boolean)
+  - MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionParams)
+  - MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single)
+  - MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionParams)
+  langs:
+  - csharp
+  - vb
+  name: MapGenRandom
+  nameWithType: MapGenRandom
+  fullName: MoraGames.MapGen.RNG.MapGenRandom
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static class MapGenRandom
+    content.vb: Public Module MapGenRandom
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Init(System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Init(System.Int32)
+  id: Init(System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Init(int)
+  nameWithType: MapGenRandom.Init(int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Init(int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static void Init(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+    content.vb: Public Shared Sub Init(seed As Integer)
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Init*
+  nameWithType.vb: MapGenRandom.Init(Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Init(Integer)
+  name.vb: Init(Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetRng(System.String)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.GetRng(System.String)
+  id: GetRng(System.String)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: GetRng(string)
+  nameWithType: MapGenRandom.GetRng(string)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetRng(string)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static Random GetRng(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Random
+    content.vb: Public Shared Function GetRng(key As String) As Random
+  overload: MoraGames.MapGen.RNG.MapGenRandom.GetRng*
+  nameWithType.vb: MapGenRandom.GetRng(String)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.GetRng(String)
+  name.vb: GetRng(String)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.Random)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.Random)
+  id: UniformValue(System.Random)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformValue(Random)
+  nameWithType: MapGenRandom.UniformValue(Random)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.Random)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UniformValue(Random rng)
+    parameters:
+    - id: rng
+      type: System.Random
+    return:
+      type: System.Single
+    content.vb: Public Shared Function UniformValue(rng As Random) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformValue*
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.String)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformValue(System.String)
+  id: UniformValue(System.String)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformValue(string)
+  nameWithType: MapGenRandom.UniformValue(string)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformValue(string)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UniformValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Single
+    content.vb: Public Shared Function UniformValue(key As String) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformValue*
+  nameWithType.vb: MapGenRandom.UniformValue(String)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformValue(String)
+  name.vb: UniformValue(String)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Single,System.Single)
+  id: UniformRange(System.Random,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformRange(Random, float, float)
+  nameWithType: MapGenRandom.UniformRange(Random, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UniformRange(Random rng, float minInclusive, float maxInclusive)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: minInclusive
+      type: System.Single
+    - id: maxInclusive
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function UniformRange(rng As Random, minInclusive As Single, maxInclusive As Single) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformRange*
+  nameWithType.vb: MapGenRandom.UniformRange(Random, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random, Single, Single)
+  name.vb: UniformRange(Random, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Single,System.Single)
+  id: UniformRange(System.String,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformRange(string, float, float)
+  nameWithType: MapGenRandom.UniformRange(string, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(string, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UniformRange(string key, float minInclusive, float maxInclusive)
+    parameters:
+    - id: key
+      type: System.String
+    - id: minInclusive
+      type: System.Single
+    - id: maxInclusive
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function UniformRange(key As String, minInclusive As Single, maxInclusive As Single) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformRange*
+  nameWithType.vb: MapGenRandom.UniformRange(String, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(String, Single, Single)
+  name.vb: UniformRange(String, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Int32,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random,System.Int32,System.Int32)
+  id: UniformRange(System.Random,System.Int32,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformRange(Random, int, int)
+  nameWithType: MapGenRandom.UniformRange(Random, int, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random, int, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int UniformRange(Random rng, int minInclusive, int maxExclusive)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function UniformRange(rng As Random, minInclusive As Integer, maxExclusive As Integer) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformRange*
+  nameWithType.vb: MapGenRandom.UniformRange(Random, Integer, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.Random, Integer, Integer)
+  name.vb: UniformRange(Random, Integer, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Int32,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformRange(System.String,System.Int32,System.Int32)
+  id: UniformRange(System.String,System.Int32,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformRange(string, int, int)
+  nameWithType: MapGenRandom.UniformRange(string, int, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(string, int, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int UniformRange(string key, int minInclusive, int maxExclusive)
+    parameters:
+    - id: key
+      type: System.String
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function UniformRange(key As String, minInclusive As Integer, maxExclusive As Integer) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformRange*
+  nameWithType.vb: MapGenRandom.UniformRange(String, Integer, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformRange(String, Integer, Integer)
+  name.vb: UniformRange(String, Integer, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Chance(System.Random,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Chance(System.Random,System.Single)
+  id: Chance(System.Random,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Chance(Random, float)
+  nameWithType: MapGenRandom.Chance(Random, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Chance(System.Random, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static bool Chance(Random rng, float probability)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: probability
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Chance(rng As Random, probability As Single) As Boolean
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Chance*
+  nameWithType.vb: MapGenRandom.Chance(Random, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Chance(System.Random, Single)
+  name.vb: Chance(Random, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Chance(System.String,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Chance(System.String,System.Single)
+  id: Chance(System.String,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Chance(string, float)
+  nameWithType: MapGenRandom.Chance(string, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Chance(string, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static bool Chance(string key, float probability)
+    parameters:
+    - id: key
+      type: System.String
+    - id: probability
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Chance(key As String, probability As Single) As Boolean
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Chance*
+  nameWithType.vb: MapGenRandom.Chance(String, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Chance(String, Single)
+  name.vb: Chance(String, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.Random,System.Collections.Generic.IList{``0})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.Random,System.Collections.Generic.IList{``0})
+  id: UniformPick``1(System.Random,System.Collections.Generic.IList{``0})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformPick<T>(Random, IList<T>)
+  nameWithType: MapGenRandom.UniformPick<T>(Random, IList<T>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformPick<T>(System.Random, System.Collections.Generic.IList<T>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T UniformPick<T>(Random rng, IList<T> list)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function UniformPick(Of T)(rng As Random, list As IList(Of T)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformPick*
+  nameWithType.vb: MapGenRandom.UniformPick(Of T)(Random, IList(Of T))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformPick(Of T)(System.Random, System.Collections.Generic.IList(Of T))
+  name.vb: UniformPick(Of T)(Random, IList(Of T))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.String,System.Collections.Generic.IList{``0})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UniformPick``1(System.String,System.Collections.Generic.IList{``0})
+  id: UniformPick``1(System.String,System.Collections.Generic.IList{``0})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UniformPick<T>(string, IList<T>)
+  nameWithType: MapGenRandom.UniformPick<T>(string, IList<T>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformPick<T>(string, System.Collections.Generic.IList<T>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T UniformPick<T>(string key, IList<T> list)
+    parameters:
+    - id: key
+      type: System.String
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function UniformPick(Of T)(key As String, list As IList(Of T)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UniformPick*
+  nameWithType.vb: MapGenRandom.UniformPick(Of T)(String, IList(Of T))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UniformPick(Of T)(String, System.Collections.Generic.IList(Of T))
+  name.vb: UniformPick(Of T)(String, IList(Of T))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Single,System.Single)
+  id: UnityRange(System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UnityRange(float, float)
+  nameWithType: MapGenRandom.UnityRange(float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UnityRange(float minInclusive, float maxInclusive)
+    parameters:
+    - id: minInclusive
+      type: System.Single
+    - id: maxInclusive
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function UnityRange(minInclusive As Single, maxInclusive As Single) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UnityRange*
+  nameWithType.vb: MapGenRandom.UnityRange(Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(Single, Single)
+  name.vb: UnityRange(Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Int32,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.UnityRange(System.Int32,System.Int32)
+  id: UnityRange(System.Int32,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UnityRange(int, int)
+  nameWithType: MapGenRandom.UnityRange(int, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(int, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int UnityRange(int minInclusive, int maxExclusive)
+    parameters:
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function UnityRange(minInclusive As Integer, maxExclusive As Integer) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UnityRange*
+  nameWithType.vb: MapGenRandom.UnityRange(Integer, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.UnityRange(Integer, Integer)
+  name.vb: UnityRange(Integer, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)
+  id: Shuffle``1(System.Collections.Generic.List{``0},System.String)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(List<T>, string)
+  nameWithType: MapGenRandom.Shuffle<T>(List<T>, string)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Shuffle<T>(System.Collections.Generic.List<T>, string)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static void Shuffle<T>(List<T> list, string randomKey)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.List{{T}}
+    - id: randomKey
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub Shuffle(Of T)(list As List(Of T), randomKey As String)
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Shuffle*
+  nameWithType.vb: MapGenRandom.Shuffle(Of T)(List(Of T), String)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Shuffle(Of T)(System.Collections.Generic.List(Of T), String)
+  name.vb: Shuffle(Of T)(List(Of T), String)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  id: GetWeightedRandom``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: GetWeightedRandom<T>(string, IEnumerable<T>, Func<T, float>)
+  nameWithType: MapGenRandom.GetWeightedRandom<T>(string, IEnumerable<T>, Func<T, float>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom<T>(string, System.Collections.Generic.IEnumerable<T>, System.Func<T, float>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T GetWeightedRandom<T>(string key, IEnumerable<T> options, Func<T, float> getWeight)
+    parameters:
+    - id: key
+      type: System.String
+    - id: options
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: getWeight
+      type: System.Func{{T},System.Single}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetWeightedRandom(Of T)(key As String, options As IEnumerable(Of T), getWeight As Func(Of T, Single)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom*
+  nameWithType.vb: MapGenRandom.GetWeightedRandom(Of T)(String, IEnumerable(Of T), Func(Of T, Single))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom(Of T)(String, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Single))
+  name.vb: GetWeightedRandom(Of T)(String, IEnumerable(Of T), Func(Of T, Single))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.Random,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom``1(System.Random,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  id: GetWeightedRandom``1(System.Random,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: GetWeightedRandom<T>(Random, IEnumerable<T>, Func<T, float>)
+  nameWithType: MapGenRandom.GetWeightedRandom<T>(Random, IEnumerable<T>, Func<T, float>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom<T>(System.Random, System.Collections.Generic.IEnumerable<T>, System.Func<T, float>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T GetWeightedRandom<T>(Random rng, IEnumerable<T> options, Func<T, float> getWeight)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: options
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: getWeight
+      type: System.Func{{T},System.Single}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetWeightedRandom(Of T)(rng As Random, options As IEnumerable(Of T), getWeight As Func(Of T, Single)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom*
+  nameWithType.vb: MapGenRandom.GetWeightedRandom(Of T)(Random, IEnumerable(Of T), Func(Of T, Single))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom(Of T)(System.Random, System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Single))
+  name.vb: GetWeightedRandom(Of T)(Random, IEnumerable(Of T), Func(Of T, Single))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},System.Single)
+  id: GetWeightedOption``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: GetWeightedOption<T>(IEnumerable<T>, Func<T, float>, float)
+  nameWithType: MapGenRandom.GetWeightedOption<T>(IEnumerable<T>, Func<T, float>, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, float>, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T GetWeightedOption<T>(IEnumerable<T> options, Func<T, float> getWeight, float weight)
+    parameters:
+    - id: options
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: getWeight
+      type: System.Func{{T},System.Single}
+    - id: weight
+      type: System.Single
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetWeightedOption(Of T)(options As IEnumerable(Of T), getWeight As Func(Of T, Single), weight As Single) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption*
+  nameWithType.vb: MapGenRandom.GetWeightedOption(Of T)(IEnumerable(Of T), Func(Of T, Single), Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Single), Single)
+  name.vb: GetWeightedOption(Of T)(IEnumerable(Of T), Func(Of T, Single), Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  id: GetTotalWeight``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: GetTotalWeight<T>(IEnumerable<T>, Func<T, float>)
+  nameWithType: MapGenRandom.GetTotalWeight<T>(IEnumerable<T>, Func<T, float>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, float>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float GetTotalWeight<T>(IEnumerable<T> options, Func<T, float> getWeight)
+    parameters:
+    - id: options
+      type: System.Collections.Generic.IEnumerable{{T}}
+    - id: getWeight
+      type: System.Func{{T},System.Single}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetTotalWeight(Of T)(options As IEnumerable(Of T), getWeight As Func(Of T, Single)) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight*
+  nameWithType.vb: MapGenRandom.GetTotalWeight(Of T)(IEnumerable(Of T), Func(Of T, Single))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, Single))
+  name.vb: GetTotalWeight(Of T)(IEnumerable(Of T), Func(Of T, Single))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.Random,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.Random,System.Single,System.Single)
+  id: NormalValue(System.Random,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalValue(Random, float, float)
+  nameWithType: MapGenRandom.NormalValue(Random, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.Random, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float NormalValue(Random rng, float mean = 0, float stdDev = 1)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: mean
+      type: System.Single
+    - id: stdDev
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function NormalValue(rng As Random, mean As Single = 0, stdDev As Single = 1) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalValue*
+  nameWithType.vb: MapGenRandom.NormalValue(Random, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.Random, Single, Single)
+  name.vb: NormalValue(Random, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.String,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalValue(System.String,System.Single,System.Single)
+  id: NormalValue(System.String,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalValue(string, float, float)
+  nameWithType: MapGenRandom.NormalValue(string, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(string, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float NormalValue(string key, float mean = 0, float stdDev = 1)
+    parameters:
+    - id: key
+      type: System.String
+    - id: mean
+      type: System.Single
+    - id: stdDev
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function NormalValue(key As String, mean As Single = 0, stdDev As Single = 1) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalValue*
+  nameWithType.vb: MapGenRandom.NormalValue(String, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalValue(String, Single, Single)
+  name.vb: NormalValue(String, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Single,System.Single,System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Single,System.Single,System.Single,System.Int32)
+  id: NormalRange(System.Random,System.Single,System.Single,System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalRange(Random, float, float, float, int)
+  nameWithType: MapGenRandom.NormalRange(Random, float, float, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random, float, float, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float NormalRange(Random rng, float min, float max, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function NormalRange(rng As Random, min As Single, max As Single, spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalRange*
+  nameWithType.vb: MapGenRandom.NormalRange(Random, Single, Single, Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random, Single, Single, Single, Integer)
+  name.vb: NormalRange(Random, Single, Single, Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Single,System.Single,System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Single,System.Single,System.Single,System.Int32)
+  id: NormalRange(System.String,System.Single,System.Single,System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalRange(string, float, float, float, int)
+  nameWithType: MapGenRandom.NormalRange(string, float, float, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(string, float, float, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float NormalRange(string key, float min, float max, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: key
+      type: System.String
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function NormalRange(key As String, min As Single, max As Single, spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalRange*
+  nameWithType.vb: MapGenRandom.NormalRange(String, Single, Single, Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(String, Single, Single, Single, Integer)
+  name.vb: NormalRange(String, Single, Single, Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Int32,System.Int32,System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random,System.Int32,System.Int32,System.Single,System.Int32)
+  id: NormalRange(System.Random,System.Int32,System.Int32,System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalRange(Random, int, int, float, int)
+  nameWithType: MapGenRandom.NormalRange(Random, int, int, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random, int, int, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int NormalRange(Random rng, int minInclusive, int maxExclusive, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function NormalRange(rng As Random, minInclusive As Integer, maxExclusive As Integer, spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalRange*
+  nameWithType.vb: MapGenRandom.NormalRange(Random, Integer, Integer, Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.Random, Integer, Integer, Single, Integer)
+  name.vb: NormalRange(Random, Integer, Integer, Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Int32,System.Int32,System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalRange(System.String,System.Int32,System.Int32,System.Single,System.Int32)
+  id: NormalRange(System.String,System.Int32,System.Int32,System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalRange(string, int, int, float, int)
+  nameWithType: MapGenRandom.NormalRange(string, int, int, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(string, int, int, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int NormalRange(string key, int minInclusive, int maxInclusive, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: key
+      type: System.String
+    - id: minInclusive
+      type: System.Int32
+    - id: maxInclusive
+      type: System.Int32
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function NormalRange(key As String, minInclusive As Integer, maxInclusive As Integer, spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalRange*
+  nameWithType.vb: MapGenRandom.NormalRange(String, Integer, Integer, Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalRange(String, Integer, Integer, Single, Integer)
+  name.vb: NormalRange(String, Integer, Integer, Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  id: NormalPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalPick<T>(Random, IList<T>, float, int)
+  nameWithType: MapGenRandom.NormalPick<T>(Random, IList<T>, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalPick<T>(System.Random, System.Collections.Generic.IList<T>, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T NormalPick<T>(Random rng, IList<T> list, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function NormalPick(Of T)(rng As Random, list As IList(Of T), spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalPick*
+  nameWithType.vb: MapGenRandom.NormalPick(Of T)(Random, IList(Of T), Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalPick(Of T)(System.Random, System.Collections.Generic.IList(Of T), Single, Integer)
+  name.vb: NormalPick(Of T)(Random, IList(Of T), Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.NormalPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  id: NormalPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Int32)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: NormalPick<T>(string, IList<T>, float, int)
+  nameWithType: MapGenRandom.NormalPick<T>(string, IList<T>, float, int)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalPick<T>(string, System.Collections.Generic.IList<T>, float, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T NormalPick<T>(string key, IList<T> list, float spreadFactor = 0.2, int maxRerolls = 10)
+    parameters:
+    - id: key
+      type: System.String
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: spreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function NormalPick(Of T)(key As String, list As IList(Of T), spreadFactor As Single = 0.2, maxRerolls As Integer = 10) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.NormalPick*
+  nameWithType.vb: MapGenRandom.NormalPick(Of T)(String, IList(Of T), Single, Integer)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.NormalPick(Of T)(String, System.Collections.Generic.IList(Of T), Single, Integer)
+  name.vb: NormalPick(Of T)(String, IList(Of T), Single, Integer)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01(System.Random,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01(System.Random,System.Single,System.Boolean)
+  id: BiasedValue01(System.Random,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedValue01(Random, float, bool)
+  nameWithType: MapGenRandom.BiasedValue01(Random, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01(System.Random, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float BiasedValue01(Random rng, float biasStrength, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function BiasedValue01(rng As Random, biasStrength As Single, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01*
+  nameWithType.vb: MapGenRandom.BiasedValue01(Random, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01(System.Random, Single, Boolean)
+  name.vb: BiasedValue01(Random, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Single,System.Single,System.Single,System.Boolean)
+  id: BiasedRange(System.Random,System.Single,System.Single,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedRange(Random, float, float, float, bool)
+  nameWithType: MapGenRandom.BiasedRange(Random, float, float, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random, float, float, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float BiasedRange(Random rng, float min, float max, float biasStrength, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function BiasedRange(rng As Random, min As Single, max As Single, biasStrength As Single, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange*
+  nameWithType.vb: MapGenRandom.BiasedRange(Random, Single, Single, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random, Single, Single, Single, Boolean)
+  name.vb: BiasedRange(Random, Single, Single, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  id: BiasedRange(System.String,System.Single,System.Single,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedRange(string, float, float, float, bool)
+  nameWithType: MapGenRandom.BiasedRange(string, float, float, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(string, float, float, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float BiasedRange(string key, float min, float max, float biasStrength, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function BiasedRange(key As String, min As Single, max As Single, biasStrength As Single, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange*
+  nameWithType.vb: MapGenRandom.BiasedRange(String, Single, Single, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(String, Single, Single, Single, Boolean)
+  name.vb: BiasedRange(String, Single, Single, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Int32,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random,System.Int32,System.Int32,System.Single,System.Boolean)
+  id: BiasedRange(System.Random,System.Int32,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedRange(Random, int, int, float, bool)
+  nameWithType: MapGenRandom.BiasedRange(Random, int, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random, int, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int BiasedRange(Random rng, int minInclusive, int maxExclusive, float biasStrength, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function BiasedRange(rng As Random, minInclusive As Integer, maxExclusive As Integer, biasStrength As Single, flipBias As Boolean = False) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange*
+  nameWithType.vb: MapGenRandom.BiasedRange(Random, Integer, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.Random, Integer, Integer, Single, Boolean)
+  name.vb: BiasedRange(Random, Integer, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Int32,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(System.String,System.Int32,System.Int32,System.Single,System.Boolean)
+  id: BiasedRange(System.String,System.Int32,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedRange(string, int, int, float, bool)
+  nameWithType: MapGenRandom.BiasedRange(string, int, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(string, int, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int BiasedRange(string key, int minInclusive, int maxExclusive, float biasStrength, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function BiasedRange(key As String, minInclusive As Integer, maxExclusive As Integer, biasStrength As Single, flipBias As Boolean = False) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange*
+  nameWithType.vb: MapGenRandom.BiasedRange(String, Integer, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange(String, Integer, Integer, Single, Boolean)
+  name.vb: BiasedRange(String, Integer, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  id: BiasedPick``1(System.Random,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedPick<T>(Random, IList<T>, float, bool)
+  nameWithType: MapGenRandom.BiasedPick<T>(Random, IList<T>, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick<T>(System.Random, System.Collections.Generic.IList<T>, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T BiasedPick<T>(Random rng, IList<T> list, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function BiasedPick(Of T)(rng As Random, list As IList(Of T), biasStrength As Single = 3, flipBias As Boolean = False) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick*
+  nameWithType.vb: MapGenRandom.BiasedPick(Of T)(Random, IList(Of T), Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick(Of T)(System.Random, System.Collections.Generic.IList(Of T), Single, Boolean)
+  name.vb: BiasedPick(Of T)(Random, IList(Of T), Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.BiasedPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  id: BiasedPick``1(System.String,System.Collections.Generic.IList{``0},System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: BiasedPick<T>(string, IList<T>, float, bool)
+  nameWithType: MapGenRandom.BiasedPick<T>(string, IList<T>, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick<T>(string, System.Collections.Generic.IList<T>, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T BiasedPick<T>(string key, IList<T> list, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function BiasedPick(Of T)(key As String, list As IList(Of T), biasStrength As Single = 3, flipBias As Boolean = False) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick*
+  nameWithType.vb: MapGenRandom.BiasedPick(Of T)(String, IList(Of T), Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick(Of T)(String, System.Collections.Generic.IList(Of T), Single, Boolean)
+  name.vb: BiasedPick(Of T)(String, IList(Of T), Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Boolean)
+  id: Value(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Value(Random, DistributionMode, float, float, float, bool)
+  nameWithType: MapGenRandom.Value(Random, DistributionMode, float, float, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random, MoraGames.MapGen.RNG.DistributionMode, float, float, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Value(Random rng, DistributionMode mode, float normalMean = 0, float normalStdDev = 1, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: normalMean
+      type: System.Single
+    - id: normalStdDev
+      type: System.Single
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Value(rng As Random, mode As DistributionMode, normalMean As Single = 0, normalStdDev As Single = 1, biasStrength As Single = 3, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Value*
+  nameWithType.vb: MapGenRandom.Value(Random, DistributionMode, Single, Single, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random, MoraGames.MapGen.RNG.DistributionMode, Single, Single, Single, Boolean)
+  name.vb: Value(Random, DistributionMode, Single, Single, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single)
+  id: Value(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Value(string, DistributionMode, float, float, float)
+  nameWithType: MapGenRandom.Value(string, DistributionMode, float, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Value(string, MoraGames.MapGen.RNG.DistributionMode, float, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Value(string key, DistributionMode mode, float normalMean = 0, float normalStdDev = 1, float biasStrength = 3)
+    parameters:
+    - id: key
+      type: System.String
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: normalMean
+      type: System.Single
+    - id: normalStdDev
+      type: System.Single
+    - id: biasStrength
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Value(key As String, mode As DistributionMode, normalMean As Single = 0, normalStdDev As Single = 1, biasStrength As Single = 3) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Value*
+  nameWithType.vb: MapGenRandom.Value(String, DistributionMode, Single, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Value(String, MoraGames.MapGen.RNG.DistributionMode, Single, Single, Single)
+  name.vb: Value(String, DistributionMode, Single, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionParams)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.RNG.DistributionParams)
+  id: Value(System.Random,MoraGames.MapGen.RNG.DistributionParams)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Value(Random, DistributionParams)
+  nameWithType: MapGenRandom.Value(Random, DistributionParams)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Value(System.Random, MoraGames.MapGen.RNG.DistributionParams)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Value(Random rng, DistributionParams distributionParams)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Value(rng As Random, distributionParams As DistributionParams) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Value*
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionParams)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.RNG.DistributionParams)
+  id: Value(System.String,MoraGames.MapGen.RNG.DistributionParams)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Value(string, DistributionParams)
+  nameWithType: MapGenRandom.Value(string, DistributionParams)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Value(string, MoraGames.MapGen.RNG.DistributionParams)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Value(string key, DistributionParams distributionParams)
+    parameters:
+    - id: key
+      type: System.String
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Value(key As String, distributionParams As DistributionParams) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Value*
+  nameWithType.vb: MapGenRandom.Value(String, DistributionParams)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Value(String, MoraGames.MapGen.RNG.DistributionParams)
+  name.vb: Value(String, DistributionParams)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  id: Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(Random, DistributionMode, float, float, float, int, float, bool)
+  nameWithType: MapGenRandom.Range(Random, DistributionMode, float, float, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionMode, float, float, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Range(Random rng, DistributionMode mode, float min, float max, float normalSpreadFactor = 0.2, int normalMaxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: normalMaxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Range(rng As Random, mode As DistributionMode, min As Single, max As Single, normalSpreadFactor As Single = 0.2, normalMaxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(Random, DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+  name.vb: Range(Random, DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  id: Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(string, DistributionMode, float, float, float, int, float, bool)
+  nameWithType: MapGenRandom.Range(string, DistributionMode, float, float, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(string, MoraGames.MapGen.RNG.DistributionMode, float, float, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Range(string key, DistributionMode mode, float min, float max, float normalSpreadFactor = 0.2, int normalMaxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: normalMaxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Range(key As String, mode As DistributionMode, min As Single, max As Single, normalSpreadFactor As Single = 0.2, normalMaxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(String, DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(String, MoraGames.MapGen.RNG.DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+  name.vb: Range(String, DistributionMode, Single, Single, Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  id: Range(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(Random, DistributionParams, float, float)
+  nameWithType: MapGenRandom.Range(Random, DistributionParams, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionParams, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Range(Random rng, DistributionParams distributionParams, float min, float max)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Range(rng As Random, distributionParams As DistributionParams, min As Single, max As Single) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(Random, DistributionParams, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionParams, Single, Single)
+  name.vb: Range(Random, DistributionParams, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  id: Range(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Single,System.Single)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(string, DistributionParams, float, float)
+  nameWithType: MapGenRandom.Range(string, DistributionParams, float, float)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(string, MoraGames.MapGen.RNG.DistributionParams, float, float)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float Range(string key, DistributionParams distributionParams, float min, float max)
+    parameters:
+    - id: key
+      type: System.String
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Range(key As String, distributionParams As DistributionParams, min As Single, max As Single) As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(String, DistributionParams, Single, Single)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(String, MoraGames.MapGen.RNG.DistributionParams, Single, Single)
+  name.vb: Range(String, DistributionParams, Single, Single)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  id: Range(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(Random, DistributionMode, int, int, float, int, float, bool)
+  nameWithType: MapGenRandom.Range(Random, DistributionMode, int, int, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionMode, int, int, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int Range(Random rng, DistributionMode mode, int minInclusive, int maxExclusive, float normalSpreadFactor = 0.2, int normalMaxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: normalMaxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Range(rng As Random, mode As DistributionMode, minInclusive As Integer, maxExclusive As Integer, normalSpreadFactor As Single = 0.2, normalMaxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(Random, DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(System.Random, MoraGames.MapGen.RNG.DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+  name.vb: Range(Random, DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  id: Range(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Range(string, DistributionMode, int, int, float, int, float, bool)
+  nameWithType: MapGenRandom.Range(string, DistributionMode, int, int, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range(string, MoraGames.MapGen.RNG.DistributionMode, int, int, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static int Range(string key, DistributionMode mode, int minInclusive, int maxExclusive, float normalSpreadFactor = 0.2, int normalMaxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: normalMaxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Range(key As String, mode As DistributionMode, minInclusive As Integer, maxExclusive As Integer, normalSpreadFactor As Single = 0.2, normalMaxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As Integer
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  nameWithType.vb: MapGenRandom.Range(String, DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Range(String, MoraGames.MapGen.RNG.DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+  name.vb: Range(String, DistributionMode, Integer, Integer, Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  id: Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Pick<T>(Random, DistributionMode, IList<T>, float, int, float, bool)
+  nameWithType: MapGenRandom.Pick<T>(Random, DistributionMode, IList<T>, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Pick<T>(System.Random, MoraGames.MapGen.RNG.DistributionMode, System.Collections.Generic.IList<T>, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T Pick<T>(Random rng, DistributionMode mode, IList<T> list, float normalSpreadFactor = 0.2, int maxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Pick(Of T)(rng As Random, mode As DistributionMode, list As IList(Of T), normalSpreadFactor As Single = 0.2, maxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Pick*
+  nameWithType.vb: MapGenRandom.Pick(Of T)(Random, DistributionMode, IList(Of T), Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Pick(Of T)(System.Random, MoraGames.MapGen.RNG.DistributionMode, System.Collections.Generic.IList(Of T), Single, Integer, Single, Boolean)
+  name.vb: Pick(Of T)(Random, DistributionMode, IList(Of T), Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  id: Pick``1(System.String,MoraGames.MapGen.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Pick<T>(string, DistributionMode, IList<T>, float, int, float, bool)
+  nameWithType: MapGenRandom.Pick<T>(string, DistributionMode, IList<T>, float, int, float, bool)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Pick<T>(string, MoraGames.MapGen.RNG.DistributionMode, System.Collections.Generic.IList<T>, float, int, float, bool)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T Pick<T>(string key, DistributionMode mode, IList<T> list, float normalSpreadFactor = 0.2, int maxRerolls = 10, float biasStrength = 3, bool flipBias = false)
+    parameters:
+    - id: key
+      type: System.String
+    - id: mode
+      type: MoraGames.MapGen.RNG.DistributionMode
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    - id: normalSpreadFactor
+      type: System.Single
+    - id: maxRerolls
+      type: System.Int32
+    - id: biasStrength
+      type: System.Single
+    - id: flipBias
+      type: System.Boolean
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Pick(Of T)(key As String, mode As DistributionMode, list As IList(Of T), normalSpreadFactor As Single = 0.2, maxRerolls As Integer = 10, biasStrength As Single = 3, flipBias As Boolean = False) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Pick*
+  nameWithType.vb: MapGenRandom.Pick(Of T)(String, DistributionMode, IList(Of T), Single, Integer, Single, Boolean)
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Pick(Of T)(String, MoraGames.MapGen.RNG.DistributionMode, System.Collections.Generic.IList(Of T), Single, Integer, Single, Boolean)
+  name.vb: Pick(Of T)(String, DistributionMode, IList(Of T), Single, Integer, Single, Boolean)
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  id: Pick``1(System.Random,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Pick<T>(Random, DistributionParams, IList<T>)
+  nameWithType: MapGenRandom.Pick<T>(Random, DistributionParams, IList<T>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Pick<T>(System.Random, MoraGames.MapGen.RNG.DistributionParams, System.Collections.Generic.IList<T>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T Pick<T>(Random rng, DistributionParams distributionParams, IList<T> list)
+    parameters:
+    - id: rng
+      type: System.Random
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Pick(Of T)(rng As Random, distributionParams As DistributionParams, list As IList(Of T)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Pick*
+  nameWithType.vb: MapGenRandom.Pick(Of T)(Random, DistributionParams, IList(Of T))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Pick(Of T)(System.Random, MoraGames.MapGen.RNG.DistributionParams, System.Collections.Generic.IList(Of T))
+  name.vb: Pick(Of T)(Random, DistributionParams, IList(Of T))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  commentId: M:MoraGames.MapGen.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  id: Pick``1(System.String,MoraGames.MapGen.RNG.DistributionParams,System.Collections.Generic.IList{``0})
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: Pick<T>(string, DistributionParams, IList<T>)
+  nameWithType: MapGenRandom.Pick<T>(string, DistributionParams, IList<T>)
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Pick<T>(string, MoraGames.MapGen.RNG.DistributionParams, System.Collections.Generic.IList<T>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static T Pick<T>(string key, DistributionParams distributionParams, IList<T> list)
+    parameters:
+    - id: key
+      type: System.String
+    - id: distributionParams
+      type: MoraGames.MapGen.RNG.DistributionParams
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function Pick(Of T)(key As String, distributionParams As DistributionParams, list As IList(Of T)) As T
+  overload: MoraGames.MapGen.RNG.MapGenRandom.Pick*
+  nameWithType.vb: MapGenRandom.Pick(Of T)(String, DistributionParams, IList(Of T))
+  fullName.vb: MoraGames.MapGen.RNG.MapGenRandom.Pick(Of T)(String, MoraGames.MapGen.RNG.DistributionParams, System.Collections.Generic.IList(Of T))
+  name.vb: Pick(Of T)(String, DistributionParams, IList(Of T))
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UnityValue
+  commentId: P:MoraGames.MapGen.RNG.MapGenRandom.UnityValue
+  id: UnityValue
+  parent: MoraGames.MapGen.RNG.MapGenRandom
+  langs:
+  - csharp
+  - vb
+  name: UnityValue
+  nameWithType: MapGenRandom.UnityValue
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UnityValue
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public static float UnityValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly Property UnityValue As Single
+  overload: MoraGames.MapGen.RNG.MapGenRandom.UnityValue*
+references:
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Init*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Init
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Init_System_Int32_
+  name: Init
+  nameWithType: MapGenRandom.Init
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Init
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetRng*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.GetRng
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_GetRng_System_String_
+  name: GetRng
+  nameWithType: MapGenRandom.GetRng
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetRng
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.random
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformValue*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.UniformValue
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_UniformValue_System_Random_
+  name: UniformValue
+  nameWithType: MapGenRandom.UniformValue
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformRange*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.UniformRange
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_UniformRange_System_Random_System_Single_System_Single_
+  name: UniformRange
+  nameWithType: MapGenRandom.UniformRange
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformRange
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Chance*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Chance
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Chance_System_Random_System_Single_
+  name: Chance
+  nameWithType: MapGenRandom.Chance
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Chance
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UniformPick*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.UniformPick
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_UniformPick__1_System_Random_System_Collections_Generic_IList___0__
+  name: UniformPick
+  nameWithType: MapGenRandom.UniformPick
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UniformPick
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UnityRange*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.UnityRange
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_UnityRange_System_Single_System_Single_
+  name: UnityRange
+  nameWithType: MapGenRandom.UnityRange
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UnityRange
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Shuffle*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Shuffle
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Shuffle__1_System_Collections_Generic_List___0__System_String_
+  name: Shuffle
+  nameWithType: MapGenRandom.Shuffle
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Shuffle
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_GetWeightedRandom__1_System_String_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__
+  name: GetWeightedRandom
+  nameWithType: MapGenRandom.GetWeightedRandom
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedRandom
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func{{T},System.Single}
+  commentId: T:System.Func{``0,System.Single}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, float>
+  nameWithType: Func<T, float>
+  fullName: System.Func<T, float>
+  nameWithType.vb: Func(Of T, Single)
+  fullName.vb: System.Func(Of T, Single)
+  name.vb: Func(Of T, Single)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_GetWeightedOption__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__System_Single_
+  name: GetWeightedOption
+  nameWithType: MapGenRandom.GetWeightedOption
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetWeightedOption
+- uid: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_GetTotalWeight__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__
+  name: GetTotalWeight
+  nameWithType: MapGenRandom.GetTotalWeight
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.GetTotalWeight
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalValue*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.NormalValue
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_NormalValue_System_Random_System_Single_System_Single_
+  name: NormalValue
+  nameWithType: MapGenRandom.NormalValue
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalValue
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalRange*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.NormalRange
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_NormalRange_System_Random_System_Single_System_Single_System_Single_System_Int32_
+  name: NormalRange
+  nameWithType: MapGenRandom.NormalRange
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalRange
+- uid: MoraGames.MapGen.RNG.MapGenRandom.NormalPick*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.NormalPick
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_NormalPick__1_System_Random_System_Collections_Generic_IList___0__System_Single_System_Int32_
+  name: NormalPick
+  nameWithType: MapGenRandom.NormalPick
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.NormalPick
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_BiasedValue01_System_Random_System_Single_System_Boolean_
+  name: BiasedValue01
+  nameWithType: MapGenRandom.BiasedValue01
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedValue01
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.BiasedRange
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_BiasedRange_System_Random_System_Single_System_Single_System_Single_System_Boolean_
+  name: BiasedRange
+  nameWithType: MapGenRandom.BiasedRange
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedRange
+- uid: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.BiasedPick
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_BiasedPick__1_System_Random_System_Collections_Generic_IList___0__System_Single_System_Boolean_
+  name: BiasedPick
+  nameWithType: MapGenRandom.BiasedPick
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.BiasedPick
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Value*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Value
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Value_System_Random_MoraGames_MapGen_RNG_DistributionMode_System_Single_System_Single_System_Single_System_Boolean_
+  name: Value
+  nameWithType: MapGenRandom.Value
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Value
+- uid: MoraGames.MapGen.RNG.DistributionMode
+  commentId: T:MoraGames.MapGen.RNG.DistributionMode
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.DistributionMode.html
+  name: DistributionMode
+  nameWithType: DistributionMode
+  fullName: MoraGames.MapGen.RNG.DistributionMode
+- uid: MoraGames.MapGen.RNG.DistributionParams
+  commentId: T:MoraGames.MapGen.RNG.DistributionParams
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.DistributionParams.html
+  name: DistributionParams
+  nameWithType: DistributionParams
+  fullName: MoraGames.MapGen.RNG.DistributionParams
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Range*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Range
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Range_System_Random_MoraGames_MapGen_RNG_DistributionMode_System_Single_System_Single_System_Single_System_Int32_System_Single_System_Boolean_
+  name: Range
+  nameWithType: MapGenRandom.Range
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Range
+- uid: MoraGames.MapGen.RNG.MapGenRandom.Pick*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.Pick
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_Pick__1_System_Random_MoraGames_MapGen_RNG_DistributionMode_System_Collections_Generic_IList___0__System_Single_System_Int32_System_Single_System_Boolean_
+  name: Pick
+  nameWithType: MapGenRandom.Pick
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.Pick
+- uid: MoraGames.MapGen.RNG.MapGenRandom.UnityValue*
+  commentId: Overload:MoraGames.MapGen.RNG.MapGenRandom.UnityValue
+  isExternal: true
+  href: MoraGames.MapGen.RNG.MapGenRandom.html#MoraGames_MapGen_RNG_MapGenRandom_UnityValue
+  name: UnityValue
+  nameWithType: MapGenRandom.UnityValue
+  fullName: MoraGames.MapGen.RNG.MapGenRandom.UnityValue

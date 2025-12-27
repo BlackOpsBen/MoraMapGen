@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer
+  commentId: T:MoraGames.MapGen.Demo.DemoFPSPlayer
+  id: DemoFPSPlayer
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor
+  - MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady
+  - MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity
+  langs:
+  - csharp
+  - vb
+  name: DemoFPSPlayer
+  nameWithType: DemoFPSPlayer
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoFPSPlayer : MonoBehaviour'
+    content.vb: Public Class DemoFPSPlayer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: MoraGames.MapGen.Demo.DemoFPSPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnMove(CallbackContext)
+  nameWithType: DemoFPSPlayer.OnMove(InputAction.CallbackContext)
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnMove(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnMove(context As InputAction.CallbackContext)
+  overload: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove*
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnAim(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: MoraGames.MapGen.Demo.DemoFPSPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnAim(CallbackContext)
+  nameWithType: DemoFPSPlayer.OnAim(InputAction.CallbackContext)
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnAim(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnAim(context As InputAction.CallbackContext)
+  overload: MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim*
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity
+  commentId: M:MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity
+  id: UpdateCamRelativity
+  parent: MoraGames.MapGen.Demo.DemoFPSPlayer
+  langs:
+  - csharp
+  - vb
+  name: UpdateCamRelativity()
+  nameWithType: DemoFPSPlayer.UpdateCamRelativity()
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void UpdateCamRelativity()
+    content.vb: Public Sub UpdateCamRelativity()
+  overload: MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity*
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady
+  commentId: M:MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady
+  id: OnMapReady
+  parent: MoraGames.MapGen.Demo.DemoFPSPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnMapReady()
+  nameWithType: DemoFPSPlayer.OnMapReady()
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnMapReady()
+    content.vb: Public Sub OnMapReady()
+  overload: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady*
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoFPSPlayer
+  langs:
+  - csharp
+  - vb
+  name: DemoFPSPlayer()
+  nameWithType: DemoFPSPlayer.DemoFPSPlayer()
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.DemoFPSPlayer()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoFPSPlayer()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor*
+  nameWithType.vb: DemoFPSPlayer.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoFPSPlayer.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoFPSPlayer.html#MoraGames_MapGen_Demo_DemoFPSPlayer_OnMove_UnityEngine_InputSystem_InputAction_CallbackContext_
+  name: OnMove
+  nameWithType: DemoFPSPlayer.OnMove
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMove
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoFPSPlayer.html#MoraGames_MapGen_Demo_DemoFPSPlayer_OnAim_UnityEngine_InputSystem_InputAction_CallbackContext_
+  name: OnAim
+  nameWithType: DemoFPSPlayer.OnAim
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnAim
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoFPSPlayer.html#MoraGames_MapGen_Demo_DemoFPSPlayer_UpdateCamRelativity
+  name: UpdateCamRelativity
+  nameWithType: DemoFPSPlayer.UpdateCamRelativity
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.UpdateCamRelativity
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoFPSPlayer.html#MoraGames_MapGen_Demo_DemoFPSPlayer_OnMapReady
+  name: OnMapReady
+  nameWithType: DemoFPSPlayer.OnMapReady
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.OnMapReady
+- uid: MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoFPSPlayer.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoFPSPlayer.html#MoraGames_MapGen_Demo_DemoFPSPlayer__ctor
+  name: DemoFPSPlayer
+  nameWithType: DemoFPSPlayer.DemoFPSPlayer
+  fullName: MoraGames.MapGen.Demo.DemoFPSPlayer.DemoFPSPlayer
+  nameWithType.vb: DemoFPSPlayer.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoFPSPlayer.New
+  name.vb: New

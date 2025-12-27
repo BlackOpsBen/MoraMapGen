@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  commentId: T:MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  id: Demo3rdPersonPlayer
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor
+  - MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady
+  - MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  - MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity
+  langs:
+  - csharp
+  - vb
+  name: Demo3rdPersonPlayer
+  nameWithType: Demo3rdPersonPlayer
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class Demo3rdPersonPlayer : MonoBehaviour'
+    content.vb: Public Class Demo3rdPersonPlayer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  id: OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnMove(CallbackContext)
+  nameWithType: Demo3rdPersonPlayer.OnMove(InputAction.CallbackContext)
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove(UnityEngine.InputSystem.InputAction.CallbackContext)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnMove(InputAction.CallbackContext context)
+    parameters:
+    - id: context
+      type: UnityEngine.InputSystem.InputAction.CallbackContext
+    content.vb: Public Sub OnMove(context As InputAction.CallbackContext)
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove*
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity
+  id: UpdateCamRelativity
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  langs:
+  - csharp
+  - vb
+  name: UpdateCamRelativity()
+  nameWithType: Demo3rdPersonPlayer.UpdateCamRelativity()
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void UpdateCamRelativity()
+    content.vb: Public Sub UpdateCamRelativity()
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity*
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady
+  id: OnMapReady
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnMapReady()
+  nameWithType: Demo3rdPersonPlayer.OnMapReady()
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnMapReady()
+    content.vb: Public Sub OnMapReady()
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady*
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor
+  commentId: M:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+  langs:
+  - csharp
+  - vb
+  name: Demo3rdPersonPlayer()
+  nameWithType: Demo3rdPersonPlayer.Demo3rdPersonPlayer()
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.Demo3rdPersonPlayer()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public Demo3rdPersonPlayer()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor*
+  nameWithType.vb: Demo3rdPersonPlayer.New()
+  fullName.vb: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.html#MoraGames_MapGen_Demo_Demo3rdPersonPlayer_OnMove_UnityEngine_InputSystem_InputAction_CallbackContext_
+  name: OnMove
+  nameWithType: Demo3rdPersonPlayer.OnMove
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMove
+- uid: UnityEngine.InputSystem.InputAction.CallbackContext
+  commentId: T:UnityEngine.InputSystem.InputAction.CallbackContext
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputAction.CallbackContext
+  nameWithType: InputAction.CallbackContext
+  fullName: UnityEngine.InputSystem.InputAction.CallbackContext
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.InputAction.CallbackContext
+    name: CallbackContext
+    isExternal: true
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.html#MoraGames_MapGen_Demo_Demo3rdPersonPlayer_UpdateCamRelativity
+  name: UpdateCamRelativity
+  nameWithType: Demo3rdPersonPlayer.UpdateCamRelativity
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.UpdateCamRelativity
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.html#MoraGames_MapGen_Demo_Demo3rdPersonPlayer_OnMapReady
+  name: OnMapReady
+  nameWithType: Demo3rdPersonPlayer.OnMapReady
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.OnMapReady
+- uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.Demo3rdPersonPlayer.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.html#MoraGames_MapGen_Demo_Demo3rdPersonPlayer__ctor
+  name: Demo3rdPersonPlayer
+  nameWithType: Demo3rdPersonPlayer.Demo3rdPersonPlayer
+  fullName: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.Demo3rdPersonPlayer
+  nameWithType.vb: Demo3rdPersonPlayer.New
+  fullName.vb: MoraGames.MapGen.Demo.Demo3rdPersonPlayer.New
+  name.vb: New

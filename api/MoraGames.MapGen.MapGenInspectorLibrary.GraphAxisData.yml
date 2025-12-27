@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  commentId: T:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  id: MapGenInspectorLibrary.GraphAxisData
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor(UnityEngine.Vector2,UnityEngine.Color,System.Func{System.Single},System.String)
+  - MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Color
+  - MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Label
+  - MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.MinMax
+  - MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Sampler
+  langs:
+  - csharp
+  - vb
+  name: MapGenInspectorLibrary.GraphAxisData
+  nameWithType: MapGenInspectorLibrary.GraphAxisData
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  type: Struct
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public struct MapGenInspectorLibrary.GraphAxisData
+    content.vb: Public Structure MapGenInspectorLibrary.GraphAxisData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.MinMax
+  commentId: F:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.MinMax
+  id: MinMax
+  parent: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  langs:
+  - csharp
+  - vb
+  name: MinMax
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.MinMax
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.MinMax
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2 MinMax
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public MinMax As Vector2
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Color
+  commentId: F:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Color
+  id: Color
+  parent: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.Color
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Color
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Color Color
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Color As Color
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Sampler
+  commentId: F:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Sampler
+  id: Sampler
+  parent: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  langs:
+  - csharp
+  - vb
+  name: Sampler
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.Sampler
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Sampler
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Func<float> Sampler
+    return:
+      type: System.Func{System.Single}
+    content.vb: Public Sampler As Func(Of Single)
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Label
+  commentId: F:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Label
+  id: Label
+  parent: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.Label
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.Label
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public string Label
+    return:
+      type: System.String
+    content.vb: Public Label As String
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor(UnityEngine.Vector2,UnityEngine.Color,System.Func{System.Single},System.String)
+  commentId: M:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor(UnityEngine.Vector2,UnityEngine.Color,System.Func{System.Single},System.String)
+  id: '#ctor(UnityEngine.Vector2,UnityEngine.Color,System.Func{System.Single},System.String)'
+  parent: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+  langs:
+  - csharp
+  - vb
+  name: GraphAxisData(Vector2, Color, Func<float>, string)
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.GraphAxisData(Vector2, Color, Func<float>, string)
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.GraphAxisData(UnityEngine.Vector2, UnityEngine.Color, System.Func<float>, string)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public GraphAxisData(Vector2 minMax, Color color, Func<float> sampler, string label = null)
+    parameters:
+    - id: minMax
+      type: UnityEngine.Vector2
+    - id: color
+      type: UnityEngine.Color
+    - id: sampler
+      type: System.Func{System.Single}
+    - id: label
+      type: System.String
+    content.vb: Public Sub New(minMax As Vector2, color As Color, sampler As Func(Of Single), label As String = Nothing)
+  overload: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor*
+  nameWithType.vb: MapGenInspectorLibrary.GraphAxisData.New(Vector2, Color, Func(Of Single), String)
+  fullName.vb: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.New(UnityEngine.Vector2, UnityEngine.Color, System.Func(Of Single), String)
+  name.vb: New(Vector2, Color, Func(Of Single), String)
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Func{System.Single}
+  commentId: T:System.Func{System.Single}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<float>
+  nameWithType: Func<float>
+  fullName: System.Func<float>
+  nameWithType.vb: Func(Of Single)
+  fullName.vb: System.Func(Of Single)
+  name.vb: Func(Of Single)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor*
+  commentId: Overload:MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.html#MoraGames_MapGen_MapGenInspectorLibrary_GraphAxisData__ctor_UnityEngine_Vector2_UnityEngine_Color_System_Func_System_Single__System_String_
+  name: GraphAxisData
+  nameWithType: MapGenInspectorLibrary.GraphAxisData.GraphAxisData
+  fullName: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.GraphAxisData
+  nameWithType.vb: MapGenInspectorLibrary.GraphAxisData.New
+  fullName.vb: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.New
+  name.vb: New

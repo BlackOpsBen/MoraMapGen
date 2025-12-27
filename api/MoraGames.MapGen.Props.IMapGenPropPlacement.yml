@@ -1,0 +1,148 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.IMapGenPropPlacement
+  commentId: T:MoraGames.MapGen.Props.IMapGenPropPlacement
+  id: IMapGenPropPlacement
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase(MoraGames.MapGen.BakedMap)
+  - MoraGames.MapGen.Props.IMapGenPropPlacement.Reset
+  langs:
+  - csharp
+  - vb
+  name: IMapGenPropPlacement
+  nameWithType: IMapGenPropPlacement
+  fullName: MoraGames.MapGen.Props.IMapGenPropPlacement
+  type: Interface
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public interface IMapGenPropPlacement
+    content.vb: Public Interface IMapGenPropPlacement
+- uid: MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase(MoraGames.MapGen.BakedMap)
+  commentId: M:MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase(MoraGames.MapGen.BakedMap)
+  id: OnPropPlacementPhase(MoraGames.MapGen.BakedMap)
+  parent: MoraGames.MapGen.Props.IMapGenPropPlacement
+  langs:
+  - csharp
+  - vb
+  name: OnPropPlacementPhase(BakedMap)
+  nameWithType: IMapGenPropPlacement.OnPropPlacementPhase(BakedMap)
+  fullName: MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase(MoraGames.MapGen.BakedMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: void OnPropPlacementPhase(BakedMap bakedMap)
+    parameters:
+    - id: bakedMap
+      type: MoraGames.MapGen.BakedMap
+    content.vb: Sub OnPropPlacementPhase(bakedMap As BakedMap)
+  overload: MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase*
+- uid: MoraGames.MapGen.Props.IMapGenPropPlacement.Reset
+  commentId: M:MoraGames.MapGen.Props.IMapGenPropPlacement.Reset
+  id: Reset
+  parent: MoraGames.MapGen.Props.IMapGenPropPlacement
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IMapGenPropPlacement.Reset()
+  fullName: MoraGames.MapGen.Props.IMapGenPropPlacement.Reset()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: MoraGames.MapGen.Props.IMapGenPropPlacement.Reset*
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase*
+  commentId: Overload:MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase
+  isExternal: true
+  href: MoraGames.MapGen.Props.IMapGenPropPlacement.html#MoraGames_MapGen_Props_IMapGenPropPlacement_OnPropPlacementPhase_MoraGames_MapGen_BakedMap_
+  name: OnPropPlacementPhase
+  nameWithType: IMapGenPropPlacement.OnPropPlacementPhase
+  fullName: MoraGames.MapGen.Props.IMapGenPropPlacement.OnPropPlacementPhase
+- uid: MoraGames.MapGen.BakedMap
+  commentId: T:MoraGames.MapGen.BakedMap
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedMap.html
+  name: BakedMap
+  nameWithType: BakedMap
+  fullName: MoraGames.MapGen.BakedMap
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.Props.IMapGenPropPlacement.Reset*
+  commentId: Overload:MoraGames.MapGen.Props.IMapGenPropPlacement.Reset
+  isExternal: true
+  href: MoraGames.MapGen.Props.IMapGenPropPlacement.html#MoraGames_MapGen_Props_IMapGenPropPlacement_Reset
+  name: Reset
+  nameWithType: IMapGenPropPlacement.Reset
+  fullName: MoraGames.MapGen.Props.IMapGenPropPlacement.Reset

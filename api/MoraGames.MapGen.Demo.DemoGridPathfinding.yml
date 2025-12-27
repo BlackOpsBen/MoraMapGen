@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding
+  commentId: T:MoraGames.MapGen.Demo.DemoGridPathfinding
+  id: DemoGridPathfinding
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor
+  - MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath
+  - MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath
+  - MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady
+  langs:
+  - csharp
+  - vb
+  name: DemoGridPathfinding
+  nameWithType: DemoGridPathfinding
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoGridPathfinding : MonoBehaviour'
+    content.vb: Public Class DemoGridPathfinding Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady
+  commentId: M:MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady
+  id: OnMapReady
+  parent: MoraGames.MapGen.Demo.DemoGridPathfinding
+  langs:
+  - csharp
+  - vb
+  name: OnMapReady()
+  nameWithType: DemoGridPathfinding.OnMapReady()
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void OnMapReady()
+    content.vb: Public Sub OnMapReady()
+  overload: MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady*
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath
+  commentId: M:MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath
+  id: GetRandomPath
+  parent: MoraGames.MapGen.Demo.DemoGridPathfinding
+  langs:
+  - csharp
+  - vb
+  name: GetRandomPath()
+  nameWithType: DemoGridPathfinding.GetRandomPath()
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void GetRandomPath()
+    content.vb: Public Sub GetRandomPath()
+  overload: MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath*
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath
+  commentId: M:MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath
+  id: GetCurrentPath
+  parent: MoraGames.MapGen.Demo.DemoGridPathfinding
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentPath()
+  nameWithType: DemoGridPathfinding.GetCurrentPath()
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public void GetCurrentPath()
+    content.vb: Public Sub GetCurrentPath()
+  overload: MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath*
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoGridPathfinding
+  langs:
+  - csharp
+  - vb
+  name: DemoGridPathfinding()
+  nameWithType: DemoGridPathfinding.DemoGridPathfinding()
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.DemoGridPathfinding()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoGridPathfinding()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor*
+  nameWithType.vb: DemoGridPathfinding.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoGridPathfinding.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoGridPathfinding.html#MoraGames_MapGen_Demo_DemoGridPathfinding_OnMapReady
+  name: OnMapReady
+  nameWithType: DemoGridPathfinding.OnMapReady
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.OnMapReady
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoGridPathfinding.html#MoraGames_MapGen_Demo_DemoGridPathfinding_GetRandomPath
+  name: GetRandomPath
+  nameWithType: DemoGridPathfinding.GetRandomPath
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.GetRandomPath
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoGridPathfinding.html#MoraGames_MapGen_Demo_DemoGridPathfinding_GetCurrentPath
+  name: GetCurrentPath
+  nameWithType: DemoGridPathfinding.GetCurrentPath
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.GetCurrentPath
+- uid: MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoGridPathfinding.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoGridPathfinding.html#MoraGames_MapGen_Demo_DemoGridPathfinding__ctor
+  name: DemoGridPathfinding
+  nameWithType: DemoGridPathfinding.DemoGridPathfinding
+  fullName: MoraGames.MapGen.Demo.DemoGridPathfinding.DemoGridPathfinding
+  nameWithType.vb: DemoGridPathfinding.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoGridPathfinding.New
+  name.vb: New

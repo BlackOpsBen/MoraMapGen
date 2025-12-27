@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Area Options | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Area Options | MoraMapGen ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="MoraMapGen">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="area-options">Area Options</h1>
+
+<p>Area Options assets define how each room and corridor will be named and &quot;skinned&quot; (which visual style they use).</p>
+<h2 id="creating-an-area-options-asset">Creating an Area Options asset</h2>
+<p>To create a new Area Options asset, right-click in your Project Assets and select &quot;Create/MoraMapGen/Area Options&quot;.</p>
+<h2 id="defining-the-area-options">Defining the Area Options</h2>
+<p>Specify which Rooms and Corridors can be used in the map generation by assigning Area Definition assets to the various categories.
+At a minimum, you must specify the Default Room and Default Corridor. They can share the same Area Definition asset if you want them to look identical, and in fact both can use the same Area Definition. You should also ensure the Tile Module Edge Size is set to match your module prefabs. Any of the other lists can be left empty.
+<img src="../../images/concepts/area-options-inspector.PNG" alt="Area Options asset inspector"></p>
+<h3 id="tile-module-edge-size">Tile Module Edge Size</h3>
+<p>This is where you specify the length in Unity units of each of your module prefab meshes. Each module should be the same dimensions and they should be square in the X and Z axes, but can be whatever Y height you want.
+Example: If your wall and floor prefabs are 4×4 Unity units when viewed from above, set this to 4.</p>
+<h3 id="required-unique-rooms">Required Unique Rooms</h3>
+<p>Exactly 1 of each of these rooms will be generated/assigned. When using the Chunks Room Creation Mode, the system will try to make at least enough chunks to support these rooms. If your map size is too small and/or min chunk size is too large, there may not be enough space for the required number of chunks.</p>
+<h3 id="optional-unique-rooms">Optional Unique Rooms</h3>
+<p>Up to 1 of each of these rooms may be generated/assigned. These rooms will be among the options to be assigned to each area, but are not guaranteed to be selected at all.</p>
+<h3 id="optional-common-rooms">Optional Common Rooms</h3>
+<p>Any number of each of these may be generated/assigned (including 0.)</p>
+<h3 id="required-unique-corridors">Required Unique Corridors</h3>
+<p>Exactly 1 of each of these corridors will be generated/assigned. Make sure the map has enough rooms to support enough corridors for all required unique corridors.</p>
+<h3 id="optional-unique-corridors">Optional Unique Corridors</h3>
+<p>Up to 1 of each of these corridors may be generated/assigned.</p>
+<h3 id="optional-common-corridors">Optional Common Corridors</h3>
+<p>Any number of each of these may be generated/assigned (including 0.)</p>
+<h3 id="default-room">Default Room</h3>
+<p>This is the fallback default room definition used when there aren't any optional rooms available or not enough required rooms to fill all room spaces.
+Important: The Default Room's Tile Module Definitions also determine the exterior ceiling for the outer boundary of the map.</p>
+<h3 id="default-corridor">Default Corridor</h3>
+<p>This is the fallback default corridor definition used when there aren't any optional corridors available or not enough required corridors to fill all corridor spaces.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/concepts/area-options.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

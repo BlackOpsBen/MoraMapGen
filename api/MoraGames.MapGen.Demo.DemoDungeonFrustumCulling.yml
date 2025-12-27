@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling
+  commentId: T:MoraGames.MapGen.Demo.DemoDungeonFrustumCulling
+  id: DemoDungeonFrustumCulling
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonFrustumCulling
+  nameWithType: DemoDungeonFrustumCulling
+  fullName: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoDungeonFrustumCulling : MonoBehaviour'
+    content.vb: Public Class DemoDungeonFrustumCulling Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonFrustumCulling()
+  nameWithType: DemoDungeonFrustumCulling.DemoDungeonFrustumCulling()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.DemoDungeonFrustumCulling()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoDungeonFrustumCulling()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor*
+  nameWithType.vb: DemoDungeonFrustumCulling.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.html#MoraGames_MapGen_Demo_DemoDungeonFrustumCulling__ctor
+  name: DemoDungeonFrustumCulling
+  nameWithType: DemoDungeonFrustumCulling.DemoDungeonFrustumCulling
+  fullName: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.DemoDungeonFrustumCulling
+  nameWithType.vb: DemoDungeonFrustumCulling.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.New
+  name.vb: New

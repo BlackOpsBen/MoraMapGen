@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor
+  commentId: T:MoraGames.MapGen.Props.PropAnchorOverrideEditor
+  id: PropAnchorOverrideEditor
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor
+  - MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: PropAnchorOverrideEditor
+  nameWithType: PropAnchorOverrideEditor
+  fullName: MoraGames.MapGen.Props.PropAnchorOverrideEditor
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class PropAnchorOverrideEditor : Editor'
+    content.vb: Public Class PropAnchorOverrideEditor Inherits Editor
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI
+  commentId: M:MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: MoraGames.MapGen.Props.PropAnchorOverrideEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: PropAnchorOverrideEditor.OnInspectorGUI()
+  fullName: MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI*
+- uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor
+  commentId: M:MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.PropAnchorOverrideEditor
+  langs:
+  - csharp
+  - vb
+  name: PropAnchorOverrideEditor()
+  nameWithType: PropAnchorOverrideEditor.PropAnchorOverrideEditor()
+  fullName: MoraGames.MapGen.Props.PropAnchorOverrideEditor.PropAnchorOverrideEditor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropAnchorOverrideEditor()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor*
+  nameWithType.vb: PropAnchorOverrideEditor.New()
+  fullName.vb: MoraGames.MapGen.Props.PropAnchorOverrideEditor.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI*
+  commentId: Overload:MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropAnchorOverrideEditor.html#MoraGames_MapGen_Props_PropAnchorOverrideEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: PropAnchorOverrideEditor.OnInspectorGUI
+  fullName: MoraGames.MapGen.Props.PropAnchorOverrideEditor.OnInspectorGUI
+- uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.PropAnchorOverrideEditor.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropAnchorOverrideEditor.html#MoraGames_MapGen_Props_PropAnchorOverrideEditor__ctor
+  name: PropAnchorOverrideEditor
+  nameWithType: PropAnchorOverrideEditor.PropAnchorOverrideEditor
+  fullName: MoraGames.MapGen.Props.PropAnchorOverrideEditor.PropAnchorOverrideEditor
+  nameWithType.vb: PropAnchorOverrideEditor.New
+  fullName.vb: MoraGames.MapGen.Props.PropAnchorOverrideEditor.New
+  name.vb: New

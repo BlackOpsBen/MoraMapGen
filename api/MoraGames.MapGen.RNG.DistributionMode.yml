@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.RNG.DistributionMode
+  commentId: T:MoraGames.MapGen.RNG.DistributionMode
+  id: DistributionMode
+  parent: MoraGames.MapGen.RNG
+  children:
+  - MoraGames.MapGen.RNG.DistributionMode.Biased
+  - MoraGames.MapGen.RNG.DistributionMode.Normal
+  - MoraGames.MapGen.RNG.DistributionMode.Uniform
+  langs:
+  - csharp
+  - vb
+  name: DistributionMode
+  nameWithType: DistributionMode
+  fullName: MoraGames.MapGen.RNG.DistributionMode
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: public enum DistributionMode
+    content.vb: Public Enum DistributionMode
+- uid: MoraGames.MapGen.RNG.DistributionMode.Uniform
+  commentId: F:MoraGames.MapGen.RNG.DistributionMode.Uniform
+  id: Uniform
+  parent: MoraGames.MapGen.RNG.DistributionMode
+  langs:
+  - csharp
+  - vb
+  name: Uniform
+  nameWithType: DistributionMode.Uniform
+  fullName: MoraGames.MapGen.RNG.DistributionMode.Uniform
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: Uniform = 0
+    return:
+      type: MoraGames.MapGen.RNG.DistributionMode
+- uid: MoraGames.MapGen.RNG.DistributionMode.Normal
+  commentId: F:MoraGames.MapGen.RNG.DistributionMode.Normal
+  id: Normal
+  parent: MoraGames.MapGen.RNG.DistributionMode
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: DistributionMode.Normal
+  fullName: MoraGames.MapGen.RNG.DistributionMode.Normal
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: Normal = 1
+    return:
+      type: MoraGames.MapGen.RNG.DistributionMode
+- uid: MoraGames.MapGen.RNG.DistributionMode.Biased
+  commentId: F:MoraGames.MapGen.RNG.DistributionMode.Biased
+  id: Biased
+  parent: MoraGames.MapGen.RNG.DistributionMode
+  langs:
+  - csharp
+  - vb
+  name: Biased
+  nameWithType: DistributionMode.Biased
+  fullName: MoraGames.MapGen.RNG.DistributionMode.Biased
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.RNG
+  syntax:
+    content: Biased = 2
+    return:
+      type: MoraGames.MapGen.RNG.DistributionMode
+references:
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: MoraGames.MapGen.RNG.DistributionMode
+  commentId: T:MoraGames.MapGen.RNG.DistributionMode
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.DistributionMode.html
+  name: DistributionMode
+  nameWithType: DistributionMode
+  fullName: MoraGames.MapGen.RNG.DistributionMode

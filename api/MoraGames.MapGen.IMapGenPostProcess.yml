@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.IMapGenPostProcess
+  commentId: T:MoraGames.MapGen.IMapGenPostProcess
+  id: IMapGenPostProcess
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  - MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  - MoraGames.MapGen.IMapGenPostProcess.Reset
+  langs:
+  - csharp
+  - vb
+  name: IMapGenPostProcess
+  nameWithType: IMapGenPostProcess
+  fullName: MoraGames.MapGen.IMapGenPostProcess
+  type: Interface
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public interface IMapGenPostProcess
+    content.vb: Public Interface IMapGenPostProcess
+- uid: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  id: OnMapBaked(MoraGames.MapGen.BakedMap)
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  langs:
+  - csharp
+  - vb
+  name: OnMapBaked(BakedMap)
+  nameWithType: IMapGenPostProcess.OnMapBaked(BakedMap)
+  fullName: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: void OnMapBaked(BakedMap bakedMap)
+    parameters:
+    - id: bakedMap
+      type: MoraGames.MapGen.BakedMap
+    content.vb: Sub OnMapBaked(bakedMap As BakedMap)
+  overload: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked*
+- uid: MoraGames.MapGen.IMapGenPostProcess.Reset
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.Reset
+  id: Reset
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IMapGenPostProcess.Reset()
+  fullName: MoraGames.MapGen.IMapGenPostProcess.Reset()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: MoraGames.MapGen.IMapGenPostProcess.Reset*
+- uid: MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  id: GetPhase
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  langs:
+  - csharp
+  - vb
+  name: GetPhase()
+  nameWithType: IMapGenPostProcess.GetPhase()
+  fullName: MoraGames.MapGen.IMapGenPostProcess.GetPhase()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: PostProcessPhase GetPhase()
+    return:
+      type: MoraGames.MapGen.PostProcessPhase
+    content.vb: Function GetPhase() As PostProcessPhase
+  overload: MoraGames.MapGen.IMapGenPostProcess.GetPhase*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked*
+  commentId: Overload:MoraGames.MapGen.IMapGenPostProcess.OnMapBaked
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_OnMapBaked_MoraGames_MapGen_BakedMap_
+  name: OnMapBaked
+  nameWithType: IMapGenPostProcess.OnMapBaked
+  fullName: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked
+- uid: MoraGames.MapGen.BakedMap
+  commentId: T:MoraGames.MapGen.BakedMap
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedMap.html
+  name: BakedMap
+  nameWithType: BakedMap
+  fullName: MoraGames.MapGen.BakedMap
+- uid: MoraGames.MapGen.IMapGenPostProcess.Reset*
+  commentId: Overload:MoraGames.MapGen.IMapGenPostProcess.Reset
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_Reset
+  name: Reset
+  nameWithType: IMapGenPostProcess.Reset
+  fullName: MoraGames.MapGen.IMapGenPostProcess.Reset
+- uid: MoraGames.MapGen.IMapGenPostProcess.GetPhase*
+  commentId: Overload:MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_GetPhase
+  name: GetPhase
+  nameWithType: IMapGenPostProcess.GetPhase
+  fullName: MoraGames.MapGen.IMapGenPostProcess.GetPhase
+- uid: MoraGames.MapGen.PostProcessPhase
+  commentId: T:MoraGames.MapGen.PostProcessPhase
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.PostProcessPhase.html
+  name: PostProcessPhase
+  nameWithType: PostProcessPhase
+  fullName: MoraGames.MapGen.PostProcessPhase

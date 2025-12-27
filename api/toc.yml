@@ -1,0 +1,444 @@
+### YamlMime:TableOfContent
+items:
+- uid: MoraGames.MapGen
+  name: MoraGames.MapGen
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.AdvancedSettings
+    name: AdvancedSettings
+    type: Class
+  - uid: MoraGames.MapGen.AreaDefinitionSO
+    name: AreaDefinitionSO
+    type: Class
+  - uid: MoraGames.MapGen.AreaDefinitionsSOEditor
+    name: AreaDefinitionsSOEditor
+    type: Class
+  - uid: MoraGames.MapGen.AreaOptionsSO
+    name: AreaOptionsSO
+    type: Class
+  - uid: MoraGames.MapGen.BakedArea
+    name: BakedArea
+    type: Class
+  - uid: MoraGames.MapGen.BakedAreaGraphExtensions
+    name: BakedAreaGraphExtensions
+    type: Class
+  - uid: MoraGames.MapGen.BakedAreaType
+    name: BakedAreaType
+    type: Enum
+  - uid: MoraGames.MapGen.BakedGridSpace
+    name: BakedGridSpace
+    type: Class
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    type: Class
+  - uid: MoraGames.MapGen.BakedMapExtensions
+    name: BakedMapExtensions
+    type: Class
+  - uid: MoraGames.MapGen.BakedMapGraphExtensions
+    name: BakedMapGraphExtensions
+    type: Class
+  - uid: MoraGames.MapGen.BakedMapPathExtensions
+    name: BakedMapPathExtensions
+    type: Class
+  - uid: MoraGames.MapGen.BasePropCategoriesEditor`1
+    name: BasePropCategoriesEditor<T>
+    type: Class
+  - uid: MoraGames.MapGen.BlueprintRotation
+    name: BlueprintRotation
+    type: Enum
+  - uid: MoraGames.MapGen.BoundsOverlapCalculator
+    name: BoundsOverlapCalculator
+    type: Class
+  - uid: MoraGames.MapGen.Chunk
+    name: Chunk
+    type: Class
+  - uid: MoraGames.MapGen.ChunkNeighborPair
+    name: ChunkNeighborPair
+    type: Struct
+  - uid: MoraGames.MapGen.ChunkRoomConnectionMode
+    name: ChunkRoomConnectionMode
+    type: Enum
+  - uid: MoraGames.MapGen.Chunks
+    name: Chunks
+    type: Class
+  - uid: MoraGames.MapGen.ChunksStrategy
+    name: ChunksStrategy
+    type: Class
+  - uid: MoraGames.MapGen.CommonMapGen
+    name: CommonMapGen
+    type: Class
+  - uid: MoraGames.MapGen.ComplexFloor
+    name: ComplexFloor
+    type: Class
+  - uid: MoraGames.MapGen.ConnectingTiles
+    name: ConnectingTiles
+    type: Struct
+  - uid: MoraGames.MapGen.Corner
+    name: Corner
+    type: Enum
+  - uid: MoraGames.MapGen.DebugOutputWorldGenInput
+    name: DebugOutputWorldGenInput
+    type: Class
+  - uid: MoraGames.MapGen.DeterministicHashSet`1
+    name: DeterministicHashSet<T>
+    type: Class
+  - uid: MoraGames.MapGen.DivideIntoChunks
+    name: DivideIntoChunks
+    type: Class
+  - uid: MoraGames.MapGen.DoorPlacementMode
+    name: DoorPlacementMode
+    type: Enum
+  - uid: MoraGames.MapGen.Edge
+    name: Edge
+    type: Enum
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    type: Enum
+  - uid: MoraGames.MapGen.FloorType
+    name: FloorType
+    type: Enum
+  - uid: MoraGames.MapGen.GenArea
+    name: GenArea
+    type: Class
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    type: Class
+  - uid: MoraGames.MapGen.GenMap
+    name: GenMap
+    type: Class
+  - uid: MoraGames.MapGen.Grid2D`1
+    name: Grid2D<T>
+    type: Class
+  - uid: MoraGames.MapGen.HybridStrategy
+    name: HybridStrategy
+    type: Class
+  - uid: MoraGames.MapGen.IMapGenPostProcess
+    name: IMapGenPostProcess
+    type: Interface
+  - uid: MoraGames.MapGen.IMapGenStrategy
+    name: IMapGenStrategy
+    type: Interface
+  - uid: MoraGames.MapGen.MapGenConstants
+    name: MapGenConstants
+    type: Class
+  - uid: MoraGames.MapGen.MapGenInspectorLibrary
+    name: MapGenInspectorLibrary
+    type: Class
+  - uid: MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData
+    name: MapGenInspectorLibrary.GraphAxisData
+    type: Struct
+  - uid: MoraGames.MapGen.MapGenSettingsSO
+    name: MapGenSettingsSO
+    type: Class
+  - uid: MoraGames.MapGen.MapGenSettingsSOEditor
+    name: MapGenSettingsSOEditor
+    type: Class
+  - uid: MoraGames.MapGen.MapGenStrategies
+    name: MapGenStrategies
+    type: Class
+  - uid: MoraGames.MapGen.MapSizeUtility
+    name: MapSizeUtility
+    type: Class
+  - uid: MoraGames.MapGen.MapTileBlueprint
+    name: MapTileBlueprint
+    type: Class
+  - uid: MoraGames.MapGen.MapTileFactory
+    name: MapTileFactory
+    type: Class
+  - uid: MoraGames.MapGen.MapTileManager
+    name: MapTileManager
+    type: Class
+  - uid: MoraGames.MapGen.Module
+    name: Module
+    type: Class
+  - uid: MoraGames.MapGen.ModuleType
+    name: ModuleType
+    type: Enum
+  - uid: MoraGames.MapGen.MoraMapGen
+    name: MoraMapGen
+    type: Class
+  - uid: MoraGames.MapGen.MoraMapGenEditor
+    name: MoraMapGenEditor
+    type: Class
+  - uid: MoraGames.MapGen.PostProcessPhase
+    name: PostProcessPhase
+    type: Enum
+  - uid: MoraGames.MapGen.PotentialConnection
+    name: PotentialConnection
+    type: Struct
+  - uid: MoraGames.MapGen.PrefabSelectionBase
+    name: PrefabSelectionBase
+    type: Class
+  - uid: MoraGames.MapGen.PriorityQueue`1
+    name: PriorityQueue<T>
+    type: Class
+  - uid: MoraGames.MapGen.PropCategoriesEditorUI
+    name: PropCategoriesEditorUI
+    type: Class
+  - uid: MoraGames.MapGen.RandomStrategy
+    name: RandomStrategy
+    type: Class
+  - uid: MoraGames.MapGen.ReflectionProbeVisualization
+    name: ReflectionProbeVisualization
+    type: Class
+  - uid: MoraGames.MapGen.RoomCreationMode
+    name: RoomCreationMode
+    type: Enum
+  - uid: MoraGames.MapGen.RoomShapeManager
+    name: RoomShapeManager
+    type: Class
+  - uid: MoraGames.MapGen.RoomShapeSO
+    name: RoomShapeSO
+    type: Class
+  - uid: MoraGames.MapGen.RoomShapeSOEditor
+    name: RoomShapeSOEditor
+    type: Class
+  - uid: MoraGames.MapGen.SearchTile
+    name: SearchTile
+    type: Class
+  - uid: MoraGames.MapGen.SearchTileExtensions
+    name: SearchTileExtensions
+    type: Class
+  - uid: MoraGames.MapGen.SerializableDictionaryEntryDrawer
+    name: SerializableDictionaryEntryDrawer
+    type: Class
+  - uid: MoraGames.MapGen.SerializableDictionaryEntry`2
+    name: SerializableDictionaryEntry<TKey, TValue>
+    type: Class
+  - uid: MoraGames.MapGen.SerializableDictionary`2
+    name: SerializableDictionary<TKey, TValue>
+    type: Class
+  - uid: MoraGames.MapGen.SingleReflectionProbeVisualization
+    name: SingleReflectionProbeVisualization
+    type: Class
+  - uid: MoraGames.MapGen.SmartPrefabUtility
+    name: SmartPrefabUtility
+    type: Class
+  - uid: MoraGames.MapGen.TestOverlap
+    name: TestOverlap
+    type: Class
+  - uid: MoraGames.MapGen.TileEdgePair
+    name: TileEdgePair
+    type: Struct
+  - uid: MoraGames.MapGen.TileModuleDefinitionsSO
+    name: TileModuleDefinitionsSO
+    type: Class
+  - uid: MoraGames.MapGen.TileModuleDefinitionsSOEditor
+    name: TileModuleDefinitionsSOEditor
+    type: Class
+  - uid: MoraGames.MapGen.WeightedTileModule
+    name: WeightedTileModule
+    type: Class
+  - uid: MoraGames.MapGen.WeightedTileModuleDrawer
+    name: WeightedTileModuleDrawer
+    type: Class
+- uid: MoraGames.MapGen.Demo
+  name: MoraGames.MapGen.Demo
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.Demo.Demo3rdPersonCamRig
+    name: Demo3rdPersonCamRig
+    type: Class
+  - uid: MoraGames.MapGen.Demo.Demo3rdPersonPlayer
+    name: Demo3rdPersonPlayer
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonChest
+    name: DemoDungeonChest
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonDoor
+    name: DemoDungeonDoor
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonFrustumCulling
+    name: DemoDungeonFrustumCulling
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonKey
+    name: DemoDungeonKey
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+    name: DemoDungeonLockAndSwitch
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonPlayer
+    name: DemoDungeonPlayer
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoDungeonPrompt
+    name: DemoDungeonPrompt
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoFPSPlayer
+    name: DemoFPSPlayer
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoFindFarthestAreas
+    name: DemoFindFarthestAreas
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoFindFarthestGridSpaces
+    name: DemoFindFarthestGridSpaces
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoGridPathfinding
+    name: DemoGridPathfinding
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoLocationTrackingUI
+    name: DemoLocationTrackingUI
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoNPC
+    name: DemoNPC
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoNPCSpawner
+    name: DemoNPCSpawner
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoOpenDoors
+    name: DemoOpenDoors
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoPropArray
+    name: DemoPropArray
+    type: Class
+  - uid: MoraGames.MapGen.Demo.DemoSceneInfo
+    name: DemoSceneInfo
+    type: Class
+  - uid: MoraGames.MapGen.Demo.MarkingMode
+    name: MarkingMode
+    type: Enum
+- uid: MoraGames.MapGen.Demo.Editor
+  name: MoraGames.MapGen.Demo.Editor
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor
+    name: DemoSceneInfoEditor
+    type: Class
+- uid: MoraGames.MapGen.Props
+  name: MoraGames.MapGen.Props
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.Props.IMapGenPropPlacement
+    name: IMapGenPropPlacement
+    type: Interface
+  - uid: MoraGames.MapGen.Props.IPropPostPlacement
+    name: IPropPostPlacement
+    type: Interface
+  - uid: MoraGames.MapGen.Props.IPropSpot
+    name: IPropSpot
+    type: Interface
+  - uid: MoraGames.MapGen.Props.ProceduralPropSpot
+    name: ProceduralPropSpot
+    type: Class
+  - uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO
+    name: ProceduralPropSpotOffsetsSO
+    type: Class
+  - uid: MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor
+    name: ProceduralPropSpotOffsetsSOEditor
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropAnchorOverride
+    name: PropAnchorOverride
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropAnchorOverrideEditor
+    name: PropAnchorOverrideEditor
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropCategories
+    name: PropCategories
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropChannelSO
+    name: PropChannelSO
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropDefinition
+    name: PropDefinition
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropOptionDefinition
+    name: PropOptionDefinition
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropOptions
+    name: PropOptions
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropPlacement
+    name: PropPlacement
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropPlacementType
+    name: PropPlacementType
+    type: Enum
+  - uid: MoraGames.MapGen.Props.PropPlacementTypeInt
+    name: PropPlacementTypeInt
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropPlacementTypeIntDrawer
+    name: PropPlacementTypeIntDrawer
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropPlacementVolume
+    name: PropPlacementVolume
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropPlacementVolumeEditor
+    name: PropPlacementVolumeEditor
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsEditor
+    name: PropRotationSettingsEditor
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions
+    name: PropRotationSettingsExtensions
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+    name: PropRotationSettingsSO
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropSpot
+    name: PropSpot
+    type: Class
+  - uid: MoraGames.MapGen.Props.PropSpotEditor
+    name: PropSpotEditor
+    type: Class
+  - uid: MoraGames.MapGen.Props.ReflectionProbePlacement
+    name: ReflectionProbePlacement
+    type: Class
+  - uid: MoraGames.MapGen.Props.ReflectionProbePlacementEditor
+    name: ReflectionProbePlacementEditor
+    type: Class
+- uid: MoraGames.MapGen.RNG
+  name: MoraGames.MapGen.RNG
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.RNG.DistributionMode
+    name: DistributionMode
+    type: Enum
+  - uid: MoraGames.MapGen.RNG.DistributionParams
+    name: DistributionParams
+    type: Class
+  - uid: MoraGames.MapGen.RNG.DistributionParamsDrawer
+    name: DistributionParamsDrawer
+    type: Class
+  - uid: MoraGames.MapGen.RNG.DistributionParamsExtensions
+    name: DistributionParamsExtensions
+    type: Class
+  - uid: MoraGames.MapGen.RNG.FixedRandomProvider
+    name: FixedRandomProvider
+    type: Class
+  - uid: MoraGames.MapGen.RNG.IRandomProvider
+    name: IRandomProvider
+    type: Interface
+  - uid: MoraGames.MapGen.RNG.MapGenRandom
+    name: MapGenRandom
+    type: Class
+  - uid: MoraGames.MapGen.RNG.MapGenRandomProvider
+    name: MapGenRandomProvider
+    type: Class
+  - uid: MoraGames.MapGen.RNG.PropOffsets
+    name: PropOffsets
+    type: Class
+  - uid: MoraGames.MapGen.RNG.PropOffsetsDrawer
+    name: PropOffsetsDrawer
+    type: Class
+  - uid: MoraGames.MapGen.RNG.PropOffsetsExtensions
+    name: PropOffsetsExtensions
+    type: Class
+  - uid: MoraGames.MapGen.RNG.SeedKeys
+    name: SeedKeys
+    type: Class
+  - uid: MoraGames.MapGen.RNG.SeedManager
+    name: SeedManager
+    type: Class
+- uid: MoraGames.MapGen.RNG.Demo
+  name: MoraGames.MapGen.RNG.Demo
+  type: Namespace
+  items:
+  - uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandom
+    name: DemoMapGenRandom
+    type: Class
+  - uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar
+    name: DemoMapGenRandomBar
+    type: Class
+  - uid: MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor
+    name: DemoMapGenRandomEditor
+    type: Class
+memberLayout: SamePage

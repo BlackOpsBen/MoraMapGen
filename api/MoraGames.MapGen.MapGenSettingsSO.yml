@@ -1,0 +1,1211 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.MapGenSettingsSO
+  commentId: T:MoraGames.MapGen.MapGenSettingsSO
+  id: MapGenSettingsSO
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.MapGenSettingsSO.#ctor
+  - MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+  - MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+  - MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+  - MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+  - MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+  - MoraGames.MapGen.MapGenSettingsSO.ClampArea
+  - MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+  - MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+  - MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+  - MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll
+  - MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+  - MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+  - MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+  - MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize
+  - MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString
+  - MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+  - MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize
+  - MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+  - MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+  - MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+  - MoraGames.MapGen.MapGenSettingsSO.MinRooms
+  - MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+  - MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+  - MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+  - MoraGames.MapGen.MapGenSettingsSO.Randomize
+  - MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+  - MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+  - MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes
+  - MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+  - MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+  - MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+  - MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+  - MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+  - MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+  - MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+  - MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+  langs:
+  - csharp
+  - vb
+  name: MapGenSettingsSO
+  nameWithType: MapGenSettingsSO
+  fullName: MoraGames.MapGen.MapGenSettingsSO
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class MapGenSettingsSO : ScriptableObject'
+    content.vb: Public Class MapGenSettingsSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize
+  id: GetActualMapSize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: GetActualMapSize()
+  nameWithType: MapGenSettingsSO.GetActualMapSize()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int GetActualMapSize()
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public Function GetActualMapSize() As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize
+  id: IncreaseMapSize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: IncreaseMapSize()
+  nameWithType: MapGenSettingsSO.IncreaseMapSize()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void IncreaseMapSize()
+    content.vb: Public Sub IncreaseMapSize()
+  overload: MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes
+  id: ResetTempSizes
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ResetTempSizes()
+  nameWithType: MapGenSettingsSO.ResetTempSizes()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void ResetTempSizes()
+    content.vb: Public Sub ResetTempSizes()
+  overload: MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes*
+- uid: MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll
+  id: DebugRandomizeAll
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: DebugRandomizeAll()
+  nameWithType: MapGenSettingsSO.DebugRandomizeAll()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void DebugRandomizeAll()
+    content.vb: Public Sub DebugRandomizeAll()
+  overload: MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll*
+- uid: MoraGames.MapGen.MapGenSettingsSO.Randomize
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.Randomize
+  id: Randomize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: Randomize()
+  nameWithType: MapGenSettingsSO.Randomize()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.Randomize()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public void Randomize()
+    content.vb: Public Sub Randomize()
+  overload: MoraGames.MapGen.MapGenSettingsSO.Randomize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString
+  id: GetSettingsInfoString
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: GetSettingsInfoString()
+  nameWithType: MapGenSettingsSO.GetSettingsInfoString()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public string GetSettingsInfoString()
+    return:
+      type: System.String
+    content.vb: Public Function GetSettingsInfoString() As String
+  overload: MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString*
+- uid: MoraGames.MapGen.MapGenSettingsSO.#ctor
+  commentId: M:MoraGames.MapGen.MapGenSettingsSO.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: MapGenSettingsSO()
+  nameWithType: MapGenSettingsSO.MapGenSettingsSO()
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MapGenSettingsSO()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public MapGenSettingsSO()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.MapGenSettingsSO.#ctor*
+  nameWithType.vb: MapGenSettingsSO.New()
+  fullName.vb: MoraGames.MapGen.MapGenSettingsSO.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+  id: ExactMapSizeSetting
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ExactMapSizeSetting
+  nameWithType: MapGenSettingsSO.ExactMapSizeSetting
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int ExactMapSizeSetting { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property ExactMapSizeSetting As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ClampArea
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ClampArea
+  id: ClampArea
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ClampArea
+  nameWithType: MapGenSettingsSO.ClampArea
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ClampArea
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool ClampArea { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ClampArea As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.ClampArea*
+- uid: MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+  id: MapPlayAreaMinMax
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: MapPlayAreaMinMax
+  nameWithType: MapGenSettingsSO.MapPlayAreaMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int MapPlayAreaMinMax { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property MapPlayAreaMinMax As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+  id: RandomMapDimensionsMinMax
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RandomMapDimensionsMinMax
+  nameWithType: MapGenSettingsSO.RandomMapDimensionsMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int RandomMapDimensionsMinMax { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property RandomMapDimensionsMinMax As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax*
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+  id: UseRandomMapSize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: UseRandomMapSize
+  nameWithType: MapGenSettingsSO.UseRandomMapSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool UseRandomMapSize { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseRandomMapSize As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+  id: SaveAdjustedSizes
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: SaveAdjustedSizes
+  nameWithType: MapGenSettingsSO.SaveAdjustedSizes
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool SaveAdjustedSizes { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SaveAdjustedSizes As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+  id: ChunkSizeMinMax
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ChunkSizeMinMax
+  nameWithType: MapGenSettingsSO.ChunkSizeMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int ChunkSizeMinMax { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property ChunkSizeMinMax As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+  id: RoomShapesPath
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RoomShapesPath
+  nameWithType: MapGenSettingsSO.RoomShapesPath
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public string RoomShapesPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RoomShapesPath As String
+  overload: MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath*
+- uid: MoraGames.MapGen.MapGenSettingsSO.MinRooms
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.MinRooms
+  id: MinRooms
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: MinRooms
+  nameWithType: MapGenSettingsSO.MinRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MinRooms
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int MinRooms { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MinRooms As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.MinRooms*
+- uid: MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+  id: MinCorridors
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: MinCorridors
+  nameWithType: MapGenSettingsSO.MinCorridors
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int MinCorridors { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MinCorridors As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.MinCorridors*
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+  id: UseExteriorCeiling
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: UseExteriorCeiling
+  nameWithType: MapGenSettingsSO.UseExteriorCeiling
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool UseExteriorCeiling { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseExteriorCeiling As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling*
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+  id: UseInteriorCeiling
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: UseInteriorCeiling
+  nameWithType: MapGenSettingsSO.UseInteriorCeiling
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool UseInteriorCeiling { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property UseInteriorCeiling As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+  id: RandomSeed
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RandomSeed
+  nameWithType: MapGenSettingsSO.RandomSeed
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int RandomSeed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RandomSeed As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.RandomSeed*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+  id: RandomizeSeed
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RandomizeSeed
+  nameWithType: MapGenSettingsSO.RandomizeSeed
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool RandomizeSeed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RandomizeSeed As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+  id: RoomCreationMode
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RoomCreationMode
+  nameWithType: MapGenSettingsSO.RoomCreationMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public RoomCreationMode RoomCreationMode { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.RoomCreationMode
+    content.vb: Public ReadOnly Property RoomCreationMode As RoomCreationMode
+  overload: MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode*
+- uid: MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+  id: AreaOptions
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: AreaOptions
+  nameWithType: MapGenSettingsSO.AreaOptions
+  fullName: MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public AreaOptionsSO AreaOptions { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.AreaOptionsSO
+    content.vb: Public ReadOnly Property AreaOptions As AreaOptionsSO
+  overload: MoraGames.MapGen.MapGenSettingsSO.AreaOptions*
+- uid: MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+  id: DirectRoutes
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: DirectRoutes
+  nameWithType: MapGenSettingsSO.DirectRoutes
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool DirectRoutes { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property DirectRoutes As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.DirectRoutes*
+- uid: MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+  id: CorridorsFillSpace
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: CorridorsFillSpace
+  nameWithType: MapGenSettingsSO.CorridorsFillSpace
+  fullName: MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool CorridorsFillSpace { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CorridorsFillSpace As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace*
+- uid: MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+  id: CFSPercent
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: CFSPercent
+  nameWithType: MapGenSettingsSO.CFSPercent
+  fullName: MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public float CFSPercent { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property CFSPercent As Single
+  overload: MoraGames.MapGen.MapGenSettingsSO.CFSPercent*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+  id: ConsolidatePaths
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ConsolidatePaths
+  nameWithType: MapGenSettingsSO.ConsolidatePaths
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool ConsolidatePaths { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ConsolidatePaths As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths*
+- uid: MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+  id: DeadEndsReductionFactor
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: DeadEndsReductionFactor
+  nameWithType: MapGenSettingsSO.DeadEndsReductionFactor
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public float DeadEndsReductionFactor { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DeadEndsReductionFactor As Single
+  overload: MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor*
+- uid: MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+  id: RemoveSmallRooms
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RemoveSmallRooms
+  nameWithType: MapGenSettingsSO.RemoveSmallRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool RemoveSmallRooms { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property RemoveSmallRooms As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms*
+- uid: MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+  id: SmallRoomSize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: SmallRoomSize
+  nameWithType: MapGenSettingsSO.SmallRoomSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int SmallRoomSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property SmallRoomSize As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+  id: SplitLargeRooms
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: SplitLargeRooms
+  nameWithType: MapGenSettingsSO.SplitLargeRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public bool SplitLargeRooms { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property SplitLargeRooms As Boolean
+  overload: MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms*
+- uid: MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+  id: LargeRoomSize
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: LargeRoomSize
+  nameWithType: MapGenSettingsSO.LargeRoomSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int LargeRoomSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LargeRoomSize As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize*
+- uid: MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+  id: NearestRoomTieThreshold
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: NearestRoomTieThreshold
+  nameWithType: MapGenSettingsSO.NearestRoomTieThreshold
+  fullName: MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public int NearestRoomTieThreshold { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NearestRoomTieThreshold As Integer
+  overload: MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+  id: ChunkRoomConnectionMode
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ChunkRoomConnectionMode
+  nameWithType: MapGenSettingsSO.ChunkRoomConnectionMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public ChunkRoomConnectionMode ChunkRoomConnectionMode { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.ChunkRoomConnectionMode
+    content.vb: Public ReadOnly Property ChunkRoomConnectionMode As ChunkRoomConnectionMode
+  overload: MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode*
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+  id: ChunkMergesMinMax
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ChunkMergesMinMax
+  nameWithType: MapGenSettingsSO.ChunkMergesMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int ChunkMergesMinMax { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public ReadOnly Property ChunkMergesMinMax As Vector2Int
+  overload: MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax*
+- uid: MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+  id: HybridChunksFactor
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: HybridChunksFactor
+  nameWithType: MapGenSettingsSO.HybridChunksFactor
+  fullName: MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public float HybridChunksFactor { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property HybridChunksFactor As Single
+  overload: MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor*
+- uid: MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+  commentId: P:MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+  id: DoorPlacementMode
+  parent: MoraGames.MapGen.MapGenSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: DoorPlacementMode
+  nameWithType: MapGenSettingsSO.DoorPlacementMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public DoorPlacementMode DoorPlacementMode { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.DoorPlacementMode
+    content.vb: Public ReadOnly Property DoorPlacementMode As DoorPlacementMode
+  overload: MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_GetActualMapSize
+  name: GetActualMapSize
+  nameWithType: MapGenSettingsSO.GetActualMapSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_IncreaseMapSize
+  name: IncreaseMapSize
+  nameWithType: MapGenSettingsSO.IncreaseMapSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize
+- uid: MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ResetTempSizes
+  name: ResetTempSizes
+  nameWithType: MapGenSettingsSO.ResetTempSizes
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes
+- uid: MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_DebugRandomizeAll
+  name: DebugRandomizeAll
+  nameWithType: MapGenSettingsSO.DebugRandomizeAll
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll
+- uid: MoraGames.MapGen.MapGenSettingsSO.Randomize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.Randomize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_Randomize
+  name: Randomize
+  nameWithType: MapGenSettingsSO.Randomize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.Randomize
+- uid: MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_GetSettingsInfoString
+  name: GetSettingsInfoString
+  nameWithType: MapGenSettingsSO.GetSettingsInfoString
+  fullName: MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MoraGames.MapGen.MapGenSettingsSO.#ctor*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO__ctor
+  name: MapGenSettingsSO
+  nameWithType: MapGenSettingsSO.MapGenSettingsSO
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MapGenSettingsSO
+  nameWithType.vb: MapGenSettingsSO.New
+  fullName.vb: MoraGames.MapGen.MapGenSettingsSO.New
+  name.vb: New
+- uid: MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ExactMapSizeSetting
+  name: ExactMapSizeSetting
+  nameWithType: MapGenSettingsSO.ExactMapSizeSetting
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ExactMapSizeSetting
+- uid: MoraGames.MapGen.MapGenSettingsSO.ClampArea*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ClampArea
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ClampArea
+  name: ClampArea
+  nameWithType: MapGenSettingsSO.ClampArea
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ClampArea
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_MapPlayAreaMinMax
+  name: MapPlayAreaMinMax
+  nameWithType: MapGenSettingsSO.MapPlayAreaMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MapPlayAreaMinMax
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RandomMapDimensionsMinMax
+  name: RandomMapDimensionsMinMax
+  nameWithType: MapGenSettingsSO.RandomMapDimensionsMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomMapDimensionsMinMax
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_UseRandomMapSize
+  name: UseRandomMapSize
+  nameWithType: MapGenSettingsSO.UseRandomMapSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseRandomMapSize
+- uid: MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_SaveAdjustedSizes
+  name: SaveAdjustedSizes
+  nameWithType: MapGenSettingsSO.SaveAdjustedSizes
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SaveAdjustedSizes
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ChunkSizeMinMax
+  name: ChunkSizeMinMax
+  nameWithType: MapGenSettingsSO.ChunkSizeMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkSizeMinMax
+- uid: MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RoomShapesPath
+  name: RoomShapesPath
+  nameWithType: MapGenSettingsSO.RoomShapesPath
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RoomShapesPath
+- uid: MoraGames.MapGen.MapGenSettingsSO.MinRooms*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.MinRooms
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_MinRooms
+  name: MinRooms
+  nameWithType: MapGenSettingsSO.MinRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MinRooms
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MoraGames.MapGen.MapGenSettingsSO.MinCorridors*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_MinCorridors
+  name: MinCorridors
+  nameWithType: MapGenSettingsSO.MinCorridors
+  fullName: MoraGames.MapGen.MapGenSettingsSO.MinCorridors
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_UseExteriorCeiling
+  name: UseExteriorCeiling
+  nameWithType: MapGenSettingsSO.UseExteriorCeiling
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseExteriorCeiling
+- uid: MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_UseInteriorCeiling
+  name: UseInteriorCeiling
+  nameWithType: MapGenSettingsSO.UseInteriorCeiling
+  fullName: MoraGames.MapGen.MapGenSettingsSO.UseInteriorCeiling
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomSeed*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RandomSeed
+  name: RandomSeed
+  nameWithType: MapGenSettingsSO.RandomSeed
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomSeed
+- uid: MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RandomizeSeed
+  name: RandomizeSeed
+  nameWithType: MapGenSettingsSO.RandomizeSeed
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RandomizeSeed
+- uid: MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RoomCreationMode
+  name: RoomCreationMode
+  nameWithType: MapGenSettingsSO.RoomCreationMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RoomCreationMode
+- uid: MoraGames.MapGen.RoomCreationMode
+  commentId: T:MoraGames.MapGen.RoomCreationMode
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.RoomCreationMode.html
+  name: RoomCreationMode
+  nameWithType: RoomCreationMode
+  fullName: MoraGames.MapGen.RoomCreationMode
+- uid: MoraGames.MapGen.MapGenSettingsSO.AreaOptions*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_AreaOptions
+  name: AreaOptions
+  nameWithType: MapGenSettingsSO.AreaOptions
+  fullName: MoraGames.MapGen.MapGenSettingsSO.AreaOptions
+- uid: MoraGames.MapGen.AreaOptionsSO
+  commentId: T:MoraGames.MapGen.AreaOptionsSO
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.AreaOptionsSO.html
+  name: AreaOptionsSO
+  nameWithType: AreaOptionsSO
+  fullName: MoraGames.MapGen.AreaOptionsSO
+- uid: MoraGames.MapGen.MapGenSettingsSO.DirectRoutes*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_DirectRoutes
+  name: DirectRoutes
+  nameWithType: MapGenSettingsSO.DirectRoutes
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DirectRoutes
+- uid: MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_CorridorsFillSpace
+  name: CorridorsFillSpace
+  nameWithType: MapGenSettingsSO.CorridorsFillSpace
+  fullName: MoraGames.MapGen.MapGenSettingsSO.CorridorsFillSpace
+- uid: MoraGames.MapGen.MapGenSettingsSO.CFSPercent*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_CFSPercent
+  name: CFSPercent
+  nameWithType: MapGenSettingsSO.CFSPercent
+  fullName: MoraGames.MapGen.MapGenSettingsSO.CFSPercent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ConsolidatePaths
+  name: ConsolidatePaths
+  nameWithType: MapGenSettingsSO.ConsolidatePaths
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ConsolidatePaths
+- uid: MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_DeadEndsReductionFactor
+  name: DeadEndsReductionFactor
+  nameWithType: MapGenSettingsSO.DeadEndsReductionFactor
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DeadEndsReductionFactor
+- uid: MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_RemoveSmallRooms
+  name: RemoveSmallRooms
+  nameWithType: MapGenSettingsSO.RemoveSmallRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.RemoveSmallRooms
+- uid: MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_SmallRoomSize
+  name: SmallRoomSize
+  nameWithType: MapGenSettingsSO.SmallRoomSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SmallRoomSize
+- uid: MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_SplitLargeRooms
+  name: SplitLargeRooms
+  nameWithType: MapGenSettingsSO.SplitLargeRooms
+  fullName: MoraGames.MapGen.MapGenSettingsSO.SplitLargeRooms
+- uid: MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_LargeRoomSize
+  name: LargeRoomSize
+  nameWithType: MapGenSettingsSO.LargeRoomSize
+  fullName: MoraGames.MapGen.MapGenSettingsSO.LargeRoomSize
+- uid: MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_NearestRoomTieThreshold
+  name: NearestRoomTieThreshold
+  nameWithType: MapGenSettingsSO.NearestRoomTieThreshold
+  fullName: MoraGames.MapGen.MapGenSettingsSO.NearestRoomTieThreshold
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ChunkRoomConnectionMode
+  name: ChunkRoomConnectionMode
+  nameWithType: MapGenSettingsSO.ChunkRoomConnectionMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkRoomConnectionMode
+- uid: MoraGames.MapGen.ChunkRoomConnectionMode
+  commentId: T:MoraGames.MapGen.ChunkRoomConnectionMode
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.ChunkRoomConnectionMode.html
+  name: ChunkRoomConnectionMode
+  nameWithType: ChunkRoomConnectionMode
+  fullName: MoraGames.MapGen.ChunkRoomConnectionMode
+- uid: MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_ChunkMergesMinMax
+  name: ChunkMergesMinMax
+  nameWithType: MapGenSettingsSO.ChunkMergesMinMax
+  fullName: MoraGames.MapGen.MapGenSettingsSO.ChunkMergesMinMax
+- uid: MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_HybridChunksFactor
+  name: HybridChunksFactor
+  nameWithType: MapGenSettingsSO.HybridChunksFactor
+  fullName: MoraGames.MapGen.MapGenSettingsSO.HybridChunksFactor
+- uid: MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode*
+  commentId: Overload:MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+  isExternal: true
+  href: MoraGames.MapGen.MapGenSettingsSO.html#MoraGames_MapGen_MapGenSettingsSO_DoorPlacementMode
+  name: DoorPlacementMode
+  nameWithType: MapGenSettingsSO.DoorPlacementMode
+  fullName: MoraGames.MapGen.MapGenSettingsSO.DoorPlacementMode
+- uid: MoraGames.MapGen.DoorPlacementMode
+  commentId: T:MoraGames.MapGen.DoorPlacementMode
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.DoorPlacementMode.html
+  name: DoorPlacementMode
+  nameWithType: DoorPlacementMode
+  fullName: MoraGames.MapGen.DoorPlacementMode

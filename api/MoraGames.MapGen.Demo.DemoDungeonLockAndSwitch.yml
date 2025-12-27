@@ -1,0 +1,329 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  commentId: T:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  id: DemoDungeonLockAndSwitch
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor
+  - MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase
+  - MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked(MoraGames.MapGen.BakedMap)
+  - MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonLockAndSwitch
+  nameWithType: DemoDungeonLockAndSwitch
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoDungeonLockAndSwitch : MonoBehaviour, IMapGenPostProcess'
+    content.vb: Public Class DemoDungeonLockAndSwitch Inherits MonoBehaviour Implements IMapGenPostProcess
+  inheritance:
+  - System.Object
+  implements:
+  - MoraGames.MapGen.IMapGenPostProcess
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked(MoraGames.MapGen.BakedMap)
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked(MoraGames.MapGen.BakedMap)
+  id: OnMapBaked(MoraGames.MapGen.BakedMap)
+  parent: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  langs:
+  - csharp
+  - vb
+  name: OnMapBaked(BakedMap)
+  nameWithType: DemoDungeonLockAndSwitch.OnMapBaked(BakedMap)
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked(MoraGames.MapGen.BakedMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  example: []
+  syntax:
+    content: public void OnMapBaked(BakedMap bakedMap)
+    parameters:
+    - id: bakedMap
+      type: MoraGames.MapGen.BakedMap
+    content.vb: Public Sub OnMapBaked(bakedMap As BakedMap)
+  overload: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked*
+  implements:
+  - MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset
+  id: Reset
+  parent: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: DemoDungeonLockAndSwitch.Reset()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset*
+  implements:
+  - MoraGames.MapGen.IMapGenPostProcess.Reset
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase
+  id: GetPhase
+  parent: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  langs:
+  - csharp
+  - vb
+  name: GetPhase()
+  nameWithType: DemoDungeonLockAndSwitch.GetPhase()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  example: []
+  syntax:
+    content: public PostProcessPhase GetPhase()
+    return:
+      type: MoraGames.MapGen.PostProcessPhase
+    content.vb: Public Function GetPhase() As PostProcessPhase
+  overload: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase*
+  implements:
+  - MoraGames.MapGen.IMapGenPostProcess.GetPhase
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonLockAndSwitch()
+  nameWithType: DemoDungeonLockAndSwitch.DemoDungeonLockAndSwitch()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.DemoDungeonLockAndSwitch()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoDungeonLockAndSwitch()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor*
+  nameWithType.vb: DemoDungeonLockAndSwitch.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.IMapGenPostProcess
+  commentId: T:MoraGames.MapGen.IMapGenPostProcess
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html
+  name: IMapGenPostProcess
+  nameWithType: IMapGenPostProcess
+  fullName: MoraGames.MapGen.IMapGenPostProcess
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.html#MoraGames_MapGen_Demo_DemoDungeonLockAndSwitch_OnMapBaked_MoraGames_MapGen_BakedMap_
+  name: OnMapBaked
+  nameWithType: DemoDungeonLockAndSwitch.OnMapBaked
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.OnMapBaked
+- uid: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_OnMapBaked_MoraGames_MapGen_BakedMap_
+  name: OnMapBaked(BakedMap)
+  nameWithType: IMapGenPostProcess.OnMapBaked(BakedMap)
+  fullName: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+  spec.csharp:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+    name: OnMapBaked
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_OnMapBaked_MoraGames_MapGen_BakedMap_
+  - name: (
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.OnMapBaked(MoraGames.MapGen.BakedMap)
+    name: OnMapBaked
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_OnMapBaked_MoraGames_MapGen_BakedMap_
+  - name: (
+  - uid: MoraGames.MapGen.BakedMap
+    name: BakedMap
+    isExternal: true
+    href: MoraGames.MapGen.BakedMap.html
+  - name: )
+- uid: MoraGames.MapGen.BakedMap
+  commentId: T:MoraGames.MapGen.BakedMap
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.BakedMap.html
+  name: BakedMap
+  nameWithType: BakedMap
+  fullName: MoraGames.MapGen.BakedMap
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.html#MoraGames_MapGen_Demo_DemoDungeonLockAndSwitch_Reset
+  name: Reset
+  nameWithType: DemoDungeonLockAndSwitch.Reset
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.Reset
+- uid: MoraGames.MapGen.IMapGenPostProcess.Reset
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.Reset
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_Reset
+  name: Reset()
+  nameWithType: IMapGenPostProcess.Reset()
+  fullName: MoraGames.MapGen.IMapGenPostProcess.Reset()
+  spec.csharp:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.Reset
+    name: Reset
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.Reset
+    name: Reset
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_Reset
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.html#MoraGames_MapGen_Demo_DemoDungeonLockAndSwitch_GetPhase
+  name: GetPhase
+  nameWithType: DemoDungeonLockAndSwitch.GetPhase
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.GetPhase
+- uid: MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  commentId: M:MoraGames.MapGen.IMapGenPostProcess.GetPhase
+  parent: MoraGames.MapGen.IMapGenPostProcess
+  isExternal: true
+  href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_GetPhase
+  name: GetPhase()
+  nameWithType: IMapGenPostProcess.GetPhase()
+  fullName: MoraGames.MapGen.IMapGenPostProcess.GetPhase()
+  spec.csharp:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.GetPhase
+    name: GetPhase
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_GetPhase
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.IMapGenPostProcess.GetPhase
+    name: GetPhase
+    isExternal: true
+    href: MoraGames.MapGen.IMapGenPostProcess.html#MoraGames_MapGen_IMapGenPostProcess_GetPhase
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.PostProcessPhase
+  commentId: T:MoraGames.MapGen.PostProcessPhase
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.PostProcessPhase.html
+  name: PostProcessPhase
+  nameWithType: PostProcessPhase
+  fullName: MoraGames.MapGen.PostProcessPhase
+- uid: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.html#MoraGames_MapGen_Demo_DemoDungeonLockAndSwitch__ctor
+  name: DemoDungeonLockAndSwitch
+  nameWithType: DemoDungeonLockAndSwitch.DemoDungeonLockAndSwitch
+  fullName: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.DemoDungeonLockAndSwitch
+  nameWithType.vb: DemoDungeonLockAndSwitch.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.New
+  name.vb: New

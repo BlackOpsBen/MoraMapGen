@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.SingleReflectionProbeVisualization
+  commentId: T:MoraGames.MapGen.SingleReflectionProbeVisualization
+  id: SingleReflectionProbeVisualization
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor
+  langs:
+  - csharp
+  - vb
+  name: SingleReflectionProbeVisualization
+  nameWithType: SingleReflectionProbeVisualization
+  fullName: MoraGames.MapGen.SingleReflectionProbeVisualization
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public class SingleReflectionProbeVisualization : MonoBehaviour'
+    content.vb: Public Class SingleReflectionProbeVisualization Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor
+  commentId: M:MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.SingleReflectionProbeVisualization
+  langs:
+  - csharp
+  - vb
+  name: SingleReflectionProbeVisualization()
+  nameWithType: SingleReflectionProbeVisualization.SingleReflectionProbeVisualization()
+  fullName: MoraGames.MapGen.SingleReflectionProbeVisualization.SingleReflectionProbeVisualization()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public SingleReflectionProbeVisualization()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor*
+  nameWithType.vb: SingleReflectionProbeVisualization.New()
+  fullName.vb: MoraGames.MapGen.SingleReflectionProbeVisualization.New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor*
+  commentId: Overload:MoraGames.MapGen.SingleReflectionProbeVisualization.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.SingleReflectionProbeVisualization.html#MoraGames_MapGen_SingleReflectionProbeVisualization__ctor
+  name: SingleReflectionProbeVisualization
+  nameWithType: SingleReflectionProbeVisualization.SingleReflectionProbeVisualization
+  fullName: MoraGames.MapGen.SingleReflectionProbeVisualization.SingleReflectionProbeVisualization
+  nameWithType.vb: SingleReflectionProbeVisualization.New
+  fullName.vb: MoraGames.MapGen.SingleReflectionProbeVisualization.New
+  name.vb: New

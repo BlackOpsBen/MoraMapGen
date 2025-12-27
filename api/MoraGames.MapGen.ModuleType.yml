@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.ModuleType
+  commentId: T:MoraGames.MapGen.ModuleType
+  id: ModuleType
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.ModuleType.ExteriorCeiling
+  - MoraGames.MapGen.ModuleType.FloorA
+  - MoraGames.MapGen.ModuleType.FloorB
+  - MoraGames.MapGen.ModuleType.InteriorCeiling
+  - MoraGames.MapGen.ModuleType.WallCornerInside
+  - MoraGames.MapGen.ModuleType.WallCornerOutside
+  - MoraGames.MapGen.ModuleType.WallStraight
+  langs:
+  - csharp
+  - vb
+  name: ModuleType
+  nameWithType: ModuleType
+  fullName: MoraGames.MapGen.ModuleType
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public enum ModuleType
+    content.vb: Public Enum ModuleType
+- uid: MoraGames.MapGen.ModuleType.FloorA
+  commentId: F:MoraGames.MapGen.ModuleType.FloorA
+  id: FloorA
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: FloorA
+  nameWithType: ModuleType.FloorA
+  fullName: MoraGames.MapGen.ModuleType.FloorA
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: FloorA = 0
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.FloorB
+  commentId: F:MoraGames.MapGen.ModuleType.FloorB
+  id: FloorB
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: FloorB
+  nameWithType: ModuleType.FloorB
+  fullName: MoraGames.MapGen.ModuleType.FloorB
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: FloorB = 1
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.WallStraight
+  commentId: F:MoraGames.MapGen.ModuleType.WallStraight
+  id: WallStraight
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: WallStraight
+  nameWithType: ModuleType.WallStraight
+  fullName: MoraGames.MapGen.ModuleType.WallStraight
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: WallStraight = 2
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.WallCornerInside
+  commentId: F:MoraGames.MapGen.ModuleType.WallCornerInside
+  id: WallCornerInside
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: WallCornerInside
+  nameWithType: ModuleType.WallCornerInside
+  fullName: MoraGames.MapGen.ModuleType.WallCornerInside
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: WallCornerInside = 3
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.WallCornerOutside
+  commentId: F:MoraGames.MapGen.ModuleType.WallCornerOutside
+  id: WallCornerOutside
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: WallCornerOutside
+  nameWithType: ModuleType.WallCornerOutside
+  fullName: MoraGames.MapGen.ModuleType.WallCornerOutside
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: WallCornerOutside = 4
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.ExteriorCeiling
+  commentId: F:MoraGames.MapGen.ModuleType.ExteriorCeiling
+  id: ExteriorCeiling
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: ExteriorCeiling
+  nameWithType: ModuleType.ExteriorCeiling
+  fullName: MoraGames.MapGen.ModuleType.ExteriorCeiling
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: ExteriorCeiling = 5
+    return:
+      type: MoraGames.MapGen.ModuleType
+- uid: MoraGames.MapGen.ModuleType.InteriorCeiling
+  commentId: F:MoraGames.MapGen.ModuleType.InteriorCeiling
+  id: InteriorCeiling
+  parent: MoraGames.MapGen.ModuleType
+  langs:
+  - csharp
+  - vb
+  name: InteriorCeiling
+  nameWithType: ModuleType.InteriorCeiling
+  fullName: MoraGames.MapGen.ModuleType.InteriorCeiling
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: InteriorCeiling = 6
+    return:
+      type: MoraGames.MapGen.ModuleType
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: MoraGames.MapGen.ModuleType
+  commentId: T:MoraGames.MapGen.ModuleType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.ModuleType.html
+  name: ModuleType
+  nameWithType: ModuleType
+  fullName: MoraGames.MapGen.ModuleType

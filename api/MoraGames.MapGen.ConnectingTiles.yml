@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.ConnectingTiles
+  commentId: T:MoraGames.MapGen.ConnectingTiles
+  id: ConnectingTiles
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.ConnectingTiles.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - MoraGames.MapGen.ConnectingTiles.endPosition
+  - MoraGames.MapGen.ConnectingTiles.offset
+  - MoraGames.MapGen.ConnectingTiles.startPosition
+  langs:
+  - csharp
+  - vb
+  name: ConnectingTiles
+  nameWithType: ConnectingTiles
+  fullName: MoraGames.MapGen.ConnectingTiles
+  type: Struct
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public struct ConnectingTiles
+    content.vb: Public Structure ConnectingTiles
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MoraGames.MapGen.ConnectingTiles.startPosition
+  commentId: F:MoraGames.MapGen.ConnectingTiles.startPosition
+  id: startPosition
+  parent: MoraGames.MapGen.ConnectingTiles
+  langs:
+  - csharp
+  - vb
+  name: startPosition
+  nameWithType: ConnectingTiles.startPosition
+  fullName: MoraGames.MapGen.ConnectingTiles.startPosition
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int startPosition
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public startPosition As Vector2Int
+- uid: MoraGames.MapGen.ConnectingTiles.endPosition
+  commentId: F:MoraGames.MapGen.ConnectingTiles.endPosition
+  id: endPosition
+  parent: MoraGames.MapGen.ConnectingTiles
+  langs:
+  - csharp
+  - vb
+  name: endPosition
+  nameWithType: ConnectingTiles.endPosition
+  fullName: MoraGames.MapGen.ConnectingTiles.endPosition
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int endPosition
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public endPosition As Vector2Int
+- uid: MoraGames.MapGen.ConnectingTiles.offset
+  commentId: F:MoraGames.MapGen.ConnectingTiles.offset
+  id: offset
+  parent: MoraGames.MapGen.ConnectingTiles
+  langs:
+  - csharp
+  - vb
+  name: offset
+  nameWithType: ConnectingTiles.offset
+  fullName: MoraGames.MapGen.ConnectingTiles.offset
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public Vector2Int offset
+    return:
+      type: UnityEngine.Vector2Int
+    content.vb: Public offset As Vector2Int
+- uid: MoraGames.MapGen.ConnectingTiles.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.ConnectingTiles.#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: '#ctor(UnityEngine.Vector2Int,UnityEngine.Vector2Int)'
+  parent: MoraGames.MapGen.ConnectingTiles
+  langs:
+  - csharp
+  - vb
+  name: ConnectingTiles(Vector2Int, Vector2Int)
+  nameWithType: ConnectingTiles.ConnectingTiles(Vector2Int, Vector2Int)
+  fullName: MoraGames.MapGen.ConnectingTiles.ConnectingTiles(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public ConnectingTiles(Vector2Int start, Vector2Int end)
+    parameters:
+    - id: start
+      type: UnityEngine.Vector2Int
+    - id: end
+      type: UnityEngine.Vector2Int
+    content.vb: Public Sub New(start As Vector2Int, [end] As Vector2Int)
+  overload: MoraGames.MapGen.ConnectingTiles.#ctor*
+  nameWithType.vb: ConnectingTiles.New(Vector2Int, Vector2Int)
+  fullName.vb: MoraGames.MapGen.ConnectingTiles.New(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  name.vb: New(Vector2Int, Vector2Int)
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.ConnectingTiles.#ctor*
+  commentId: Overload:MoraGames.MapGen.ConnectingTiles.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.ConnectingTiles.html#MoraGames_MapGen_ConnectingTiles__ctor_UnityEngine_Vector2Int_UnityEngine_Vector2Int_
+  name: ConnectingTiles
+  nameWithType: ConnectingTiles.ConnectingTiles
+  fullName: MoraGames.MapGen.ConnectingTiles.ConnectingTiles
+  nameWithType.vb: ConnectingTiles.New
+  fullName.vb: MoraGames.MapGen.ConnectingTiles.New
+  name.vb: New

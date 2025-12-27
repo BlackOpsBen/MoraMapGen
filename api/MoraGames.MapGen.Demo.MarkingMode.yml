@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.MarkingMode
+  commentId: T:MoraGames.MapGen.Demo.MarkingMode
+  id: MarkingMode
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.MarkingMode.Both
+  - MoraGames.MapGen.Demo.MarkingMode.Corridors
+  - MoraGames.MapGen.Demo.MarkingMode.Rooms
+  langs:
+  - csharp
+  - vb
+  name: MarkingMode
+  nameWithType: MarkingMode
+  fullName: MoraGames.MapGen.Demo.MarkingMode
+  type: Enum
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public enum MarkingMode
+    content.vb: Public Enum MarkingMode
+- uid: MoraGames.MapGen.Demo.MarkingMode.Rooms
+  commentId: F:MoraGames.MapGen.Demo.MarkingMode.Rooms
+  id: Rooms
+  parent: MoraGames.MapGen.Demo.MarkingMode
+  langs:
+  - csharp
+  - vb
+  name: Rooms
+  nameWithType: MarkingMode.Rooms
+  fullName: MoraGames.MapGen.Demo.MarkingMode.Rooms
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: Rooms = 0
+    return:
+      type: MoraGames.MapGen.Demo.MarkingMode
+- uid: MoraGames.MapGen.Demo.MarkingMode.Corridors
+  commentId: F:MoraGames.MapGen.Demo.MarkingMode.Corridors
+  id: Corridors
+  parent: MoraGames.MapGen.Demo.MarkingMode
+  langs:
+  - csharp
+  - vb
+  name: Corridors
+  nameWithType: MarkingMode.Corridors
+  fullName: MoraGames.MapGen.Demo.MarkingMode.Corridors
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: Corridors = 1
+    return:
+      type: MoraGames.MapGen.Demo.MarkingMode
+- uid: MoraGames.MapGen.Demo.MarkingMode.Both
+  commentId: F:MoraGames.MapGen.Demo.MarkingMode.Both
+  id: Both
+  parent: MoraGames.MapGen.Demo.MarkingMode
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: MarkingMode.Both
+  fullName: MoraGames.MapGen.Demo.MarkingMode.Both
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: Both = 2
+    return:
+      type: MoraGames.MapGen.Demo.MarkingMode
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: MoraGames.MapGen.Demo.MarkingMode
+  commentId: T:MoraGames.MapGen.Demo.MarkingMode
+  parent: MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.MapGen.Demo.MarkingMode.html
+  name: MarkingMode
+  nameWithType: MarkingMode
+  fullName: MoraGames.MapGen.Demo.MarkingMode

@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1
+  commentId: T:MoraGames.MapGen.BasePropCategoriesEditor`1
+  id: BasePropCategoriesEditor`1
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor
+  - MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable
+  - MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI
+  - MoraGames.MapGen.BasePropCategoriesEditor`1._propCategoriesUI
+  langs:
+  - csharp
+  - vb
+  name: BasePropCategoriesEditor<T>
+  nameWithType: BasePropCategoriesEditor<T>
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: 'public abstract class BasePropCategoriesEditor<T> : Editor where T : ScriptableObject'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class BasePropCategoriesEditor(Of T As ScriptableObject) Inherits Editor
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MoraGames.MapGen.AreaDefinitionsSOEditor
+  - MoraGames.MapGen.TileModuleDefinitionsSOEditor
+  nameWithType.vb: BasePropCategoriesEditor(Of T)
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T)
+  name.vb: BasePropCategoriesEditor(Of T)
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1._propCategoriesUI
+  commentId: F:MoraGames.MapGen.BasePropCategoriesEditor`1._propCategoriesUI
+  id: _propCategoriesUI
+  parent: MoraGames.MapGen.BasePropCategoriesEditor`1
+  langs:
+  - csharp
+  - vb
+  name: _propCategoriesUI
+  nameWithType: BasePropCategoriesEditor<T>._propCategoriesUI
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>._propCategoriesUI
+  type: Field
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: protected PropCategoriesEditorUI _propCategoriesUI
+    return:
+      type: MoraGames.MapGen.PropCategoriesEditorUI
+    content.vb: Protected _propCategoriesUI As PropCategoriesEditorUI
+  nameWithType.vb: BasePropCategoriesEditor(Of T)._propCategoriesUI
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T)._propCategoriesUI
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable
+  commentId: M:MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable
+  id: OnEnable
+  parent: MoraGames.MapGen.BasePropCategoriesEditor`1
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: BasePropCategoriesEditor<T>.OnEnable()
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.OnEnable()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public virtual void OnEnable()
+    content.vb: Public Overridable Sub OnEnable()
+  overload: MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable*
+  nameWithType.vb: BasePropCategoriesEditor(Of T).OnEnable()
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).OnEnable()
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI
+  commentId: M:MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: MoraGames.MapGen.BasePropCategoriesEditor`1
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: BasePropCategoriesEditor<T>.OnInspectorGUI()
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.OnInspectorGUI()
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI*
+  nameWithType.vb: BasePropCategoriesEditor(Of T).OnInspectorGUI()
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).OnInspectorGUI()
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor
+  commentId: M:MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.BasePropCategoriesEditor`1
+  langs:
+  - csharp
+  - vb
+  name: BasePropCategoriesEditor()
+  nameWithType: BasePropCategoriesEditor<T>.BasePropCategoriesEditor()
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.BasePropCategoriesEditor()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: protected BasePropCategoriesEditor()
+    content.vb: Protected Sub New()
+  overload: MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor*
+  nameWithType.vb: BasePropCategoriesEditor(Of T).New()
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).New()
+  name.vb: New()
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.PropCategoriesEditorUI
+  commentId: T:MoraGames.MapGen.PropCategoriesEditorUI
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.PropCategoriesEditorUI.html
+  name: PropCategoriesEditorUI
+  nameWithType: PropCategoriesEditorUI
+  fullName: MoraGames.MapGen.PropCategoriesEditorUI
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable*
+  commentId: Overload:MoraGames.MapGen.BasePropCategoriesEditor`1.OnEnable
+  isExternal: true
+  href: MoraGames.MapGen.BasePropCategoriesEditor-1.html#MoraGames_MapGen_BasePropCategoriesEditor_1_OnEnable
+  name: OnEnable
+  nameWithType: BasePropCategoriesEditor<T>.OnEnable
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.OnEnable
+  nameWithType.vb: BasePropCategoriesEditor(Of T).OnEnable
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).OnEnable
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI*
+  commentId: Overload:MoraGames.MapGen.BasePropCategoriesEditor`1.OnInspectorGUI
+  isExternal: true
+  href: MoraGames.MapGen.BasePropCategoriesEditor-1.html#MoraGames_MapGen_BasePropCategoriesEditor_1_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: BasePropCategoriesEditor<T>.OnInspectorGUI
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.OnInspectorGUI
+  nameWithType.vb: BasePropCategoriesEditor(Of T).OnInspectorGUI
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).OnInspectorGUI
+- uid: MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor*
+  commentId: Overload:MoraGames.MapGen.BasePropCategoriesEditor`1.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.BasePropCategoriesEditor-1.html#MoraGames_MapGen_BasePropCategoriesEditor_1__ctor
+  name: BasePropCategoriesEditor
+  nameWithType: BasePropCategoriesEditor<T>.BasePropCategoriesEditor
+  fullName: MoraGames.MapGen.BasePropCategoriesEditor<T>.BasePropCategoriesEditor
+  nameWithType.vb: BasePropCategoriesEditor(Of T).New
+  fullName.vb: MoraGames.MapGen.BasePropCategoriesEditor(Of T).New
+  name.vb: New

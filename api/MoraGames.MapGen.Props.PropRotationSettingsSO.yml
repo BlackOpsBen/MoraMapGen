@@ -1,0 +1,501 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+  commentId: T:MoraGames.MapGen.Props.PropRotationSettingsSO
+  id: PropRotationSettingsSO
+  parent: MoraGames.MapGen.Props
+  children:
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+  langs:
+  - csharp
+  - vb
+  name: PropRotationSettingsSO
+  nameWithType: PropRotationSettingsSO
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: 'public class PropRotationSettingsSO : ScriptableObject'
+    content.vb: Public Class PropRotationSettingsSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - MoraGames.MapGen.Props.PropRotationSettingsSO.MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor
+  commentId: M:MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: PropRotationSettingsSO()
+  nameWithType: PropRotationSettingsSO.PropRotationSettingsSO()
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.PropRotationSettingsSO()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropRotationSettingsSO()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor*
+  nameWithType.vb: PropRotationSettingsSO.New()
+  fullName.vb: MoraGames.MapGen.Props.PropRotationSettingsSO.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+  id: RotationOffsets
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RotationOffsets
+  nameWithType: PropRotationSettingsSO.RotationOffsets
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public PropOffsets RotationOffsets { get; }
+    parameters: []
+    return:
+      type: MoraGames.MapGen.RNG.PropOffsets
+    content.vb: Public ReadOnly Property RotationOffsets As PropOffsets
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+  id: RotationIncrement
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: RotationIncrement
+  nameWithType: PropRotationSettingsSO.RotationIncrement
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float RotationIncrement { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property RotationIncrement As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+  id: PlusOrMinus
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: PlusOrMinus
+  nameWithType: PropRotationSettingsSO.PlusOrMinus
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public Vector3 PlusOrMinus { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property PlusOrMinus As Vector3
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+  id: XMin
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: XMin
+  nameWithType: PropRotationSettingsSO.XMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float XMin { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property XMin As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.XMin*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+  id: XMax
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: XMax
+  nameWithType: PropRotationSettingsSO.XMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float XMax { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property XMax As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.XMax*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+  id: YMin
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: YMin
+  nameWithType: PropRotationSettingsSO.YMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float YMin { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property YMin As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.YMin*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+  id: YMax
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: YMax
+  nameWithType: PropRotationSettingsSO.YMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float YMax { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property YMax As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.YMax*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+  id: ZMin
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ZMin
+  nameWithType: PropRotationSettingsSO.ZMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float ZMin { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ZMin As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin*
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax
+  commentId: P:MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax
+  id: ZMax
+  parent: MoraGames.MapGen.Props.PropRotationSettingsSO
+  langs:
+  - csharp
+  - vb
+  name: ZMax
+  nameWithType: PropRotationSettingsSO.ZMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax
+  type: Property
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Props
+  syntax:
+    content: public float ZMax { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ZMax As Single
+  overload: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax*
+references:
+- uid: MoraGames.MapGen.Props
+  commentId: N:MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Props
+  nameWithType: MoraGames.MapGen.Props
+  fullName: MoraGames.MapGen.Props
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Props
+    name: Props
+    isExternal: true
+    href: MoraGames.MapGen.Props.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation
+  commentId: M:MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  parent: MoraGames.MapGen.Props.PropRotationSettingsExtensions
+  definition: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  name: GetRandomRotation(PropRotationSettingsSO)
+  nameWithType: PropRotationSettingsExtensions.GetRandomRotation(PropRotationSettingsSO)
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+    name: GetRandomRotation
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  - name: (
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+    name: PropRotationSettingsSO
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsSO.html
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+    name: GetRandomRotation
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  - name: (
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+    name: PropRotationSettingsSO
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsSO.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  commentId: M:MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  name: GetRandomRotation(PropRotationSettingsSO)
+  nameWithType: PropRotationSettingsExtensions.GetRandomRotation(PropRotationSettingsSO)
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+  spec.csharp:
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+    name: GetRandomRotation
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  - name: (
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+    name: PropRotationSettingsSO
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsSO.html
+  - name: )
+  spec.vb:
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions.GetRandomRotation(MoraGames.MapGen.Props.PropRotationSettingsSO)
+    name: GetRandomRotation
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html#MoraGames_MapGen_Props_PropRotationSettingsExtensions_GetRandomRotation_MoraGames_MapGen_Props_PropRotationSettingsSO_
+  - name: (
+  - uid: MoraGames.MapGen.Props.PropRotationSettingsSO
+    name: PropRotationSettingsSO
+    isExternal: true
+    href: MoraGames.MapGen.Props.PropRotationSettingsSO.html
+  - name: )
+- uid: MoraGames.MapGen.Props.PropRotationSettingsExtensions
+  commentId: T:MoraGames.MapGen.Props.PropRotationSettingsExtensions
+  parent: MoraGames.MapGen.Props
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsExtensions.html
+  name: PropRotationSettingsExtensions
+  nameWithType: PropRotationSettingsExtensions
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsExtensions
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO__ctor
+  name: PropRotationSettingsSO
+  nameWithType: PropRotationSettingsSO.PropRotationSettingsSO
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.PropRotationSettingsSO
+  nameWithType.vb: PropRotationSettingsSO.New
+  fullName.vb: MoraGames.MapGen.Props.PropRotationSettingsSO.New
+  name.vb: New
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_RotationOffsets
+  name: RotationOffsets
+  nameWithType: PropRotationSettingsSO.RotationOffsets
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationOffsets
+- uid: MoraGames.MapGen.RNG.PropOffsets
+  commentId: T:MoraGames.MapGen.RNG.PropOffsets
+  parent: MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.MapGen.RNG.PropOffsets.html
+  name: PropOffsets
+  nameWithType: PropOffsets
+  fullName: MoraGames.MapGen.RNG.PropOffsets
+- uid: MoraGames.MapGen.RNG
+  commentId: N:MoraGames.MapGen.RNG
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.RNG
+  nameWithType: MoraGames.MapGen.RNG
+  fullName: MoraGames.MapGen.RNG
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.RNG
+    name: RNG
+    isExternal: true
+    href: MoraGames.MapGen.RNG.html
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_RotationIncrement
+  name: RotationIncrement
+  nameWithType: PropRotationSettingsSO.RotationIncrement
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.RotationIncrement
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_PlusOrMinus
+  name: PlusOrMinus
+  nameWithType: PropRotationSettingsSO.PlusOrMinus
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.PlusOrMinus
+- uid: UnityEngine.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.XMin*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_XMin
+  name: XMin
+  nameWithType: PropRotationSettingsSO.XMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.XMin
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.XMax*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_XMax
+  name: XMax
+  nameWithType: PropRotationSettingsSO.XMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.XMax
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.YMin*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_YMin
+  name: YMin
+  nameWithType: PropRotationSettingsSO.YMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.YMin
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.YMax*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_YMax
+  name: YMax
+  nameWithType: PropRotationSettingsSO.YMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.YMax
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_ZMin
+  name: ZMin
+  nameWithType: PropRotationSettingsSO.ZMin
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin
+- uid: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax*
+  commentId: Overload:MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax
+  isExternal: true
+  href: MoraGames.MapGen.Props.PropRotationSettingsSO.html#MoraGames_MapGen_Props_PropRotationSettingsSO_ZMax
+  name: ZMax
+  nameWithType: PropRotationSettingsSO.ZMax
+  fullName: MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax

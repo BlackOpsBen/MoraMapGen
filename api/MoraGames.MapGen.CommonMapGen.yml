@@ -1,0 +1,1853 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.CommonMapGen
+  commentId: T:MoraGames.MapGen.CommonMapGen
+  id: CommonMapGen
+  parent: MoraGames.MapGen
+  children:
+  - MoraGames.MapGen.CommonMapGen.AssignIds(MoraGames.MapGen.GenMap)
+  - MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.CollapseTile(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges(MoraGames.MapGen.GenMap)
+  - MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  - MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  - MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea})
+  - MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  - MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32@)
+  - MoraGames.MapGen.CommonMapGen.GetOrthoDistance(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  - MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  - MoraGames.MapGen.CommonMapGen.GetRoomDistance(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  - MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  - MoraGames.MapGen.CommonMapGen.MakeConnectingPath(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.ConnectingTiles,MoraGames.MapGen.SearchTile)
+  - MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge(MoraGames.MapGen.GenMap,UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
+  - MoraGames.MapGen.CommonMapGen.PairCorridorsToIds(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.PairRoomsToIds(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.CommonMapGen.RemoveCorridors(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.SpawnGameObjects(MoraGames.MapGen.MoraMapGen)
+  - MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@)
+  - MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@,MoraGames.MapGen.GenArea@)
+  - MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace)
+  - MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  - MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  - MoraGames.MapGen.CommonMapGen.ValidateMap(MoraGames.MapGen.MoraMapGen)
+  langs:
+  - csharp
+  - vb
+  name: CommonMapGen
+  nameWithType: CommonMapGen
+  fullName: MoraGames.MapGen.CommonMapGen
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static class CommonMapGen
+    content.vb: Public Module CommonMapGen
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  id: CommonMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: CommonMapGenCoroutine(MoraMapGen)
+  nameWithType: CommonMapGen.CommonMapGenCoroutine(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator CommonMapGenCoroutine(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function CommonMapGenCoroutine(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine*
+- uid: MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling(MoraGames.MapGen.MoraMapGen)
+  id: CollapseExteriorCeiling(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: CollapseExteriorCeiling(MoraMapGen)
+  nameWithType: CommonMapGen.CollapseExteriorCeiling(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator CollapseExteriorCeiling(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function CollapseExteriorCeiling(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling*
+- uid: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync(MoraGames.MapGen.MoraMapGen)
+  id: CollapseRemainingTilesAsync(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: CollapseRemainingTilesAsync(MoraMapGen)
+  nameWithType: CommonMapGen.CollapseRemainingTilesAsync(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator CollapseRemainingTilesAsync(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function CollapseRemainingTilesAsync(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync*
+- uid: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync(MoraGames.MapGen.MoraMapGen)
+  id: CollapseRemainingTilesSync(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: CollapseRemainingTilesSync(MoraMapGen)
+  nameWithType: CommonMapGen.CollapseRemainingTilesSync(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void CollapseRemainingTilesSync(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    content.vb: Public Shared Sub CollapseRemainingTilesSync(context As MoraMapGen)
+  overload: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync*
+- uid: MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges(MoraGames.MapGen.GenMap)
+  commentId: M:MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges(MoraGames.MapGen.GenMap)
+  id: FindAllValidDoorEdges(MoraGames.MapGen.GenMap)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: FindAllValidDoorEdges(GenMap)
+  nameWithType: CommonMapGen.FindAllValidDoorEdges(GenMap)
+  fullName: MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges(MoraGames.MapGen.GenMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void FindAllValidDoorEdges(GenMap context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenMap
+    content.vb: Public Shared Sub FindAllValidDoorEdges(context As GenMap)
+  overload: MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges*
+- uid: MoraGames.MapGen.CommonMapGen.RemoveCorridors(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.RemoveCorridors(MoraGames.MapGen.MoraMapGen)
+  id: RemoveCorridors(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: RemoveCorridors(MoraMapGen)
+  nameWithType: CommonMapGen.RemoveCorridors(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.RemoveCorridors(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator RemoveCorridors(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function RemoveCorridors(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.CommonMapGen.RemoveCorridors*
+- uid: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace)
+  commentId: M:MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace)
+  id: UncollapseTile(MoraGames.MapGen.GenGridSpace)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: UncollapseTile(GenGridSpace)
+  nameWithType: CommonMapGen.UncollapseTile(GenGridSpace)
+  fullName: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void UncollapseTile(GenGridSpace tile)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    content.vb: Public Shared Sub UncollapseTile(tile As GenGridSpace)
+  overload: MoraGames.MapGen.CommonMapGen.UncollapseTile*
+- uid: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  id: UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: UncollapseTile(GenGridSpace, EnvType)
+  nameWithType: CommonMapGen.UncollapseTile(GenGridSpace, EnvType)
+  fullName: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void UncollapseTile(GenGridSpace tile, EnvType resetNarrowingToType)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: resetNarrowingToType
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Shared Sub UncollapseTile(tile As GenGridSpace, resetNarrowingToType As EnvType)
+  overload: MoraGames.MapGen.CommonMapGen.UncollapseTile*
+- uid: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  id: UncollapseTile(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: UncollapseTile(GenGridSpace, EnvType[])
+  nameWithType: CommonMapGen.UncollapseTile(GenGridSpace, EnvType[])
+  fullName: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void UncollapseTile(GenGridSpace tile, EnvType[] resetNarrowingToTypes)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: resetNarrowingToTypes
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Sub UncollapseTile(tile As GenGridSpace, resetNarrowingToTypes As EnvType())
+  overload: MoraGames.MapGen.CommonMapGen.UncollapseTile*
+  nameWithType.vb: CommonMapGen.UncollapseTile(GenGridSpace, EnvType())
+  fullName.vb: MoraGames.MapGen.CommonMapGen.UncollapseTile(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType())
+  name.vb: UncollapseTile(GenGridSpace, EnvType())
+- uid: MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  id: ReCollapseEdgeToType(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: ReCollapseEdgeToType(GenGridSpace, Edge, EnvType)
+  nameWithType: CommonMapGen.ReCollapseEdgeToType(GenGridSpace, Edge, EnvType)
+  fullName: MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.Edge, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void ReCollapseEdgeToType(GenGridSpace tile, Edge edge, EnvType type)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    - id: type
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Shared Sub ReCollapseEdgeToType(tile As GenGridSpace, edge As Edge, type As EnvType)
+  overload: MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType*
+- uid: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  id: ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: ReCollapseTileCompletely(GenGridSpace, EnvType[])
+  nameWithType: CommonMapGen.ReCollapseTileCompletely(GenGridSpace, EnvType[])
+  fullName: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void ReCollapseTileCompletely(GenGridSpace tile, EnvType[] pixels)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: pixels
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Sub ReCollapseTileCompletely(tile As GenGridSpace, pixels As EnvType())
+  overload: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely*
+  nameWithType.vb: CommonMapGen.ReCollapseTileCompletely(GenGridSpace, EnvType())
+  fullName.vb: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType())
+  name.vb: ReCollapseTileCompletely(GenGridSpace, EnvType())
+- uid: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  id: ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: ReCollapseTileCompletely(GenGridSpace, EnvType)
+  nameWithType: CommonMapGen.ReCollapseTileCompletely(GenGridSpace, EnvType)
+  fullName: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely(MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void ReCollapseTileCompletely(GenGridSpace tile, EnvType type)
+    parameters:
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: type
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Shared Sub ReCollapseTileCompletely(tile As GenGridSpace, type As EnvType)
+  overload: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely*
+- uid: MoraGames.MapGen.CommonMapGen.CollapseTile(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.CommonMapGen.CollapseTile(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: CollapseTile(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.RoomShapeSO,UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: CollapseTile(MoraMapGen, RoomShapeSO, Vector2Int, Vector2Int)
+  nameWithType: CommonMapGen.CollapseTile(MoraMapGen, RoomShapeSO, Vector2Int, Vector2Int)
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseTile(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.RoomShapeSO, UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static GenGridSpace CollapseTile(MoraMapGen context, RoomShapeSO roomShape, Vector2Int startingCoords, Vector2Int dimensions)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: roomShape
+      type: MoraGames.MapGen.RoomShapeSO
+    - id: startingCoords
+      type: UnityEngine.Vector2Int
+    - id: dimensions
+      type: UnityEngine.Vector2Int
+    return:
+      type: MoraGames.MapGen.GenGridSpace
+    content.vb: Public Shared Function CollapseTile(context As MoraMapGen, roomShape As RoomShapeSO, startingCoords As Vector2Int, dimensions As Vector2Int) As GenGridSpace
+  overload: MoraGames.MapGen.CommonMapGen.CollapseTile*
+- uid: MoraGames.MapGen.CommonMapGen.AssignIds(MoraGames.MapGen.GenMap)
+  commentId: M:MoraGames.MapGen.CommonMapGen.AssignIds(MoraGames.MapGen.GenMap)
+  id: AssignIds(MoraGames.MapGen.GenMap)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: AssignIds(GenMap)
+  nameWithType: CommonMapGen.AssignIds(GenMap)
+  fullName: MoraGames.MapGen.CommonMapGen.AssignIds(MoraGames.MapGen.GenMap)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void AssignIds(GenMap context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenMap
+    content.vb: Public Shared Sub AssignIds(context As GenMap)
+  overload: MoraGames.MapGen.CommonMapGen.AssignIds*
+- uid: MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom(MoraGames.MapGen.MoraMapGen)
+  id: ConnectAllRoomsRandom(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: ConnectAllRoomsRandom(MoraMapGen)
+  nameWithType: CommonMapGen.ConnectAllRoomsRandom(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static IEnumerator ConnectAllRoomsRandom(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ConnectAllRoomsRandom(context As MoraMapGen) As IEnumerator
+  overload: MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom*
+- uid: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@)
+  commentId: M:MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@)
+  id: TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: TryGetConnectingPathAstar(MoraMapGen, GenArea, GenArea, out SearchTile, out ConnectingTiles)
+  nameWithType: CommonMapGen.TryGetConnectingPathAstar(MoraMapGen, GenArea, GenArea, out SearchTile, out ConnectingTiles)
+  fullName: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.GenArea, MoraGames.MapGen.GenArea, out MoraGames.MapGen.SearchTile, out MoraGames.MapGen.ConnectingTiles)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static bool TryGetConnectingPathAstar(MoraMapGen context, GenArea roomA, GenArea roomB, out SearchTile pathEnd, out ConnectingTiles connection)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: roomA
+      type: MoraGames.MapGen.GenArea
+    - id: roomB
+      type: MoraGames.MapGen.GenArea
+    - id: pathEnd
+      type: MoraGames.MapGen.SearchTile
+    - id: connection
+      type: MoraGames.MapGen.ConnectingTiles
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryGetConnectingPathAstar(context As MoraMapGen, roomA As GenArea, roomB As GenArea, pathEnd As SearchTile, connection As ConnectingTiles) As Boolean
+  overload: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar*
+  nameWithType.vb: CommonMapGen.TryGetConnectingPathAstar(MoraMapGen, GenArea, GenArea, SearchTile, ConnectingTiles)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.GenArea, MoraGames.MapGen.GenArea, MoraGames.MapGen.SearchTile, MoraGames.MapGen.ConnectingTiles)
+  name.vb: TryGetConnectingPathAstar(MoraMapGen, GenArea, GenArea, SearchTile, ConnectingTiles)
+- uid: MoraGames.MapGen.CommonMapGen.MakeConnectingPath(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.ConnectingTiles,MoraGames.MapGen.SearchTile)
+  commentId: M:MoraGames.MapGen.CommonMapGen.MakeConnectingPath(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.ConnectingTiles,MoraGames.MapGen.SearchTile)
+  id: MakeConnectingPath(MoraGames.MapGen.MoraMapGen,MoraGames.MapGen.ConnectingTiles,MoraGames.MapGen.SearchTile)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: MakeConnectingPath(MoraMapGen, ConnectingTiles, SearchTile)
+  nameWithType: CommonMapGen.MakeConnectingPath(MoraMapGen, ConnectingTiles, SearchTile)
+  fullName: MoraGames.MapGen.CommonMapGen.MakeConnectingPath(MoraGames.MapGen.MoraMapGen, MoraGames.MapGen.ConnectingTiles, MoraGames.MapGen.SearchTile)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void MakeConnectingPath(MoraMapGen context, ConnectingTiles connection, SearchTile pathEnd)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    - id: connection
+      type: MoraGames.MapGen.ConnectingTiles
+    - id: pathEnd
+      type: MoraGames.MapGen.SearchTile
+    content.vb: Public Shared Sub MakeConnectingPath(context As MoraMapGen, connection As ConnectingTiles, pathEnd As SearchTile)
+  overload: MoraGames.MapGen.CommonMapGen.MakeConnectingPath*
+- uid: MoraGames.MapGen.CommonMapGen.SpawnGameObjects(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.SpawnGameObjects(MoraGames.MapGen.MoraMapGen)
+  id: SpawnGameObjects(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: SpawnGameObjects(MoraMapGen)
+  nameWithType: CommonMapGen.SpawnGameObjects(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.SpawnGameObjects(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void SpawnGameObjects(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    content.vb: Public Shared Sub SpawnGameObjects(context As MoraMapGen)
+  overload: MoraGames.MapGen.CommonMapGen.SpawnGameObjects*
+- uid: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  id: StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, Edge, EnvType)
+  nameWithType: CommonMapGen.StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, Edge, EnvType)
+  fullName: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary<MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[]>, MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.Edge, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void StorePixelChanges(Dictionary<GenGridSpace, EnvType[]> store, GenGridSpace tile, Edge edge, EnvType toType)
+    parameters:
+    - id: store
+      type: System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]}
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    - id: toType
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Shared Sub StorePixelChanges(store As Dictionary(Of GenGridSpace, EnvType()), tile As GenGridSpace, edge As Edge, toType As EnvType)
+  overload: MoraGames.MapGen.CommonMapGen.StorePixelChanges*
+  nameWithType.vb: CommonMapGen.StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, Edge, EnvType)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary(Of MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType()), MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.Edge, MoraGames.MapGen.EnvType)
+  name.vb: StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, Edge, EnvType)
+- uid: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  commentId: M:MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  id: StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.Corner,MoraGames.MapGen.EnvType)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, Corner, EnvType)
+  nameWithType: CommonMapGen.StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, Corner, EnvType)
+  fullName: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary<MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[]>, MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.Corner, MoraGames.MapGen.EnvType)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void StorePixelChanges(Dictionary<GenGridSpace, EnvType[]> store, GenGridSpace tile, Corner corner, EnvType toType)
+    parameters:
+    - id: store
+      type: System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]}
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: corner
+      type: MoraGames.MapGen.Corner
+    - id: toType
+      type: MoraGames.MapGen.EnvType
+    content.vb: Public Shared Sub StorePixelChanges(store As Dictionary(Of GenGridSpace, EnvType()), tile As GenGridSpace, corner As Corner, toType As EnvType)
+  overload: MoraGames.MapGen.CommonMapGen.StorePixelChanges*
+  nameWithType.vb: CommonMapGen.StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, Corner, EnvType)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary(Of MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType()), MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.Corner, MoraGames.MapGen.EnvType)
+  name.vb: StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, Corner, EnvType)
+- uid: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  commentId: M:MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  id: StorePixelChanges(System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]},MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[])
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, EnvType[])
+  nameWithType: CommonMapGen.StorePixelChanges(Dictionary<GenGridSpace, EnvType[]>, GenGridSpace, EnvType[])
+  fullName: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary<MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[]>, MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[])
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void StorePixelChanges(Dictionary<GenGridSpace, EnvType[]> store, GenGridSpace tile, EnvType[] pixels)
+    parameters:
+    - id: store
+      type: System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]}
+    - id: tile
+      type: MoraGames.MapGen.GenGridSpace
+    - id: pixels
+      type: MoraGames.MapGen.EnvType[]
+    content.vb: Public Shared Sub StorePixelChanges(store As Dictionary(Of GenGridSpace, EnvType()), tile As GenGridSpace, pixels As EnvType())
+  overload: MoraGames.MapGen.CommonMapGen.StorePixelChanges*
+  nameWithType.vb: CommonMapGen.StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, EnvType())
+  fullName.vb: MoraGames.MapGen.CommonMapGen.StorePixelChanges(System.Collections.Generic.Dictionary(Of MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType()), MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType())
+  name.vb: StorePixelChanges(Dictionary(Of GenGridSpace, EnvType()), GenGridSpace, EnvType())
+- uid: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@,MoraGames.MapGen.GenArea@)
+  commentId: M:MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@,MoraGames.MapGen.GenArea@)
+  id: TryMakeRandomValidConnection(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32,MoraGames.MapGen.SearchTile@,MoraGames.MapGen.ConnectingTiles@,MoraGames.MapGen.GenArea@)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: TryMakeRandomValidConnection(GenArea, HashSet<GenArea>, int, out SearchTile, out ConnectingTiles, out GenArea)
+  nameWithType: CommonMapGen.TryMakeRandomValidConnection(GenArea, HashSet<GenArea>, int, out SearchTile, out ConnectingTiles, out GenArea)
+  fullName: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>, int, out MoraGames.MapGen.SearchTile, out MoraGames.MapGen.ConnectingTiles, out MoraGames.MapGen.GenArea)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static bool TryMakeRandomValidConnection(GenArea context, HashSet<GenArea> validRooms, int tieThreshold, out SearchTile pathEnd, out ConnectingTiles connection, out GenArea touchedRoom)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: validRooms
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    - id: tieThreshold
+      type: System.Int32
+    - id: pathEnd
+      type: MoraGames.MapGen.SearchTile
+    - id: connection
+      type: MoraGames.MapGen.ConnectingTiles
+    - id: touchedRoom
+      type: MoraGames.MapGen.GenArea
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryMakeRandomValidConnection(context As GenArea, validRooms As HashSet(Of GenArea), tieThreshold As Integer, pathEnd As SearchTile, connection As ConnectingTiles, touchedRoom As GenArea) As Boolean
+  overload: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection*
+  nameWithType.vb: CommonMapGen.TryMakeRandomValidConnection(GenArea, HashSet(Of GenArea), Integer, SearchTile, ConnectingTiles, GenArea)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea), Integer, MoraGames.MapGen.SearchTile, MoraGames.MapGen.ConnectingTiles, MoraGames.MapGen.GenArea)
+  name.vb: TryMakeRandomValidConnection(GenArea, HashSet(Of GenArea), Integer, SearchTile, ConnectingTiles, GenArea)
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea})
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea})
+  id: GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea})
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetNearestRooms(GenArea, HashSet<GenArea>)
+  nameWithType: CommonMapGen.GetNearestRooms(GenArea, HashSet<GenArea>)
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static HashSet<GenArea> GetNearestRooms(GenArea context, HashSet<GenArea> validRooms)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: validRooms
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    return:
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    content.vb: Public Shared Function GetNearestRooms(context As GenArea, validRooms As HashSet(Of GenArea)) As HashSet(Of GenArea)
+  overload: MoraGames.MapGen.CommonMapGen.GetNearestRooms*
+  nameWithType.vb: CommonMapGen.GetNearestRooms(GenArea, HashSet(Of GenArea))
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea))
+  name.vb: GetNearestRooms(GenArea, HashSet(Of GenArea))
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32@)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32@)
+  id: GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32@)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetNearestRooms(GenArea, HashSet<GenArea>, out int)
+  nameWithType: CommonMapGen.GetNearestRooms(GenArea, HashSet<GenArea>, out int)
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>, out int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static HashSet<GenArea> GetNearestRooms(GenArea context, HashSet<GenArea> validRooms, out int distance)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: validRooms
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    - id: distance
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    content.vb: Public Shared Function GetNearestRooms(context As GenArea, validRooms As HashSet(Of GenArea), distance As Integer) As HashSet(Of GenArea)
+  overload: MoraGames.MapGen.CommonMapGen.GetNearestRooms*
+  nameWithType.vb: CommonMapGen.GetNearestRooms(GenArea, HashSet(Of GenArea), Integer)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea), Integer)
+  name.vb: GetNearestRooms(GenArea, HashSet(Of GenArea), Integer)
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  id: GetNearestRooms(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetNearestRooms(GenArea, HashSet<GenArea>, int)
+  nameWithType: CommonMapGen.GetNearestRooms(GenArea, HashSet<GenArea>, int)
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static HashSet<GenArea> GetNearestRooms(GenArea context, HashSet<GenArea> validRooms, int tieThreshold)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: validRooms
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    - id: tieThreshold
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    content.vb: Public Shared Function GetNearestRooms(context As GenArea, validRooms As HashSet(Of GenArea), tieThreshold As Integer) As HashSet(Of GenArea)
+  overload: MoraGames.MapGen.CommonMapGen.GetNearestRooms*
+  nameWithType.vb: CommonMapGen.GetNearestRooms(GenArea, HashSet(Of GenArea), Integer)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetNearestRooms(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea), Integer)
+  name.vb: GetNearestRooms(GenArea, HashSet(Of GenArea), Integer)
+- uid: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  id: GetRoomsWithinDistance(MoraGames.MapGen.GenArea,System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea},System.Int32)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetRoomsWithinDistance(GenArea, HashSet<GenArea>, int)
+  nameWithType: CommonMapGen.GetRoomsWithinDistance(GenArea, HashSet<GenArea>, int)
+  fullName: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>, int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static HashSet<GenArea> GetRoomsWithinDistance(GenArea context, HashSet<GenArea> validRooms, int distance)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: validRooms
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    - id: distance
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+    content.vb: Public Shared Function GetRoomsWithinDistance(context As GenArea, validRooms As HashSet(Of GenArea), distance As Integer) As HashSet(Of GenArea)
+  overload: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance*
+  nameWithType.vb: CommonMapGen.GetRoomsWithinDistance(GenArea, HashSet(Of GenArea), Integer)
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance(MoraGames.MapGen.GenArea, System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea), Integer)
+  name.vb: GetRoomsWithinDistance(GenArea, HashSet(Of GenArea), Integer)
+- uid: MoraGames.MapGen.CommonMapGen.GetRoomDistance(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetRoomDistance(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  id: GetRoomDistance(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetRoomDistance(GenArea, GenArea)
+  nameWithType: CommonMapGen.GetRoomDistance(GenArea, GenArea)
+  fullName: MoraGames.MapGen.CommonMapGen.GetRoomDistance(MoraGames.MapGen.GenArea, MoraGames.MapGen.GenArea)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static int GetRoomDistance(GenArea context, GenArea otherRoom)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.GenArea
+    - id: otherRoom
+      type: MoraGames.MapGen.GenArea
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetRoomDistance(context As GenArea, otherRoom As GenArea) As Integer
+  overload: MoraGames.MapGen.CommonMapGen.GetRoomDistance*
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  id: GetNearestConnectingTiles(MoraGames.MapGen.GenArea,MoraGames.MapGen.GenArea)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetNearestConnectingTiles(GenArea, GenArea)
+  nameWithType: CommonMapGen.GetNearestConnectingTiles(GenArea, GenArea)
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.GenArea, MoraGames.MapGen.GenArea)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static ConnectingTiles GetNearestConnectingTiles(GenArea startingRoom, GenArea nextRoom)
+    parameters:
+    - id: startingRoom
+      type: MoraGames.MapGen.GenArea
+    - id: nextRoom
+      type: MoraGames.MapGen.GenArea
+    return:
+      type: MoraGames.MapGen.ConnectingTiles
+    content.vb: Public Shared Function GetNearestConnectingTiles(startingRoom As GenArea, nextRoom As GenArea) As ConnectingTiles
+  overload: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles*
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  id: GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetNearestConnectingTiles(ConnectingTiles[], List<PotentialConnection>)
+  nameWithType: CommonMapGen.GetNearestConnectingTiles(ConnectingTiles[], List<PotentialConnection>)
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles[], System.Collections.Generic.List<MoraGames.MapGen.PotentialConnection>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static ConnectingTiles GetNearestConnectingTiles(ConnectingTiles[] invalidConnections, List<PotentialConnection> possibleCombos)
+    parameters:
+    - id: invalidConnections
+      type: MoraGames.MapGen.ConnectingTiles[]
+    - id: possibleCombos
+      type: System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection}
+    return:
+      type: MoraGames.MapGen.ConnectingTiles
+    content.vb: Public Shared Function GetNearestConnectingTiles(invalidConnections As ConnectingTiles(), possibleCombos As List(Of PotentialConnection)) As ConnectingTiles
+  overload: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles*
+  nameWithType.vb: CommonMapGen.GetNearestConnectingTiles(ConnectingTiles(), List(Of PotentialConnection))
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles(MoraGames.MapGen.ConnectingTiles(), System.Collections.Generic.List(Of MoraGames.MapGen.PotentialConnection))
+  name.vb: GetNearestConnectingTiles(ConnectingTiles(), List(Of PotentialConnection))
+- uid: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  id: GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles[],System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection})
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetRandomConnectingTiles(ConnectingTiles[], List<PotentialConnection>)
+  nameWithType: CommonMapGen.GetRandomConnectingTiles(ConnectingTiles[], List<PotentialConnection>)
+  fullName: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles[], System.Collections.Generic.List<MoraGames.MapGen.PotentialConnection>)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static ConnectingTiles GetRandomConnectingTiles(ConnectingTiles[] invalidConnections, List<PotentialConnection> possibleCombos)
+    parameters:
+    - id: invalidConnections
+      type: MoraGames.MapGen.ConnectingTiles[]
+    - id: possibleCombos
+      type: System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection}
+    return:
+      type: MoraGames.MapGen.ConnectingTiles
+    content.vb: Public Shared Function GetRandomConnectingTiles(invalidConnections As ConnectingTiles(), possibleCombos As List(Of PotentialConnection)) As ConnectingTiles
+  overload: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles*
+  nameWithType.vb: CommonMapGen.GetRandomConnectingTiles(ConnectingTiles(), List(Of PotentialConnection))
+  fullName.vb: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles(MoraGames.MapGen.ConnectingTiles(), System.Collections.Generic.List(Of MoraGames.MapGen.PotentialConnection))
+  name.vb: GetRandomConnectingTiles(ConnectingTiles(), List(Of PotentialConnection))
+- uid: MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge(MoraGames.MapGen.GenMap,UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
+  commentId: M:MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge(MoraGames.MapGen.GenMap,UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
+  id: NarrowDownPathEdge(MoraGames.MapGen.GenMap,UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: NarrowDownPathEdge(GenMap, Vector2Int, Edge)
+  nameWithType: CommonMapGen.NarrowDownPathEdge(GenMap, Vector2Int, Edge)
+  fullName: MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge(MoraGames.MapGen.GenMap, UnityEngine.Vector2Int, MoraGames.MapGen.Edge)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static void NarrowDownPathEdge(GenMap worldMap, Vector2Int gridPos, Edge edge)
+    parameters:
+    - id: worldMap
+      type: MoraGames.MapGen.GenMap
+    - id: gridPos
+      type: UnityEngine.Vector2Int
+    - id: edge
+      type: MoraGames.MapGen.Edge
+    content.vb: Public Shared Sub NarrowDownPathEdge(worldMap As GenMap, gridPos As Vector2Int, edge As Edge)
+  overload: MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge*
+- uid: MoraGames.MapGen.CommonMapGen.ValidateMap(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.ValidateMap(MoraGames.MapGen.MoraMapGen)
+  id: ValidateMap(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: ValidateMap(MoraMapGen)
+  nameWithType: CommonMapGen.ValidateMap(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.ValidateMap(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static bool ValidateMap(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ValidateMap(context As MoraMapGen) As Boolean
+  overload: MoraGames.MapGen.CommonMapGen.ValidateMap*
+- uid: MoraGames.MapGen.CommonMapGen.PairRoomsToIds(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.PairRoomsToIds(MoraGames.MapGen.MoraMapGen)
+  id: PairRoomsToIds(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: PairRoomsToIds(MoraMapGen)
+  nameWithType: CommonMapGen.PairRoomsToIds(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.PairRoomsToIds(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static bool PairRoomsToIds(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function PairRoomsToIds(context As MoraMapGen) As Boolean
+  overload: MoraGames.MapGen.CommonMapGen.PairRoomsToIds*
+- uid: MoraGames.MapGen.CommonMapGen.PairCorridorsToIds(MoraGames.MapGen.MoraMapGen)
+  commentId: M:MoraGames.MapGen.CommonMapGen.PairCorridorsToIds(MoraGames.MapGen.MoraMapGen)
+  id: PairCorridorsToIds(MoraGames.MapGen.MoraMapGen)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: PairCorridorsToIds(MoraMapGen)
+  nameWithType: CommonMapGen.PairCorridorsToIds(MoraMapGen)
+  fullName: MoraGames.MapGen.CommonMapGen.PairCorridorsToIds(MoraGames.MapGen.MoraMapGen)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static bool PairCorridorsToIds(MoraMapGen context)
+    parameters:
+    - id: context
+      type: MoraGames.MapGen.MoraMapGen
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function PairCorridorsToIds(context As MoraMapGen) As Boolean
+  overload: MoraGames.MapGen.CommonMapGen.PairCorridorsToIds*
+- uid: MoraGames.MapGen.CommonMapGen.GetOrthoDistance(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  commentId: M:MoraGames.MapGen.CommonMapGen.GetOrthoDistance(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  id: GetOrthoDistance(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+  parent: MoraGames.MapGen.CommonMapGen
+  langs:
+  - csharp
+  - vb
+  name: GetOrthoDistance(Vector2Int, Vector2Int)
+  nameWithType: CommonMapGen.GetOrthoDistance(Vector2Int, Vector2Int)
+  fullName: MoraGames.MapGen.CommonMapGen.GetOrthoDistance(UnityEngine.Vector2Int, UnityEngine.Vector2Int)
+  type: Method
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen
+  syntax:
+    content: public static int GetOrthoDistance(Vector2Int posA, Vector2Int posB)
+    parameters:
+    - id: posA
+      type: UnityEngine.Vector2Int
+    - id: posB
+      type: UnityEngine.Vector2Int
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetOrthoDistance(posA As Vector2Int, posB As Vector2Int) As Integer
+  overload: MoraGames.MapGen.CommonMapGen.GetOrthoDistance*
+references:
+- uid: MoraGames.MapGen
+  commentId: N:MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen
+  nameWithType: MoraGames.MapGen
+  fullName: MoraGames.MapGen
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_CommonMapGenCoroutine_MoraGames_MapGen_MoraMapGen_
+  name: CommonMapGenCoroutine
+  nameWithType: CommonMapGen.CommonMapGenCoroutine
+  fullName: MoraGames.MapGen.CommonMapGen.CommonMapGenCoroutine
+- uid: MoraGames.MapGen.MoraMapGen
+  commentId: T:MoraGames.MapGen.MoraMapGen
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.MoraMapGen.html
+  name: MoraMapGen
+  nameWithType: MoraMapGen
+  fullName: MoraGames.MapGen.MoraMapGen
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_CollapseExteriorCeiling_MoraGames_MapGen_MoraMapGen_
+  name: CollapseExteriorCeiling
+  nameWithType: CommonMapGen.CollapseExteriorCeiling
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseExteriorCeiling
+- uid: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_CollapseRemainingTilesAsync_MoraGames_MapGen_MoraMapGen_
+  name: CollapseRemainingTilesAsync
+  nameWithType: CommonMapGen.CollapseRemainingTilesAsync
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesAsync
+- uid: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_CollapseRemainingTilesSync_MoraGames_MapGen_MoraMapGen_
+  name: CollapseRemainingTilesSync
+  nameWithType: CommonMapGen.CollapseRemainingTilesSync
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseRemainingTilesSync
+- uid: MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_FindAllValidDoorEdges_MoraGames_MapGen_GenMap_
+  name: FindAllValidDoorEdges
+  nameWithType: CommonMapGen.FindAllValidDoorEdges
+  fullName: MoraGames.MapGen.CommonMapGen.FindAllValidDoorEdges
+- uid: MoraGames.MapGen.GenMap
+  commentId: T:MoraGames.MapGen.GenMap
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.GenMap.html
+  name: GenMap
+  nameWithType: GenMap
+  fullName: MoraGames.MapGen.GenMap
+- uid: MoraGames.MapGen.CommonMapGen.RemoveCorridors*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.RemoveCorridors
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_RemoveCorridors_MoraGames_MapGen_MoraMapGen_
+  name: RemoveCorridors
+  nameWithType: CommonMapGen.RemoveCorridors
+  fullName: MoraGames.MapGen.CommonMapGen.RemoveCorridors
+- uid: MoraGames.MapGen.CommonMapGen.UncollapseTile*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.UncollapseTile
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_UncollapseTile_MoraGames_MapGen_GenGridSpace_
+  name: UncollapseTile
+  nameWithType: CommonMapGen.UncollapseTile
+  fullName: MoraGames.MapGen.CommonMapGen.UncollapseTile
+- uid: MoraGames.MapGen.GenGridSpace
+  commentId: T:MoraGames.MapGen.GenGridSpace
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.GenGridSpace.html
+  name: GenGridSpace
+  nameWithType: GenGridSpace
+  fullName: MoraGames.MapGen.GenGridSpace
+- uid: MoraGames.MapGen.EnvType
+  commentId: T:MoraGames.MapGen.EnvType
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.EnvType.html
+  name: EnvType
+  nameWithType: EnvType
+  fullName: MoraGames.MapGen.EnvType
+- uid: MoraGames.MapGen.EnvType[]
+  isExternal: true
+  href: MoraGames.MapGen.EnvType.html
+  name: EnvType[]
+  nameWithType: EnvType[]
+  fullName: MoraGames.MapGen.EnvType[]
+  nameWithType.vb: EnvType()
+  fullName.vb: MoraGames.MapGen.EnvType()
+  name.vb: EnvType()
+  spec.csharp:
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: (
+  - name: )
+- uid: MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_ReCollapseEdgeToType_MoraGames_MapGen_GenGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_EnvType_
+  name: ReCollapseEdgeToType
+  nameWithType: CommonMapGen.ReCollapseEdgeToType
+  fullName: MoraGames.MapGen.CommonMapGen.ReCollapseEdgeToType
+- uid: MoraGames.MapGen.Edge
+  commentId: T:MoraGames.MapGen.Edge
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Edge.html
+  name: Edge
+  nameWithType: Edge
+  fullName: MoraGames.MapGen.Edge
+- uid: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_ReCollapseTileCompletely_MoraGames_MapGen_GenGridSpace_MoraGames_MapGen_EnvType___
+  name: ReCollapseTileCompletely
+  nameWithType: CommonMapGen.ReCollapseTileCompletely
+  fullName: MoraGames.MapGen.CommonMapGen.ReCollapseTileCompletely
+- uid: MoraGames.MapGen.CommonMapGen.CollapseTile*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.CollapseTile
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_CollapseTile_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_RoomShapeSO_UnityEngine_Vector2Int_UnityEngine_Vector2Int_
+  name: CollapseTile
+  nameWithType: CommonMapGen.CollapseTile
+  fullName: MoraGames.MapGen.CommonMapGen.CollapseTile
+- uid: MoraGames.MapGen.RoomShapeSO
+  commentId: T:MoraGames.MapGen.RoomShapeSO
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.RoomShapeSO.html
+  name: RoomShapeSO
+  nameWithType: RoomShapeSO
+  fullName: MoraGames.MapGen.RoomShapeSO
+- uid: UnityEngine.Vector2Int
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: UnityEngine.Vector2Int
+- uid: MoraGames.MapGen.CommonMapGen.AssignIds*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.AssignIds
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_AssignIds_MoraGames_MapGen_GenMap_
+  name: AssignIds
+  nameWithType: CommonMapGen.AssignIds
+  fullName: MoraGames.MapGen.CommonMapGen.AssignIds
+- uid: MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_ConnectAllRoomsRandom_MoraGames_MapGen_MoraMapGen_
+  name: ConnectAllRoomsRandom
+  nameWithType: CommonMapGen.ConnectAllRoomsRandom
+  fullName: MoraGames.MapGen.CommonMapGen.ConnectAllRoomsRandom
+- uid: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_TryGetConnectingPathAstar_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_GenArea_MoraGames_MapGen_GenArea_MoraGames_MapGen_SearchTile__MoraGames_MapGen_ConnectingTiles__
+  name: TryGetConnectingPathAstar
+  nameWithType: CommonMapGen.TryGetConnectingPathAstar
+  fullName: MoraGames.MapGen.CommonMapGen.TryGetConnectingPathAstar
+- uid: MoraGames.MapGen.GenArea
+  commentId: T:MoraGames.MapGen.GenArea
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.GenArea.html
+  name: GenArea
+  nameWithType: GenArea
+  fullName: MoraGames.MapGen.GenArea
+- uid: MoraGames.MapGen.SearchTile
+  commentId: T:MoraGames.MapGen.SearchTile
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.SearchTile.html
+  name: SearchTile
+  nameWithType: SearchTile
+  fullName: MoraGames.MapGen.SearchTile
+- uid: MoraGames.MapGen.ConnectingTiles
+  commentId: T:MoraGames.MapGen.ConnectingTiles
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.ConnectingTiles.html
+  name: ConnectingTiles
+  nameWithType: ConnectingTiles
+  fullName: MoraGames.MapGen.ConnectingTiles
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MoraGames.MapGen.CommonMapGen.MakeConnectingPath*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.MakeConnectingPath
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_MakeConnectingPath_MoraGames_MapGen_MoraMapGen_MoraGames_MapGen_ConnectingTiles_MoraGames_MapGen_SearchTile_
+  name: MakeConnectingPath
+  nameWithType: CommonMapGen.MakeConnectingPath
+  fullName: MoraGames.MapGen.CommonMapGen.MakeConnectingPath
+- uid: MoraGames.MapGen.CommonMapGen.SpawnGameObjects*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.SpawnGameObjects
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_SpawnGameObjects_MoraGames_MapGen_MoraMapGen_
+  name: SpawnGameObjects
+  nameWithType: CommonMapGen.SpawnGameObjects
+  fullName: MoraGames.MapGen.CommonMapGen.SpawnGameObjects
+- uid: MoraGames.MapGen.CommonMapGen.StorePixelChanges*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.StorePixelChanges
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_StorePixelChanges_System_Collections_Generic_Dictionary_MoraGames_MapGen_GenGridSpace_MoraGames_MapGen_EnvType____MoraGames_MapGen_GenGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_EnvType_
+  name: StorePixelChanges
+  nameWithType: CommonMapGen.StorePixelChanges
+  fullName: MoraGames.MapGen.CommonMapGen.StorePixelChanges
+- uid: System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]}
+  commentId: T:System.Collections.Generic.Dictionary{MoraGames.MapGen.GenGridSpace,MoraGames.MapGen.EnvType[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<GenGridSpace, EnvType[]>
+  nameWithType: Dictionary<GenGridSpace, EnvType[]>
+  fullName: System.Collections.Generic.Dictionary<MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType[]>
+  nameWithType.vb: Dictionary(Of GenGridSpace, EnvType())
+  fullName.vb: System.Collections.Generic.Dictionary(Of MoraGames.MapGen.GenGridSpace, MoraGames.MapGen.EnvType())
+  name.vb: Dictionary(Of GenGridSpace, EnvType())
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.GenGridSpace
+    name: GenGridSpace
+    isExternal: true
+    href: MoraGames.MapGen.GenGridSpace.html
+  - name: ','
+  - name: " "
+  - uid: MoraGames.MapGen.EnvType
+    name: EnvType
+    isExternal: true
+    href: MoraGames.MapGen.EnvType.html
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MoraGames.MapGen.Corner
+  commentId: T:MoraGames.MapGen.Corner
+  parent: MoraGames.MapGen
+  isExternal: true
+  href: MoraGames.MapGen.Corner.html
+  name: Corner
+  nameWithType: Corner
+  fullName: MoraGames.MapGen.Corner
+- uid: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_TryMakeRandomValidConnection_MoraGames_MapGen_GenArea_System_Collections_Generic_HashSet_MoraGames_MapGen_GenArea__System_Int32_MoraGames_MapGen_SearchTile__MoraGames_MapGen_ConnectingTiles__MoraGames_MapGen_GenArea__
+  name: TryMakeRandomValidConnection
+  nameWithType: CommonMapGen.TryMakeRandomValidConnection
+  fullName: MoraGames.MapGen.CommonMapGen.TryMakeRandomValidConnection
+- uid: System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+  commentId: T:System.Collections.Generic.HashSet{MoraGames.MapGen.GenArea}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<GenArea>
+  nameWithType: HashSet<GenArea>
+  fullName: System.Collections.Generic.HashSet<MoraGames.MapGen.GenArea>
+  nameWithType.vb: HashSet(Of GenArea)
+  fullName.vb: System.Collections.Generic.HashSet(Of MoraGames.MapGen.GenArea)
+  name.vb: HashSet(Of GenArea)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: MoraGames.MapGen.GenArea
+    name: GenArea
+    isExternal: true
+    href: MoraGames.MapGen.GenArea.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.GenArea
+    name: GenArea
+    isExternal: true
+    href: MoraGames.MapGen.GenArea.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestRooms*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetNearestRooms
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetNearestRooms_MoraGames_MapGen_GenArea_System_Collections_Generic_HashSet_MoraGames_MapGen_GenArea__
+  name: GetNearestRooms
+  nameWithType: CommonMapGen.GetNearestRooms
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestRooms
+- uid: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetRoomsWithinDistance_MoraGames_MapGen_GenArea_System_Collections_Generic_HashSet_MoraGames_MapGen_GenArea__System_Int32_
+  name: GetRoomsWithinDistance
+  nameWithType: CommonMapGen.GetRoomsWithinDistance
+  fullName: MoraGames.MapGen.CommonMapGen.GetRoomsWithinDistance
+- uid: MoraGames.MapGen.CommonMapGen.GetRoomDistance*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetRoomDistance
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetRoomDistance_MoraGames_MapGen_GenArea_MoraGames_MapGen_GenArea_
+  name: GetRoomDistance
+  nameWithType: CommonMapGen.GetRoomDistance
+  fullName: MoraGames.MapGen.CommonMapGen.GetRoomDistance
+- uid: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetNearestConnectingTiles_MoraGames_MapGen_GenArea_MoraGames_MapGen_GenArea_
+  name: GetNearestConnectingTiles
+  nameWithType: CommonMapGen.GetNearestConnectingTiles
+  fullName: MoraGames.MapGen.CommonMapGen.GetNearestConnectingTiles
+- uid: MoraGames.MapGen.ConnectingTiles[]
+  isExternal: true
+  href: MoraGames.MapGen.ConnectingTiles.html
+  name: ConnectingTiles[]
+  nameWithType: ConnectingTiles[]
+  fullName: MoraGames.MapGen.ConnectingTiles[]
+  nameWithType.vb: ConnectingTiles()
+  fullName.vb: MoraGames.MapGen.ConnectingTiles()
+  name.vb: ConnectingTiles()
+  spec.csharp:
+  - uid: MoraGames.MapGen.ConnectingTiles
+    name: ConnectingTiles
+    isExternal: true
+    href: MoraGames.MapGen.ConnectingTiles.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MoraGames.MapGen.ConnectingTiles
+    name: ConnectingTiles
+    isExternal: true
+    href: MoraGames.MapGen.ConnectingTiles.html
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection}
+  commentId: T:System.Collections.Generic.List{MoraGames.MapGen.PotentialConnection}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<PotentialConnection>
+  nameWithType: List<PotentialConnection>
+  fullName: System.Collections.Generic.List<MoraGames.MapGen.PotentialConnection>
+  nameWithType.vb: List(Of PotentialConnection)
+  fullName.vb: System.Collections.Generic.List(Of MoraGames.MapGen.PotentialConnection)
+  name.vb: List(Of PotentialConnection)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MoraGames.MapGen.PotentialConnection
+    name: PotentialConnection
+    isExternal: true
+    href: MoraGames.MapGen.PotentialConnection.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MoraGames.MapGen.PotentialConnection
+    name: PotentialConnection
+    isExternal: true
+    href: MoraGames.MapGen.PotentialConnection.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetRandomConnectingTiles_MoraGames_MapGen_ConnectingTiles___System_Collections_Generic_List_MoraGames_MapGen_PotentialConnection__
+  name: GetRandomConnectingTiles
+  nameWithType: CommonMapGen.GetRandomConnectingTiles
+  fullName: MoraGames.MapGen.CommonMapGen.GetRandomConnectingTiles
+- uid: MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_NarrowDownPathEdge_MoraGames_MapGen_GenMap_UnityEngine_Vector2Int_MoraGames_MapGen_Edge_
+  name: NarrowDownPathEdge
+  nameWithType: CommonMapGen.NarrowDownPathEdge
+  fullName: MoraGames.MapGen.CommonMapGen.NarrowDownPathEdge
+- uid: MoraGames.MapGen.CommonMapGen.ValidateMap*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.ValidateMap
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_ValidateMap_MoraGames_MapGen_MoraMapGen_
+  name: ValidateMap
+  nameWithType: CommonMapGen.ValidateMap
+  fullName: MoraGames.MapGen.CommonMapGen.ValidateMap
+- uid: MoraGames.MapGen.CommonMapGen.PairRoomsToIds*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.PairRoomsToIds
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_PairRoomsToIds_MoraGames_MapGen_MoraMapGen_
+  name: PairRoomsToIds
+  nameWithType: CommonMapGen.PairRoomsToIds
+  fullName: MoraGames.MapGen.CommonMapGen.PairRoomsToIds
+- uid: MoraGames.MapGen.CommonMapGen.PairCorridorsToIds*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.PairCorridorsToIds
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_PairCorridorsToIds_MoraGames_MapGen_MoraMapGen_
+  name: PairCorridorsToIds
+  nameWithType: CommonMapGen.PairCorridorsToIds
+  fullName: MoraGames.MapGen.CommonMapGen.PairCorridorsToIds
+- uid: MoraGames.MapGen.CommonMapGen.GetOrthoDistance*
+  commentId: Overload:MoraGames.MapGen.CommonMapGen.GetOrthoDistance
+  isExternal: true
+  href: MoraGames.MapGen.CommonMapGen.html#MoraGames_MapGen_CommonMapGen_GetOrthoDistance_UnityEngine_Vector2Int_UnityEngine_Vector2Int_
+  name: GetOrthoDistance
+  nameWithType: CommonMapGen.GetOrthoDistance
+  fullName: MoraGames.MapGen.CommonMapGen.GetOrthoDistance

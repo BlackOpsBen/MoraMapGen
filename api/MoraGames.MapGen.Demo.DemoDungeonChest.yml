@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: MoraGames.MapGen.Demo.DemoDungeonChest
+  commentId: T:MoraGames.MapGen.Demo.DemoDungeonChest
+  id: DemoDungeonChest
+  parent: MoraGames.MapGen.Demo
+  children:
+  - MoraGames.MapGen.Demo.DemoDungeonChest.#ctor
+  - MoraGames.MapGen.Demo.DemoDungeonChest.OnChestCollected
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonChest
+  nameWithType: DemoDungeonChest
+  fullName: MoraGames.MapGen.Demo.DemoDungeonChest
+  type: Class
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: 'public class DemoDungeonChest : MonoBehaviour'
+    content.vb: Public Class DemoDungeonChest Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MoraGames.MapGen.Demo.DemoDungeonChest.#ctor
+  commentId: M:MoraGames.MapGen.Demo.DemoDungeonChest.#ctor
+  id: '#ctor'
+  parent: MoraGames.MapGen.Demo.DemoDungeonChest
+  langs:
+  - csharp
+  - vb
+  name: DemoDungeonChest()
+  nameWithType: DemoDungeonChest.DemoDungeonChest()
+  fullName: MoraGames.MapGen.Demo.DemoDungeonChest.DemoDungeonChest()
+  type: Constructor
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public DemoDungeonChest()
+    content.vb: Public Sub New()
+  overload: MoraGames.MapGen.Demo.DemoDungeonChest.#ctor*
+  nameWithType.vb: DemoDungeonChest.New()
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonChest.New()
+  name.vb: New()
+- uid: MoraGames.MapGen.Demo.DemoDungeonChest.OnChestCollected
+  commentId: E:MoraGames.MapGen.Demo.DemoDungeonChest.OnChestCollected
+  id: OnChestCollected
+  parent: MoraGames.MapGen.Demo.DemoDungeonChest
+  langs:
+  - csharp
+  - vb
+  name: OnChestCollected
+  nameWithType: DemoDungeonChest.OnChestCollected
+  fullName: MoraGames.MapGen.Demo.DemoDungeonChest.OnChestCollected
+  type: Event
+  assemblies:
+  - MoraMapGen
+  namespace: MoraGames.MapGen.Demo
+  syntax:
+    content: public static event Action OnChestCollected
+    return:
+      type: System.Action
+    content.vb: Public Shared Event OnChestCollected As Action
+references:
+- uid: MoraGames.MapGen.Demo
+  commentId: N:MoraGames.MapGen.Demo
+  isExternal: true
+  href: MoraGames.html
+  name: MoraGames.MapGen.Demo
+  nameWithType: MoraGames.MapGen.Demo
+  fullName: MoraGames.MapGen.Demo
+  spec.csharp:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+  spec.vb:
+  - uid: MoraGames
+    name: MoraGames
+    isExternal: true
+    href: MoraGames.html
+  - name: .
+  - uid: MoraGames.MapGen
+    name: MapGen
+    isExternal: true
+    href: MoraGames.MapGen.html
+  - name: .
+  - uid: MoraGames.MapGen.Demo
+    name: Demo
+    isExternal: true
+    href: MoraGames.MapGen.Demo.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MoraGames.MapGen.Demo.DemoDungeonChest.#ctor*
+  commentId: Overload:MoraGames.MapGen.Demo.DemoDungeonChest.#ctor
+  isExternal: true
+  href: MoraGames.MapGen.Demo.DemoDungeonChest.html#MoraGames_MapGen_Demo_DemoDungeonChest__ctor
+  name: DemoDungeonChest
+  nameWithType: DemoDungeonChest.DemoDungeonChest
+  fullName: MoraGames.MapGen.Demo.DemoDungeonChest.DemoDungeonChest
+  nameWithType.vb: DemoDungeonChest.New
+  fullName.vb: MoraGames.MapGen.Demo.DemoDungeonChest.New
+  name.vb: New
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
