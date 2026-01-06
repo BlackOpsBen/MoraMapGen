@@ -10,7 +10,7 @@
       <meta name="title" content="Class BakedAreaGraphExtensions | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -113,7 +113,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_BakedAreaGraphExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class BakedAreaGraphExtensions</code></pre>
@@ -124,7 +124,8 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_GetFarthestAreas_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.GetFarthestAreas(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Nullable{MoraGames.MapGen.BakedAreaType})">GetFarthestAreas(BakedArea, BakedMap, out List&lt;BakedArea&gt;, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the area(s) that are the farthest away from this one in terms of how many areas are between them, not actual distance or grid-space distance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,22 +144,26 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>This area</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap that this area belongs to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">farthestAreas</span></td>
-        <td></td>
+        <td><p>The list of areas found that are farthest away.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">typeFilter</span></td>
-        <td></td>
+        <td><p>Optional type of area to filter for. If set to <a class="xref" href="MoraGames.MapGen.BakedAreaType.html#MoraGames_MapGen_BakedAreaType_Room">Room</a> then only the farthest rooms will be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -173,7 +178,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The number of areas between this area and the farthest area(s).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -181,7 +187,8 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_GetImmediateGraphConnections_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.GetImmediateGraphConnections(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})">GetImmediateGraphConnections(BakedArea, BakedMap, List&lt;BakedArea&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of all areas that are directly connected to this one.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,17 +207,20 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>This area</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap that this area belongs to</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">exclude</span></td>
-        <td></td>
+        <td><p>Optional list of areas to ignore and not include in the return list even if they are directly connected.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -233,7 +243,8 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)">TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List&lt;BakedArea&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a list of BakedAreas representing the areas in sequence from this area to the given area.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -290,7 +301,8 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})">TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List&lt;BakedArea&gt;, List&lt;BakedArea&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a list of BakedAreas representing the areas in sequence from this area to the given area which does not go through any of the areasToAvoid.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">

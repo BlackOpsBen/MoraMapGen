@@ -10,7 +10,7 @@
       <meta name="title" content="Advanced Settings | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../styles/docfx.css">
       <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,6 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="advanced-settings">Advanced Settings</h1>
 
+<p><img src="../../images/settings/advanced-settings.PNG" alt="Advanced Settings section of inspector"></p>
 <p>You generally will not need to use any of these settings unless you are extending this code and/or using custom sprite sheets.</p>
 <h2 id="sprite-templates-path">Sprite Templates Path</h2>
 <p>The name of the file or folder relative to the Resources folder which contains the sprites that you want to use for templates. The default value of &quot;Sprite Templates&quot; points to the folder &quot;Resources/Sprite Templates&quot;.</p>
@@ -87,8 +88,15 @@
 <h2 id="corridor-weight">Corridor Weight</h2>
 <p>When doing the WFC algorithm, tiles that represent corridors will be more likely to be selected if this value is higher. Increase this to favor more corridor space.</p>
 <h2 id="dead-end-weight">Dead End Weight</h2>
-<p>When doing the WFC algorithm, tiles that feature a &quot;dead-end&quot; of either room or corridor pixels will be more likely to be selected if this value is higher. Because of how room and corridor placement actually works, this value really only affects rooms.
-Note: If you don't ever want to see a dead-end, or any specific tile, you can just remove it from the sprite sheet.</p>
+<p>When doing the WFC algorithm, tiles that feature a &quot;dead-end&quot; of either room or corridor pixels will be more likely to be selected if this value is higher. Because of how room and corridor placement actually works, this value really only affects rooms.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you don't ever want to see a dead-end, or any specific tile, you can just remove it from the sprite sheet.*</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>*In rare situations, especially if you've severely limited the available sprites, a sprite will be generated at runtime if necessary to prevent an invalid map, in which case a dead end could still be generated.</p>
+</div>
 <h2 id="corridor-pixel-color">Corridor Pixel Color</h2>
 <p>The color of the pixels representing corridors on your sprite templates. Defaults to a specific color value. Only change this if you're using custom sprite templates.</p>
 <h2 id="room-pixel-color">Room Pixel Color</h2>
@@ -104,7 +112,7 @@ Note: If you don't ever want to see a dead-end, or any specific tile, you can ju
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/inspector-reference/advanced-settings.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/inspector-reference/advanced-settings.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Reflection Probe Placement | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Reflection Probe Placement | MoraMapGen ">
+    
+    
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="MoraMapGen">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="reflection-probe-placement">Reflection Probe Placement</h1>
+
+<p>While you could just use the prop placement system to place probes around your level, it wouldn’t be ideal, as the probes would just have arbitrary sizes. As an added convenience you can use the Reflection Probe Placement component which dynamically sizes the probes based on where they are placed in the generated map. The component script is located in the Scripts/PostProcesses/Reflection Probe Placement folder:</p>
+<p><img src="/images/post-processes/ReflectionProbePlacementScript.png" alt="Reflection Probe Placement script location within Assets"></p>
+<h2 id="setting-up-reflection-probe-placement">Setting up Reflection Probe Placement</h2>
+<p>Add the Reflection Probe Placement component to the same GameObject as your MoraMapGen component. This component implements the IMapGenPostProcess interface which the MapGen process will trigger at the specified Post-Process Phase.</p>
+<p><img src="/images/post-processes/ReflectionProbePlacementInspector.png" alt="Reflection Probe Placement inspector"></p>
+<h3 id="post-process-phase">Post Process Phase</h3>
+<p>Specify what phase of the post-process step the Reflection Probe Placement happens. (See <a href="create-your-own-mapgen-post-processes.html">Create Your Own MapGen Post-Processes</a> to learn more about Post Process Phases.)</p>
+<h3 id="reflection-probe-prefab">Reflection Probe Prefab</h3>
+<p>The prefab to place, which must  include a Reflection Probe component at the root level.</p>
+<h3 id="y-offset">Y Offset</h3>
+<p>The Y position offset from the ground to apply when spawning the prefab.</p>
+<h3 id="place-on">Place On</h3>
+<p>Specify what type of Prop Spots to place probes on.</p>
+<h3 id="prop-channel">Prop Channel</h3>
+<p>(Only shown if On Prop Spot is enabled in Place On.)
+Specify the Prop Channel to determine which Prop Spots probes should be placed on.</p>
+<h2 id="visualizing-reflection-probe-placement">Visualizing Reflection Probe Placement</h2>
+<p>If you select the generated “Reflection Probes” GameObject in the hierarchy, which is a child of your MoraMapGen GameObject, you can see a visualization of where reflection probes and their bounds are in the Scene view:</p>
+<p><img src="/images/post-processes/ReflectionProbeVisualization.png" alt="Visualization of all reflection probes"></p>
+<p>If you select one of the child probe instances, you can see a visualization of just that probe:</p>
+<p><img src="/images/post-processes/ReflectionProbeVisualizationSingle.png" alt="Visualization of one reflection probe"></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/post-processes/reflection-probe-placement.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

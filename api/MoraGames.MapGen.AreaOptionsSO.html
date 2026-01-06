@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AreaOptionsSO | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="The list of areas that can be used in the map, grouped by required/optional and unique/common.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_AreaOptionsSO" data-uid="MoraGames.MapGen.AreaOptionsSO" class="text-break">Class AreaOptionsSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The list of areas that can be used in the map, grouped by required/optional and unique/common.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -89,7 +90,7 @@
     <div class="level1"><span class="xref">AreaOptionsSO</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_AreaOptionsSO_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AreaOptionsSO : ScriptableObject</code></pre>
@@ -111,7 +112,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_DefaultCorridor" data-uid="MoraGames.MapGen.AreaOptionsSO.DefaultCorridor">DefaultCorridor</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The default AreaDefinitionSO asset to use for corridors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -132,10 +134,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_AreaOptionsSO_DefaultCorridor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default corridor is automatically used as one of the optional common corridors.</p>
+</div>
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_DefaultRoom" data-uid="MoraGames.MapGen.AreaOptionsSO.DefaultRoom">DefaultRoom</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The default AreaDefinitionSO asset to use for rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,10 +162,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_AreaOptionsSO_DefaultRoom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default room is automatically used as one of the optional common rooms. The default room's &quot; exterior ceiling&quot; determines the exterior ceiling for the outer boundary of the map.</p>
+</div>
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_OptionalCommonCorridors" data-uid="MoraGames.MapGen.AreaOptionsSO.OptionalCommonCorridors">OptionalCommonCorridors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map may have any number of each of these corridors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,7 +193,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_OptionalCommonRooms" data-uid="MoraGames.MapGen.AreaOptionsSO.OptionalCommonRooms">OptionalCommonRooms</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map may have any number of each of these rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +218,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_OptionalUniqueCorridors" data-uid="MoraGames.MapGen.AreaOptionsSO.OptionalUniqueCorridors">OptionalUniqueCorridors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map may have up to 1 of each of these corridors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +243,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_OptionalUniqueRooms" data-uid="MoraGames.MapGen.AreaOptionsSO.OptionalUniqueRooms">OptionalUniqueRooms</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map may have up to 1 of each of these rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -255,7 +268,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_RequiredUniqueCorridors" data-uid="MoraGames.MapGen.AreaOptionsSO.RequiredUniqueCorridors">RequiredUniqueCorridors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map MUST have exactly 1 of each of these corridors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,7 +293,8 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_RequiredUniqueRooms" data-uid="MoraGames.MapGen.AreaOptionsSO.RequiredUniqueRooms">RequiredUniqueRooms</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Map MUST have exactly 1 of each of these rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,11 +318,12 @@
 
 
   <h4 id="MoraGames_MapGen_AreaOptionsSO_TileModuleEdgeSize" data-uid="MoraGames.MapGen.AreaOptionsSO.TileModuleEdgeSize">TileModuleEdgeSize</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The width and depth (x and z size) of your tile module meshes in Unity units.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int TileModuleEdgeSize</code></pre>
+    <pre><code class="lang-csharp hljs">public float TileModuleEdgeSize</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -319,7 +335,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>

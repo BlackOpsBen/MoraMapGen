@@ -10,7 +10,7 @@
       <meta name="title" content="Tile Module Definitions | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../styles/docfx.css">
       <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="tile-module-definitions">Tile Module Definitions</h1>
 
-<p>A Tile Module Definitions asset defines which prefabs are used to construct the tiles that make up the map. See Create Module prefabs.</p>
+<p>A Tile Module Definitions asset defines which prefabs are used to construct the tiles that make up the map. See <a href="../complete_setup.html#7-create-module-prefabs">Create Module prefabs</a> for more info.</p>
 <p>For each of the module prefab categories, you can specify as many prefabs as you want, and they will be randomly selected when spawning objects. This adds visual variation to your maps.</p>
 <h2 id="creating-a-tile-module-definitions-asset">Creating a Tile Module Definitions asset</h2>
 <p>To create a new Tile Module Definitions asset, right click in your Project Assets and select “Create/MoraMapGen/Tile Module Definition.”</p>
@@ -89,7 +89,34 @@
 <h3 id="floor-a">Floor A</h3>
 <p>Used where the sprite templates have room pixels (red by default) and wall pixels (blue by default). Eg: Main floor in rooms, and under walls in rooms and corridors.</p>
 <h3 id="floor-b">Floor B</h3>
-<p>Used where the sprite templates have corridor pixels (black by default), Eg: Main paths in corridors and the entrances of rooms.</p>
+<p>Used where the sprite templates have corridor pixels (black by default), Eg: Main paths in corridors and the entrances of rooms.
+<img src="../../images/concepts/Room_Pixels.png" alt="Sprite template room floor pixels">
+<img src="../../images/concepts/Corridor_Pixels.png" alt="Sprite template corridor floor pixels"></p>
+<h3 id="walls-straight">Walls Straight</h3>
+<p>Specify the straight wall prefabs. Used for straight wall segments.
+<img src="../../images/concepts/module-wall-straight.png" alt="Wall Straight module example"></p>
+<h3 id="walls-corner-inside">Walls Corner Inside</h3>
+<p>Specify the inside corner wall prefabs. These are the convex corners, like when rounding a corner in a hallway.
+<img src="../../images/concepts/module-wall-corner-inside.png" alt="Wall Corner Inside module example"></p>
+<h3 id="walls-corner-outside">Walls Corner Outside</h3>
+<p>Specify the outside corner wall prefabs. These are the concave corners, like the corner of a room.
+<img src="../../images/concepts/module-wall-corner-outside.png" alt="Wall Corner Outside module example"></p>
+<h3 id="exterior-ceiling">Exterior Ceiling</h3>
+<p>Specify the exterior ceiling prefabs. These are visible from above and outside the rooms/corridors. Used when &quot;Use Exterior Ceiling&quot; is enabled.
+<img src="../../images/concepts/module-exterior-ceiling.png" alt="Exterior Ceiling module example"></p>
+<h3 id="interior-ceiling">Interior Ceiling</h3>
+<p>Specify the interior ceiling prefabs. These are visible from inside the rooms/corridors. Used when &quot;Use Interior Ceiling&quot; is enabled.
+<img src="../../images/concepts/module-interior-ceiling.png" alt="Interior Ceiling module example"></p>
+<h3 id="whole-doors">Whole Doors</h3>
+<p>Specify the door prefabs you want to use when using the Whole Door placement mode. This should include the door frame and the opening/animating and/or logical components of your doors.
+The entire door (frame + panel) is a single prefab in this mode.</p>
+<h3 id="half-door-frames">Half Door Frames</h3>
+<p>Specify the prefabs of just one side of the door frame to use when using the Half-Frame door placement mode. This should NOT include the opening portion of the door—just the static frame.
+This allows each side of the door to use a different style matching the room or corridor it belongs to.</p>
+<h3 id="half-door-panels">Half Door Panels</h3>
+<p>This is the prefab for the opening portion of your doors for use when using the Half-Frame door placement mode. This includes the actual door panel(s) and any opening/animation logic.</p>
+<h3 id="prop-categories">Prop Categories</h3>
+<p>Tile Module-wide prop placement settings. Use this to define general props that should appear with these tile modules across all rooms and corridors that use them. See <a href="../post-processes/prop-placement/prop-categories.html">Prop Categories</a> for descriptions of each category.</p>
 
 </article>
           </div>
@@ -99,7 +126,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/concepts/tile-module-definitions.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/concepts/tile-module-definitions.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

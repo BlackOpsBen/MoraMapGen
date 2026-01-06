@@ -10,7 +10,7 @@
       <meta name="title" content="Class PropPlacement | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -90,13 +90,13 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="MoraGames.MapGen.Props.IMapGenPropPlacement.html">IMapGenPropPlacement</a></div>
+    <div><a class="xref" href="MoraGames.MapGen.Advanced.IMapGenPostProcess.html">IMapGenPostProcess</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a>.<a class="xref" href="MoraGames.MapGen.Props.html">Props</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_Props_PropPlacement_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PropPlacement : MonoBehaviour, IMapGenPropPlacement</code></pre>
+    <pre><code class="lang-csharp hljs">public class PropPlacement : MonoBehaviour, IMapGenPostProcess</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -272,13 +272,41 @@
   </table>
 
 
-  <a id="MoraGames_MapGen_Props_PropPlacement_OnPropPlacementPhase_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnPropPlacementPhase*"></a>
-  <h4 id="MoraGames_MapGen_Props_PropPlacement_OnPropPlacementPhase_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnPropPlacementPhase(MoraGames.MapGen.BakedMap)">OnPropPlacementPhase(BakedMap)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="MoraGames_MapGen_Props_PropPlacement_GetPhase_" data-uid="MoraGames.MapGen.Props.PropPlacement.GetPhase*"></a>
+  <h4 id="MoraGames_MapGen_Props_PropPlacement_GetPhase" data-uid="MoraGames.MapGen.Props.PropPlacement.GetPhase">GetPhase()</h4>
+  <div class="markdown level1 summary"><p>Gets the phase during which this post-processor should execute.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OnPropPlacementPhase(BakedMap bakedMap)</code></pre>
+    <pre><code class="lang-csharp hljs">public PostProcessPhase GetPhase()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MoraGames.MapGen.Advanced.PostProcessPhase.html">PostProcessPhase</a></td>
+        <td><p>The PostProcessPhase when this processor runs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MoraGames_MapGen_Props_PropPlacement_OnMapBaked_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnMapBaked*"></a>
+  <h4 id="MoraGames_MapGen_Props_PropPlacement_OnMapBaked_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnMapBaked(MoraGames.MapGen.BakedMap)">OnMapBaked(BakedMap)</h4>
+  <div class="markdown level1 summary"><p>Called when the map has been baked and is ready for post-processing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMapBaked(BakedMap bakedMap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -293,7 +321,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">bakedMap</span></td>
-        <td></td>
+        <td><p>The finalized BakedMap to process.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +330,8 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_Reset_" data-uid="MoraGames.MapGen.Props.PropPlacement.Reset*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_Reset" data-uid="MoraGames.MapGen.Props.PropPlacement.Reset">Reset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when the map is cleared to reset the post-processor's state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -309,7 +339,7 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="MoraGames.MapGen.Props.IMapGenPropPlacement.html">IMapGenPropPlacement</a>
+      <a class="xref" href="MoraGames.MapGen.Advanced.IMapGenPostProcess.html">IMapGenPostProcess</a>
   </div>
 
 </article>

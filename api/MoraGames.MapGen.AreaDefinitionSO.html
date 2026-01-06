@@ -10,7 +10,7 @@
       <meta name="title" content="Class AreaDefinitionSO | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -89,7 +89,7 @@
     <div class="level1"><span class="xref">AreaDefinitionSO</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_AreaDefinitionSO_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AreaDefinitionSO : ScriptableObject</code></pre>
@@ -128,8 +128,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Props.PropCategories.html">PropCategories</a></td>
-        <td></td>
+        <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropCategories.html">PropCategories</a></td>
+        <td><p>The groups of props that could/should be placed in this area. (Required/Optional, Unique/Common)</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -137,7 +138,8 @@
 
   <a id="MoraGames_MapGen_AreaDefinitionSO_PropDensity_" data-uid="MoraGames.MapGen.AreaDefinitionSO.PropDensity*"></a>
   <h4 id="MoraGames_MapGen_AreaDefinitionSO_PropDensity" data-uid="MoraGames.MapGen.AreaDefinitionSO.PropDensity">PropDensity</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A value between 0 and 1 representing a multiplier for how likely props are to be spawned in this area.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -179,7 +181,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.TileModuleDefinitionsSO.html">TileModuleDefinitionsSO</a></td>
-        <td></td>
+        <td><p>A ScriptableObject asset that defines what modules and additional props to be used to skin an area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -189,7 +192,8 @@
 
   <a id="MoraGames_MapGen_AreaDefinitionSO_GetPropChannelDensity_" data-uid="MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity*"></a>
   <h4 id="MoraGames_MapGen_AreaDefinitionSO_GetPropChannelDensity_MoraGames_MapGen_Props_PropChannelSO_" data-uid="MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)">GetPropChannelDensity(PropChannelSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the prop-density multiplier for a specific prop channel in this area.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +212,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Props.PropChannelSO.html">PropChannelSO</a></td>
         <td><span class="parametername">channel</span></td>
-        <td></td>
+        <td><p>The prop channel to look up.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -223,7 +228,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>The multiplier assigned to <code class="paramref">channel</code>; returns 1.0 if the channel has no override.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class MoraMapGen | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="Main MonoBehaviour component for generating procedural grid-based dungeon maps.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_MoraMapGen" data-uid="MoraGames.MapGen.MoraMapGen" class="text-break">Class MoraMapGen</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Main MonoBehaviour component for generating procedural grid-based dungeon maps.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -89,11 +90,15 @@
     <div class="level1"><span class="xref">MoraMapGen</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_MoraMapGen_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MoraMapGen : MonoBehaviour</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MoraMapGen_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Attach this component to a GameObject to generate procedural dungeon maps at runtime or in the editor.
+Maps consist of rooms and corridors arranged on a grid, with automatic prop placement and navmesh generation.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -135,7 +140,8 @@
 
 
   <h4 id="MoraGames_MapGen_MoraMapGen_GenerationSucceeded" data-uid="MoraGames.MapGen.MoraMapGen.GenerationSucceeded">GenerationSucceeded</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the most recent map generation attempt succeeded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,14 +182,16 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.MapGenSettingsSO.html">MapGenSettingsSO</a></td>
-        <td></td>
+        <td><p>The settings asset that defines map generation parameters.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <h4 id="MoraGames_MapGen_MoraMapGen_MapObjects" data-uid="MoraGames.MapGen.MoraMapGen.MapObjects">MapObjects</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>All of the root GameObjects of the tiles that make up the map.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +215,8 @@
 
 
   <h4 id="MoraGames_MapGen_MoraMapGen_OnBakedMapReady" data-uid="MoraGames.MapGen.MoraMapGen.OnBakedMapReady">OnBakedMapReady</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event invoked when map generation completes and the BakedMap is ready for use.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,7 +356,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
-        <td></td>
+        <td><p>The baked representation of the generated map data containing rooms, corridors, and grid spaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -371,8 +381,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.GenMap.html">GenMap</a></td>
-        <td></td>
+        <td><span class="xref">GenMap</span></td>
+        <td><p>The internal map representation used during generation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -397,7 +408,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>Whether to automatically generate the map when Awake is called on this component in Play Mode.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -422,7 +434,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if the map has been generated and baked; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -446,8 +459,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.IMapGenStrategy.html">IMapGenStrategy</a></td>
-        <td></td>
+        <td><span class="xref">IMapGenStrategy</span></td>
+        <td><p>The generation strategy currently in use (Random, Chunks, or Hybrid).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -471,8 +485,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.MapTileManager.html">MapTileManager</a></td>
-        <td></td>
+        <td><span class="xref">MapTileManager</span></td>
+        <td><p>Manages tile module instantiation and placement.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -497,7 +512,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The random seed used for the current or most recent map generation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -592,7 +608,8 @@
 
   <a id="MoraGames_MapGen_MoraMapGen_ClearMap_" data-uid="MoraGames.MapGen.MoraMapGen.ClearMap*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_ClearMap" data-uid="MoraGames.MapGen.MoraMapGen.ClearMap">ClearMap()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Completely resets and deletes the current map.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,25 +626,35 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if there was a map to clear; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_MoraMapGen_ClearMap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Destroys all map GameObjects, clears the NavMesh, and resets all post-processors.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MoraMapGen_GenerateMap_" data-uid="MoraGames.MapGen.MoraMapGen.GenerateMap*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_GenerateMap" data-uid="MoraGames.MapGen.MoraMapGen.GenerateMap">GenerateMap()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a new map using the random seed from the settings asset.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void GenerateMap()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MoraMapGen_GenerateMap_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Clears any existing map before generating a new one.
+The seed is determined by the MapGenSettings asset.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MoraMapGen_GenerateMap_" data-uid="MoraGames.MapGen.MoraMapGen.GenerateMap*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_GenerateMap_System_Int32_" data-uid="MoraGames.MapGen.MoraMapGen.GenerateMap(System.Int32)">GenerateMap(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a new map using the provided random seed value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -646,15 +673,21 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">seed</span></td>
-        <td></td>
+        <td><p>The random seed to use for map generation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_MoraMapGen_GenerateMap_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Clears any existing map before generating a new one.
+This overrides the seed settings in the MapGenSettings asset.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MoraMapGen_Log_" data-uid="MoraGames.MapGen.MoraMapGen.Log*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_Log_System_String_" data-uid="MoraGames.MapGen.MoraMapGen.Log(System.String)">Log(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs a message to the console if ShowLogs is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -673,7 +706,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message to log.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -681,7 +715,8 @@
 
   <a id="MoraGames_MapGen_MoraMapGen_Log_" data-uid="MoraGames.MapGen.MoraMapGen.Log*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_Log_System_String_UnityEngine_Object_" data-uid="MoraGames.MapGen.MoraMapGen.Log(System.String,UnityEngine.Object)">Log(string, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs a message to the console with context if ShowLogs is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -700,12 +735,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message to log.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Object</span></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The Unity Object to associate with the log message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -713,7 +750,8 @@
 
   <a id="MoraGames_MapGen_MoraMapGen_LogWarning_" data-uid="MoraGames.MapGen.MoraMapGen.LogWarning*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_LogWarning_System_String_" data-uid="MoraGames.MapGen.MoraMapGen.LogWarning(System.String)">LogWarning(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs a warning message to the console if ShowLogs is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -732,7 +770,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The warning message to log.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -740,7 +779,8 @@
 
   <a id="MoraGames_MapGen_MoraMapGen_LogWarning_" data-uid="MoraGames.MapGen.MoraMapGen.LogWarning*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_LogWarning_System_String_UnityEngine_Object_" data-uid="MoraGames.MapGen.MoraMapGen.LogWarning(System.String,UnityEngine.Object)">LogWarning(string, Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs a warning message to the console with context if ShowLogs is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -759,12 +799,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The warning message to log.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Object</span></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The Unity Object to associate with the warning message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -772,22 +814,32 @@
 
   <a id="MoraGames_MapGen_MoraMapGen_OnMapGenCoroutineDone_" data-uid="MoraGames.MapGen.MoraMapGen.OnMapGenCoroutineDone*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_OnMapGenCoroutineDone" data-uid="MoraGames.MapGen.MoraMapGen.OnMapGenCoroutineDone">OnMapGenCoroutineDone()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when the map generation coroutine completes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnMapGenCoroutineDone()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MoraMapGen_OnMapGenCoroutineDone_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Handles baking the map, executing post-processors, building the NavMesh, and validating navigability.
+Invokes the OnBakedMapReady event when finished.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MoraMapGen_OnMapValidated_" data-uid="MoraGames.MapGen.MoraMapGen.OnMapValidated*"></a>
   <h4 id="MoraGames_MapGen_MoraMapGen_OnMapValidated" data-uid="MoraGames.MapGen.MoraMapGen.OnMapValidated">OnMapValidated()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Called when a map passes validation during the validation loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void OnMapValidated()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MoraMapGen_OnMapValidated_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Increments the validation counter and logs the total number of validations.
+Only used when ValidateMapsLoop is enabled.</p>
+</div>
 
 </article>
           </div>

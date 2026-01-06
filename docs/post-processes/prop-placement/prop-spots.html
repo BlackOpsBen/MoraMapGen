@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Prop Spots | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Prop Spots | MoraMapGen ">
+    
+    
+      <link rel="shortcut icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../../styles/docfx.css">
+      <link rel="stylesheet" href="../../../styles/main.css">
+      <meta property="docfx:navrel" content="../../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.svg" alt="MoraMapGen">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="prop-spots">Prop Spots</h1>
+
+<p><img src="../../../images/post-processes/IconPropSpot.png" alt="Prop Spot icon"></p>
+<p>The PropSpot component determines where props can be placed on your modules. You can add as many of these as you need.
+When a prop is placed on a Prop Spot, the props pivot point will be aligned with that of the Prop Spot. If the Prop Spot is rotated, the prop will be too.</p>
+<p><img src="/images/post-processes/PropSpotExamples.png" alt="Prop Spot examples"></p>
+<p>In this example “Wall Straight” module, I’ve placed four Prop Spots:</p>
+<ul>
+<li>At the base of the wall on the floor using the “Wall Floor” Prop Channel</li>
+<li>At the top of the wall at the ceiling using the “Wall Ceiling” channel</li>
+<li>At the center of the wall using the “Wall Center” channel for props that should be mounted directly to the center of the wall</li>
+<li>Another at the center of the wall using the “Wall” channel which has placement variances which allow a prop to be placed anywhere on the wall surface.</li>
+</ul>
+<h2 id="defining-a-prop-spot">Defining a Prop Spot</h2>
+<p>When you first add a Prop Spot component to your prefab, it will look like this:</p>
+<p><img src="/images/post-processes/PropSpotInspector.png" alt="Prop Spot inspector"></p>
+<h3 id="prop-channel">Prop Channel</h3>
+<p>Specify which Prop Channel this Prop Spot uses. Only props that use the same channel will be placed on this Prop Spot.</p>
+<h3 id="placement-variance-offsets">Placement Variance Offsets</h3>
+<p>By default a prop will be placed perfectly aligned with the Transform of the PropSpot. If you want to allow random offsets, you can adjust the allowable deviation in all 3 axes.
+The offsets are represented by Vector2s, with the first component (X) being the maximum negative offset in the corresponding axis, and the second component (Y) being the maximum positive offset.
+For example, if the X Offset is set to (-1.5, 1.5) then the prop may be offset on its x-axis by anywhere between -1.5 and 1.5 units.
+When you edit these values, the inspector will change accordingly, revealing new options:</p>
+<p><img src="/images/post-processes/PropSpotInspectorExample.png" alt="Prop Spot inspector with offsets"></p>
+<h3 id="mode">Mode</h3>
+<p>Selects which random number generation method to use:</p>
+<ul>
+<li><h4 id="uniform">Uniform</h4>
+</li>
+</ul>
+<p>A random number where all possible results are equally likely to occur.</p>
+<ul>
+<li><h4 id="normal">Normal</h4>
+</li>
+</ul>
+<p>A normal distribution weighted toward the center like a bell curve, where values in the middle are much more likely, and values near the extremes are very unlikely.
+<strong>Spread Factor</strong> controls how tightly clustered around the center the results can be. A lower number decreases the spread. 0 is the same as having no spread at all. A higher number flattens the curve. A value of 1 is basically Uniform, and higher values start to make the extremes the most likely results.</p>
+<ul>
+<li><h4 id="biased">Biased</h4>
+</li>
+</ul>
+<p>A sort of exponential weighted distribution where values on one end of the range are most likely, and the opposite end are very unlikely.
+<strong>Bias Strength</strong> controls how tightly the results tend toward the weighted extreme. A value of 0 is the same as Uniform, and the higher the value, the more likely the weighted extreme becomes, and values become less likely the further away they are.
+<strong>Flip Bias</strong> reverses the distribution so the other end is the more likely result.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-spots.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

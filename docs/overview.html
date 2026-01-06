@@ -10,7 +10,7 @@
       <meta name="title" content="Overview | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -99,11 +99,11 @@ A set of sprites defines all the possible options of room and corridor pieces.</
 <img src="../images/overview/Example_Perspective.PNG" alt="Example perspective view"></p>
 <p>The generation process follows these steps:</p>
 <ol>
-<li>WFC Algorithm: Generates a 2D layout using sprite templates.</li>
-<li>Area Assignment: Assigns Area Definitions to rooms and corridors.</li>
-<li>Module Spawning: Places 3D module prefabs (walls, floors, ceilings, and doors.)</li>
-<li>Prop Placement: Spawns decorative and functional prop prefabs.</li>
-<li>Baking: Creates the BakedMap data structure for runtime access.</li>
+<li><strong>WFC Algorithm</strong>: Generates a 2D layout using sprite templates.</li>
+<li><strong>Area Assignment</strong>: Assigns Area Definitions to rooms and corridors.</li>
+<li><strong>Module Spawning</strong>: Places 3D module prefabs (walls, floors, ceilings, and doors.)</li>
+<li><strong>Map Baking</strong>: Creates the BakedMap data structure for runtime access.</li>
+<li><strong>Post-Processes</strong>: Things such as prop placement and navmesh baking happen. (See <a href="post-processes.html">Mapgen Post-Processes</a>)</li>
 </ol>
 <h2 id="file-structure">File Structure</h2>
 <p><img src="../images/overview/File_Structure_Main.png" alt="File structure in assets folder"></p>
@@ -114,8 +114,8 @@ A set of sprites defines all the possible options of room and corridor pieces.</
 <h3 id="resources">Resources</h3>
 <p>Contains a sprite sheet that is used to determine the possible tile templates for generating rooms and corridors. You can edit the sprite sheet to add or remove tiles to suit your needs.</p>
 <h3 id="scripts">Scripts</h3>
-<p>Contains all of the code for this asset. One of the only scripts you will need to use is &quot;MoraMapGen&quot; which is a Monobehaviour that you add to your scene.
-<img src="../images/overview/File_Structure_Scripts.png" alt="Scripts folder file structure"></p>
+<p>Contains all of the code for this asset. One of the only scripts you will need to use is &quot;MoraMapGen&quot; which is a Monobehaviour that you add to your scene.</p>
+<p><img src="../images/overview/File_Structure_Scripts.png" alt="Scripts folder file structure"></p>
 <h3 id="tests">Tests</h3>
 <p>Contains Unit Tests that can be run via the Test Runner window to validate the generation system.</p>
 <h2 id="object-structure">Object Structure</h2>
@@ -127,7 +127,7 @@ MoraMapGen component &gt; Settings asset &gt; Area Options asset &gt; Area Defin
 <h3 id="after-generation">After Generation:</h3>
 <p>The system &quot;bakes&quot; the map into a BakedMap for efficient runtime access.</p>
 <h3 id="runtime-access">Runtime Access:</h3>
-<p>Use MoraMapGen.BakedMap to access rooms, corridors, waypoints, and more.</p>
+<p>Use <a class="xref" href="../api/MoraGames.MapGen.MoraMapGen.html#MoraGames_MapGen_MoraMapGen_BakedMap">MoraMapGen.BakedMap</a> to access rooms, corridors, waypoints, and more. You can either access it via reference to the MoraMapGen component, or receive it when it is ready by adding a listener to <a class="xref" href="../api/MoraGames.MapGen.MoraMapGen.html#MoraGames_MapGen_MoraMapGen_OnBakedMapReady">MoraMapGen.OnBakedMapReady</a></p>
 
 </article>
           </div>
@@ -137,7 +137,7 @@ MoraMapGen component &gt; Settings asset &gt; Area Options asset &gt; Area Defin
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/overview.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/overview.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

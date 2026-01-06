@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class MapGenSettingsSO | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="ScriptableObject asset defining all parameters for procedural map generation.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_MapGenSettingsSO" data-uid="MoraGames.MapGen.MapGenSettingsSO" class="text-break">Class MapGenSettingsSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>ScriptableObject asset defining all parameters for procedural map generation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -89,11 +90,15 @@
     <div class="level1"><span class="xref">MapGenSettingsSO</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_MapGenSettingsSO_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MapGenSettingsSO : ScriptableObject</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MapGenSettingsSO_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Configure map size, room creation mode, corridor design, randomness, and other
+generation parameters through this asset. Create via Assets &gt; Create &gt; MoraMapGen &gt; Map Gen Settings Asset.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -203,7 +208,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.ChunkRoomConnectionMode.html">ChunkRoomConnectionMode</a></td>
+        <td><span class="xref">ChunkRoomConnectionMode</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -378,7 +383,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.DoorPlacementMode.html">DoorPlacementMode</a></td>
+        <td><span class="xref">DoorPlacementMode</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -404,7 +409,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2Int</span></td>
-        <td></td>
+        <td><p>The exact map size in tiles when UseRandomMapSize is false.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -678,7 +684,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.RoomCreationMode.html">RoomCreationMode</a></td>
+        <td><span class="xref">RoomCreationMode</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -864,17 +870,22 @@
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_DebugRandomizeAll_" data-uid="MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_DebugRandomizeAll" data-uid="MoraGames.MapGen.MapGenSettingsSO.DebugRandomizeAll">DebugRandomizeAll()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Randomizes all generation settings for testing and variety.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void DebugRandomizeAll()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MapGenSettingsSO_DebugRandomizeAll_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Used for debug/testing purposes. Only called when the debug option is enabled.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_GetActualMapSize_" data-uid="MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_GetActualMapSize" data-uid="MoraGames.MapGen.MapGenSettingsSO.GetActualMapSize">GetActualMapSize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the actual map size to use for generation based on current settings.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -891,7 +902,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2Int</span></td>
-        <td></td>
+        <td><p>Map dimensions in tiles, including the border.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -899,7 +911,8 @@
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_GetSettingsInfoString_" data-uid="MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_GetSettingsInfoString" data-uid="MoraGames.MapGen.MapGenSettingsSO.GetSettingsInfoString">GetSettingsInfoString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a formatted string containing all current settings for logging/debugging.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -916,7 +929,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>Multi-line string with all setting values.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -924,32 +938,47 @@
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_IncreaseMapSize_" data-uid="MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_IncreaseMapSize" data-uid="MoraGames.MapGen.MapGenSettingsSO.IncreaseMapSize">IncreaseMapSize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Increases map size settings when generation fails due to insufficient space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void IncreaseMapSize()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MapGenSettingsSO_IncreaseMapSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Called automatically during generation retries. If SaveAdjustedSizes is true,
+the settings asset will be modified to prevent future failures.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_Randomize_" data-uid="MoraGames.MapGen.MapGenSettingsSO.Randomize*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_Randomize" data-uid="MoraGames.MapGen.MapGenSettingsSO.Randomize">Randomize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Randomizes settings that have randomization enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Randomize()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MapGenSettingsSO_Randomize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only randomizes values with their corresponding randomization toggle enabled.
+Called before each map generation.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_MapGenSettingsSO_ResetTempSizes_" data-uid="MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes*"></a>
   <h4 id="MoraGames_MapGen_MapGenSettingsSO_ResetTempSizes" data-uid="MoraGames.MapGen.MapGenSettingsSO.ResetTempSizes">ResetTempSizes()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resets temporary size values to their configured defaults.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetTempSizes()</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_MapGenSettingsSO_ResetTempSizes_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Called at the start of generation to ensure size adjustments from previous
+attempts don't carry over unless SaveAdjustedSizes is enabled.</p>
+</div>
 
 </article>
           </div>

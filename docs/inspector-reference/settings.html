@@ -10,7 +10,7 @@
       <meta name="title" content="Settings | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../styles/docfx.css">
       <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -116,7 +116,7 @@ Example: If you set X to 10 and Y to 15, your map could be anywhere from 10x10 t
 <h4 id="random">Random</h4>
 <p>This mode uses WFC to randomly place tiles, and some post-processing to fine-tune and clean-up the final layout. Rooms will be all sorts of shapes and sizes.</p>
 <h4 id="chunks">Chunks</h4>
-<p>This mode divides the map into a grid of &quot;chunks&quot; and places specific room shapes that you define using Room Shape ScriptableObject assets. For more info, see Room Shapes.</p>
+<p>This mode divides the map into a grid of &quot;chunks&quot; and places specific room shapes that you define using Room Shape ScriptableObject assets. See <a href="../concepts/room-shapes.html">Room Shapes</a> for more info.</p>
 <h4 id="hybrid">Hybrid</h4>
 <p>This mode combines both Random and Chunks modes with the Hybrid Chunks Factor setting determining the bias towards each mode.</p>
 <h3 id="random-room-settings">Random Room Settings</h3>
@@ -135,8 +135,11 @@ This adds variation to corridor layouts by allowing connections to rooms that ar
 <p>The tile count at which a room is considered to be &quot;Small.&quot; Only used if &quot;Remove Small Rooms&quot; is enabled.
 Example: If set to 2, rooms that are only 1 or 2 tiles in size will be removed.</p>
 <h4 id="split-large-rooms">Split Large Rooms</h4>
-<p>If this is checked on, rooms that are made up of a number of tiles equal to or greater than the &quot;Large Room Size&quot; will be split as many times as it takes to retain as much of the room area as possible without any of the remaining rooms being larger than the &quot;Large Room Size&quot; minus one.
-Note: Large Room splitting happens before removal of small rooms, so if a split results in a small room, that room will be removed.</p>
+<p>If this is checked on, rooms that are made up of a number of tiles equal to or greater than the &quot;Large Room Size&quot; will be split as many times as it takes to retain as much of the room area as possible without any of the remaining rooms being larger than the &quot;Large Room Size&quot; minus one.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Large Room splitting happens before removal of small rooms, so if a split results in a small room, that room will be removed.</p>
+</div>
 <h4 id="large-room-size">Large Room Size</h4>
 <p>The tile count at which a room is considered to be &quot;Large.&quot; Only used if &quot;Split Large Rooms&quot; is enabled.
 Example: If set to 15, rooms that are made of at least 15 tiles will be split into 2 rooms. If any of the resulting rooms are still considered to be &quot;Large,&quot; they will be split.</p>
@@ -177,9 +180,12 @@ This mode exposes all of the relevant settings of both the Random and Chunks roo
 <p>Determines what percentage of empty tiles should become corridors in addition to the ones required to connect the rooms.</p>
 <ul>
 <li>0 is the same as unchecking “Corridors Fill Space”</li>
-<li>1 means 100% will be filled.
-Note: Sometimes, due to tile placement rules, some areas will have to remain empty even at 100%.</li>
+<li>1 means 100% will be filled.</li>
 </ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Sometimes, due to tile placement rules, some areas will have to remain empty even at 100%.</p>
+</div>
 <h4 id="consolidate-paths">Consolidate Paths</h4>
 <p>When pathfinding to connect rooms:</p>
 <ul>
@@ -203,6 +209,7 @@ Dead-ends will be removed by connecting them to adjacent rooms or corridors if p
 <h5 id="half-frames">Half Frames</h5>
 <p>The &quot;Half Door Frames&quot; and &quot;Half Door Panels&quot; prefabs defined in your Tile Module Definitions assets will be used. This setting allows each side of the door to match the style of the corridor or room, creating asymmetric doorways.</p>
 <h3 id="unity-events">Unity Events</h3>
+<p><img src="../../images/settings/unity-events.PNG" alt="Unity Events section"></p>
 <h4 id="on-baked-map-ready-bakedmap">On Baked Map Ready (BakedMap)</h4>
 <p>Called at runtime when the BakedMap is ready to use. Passes the BakedMap object.</p>
 
@@ -214,7 +221,7 @@ Dead-ends will be removed by connecting them to adjacent rooms or corridors if p
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/inspector-reference/settings.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/inspector-reference/settings.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

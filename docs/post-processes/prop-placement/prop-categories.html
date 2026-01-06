@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Prop Categories | MoraMapGen </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Prop Categories | MoraMapGen ">
+    
+    
+      <link rel="shortcut icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../../styles/docfx.css">
+      <link rel="stylesheet" href="../../../styles/main.css">
+      <meta property="docfx:navrel" content="../../../toc.html">
+      <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/logo.svg" alt="MoraMapGen">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="prop-categories">Prop Categories</h1>
+
+<p>Prop Categories are located on <a href="../../concepts/area-definitions.html">Area Definitions</a> and <a href="../../concepts/tile-module-definitions.html">Tile Module Definitions</a>. Props assigned in Area Definitions can spawn only in rooms and corridors that use that Area Definition. Props assigned in Tile Module Definitions can spawn in any rooms and corridors whose Area Definition uses the respective Tile Module Definitions.</p>
+<p><img src="/images/post-processes/Prop-Categories.png" alt="Prop Categories inspector"></p>
+<h2 id="defining-prop-categories">Defining Prop Categories</h2>
+<h3 id="required-unique-props">Required Unique Props</h3>
+<p>Exactly 1 of each of these prop definitions will be placed in the area.</p>
+<h3 id="required-common-props">Required Common Props</h3>
+<p>At least 1 of each of these prop definitions will be placed in the area.</p>
+<h3 id="optional-unique-props">Optional Unique Props</h3>
+<p>At most 1 of each of these props definitions will be placed in the area.</p>
+<h3 id="optional-common-props">Optional Common Props</h3>
+<p>Any number (0+) of each of these props definitions will be placed in the area.</p>
+<h3 id="always-spawn-props">Always Spawn Props</h3>
+<p>This category functions differently from the other categories. Prop Density is ignored. Each entry is like a layer with its own list of possible props. Each entry/layer is assigned a placement type, and will do a weighted random selection of one of its prefab options for each Prop Spot and Procedural Prop Spot in the area that matches the placement type, regardless of whether the spot was already used for another prop from another category. It will still respect the overlap threshold though.
+Example: If you want a light to be placed at each room corner, and you have 3 different light options, you can guarantee that each room corner will have 1 of the 3 light options.</p>
+<h2 id="defining-props">Defining Props</h2>
+<p>Each entry in a list defines a prop and how/where it can be placed. Each category generally uses the same settings, but note that the Required Unique props do not have “weight” as they are each spawned exactly once, whereas the other categories use weight to affect their chance of being spawned.</p>
+<h3 id="prefab">Prefab</h3>
+<p>The prefab that will be spawned.</p>
+<h3 id="placement">Placement</h3>
+<p>Specify where this prop can be placed from a list which includes <a href="prop-spots.html">Prop Spots</a>, or any of the <a href="prop-categories.html">Procedural Prop Spots</a>.</p>
+<h3 id="prop-channel">Prop Channel</h3>
+<p>(Only shown if On Prop Spot is enabled in Placement)
+Specify a <a href="prop-channels.html">Prop Channel</a> to determine which <a href="prop-spots.html">Prop Spots</a> are valid for use by this prop.</p>
+<h3 id="procedural-offsets-override">Procedural Offsets Override</h3>
+<p>(Only shown if any of the <a href="procedural-prop-spots.html">Procedural Prop Spots</a> are enabled in Placement)
+Specify a <a href="procedural-prop-spot-offsets.html">Procedural Prop Spot Offsets SO</a> asset to use instead of the default one assigned on the <a href="prop-placement-component.html">Prop Placement component</a>, which defines how this prop’s positional placement on a Procedural Prop Spot can deviate.</p>
+<h3 id="rotation-settings">Rotation Settings</h3>
+<p>Specify a <a href="prop-rotation-settings.html">Prop Rotation Settings SO</a> asset to allow the prop to be rotated in place after positioned. The rotation will be relative to the prefab’s root, unless the prefab has any <a href="prop-anchor-override.html">Prop Anchor Overrides</a>.</p>
+<h3 id="weight">Weight</h3>
+<p>Affects how likely this prop is to be spawned. During prop placement, when a prop is being selected to go on a spot, all of the valid options are added to a list and selected based on weight. The higher the weight relative to the other options, the more likely a prop is to be selected.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-categories.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

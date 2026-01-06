@@ -10,7 +10,7 @@
       <meta name="title" content="Area Options | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="shortcut icon" href="../../images/favicon.ico">
       <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../../styles/docfx.css">
       <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -90,7 +90,7 @@ At a minimum, you must specify the Default Room and Default Corridor. They can s
 <p>This is where you specify the length in Unity units of each of your module prefab meshes. Each module should be the same dimensions and they should be square in the X and Z axes, but can be whatever Y height you want.
 Example: If your wall and floor prefabs are 4×4 Unity units when viewed from above, set this to 4.</p>
 <h3 id="required-unique-rooms">Required Unique Rooms</h3>
-<p>Exactly 1 of each of these rooms will be generated/assigned. When using the Chunks Room Creation Mode, the system will try to make at least enough chunks to support these rooms. If your map size is too small and/or min chunk size is too large, there may not be enough space for the required number of chunks.</p>
+<p>Exactly 1 of each of these rooms will be generated/assigned. When using the <a href="../inspector-reference/settings.html#chunk-room-connection-mode">Chunks Room Creation Mode</a>, the system will try to make at least enough chunks to support these rooms. If your map size is too small and/or min chunk size is too large, there may not be enough space for the required number of chunks.</p>
 <h3 id="optional-unique-rooms">Optional Unique Rooms</h3>
 <p>Up to 1 of each of these rooms may be generated/assigned. These rooms will be among the options to be assigned to each area, but are not guaranteed to be selected at all.</p>
 <h3 id="optional-common-rooms">Optional Common Rooms</h3>
@@ -102,8 +102,11 @@ Example: If your wall and floor prefabs are 4×4 Unity units when viewed from ab
 <h3 id="optional-common-corridors">Optional Common Corridors</h3>
 <p>Any number of each of these may be generated/assigned (including 0.)</p>
 <h3 id="default-room">Default Room</h3>
-<p>This is the fallback default room definition used when there aren't any optional rooms available or not enough required rooms to fill all room spaces.
-Important: The Default Room's Tile Module Definitions also determine the exterior ceiling for the outer boundary of the map.</p>
+<p>This is the fallback default room definition used when there aren't any optional rooms available or not enough required rooms to fill all room spaces.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Default Room's Tile Module Definitions also determine the exterior ceiling for the outer boundary of the map.</p>
+</div>
 <h3 id="default-corridor">Default Corridor</h3>
 <p>This is the fallback default corridor definition used when there aren't any optional corridors available or not enough required corridors to fill all corridor spaces.</p>
 
@@ -115,7 +118,7 @@ Important: The Default Room's Tile Module Definitions also determine the exterio
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/concepts/area-options.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/concepts/area-options.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

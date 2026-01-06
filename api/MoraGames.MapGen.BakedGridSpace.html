@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BakedGridSpace | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="Represents a single tile in the generated map grid.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_BakedGridSpace" data-uid="MoraGames.MapGen.BakedGridSpace" class="text-break">Class BakedGridSpace</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a single tile in the generated map grid.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -113,18 +114,24 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_BakedGridSpace_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BakedGridSpace</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_BakedGridSpace_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>BakedGridSpace provides access to the tile's position, environment types,
+associated GameObject, and door information. Each grid space is subdivided
+into 9 &quot;pixels&quot; (center + 4 edges + 4 corners of the sprite used as a blueprint/template for this grid space).</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
 
   <a id="MoraGames_MapGen_BakedGridSpace__ctor_" data-uid="MoraGames.MapGen.BakedGridSpace.#ctor*"></a>
-  <h4 id="MoraGames_MapGen_BakedGridSpace__ctor_MoraGames_MapGen_GenGridSpace_UnityEngine_Vector3_UnityEngine_GameObject___" data-uid="MoraGames.MapGen.BakedGridSpace.#ctor(MoraGames.MapGen.GenGridSpace,UnityEngine.Vector3,UnityEngine.GameObject[])">BakedGridSpace(GenGridSpace, Vector3, GameObject[])</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedGridSpace__ctor_MoraGames_MapGen_Internal_GenGridSpace_UnityEngine_Vector3_UnityEngine_GameObject___" data-uid="MoraGames.MapGen.BakedGridSpace.#ctor(MoraGames.MapGen.Internal.GenGridSpace,UnityEngine.Vector3,UnityEngine.GameObject[])">BakedGridSpace(GenGridSpace, Vector3, GameObject[])</h4>
+  <div class="markdown level1 summary"><p>Constructs a new BakedGridSpace from generated tile data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -141,19 +148,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.GenGridSpace.html">GenGridSpace</a></td>
+        <td><span class="xref">GenGridSpace</span></td>
         <td><span class="parametername">tile</span></td>
-        <td></td>
+        <td><p>The internal GenGridSpace data to bake.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">centerWorldPosition</span></td>
-        <td></td>
+        <td><p>The world position at the center of the tile.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">GameObject</span>[]</td>
         <td><span class="parametername">doorObjects</span></td>
-        <td></td>
+        <td><p>GameObjects representing doors at this position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +189,8 @@
     <tbody>
       <tr>
         <td><span class="xref">GameObject</span>[]</td>
-        <td></td>
+        <td><p>GameObjects representing doors at this grid space.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,7 +214,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>The string representation of this grid space's position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -230,7 +242,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></td>
-        <td></td>
+        <td><p>The EnvType at the center of this tile (Room, Corridor, or Wall).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,7 +268,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>The world position at the center of this tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -279,8 +293,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a>[]</td>
-        <td></td>
+        <td><span class="xref">Edge</span>[]</td>
+        <td><p>Edges where doors are located on this tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -305,7 +320,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2Int</span></td>
-        <td></td>
+        <td><p>The position of this grid space in grid coordinates.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +346,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if this tile contains any doors; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -355,7 +372,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</td>
-        <td></td>
+        <td><p>Array of 9 EnvTypes representing the center, edges, and corners of this tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -380,7 +398,8 @@
     <tbody>
       <tr>
         <td><span class="xref">GameObject</span></td>
-        <td></td>
+        <td><p>The root GameObject for this tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -390,7 +409,8 @@
 
   <a id="MoraGames_MapGen_BakedGridSpace_GetArea_" data-uid="MoraGames.MapGen.BakedGridSpace.GetArea*"></a>
   <h4 id="MoraGames_MapGen_BakedGridSpace_GetArea_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.BakedGridSpace.GetArea(MoraGames.MapGen.BakedMap)">GetArea(BakedMap)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedArea that contains this grid space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +429,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap this grid space belongs to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -424,7 +445,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea containing this grid space.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -432,7 +454,8 @@
 
   <a id="MoraGames_MapGen_BakedGridSpace_GetDoorPosition_" data-uid="MoraGames.MapGen.BakedGridSpace.GetDoorPosition*"></a>
   <h4 id="MoraGames_MapGen_BakedGridSpace_GetDoorPosition_MoraGames_MapGen_BakedMap_System_Int32_" data-uid="MoraGames.MapGen.BakedGridSpace.GetDoorPosition(MoraGames.MapGen.BakedMap,System.Int32)">GetDoorPosition(BakedMap, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the world position of a door at the specified index.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -451,12 +474,14 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap this grid space belongs to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">doorIndex</span></td>
-        <td></td>
+        <td><p>The index of the door (0 to DoorEdges.Length-1).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -471,15 +496,17 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>The world position of the door.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedGridSpace_GetEdgeType_" data-uid="MoraGames.MapGen.BakedGridSpace.GetEdgeType*"></a>
-  <h4 id="MoraGames_MapGen_BakedGridSpace_GetEdgeType_MoraGames_MapGen_Edge_" data-uid="MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Edge)">GetEdgeType(Edge)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedGridSpace_GetEdgeType_MoraGames_MapGen_Internal_Edge_" data-uid="MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Internal.Edge)">GetEdgeType(Edge)</h4>
+  <div class="markdown level1 summary"><p>Gets the EnvType of the specified edge.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -496,9 +523,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></td>
+        <td><span class="xref">Edge</span></td>
         <td><span class="parametername">edge</span></td>
-        <td></td>
+        <td><p>The edge to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -513,7 +541,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></td>
-        <td></td>
+        <td><p>The EnvType at that edge (Room, Corridor, or Wall).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -521,7 +550,8 @@
 
   <a id="MoraGames_MapGen_BakedGridSpace_GetEdgesByCenterType_" data-uid="MoraGames.MapGen.BakedGridSpace.GetEdgesByCenterType*"></a>
   <h4 id="MoraGames_MapGen_BakedGridSpace_GetEdgesByCenterType_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.BakedGridSpace.GetEdgesByCenterType(MoraGames.MapGen.EnvType)">GetEdgesByCenterType(EnvType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all edges of this tile that match the specified EnvType.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -540,7 +570,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></td>
         <td><span class="parametername">desiredType</span></td>
-        <td></td>
+        <td><p>The EnvType to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -554,8 +585,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a>[]</td>
-        <td></td>
+        <td><span class="xref">Edge</span>[]</td>
+        <td><p>Array of edges matching the desired type.</p>
+</td>
       </tr>
     </tbody>
   </table>

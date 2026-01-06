@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BakedMap | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="Represents the finalized, runtime-accessible structure of a generated map.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_BakedMap" data-uid="MoraGames.MapGen.BakedMap" class="text-break">Class BakedMap</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents the finalized, runtime-accessible structure of a generated map.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -113,18 +114,24 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_BakedMap_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BakedMap</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_BakedMap_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>BakedMap provides a high-level interface for querying rooms, corridors, grid spaces,
+and navigational data after map generation completes. Use this class to interact with
+the generated map at runtime for gameplay logic, AI navigation, and prop placement.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
 
   <a id="MoraGames_MapGen_BakedMap__ctor_" data-uid="MoraGames.MapGen.BakedMap.#ctor*"></a>
   <h4 id="MoraGames_MapGen_BakedMap__ctor_MoraGames_MapGen_MoraMapGen_" data-uid="MoraGames.MapGen.BakedMap.#ctor(MoraGames.MapGen.MoraMapGen)">BakedMap(MoraMapGen)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a new BakedMap from the generated map data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,10 +150,15 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.MoraMapGen.html">MoraMapGen</a></td>
         <td><span class="parametername">mapManager</span></td>
-        <td></td>
+        <td><p>The MoraMapGen component that generated the map.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_BakedMap__ctor_MoraGames_MapGen_MoraMapGen__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This constructor bakes the GenMap data into a runtime-friendly structure,
+including grid spaces, rooms, corridors, and waypoints.</p>
+</div>
   <h3 id="properties">Properties
 </h3>
 
@@ -170,7 +182,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
-        <td></td>
+        <td><p>All BakedAreas representing corridors in the map.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -195,7 +208,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2Int</span></td>
-        <td></td>
+        <td><p>The dimensions of the map grid in tile units.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,7 +234,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The total number of grid spaces in the map.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,7 +243,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_Item_" data-uid="MoraGames.MapGen.BakedMap.Item*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_Item_System_Int32_System_Int32_" data-uid="MoraGames.MapGen.BakedMap.Item(System.Int32,System.Int32)">this[int, int]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedGridSpace at the specified grid coordinates.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -247,12 +263,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">x</span></td>
-        <td></td>
+        <td><p>The x coordinate in grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">y</span></td>
-        <td></td>
+        <td><p>The y coordinate in grid space.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,7 +285,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The BakedGridSpace at the given coordinates.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -275,7 +294,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_Item_" data-uid="MoraGames.MapGen.BakedMap.Item*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_Item_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.BakedMap.Item(UnityEngine.Vector2Int)">this[Vector2Int]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedGridSpace at the specified grid position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -294,7 +314,8 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">position</span></td>
-        <td></td>
+        <td><p>The grid position to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -309,7 +330,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The BakedGridSpace at the given position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -334,7 +356,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.MoraMapGen.html">MoraMapGen</a></td>
-        <td></td>
+        <td><p>The MoraMapGen component that generated this BakedMap.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,7 +382,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
-        <td></td>
+        <td><p>All BakedAreas representing rooms in the map.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -384,7 +408,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2</span></td>
-        <td></td>
+        <td><p>The size of the map in world units.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -409,7 +434,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector2</span></td>
-        <td></td>
+        <td><p>The dimensions of each tile in world units.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -434,7 +460,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Transform</span></td>
-        <td></td>
+        <td><p>The Transform of the MoraMapGen GameObject.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -459,7 +486,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector3</span>&gt;</td>
-        <td></td>
+        <td><p>World positions at the center of all navigable floor tiles, useful for AI waypoint systems.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -469,7 +497,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetAllAreas_" data-uid="MoraGames.MapGen.BakedMap.GetAllAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetAllAreas" data-uid="MoraGames.MapGen.BakedMap.GetAllAreas">GetAllAreas()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all rooms and corridors in the map.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -486,7 +515,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
-        <td></td>
+        <td><p>A combined list of all BakedAreas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -494,7 +524,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetAllGridSpaces_" data-uid="MoraGames.MapGen.BakedMap.GetAllGridSpaces*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetAllGridSpaces_System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMap.GetAllGridSpaces(System.Nullable{MoraGames.MapGen.BakedAreaType})">GetAllGridSpaces(BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all grid spaces that are part of rooms and/or corridors.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -513,7 +544,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">type</span></td>
-        <td></td>
+        <td><p>Optional filter to get only rooms or only corridors.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -528,7 +560,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
-        <td></td>
+        <td><p>List of all matching BakedGridSpaces (excludes empty walls).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -536,7 +569,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetArea_" data-uid="MoraGames.MapGen.BakedMap.GetArea*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetArea_MoraGames_MapGen_BakedGridSpace_" data-uid="MoraGames.MapGen.BakedMap.GetArea(MoraGames.MapGen.BakedGridSpace)">GetArea(BakedGridSpace)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedArea associated with a grid space.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -555,7 +589,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">bakedGridSpace</span></td>
-        <td></td>
+        <td><p>The grid space to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -570,7 +605,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea containing the grid space.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -578,7 +614,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetArea_" data-uid="MoraGames.MapGen.BakedMap.GetArea*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetArea_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.BakedMap.GetArea(UnityEngine.Vector2Int)">GetArea(Vector2Int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedArea associated with a grid position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -597,7 +634,8 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">gridPosition</span></td>
-        <td></td>
+        <td><p>The grid position to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -612,7 +650,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea at the grid position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -620,7 +659,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetArea_" data-uid="MoraGames.MapGen.BakedMap.GetArea*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetArea_UnityEngine_Vector3_" data-uid="MoraGames.MapGen.BakedMap.GetArea(UnityEngine.Vector3)">GetArea(Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedArea containing the specified world position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -639,7 +679,8 @@
       <tr>
         <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td></td>
+        <td><p>The world position to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -654,7 +695,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea containing the position, or null if not in any area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -662,7 +704,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetAreas_" data-uid="MoraGames.MapGen.BakedMap.GetAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetAreas_MoraGames_MapGen_AreaDefinitionSO_" data-uid="MoraGames.MapGen.BakedMap.GetAreas(MoraGames.MapGen.AreaDefinitionSO)">GetAreas(AreaDefinitionSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all areas (rooms and corridors) with the specified AreaDefinition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -681,7 +724,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
         <td><span class="parametername">areaDefinition</span></td>
-        <td></td>
+        <td><p>The AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -696,7 +740,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -704,7 +749,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetAreas_" data-uid="MoraGames.MapGen.BakedMap.GetAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetAreas_System_String_" data-uid="MoraGames.MapGen.BakedMap.GetAreas(System.String)">GetAreas(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all areas (rooms and corridors) with the specified AreaDefinition name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -723,7 +769,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">areaDefinitionName</span></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -738,7 +785,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -746,7 +794,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetConnectedNeighbors_" data-uid="MoraGames.MapGen.BakedMap.GetConnectedNeighbors*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetConnectedNeighbors_MoraGames_MapGen_BakedGridSpace_System_Collections_Generic_HashSet_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.BakedMap.GetConnectedNeighbors(MoraGames.MapGen.BakedGridSpace,System.Collections.Generic.HashSet{MoraGames.MapGen.BakedGridSpace},MoraGames.MapGen.EnvType[])">GetConnectedNeighbors(BakedGridSpace, HashSet&lt;BakedGridSpace&gt;, params EnvType[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all connected neighbors of a grid space with valid EnvTypes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -765,17 +814,20 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The grid space to find connected neighbors of.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
         <td><span class="parametername">exclude</span></td>
-        <td></td>
+        <td><p>Grid spaces to exclude from the result.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</td>
         <td><span class="parametername">validTypes</span></td>
-        <td></td>
+        <td><p>The valid EnvTypes for connected neighbors.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -790,7 +842,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
-        <td></td>
+        <td><p>List of connected neighboring BakedGridSpaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -798,7 +851,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridor_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridor_MoraGames_MapGen_AreaDefinitionSO_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor(MoraGames.MapGen.AreaDefinitionSO)">GetCorridor(AreaDefinitionSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the first corridor with the specified AreaDefinition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -817,7 +871,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
         <td><span class="parametername">areaDefinition</span></td>
-        <td></td>
+        <td><p>The AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -832,7 +887,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The first matching BakedArea, or null if not found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -840,7 +896,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridor_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridor_System_Int32_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor(System.Int32)">GetCorridor(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the corridor with the specified ID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -859,7 +916,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The unique ID of the corridor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -874,7 +932,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea representing the specified corridor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -882,7 +941,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridor_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridor_System_String_" data-uid="MoraGames.MapGen.BakedMap.GetCorridor(System.String)">GetCorridor(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the first corridor with the specified AreaDefinition name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -901,7 +961,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">areaDefinitionName</span></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -916,7 +977,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The first matching BakedArea, or null if not found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -924,7 +986,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridors_" data-uid="MoraGames.MapGen.BakedMap.GetCorridors*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridors_MoraGames_MapGen_AreaDefinitionSO_" data-uid="MoraGames.MapGen.BakedMap.GetCorridors(MoraGames.MapGen.AreaDefinitionSO)">GetCorridors(AreaDefinitionSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all corridors with the specified AreaDefinition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -943,7 +1006,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
         <td><span class="parametername">areaDefinition</span></td>
-        <td></td>
+        <td><p>The AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -958,7 +1022,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas representing corridors.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -966,7 +1031,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridors_" data-uid="MoraGames.MapGen.BakedMap.GetCorridors*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridors_System_String_" data-uid="MoraGames.MapGen.BakedMap.GetCorridors(System.String)">GetCorridors(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all corridors with the specified AreaDefinition name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -985,7 +1051,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">areaDefinitionName</span></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1000,7 +1067,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas representing corridors.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1008,7 +1076,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetCorridorsByIds_" data-uid="MoraGames.MapGen.BakedMap.GetCorridorsByIds*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetCorridorsByIds_System_Collections_Generic_List_System_Int32__" data-uid="MoraGames.MapGen.BakedMap.GetCorridorsByIds(System.Collections.Generic.List{System.Int32})">GetCorridorsByIds(List&lt;int&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets corridors by their IDs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1027,7 +1096,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
         <td><span class="parametername">ids</span></td>
-        <td></td>
+        <td><p>List of corridor IDs.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1042,7 +1112,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
-        <td></td>
+        <td><p>List of BakedAreas representing the corridors.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1050,7 +1121,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetGridSpace_" data-uid="MoraGames.MapGen.BakedMap.GetGridSpace*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetGridSpace_UnityEngine_Vector3_" data-uid="MoraGames.MapGen.BakedMap.GetGridSpace(UnityEngine.Vector3)">GetGridSpace(Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the BakedGridSpace at the specified world position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1069,7 +1141,8 @@
       <tr>
         <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td></td>
+        <td><p>The world position to query.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1084,7 +1157,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The BakedGridSpace at the position, or null if out of bounds.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1092,7 +1166,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetLocalPosition_" data-uid="MoraGames.MapGen.BakedMap.GetLocalPosition*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetLocalPosition_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.BakedMap.GetLocalPosition(UnityEngine.Vector2Int)">GetLocalPosition(Vector2Int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a grid position to local position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1111,7 +1186,8 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">gridPosition</span></td>
-        <td></td>
+        <td><p>The grid position to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1126,7 +1202,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>The local position at the center of the tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1134,7 +1211,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetLocalPosition_" data-uid="MoraGames.MapGen.BakedMap.GetLocalPosition*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetLocalPosition_UnityEngine_Vector3_" data-uid="MoraGames.MapGen.BakedMap.GetLocalPosition(UnityEngine.Vector3)">GetLocalPosition(Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a world position to local position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1153,7 +1231,8 @@
       <tr>
         <td><span class="xref">Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td></td>
+        <td><p>The world position to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1168,15 +1247,17 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>The local position relative to the map transform.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighbor_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor*"></a>
-  <h4 id="MoraGames_MapGen_BakedMap_GetNeighbor_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge)">GetNeighbor(BakedGridSpace, Edge)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedMap_GetNeighbor_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge)">GetNeighbor(BakedGridSpace, Edge)</h4>
+  <div class="markdown level1 summary"><p>Gets the neighboring BakedGridSpace in the specified direction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1195,12 +1276,14 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedGridSpace to find a neighbor of.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></td>
+        <td><span class="xref">Edge</span></td>
         <td><span class="parametername">neighborDirection</span></td>
-        <td></td>
+        <td><p>The direction to look for a neighbor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1215,15 +1298,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The neighboring BakedGridSpace, or null if no neighbor exists in that direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighbor_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor*"></a>
-  <h4 id="MoraGames_MapGen_BakedMap_GetNeighbor_UnityEngine_Vector2Int_MoraGames_MapGen_Edge_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Edge)">GetNeighbor(Vector2Int, Edge)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedMap_GetNeighbor_UnityEngine_Vector2Int_MoraGames_MapGen_Internal_Edge_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Internal.Edge)">GetNeighbor(Vector2Int, Edge)</h4>
+  <div class="markdown level1 summary"><p>Gets the neighboring BakedGridSpace in the specified direction from a grid position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1242,12 +1327,14 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The grid position to find a neighbor of.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></td>
+        <td><span class="xref">Edge</span></td>
         <td><span class="parametername">neighborDirection</span></td>
-        <td></td>
+        <td><p>The direction to look for a neighbor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1262,15 +1349,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The neighboring BakedGridSpace, or null if no neighbor exists in that direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected*"></a>
-  <h4 id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_BakedGridSpace__" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@)">GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_MoraGames_MapGen_BakedGridSpace__" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@)">GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace)</h4>
+  <div class="markdown level1 summary"><p>Determines if a neighbor is connected in the specified direction.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1289,17 +1378,20 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedGridSpace to check.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></td>
+        <td><span class="xref">Edge</span></td>
         <td><span class="parametername">neighborDirection</span></td>
-        <td></td>
+        <td><p>The direction to check for a connection.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">neighbor</span></td>
-        <td></td>
+        <td><p>Outputs the neighboring BakedGridSpace if found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1314,15 +1406,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if the neighbor is connected (same EnvType on center and shared edges); false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected*"></a>
-  <h4 id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])">GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace, params EnvType[])</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_EnvType___" data-uid="MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])">GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace, params EnvType[])</h4>
+  <div class="markdown level1 summary"><p>Determines if a neighbor is connected in the specified direction with specific valid EnvTypes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1341,22 +1435,26 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedGridSpace to check.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Edge.html">Edge</a></td>
+        <td><span class="xref">Edge</span></td>
         <td><span class="parametername">neighborDirection</span></td>
-        <td></td>
+        <td><p>The direction to check for a connection.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">neighbor</span></td>
-        <td></td>
+        <td><p>Outputs the neighboring BakedGridSpace if found.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a>[]</td>
         <td><span class="parametername">validEnvTypes</span></td>
-        <td></td>
+        <td><p>The valid EnvTypes to check for on centers and edges.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1371,7 +1469,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if connected with one of the valid EnvTypes; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1379,7 +1478,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighbors_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbors*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetNeighbors_MoraGames_MapGen_BakedGridSpace_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbors(MoraGames.MapGen.BakedGridSpace)">GetNeighbors(BakedGridSpace)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all four orthogonal neighbors of a BakedGridSpace.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1398,7 +1498,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedGridSpace to find neighbors of.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1413,7 +1514,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
-        <td></td>
+        <td><p>A list of up to four neighboring BakedGridSpaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1421,7 +1523,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetNeighbors_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbors*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetNeighbors_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.BakedMap.GetNeighbors(UnityEngine.Vector2Int)">GetNeighbors(Vector2Int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all four orthogonal neighbors of a grid position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1440,7 +1543,8 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The grid position to find neighbors of.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1455,7 +1559,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
-        <td></td>
+        <td><p>A list of up to four neighboring BakedGridSpaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1463,7 +1568,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRandomArea_" data-uid="MoraGames.MapGen.BakedMap.GetRandomArea*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRandomArea" data-uid="MoraGames.MapGen.BakedMap.GetRandomArea">GetRandomArea()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random area (either a room or corridor).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1480,7 +1586,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>A randomly selected BakedArea.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1488,7 +1595,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRandomCorridor_" data-uid="MoraGames.MapGen.BakedMap.GetRandomCorridor*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRandomCorridor" data-uid="MoraGames.MapGen.BakedMap.GetRandomCorridor">GetRandomCorridor()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random corridor from the map.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1505,7 +1613,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>A randomly selected BakedArea representing a corridor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1513,7 +1622,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRandomRoom_" data-uid="MoraGames.MapGen.BakedMap.GetRandomRoom*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRandomRoom" data-uid="MoraGames.MapGen.BakedMap.GetRandomRoom">GetRandomRoom()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random room from the map.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1530,7 +1640,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>A randomly selected BakedArea representing a room.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1538,7 +1649,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRandomWaypoint_" data-uid="MoraGames.MapGen.BakedMap.GetRandomWaypoint*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRandomWaypoint" data-uid="MoraGames.MapGen.BakedMap.GetRandomWaypoint">GetRandomWaypoint()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random waypoint from all navigable floor tiles.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1555,7 +1667,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>A random world position suitable for AI navigation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1563,7 +1676,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRoom_" data-uid="MoraGames.MapGen.BakedMap.GetRoom*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRoom_MoraGames_MapGen_AreaDefinitionSO_" data-uid="MoraGames.MapGen.BakedMap.GetRoom(MoraGames.MapGen.AreaDefinitionSO)">GetRoom(AreaDefinitionSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the first room with the specified AreaDefinition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1582,7 +1696,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
         <td><span class="parametername">areaDefinition</span></td>
-        <td></td>
+        <td><p>The AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1597,7 +1712,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The first matching BakedArea, or null if not found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1605,7 +1721,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRoom_" data-uid="MoraGames.MapGen.BakedMap.GetRoom*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRoom_System_Int32_" data-uid="MoraGames.MapGen.BakedMap.GetRoom(System.Int32)">GetRoom(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the room with the specified ID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1624,7 +1741,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The unique ID of the room.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1639,7 +1757,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The BakedArea representing the specified room.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1647,7 +1766,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRoom_" data-uid="MoraGames.MapGen.BakedMap.GetRoom*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRoom_System_String_" data-uid="MoraGames.MapGen.BakedMap.GetRoom(System.String)">GetRoom(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the first room with the specified AreaDefinition name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1666,7 +1786,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">areaDefinitionName</span></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1681,7 +1802,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
-        <td></td>
+        <td><p>The first matching BakedArea, or null if not found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1689,7 +1811,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRooms_" data-uid="MoraGames.MapGen.BakedMap.GetRooms*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRooms_MoraGames_MapGen_AreaDefinitionSO_" data-uid="MoraGames.MapGen.BakedMap.GetRooms(MoraGames.MapGen.AreaDefinitionSO)">GetRooms(AreaDefinitionSO)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all rooms with the specified AreaDefinition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1708,7 +1831,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
         <td><span class="parametername">areaDefinition</span></td>
-        <td></td>
+        <td><p>The AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1723,7 +1847,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas representing rooms.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1731,7 +1856,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRooms_" data-uid="MoraGames.MapGen.BakedMap.GetRooms*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRooms_System_String_" data-uid="MoraGames.MapGen.BakedMap.GetRooms(System.String)">GetRooms(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all rooms with the specified AreaDefinition name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1750,7 +1876,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">areaDefinitionName</span></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1765,7 +1892,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>[]</td>
-        <td></td>
+        <td><p>An array of all matching BakedAreas representing rooms.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1773,7 +1901,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetRoomsByIds_" data-uid="MoraGames.MapGen.BakedMap.GetRoomsByIds*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetRoomsByIds_System_Collections_Generic_List_System_Int32__" data-uid="MoraGames.MapGen.BakedMap.GetRoomsByIds(System.Collections.Generic.List{System.Int32})">GetRoomsByIds(List&lt;int&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets rooms by their IDs.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1792,7 +1921,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
         <td><span class="parametername">ids</span></td>
-        <td></td>
+        <td><p>List of room IDs.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1807,7 +1937,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
-        <td></td>
+        <td><p>List of BakedAreas representing the rooms.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1815,7 +1946,8 @@
 
   <a id="MoraGames_MapGen_BakedMap_GetWorldPosition_" data-uid="MoraGames.MapGen.BakedMap.GetWorldPosition*"></a>
   <h4 id="MoraGames_MapGen_BakedMap_GetWorldPosition_UnityEngine_Vector2Int_" data-uid="MoraGames.MapGen.BakedMap.GetWorldPosition(UnityEngine.Vector2Int)">GetWorldPosition(Vector2Int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts a grid position to world position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1834,7 +1966,8 @@
       <tr>
         <td><span class="xref">Vector2Int</span></td>
         <td><span class="parametername">gridPosition</span></td>
-        <td></td>
+        <td><p>The grid position to convert.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1849,7 +1982,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>The world position at the center of the tile.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1873,7 +2007,7 @@
       <a class="xref" href="MoraGames.MapGen.BakedMapGraphExtensions.html#MoraGames_MapGen_BakedMapGraphExtensions_GetFarthestGridSpaces_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedGridSpace_System_Collections_Generic_List_MoraGames_MapGen_BakedGridSpace___System_Nullable_MoraGames_MapGen_BakedAreaType__">BakedMapGraphExtensions.GetFarthestGridSpaces(BakedMap, BakedGridSpace, out List&lt;BakedGridSpace&gt;, BakedAreaType?)</a>
   </div>
   <div>
-      <a class="xref" href="MoraGames.MapGen.BakedMapPathExtensions.html#MoraGames_MapGen_BakedMapPathExtensions_TryGetPath_MoraGames_MapGen_BakedMap_UnityEngine_Vector2Int_UnityEngine_Vector2Int_MoraGames_MapGen_SearchTile__MoraGames_MapGen_EnvType___">BakedMapPathExtensions.TryGetPath(BakedMap, Vector2Int, Vector2Int, out SearchTile, params EnvType[])</a>
+      <a class="xref" href="MoraGames.MapGen.BakedMapPathExtensions.html#MoraGames_MapGen_BakedMapPathExtensions_TryGetPath_MoraGames_MapGen_BakedMap_UnityEngine_Vector2Int_UnityEngine_Vector2Int_MoraGames_MapGen_Internal_SearchTile__MoraGames_MapGen_EnvType___">BakedMapPathExtensions.TryGetPath(BakedMap, Vector2Int, Vector2Int, out SearchTile, params EnvType[])</a>
   </div>
 
 </article>

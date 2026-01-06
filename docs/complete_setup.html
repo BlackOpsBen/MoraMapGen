@@ -10,7 +10,7 @@
       <meta name="title" content="Complete Setup | MoraMapGen ">
     
     
-      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -79,12 +79,12 @@
             <article class="content wrap" id="_content" data-uid="complete-setup">
 <h1 id="complete-setup">Complete Setup</h1>
 
-<h4 id="1-add-the-moramapgen-component-to-scene">1. Add the MoraMapGen component to scene</h4>
+<h3 id="1-add-the-moramapgen-component-to-scene">1. Add the MoraMapGen component to scene</h3>
 <p><img src="../images/complete-setup/MoraMapGenIcon.png" alt="MoraMapGen component icon"></p>
 <p>This is what generates the map at runtime.</p>
 <p>Create a new GameObject in your scene and add the &quot;MoraMapGen&quot; component.</p>
 <p><img src="../images/complete-setup/MoraMapGenInspectorDefault.png" alt="MoraMapGen default inspector"></p>
-<h4 id="2-create-a-new-mapgensettings-asset">2. Create a new MapGenSettings asset</h4>
+<h3 id="2-create-a-new-mapgensettings-asset">2. Create a new MapGenSettings asset</h3>
 <p><img src="../images/complete-setup/MapGenSettingsIcon.png" alt="MapGenSettings asset icon"></p>
 <p>The MapGenSettings allows you to customize how the map is generated and what it looks like.</p>
 <p>Create and assign a new MapGenSettings asset in the MoraMapGen inspector by either:</p>
@@ -93,11 +93,14 @@
 <li>Right-click in your project assets folder and select &quot;Create/MoraMapGen/Map Gen Settings Asset&quot;, then assign the new asset in the MoraMapGen inspector.</li>
 </ul>
 <p><img src="../images/complete-setup/AssignMapGenSettings.png" alt="Field to assign a MapGenSettingsSO asset"></p>
-<h4 id="3-choose-your-desired-settings">3. Choose your desired settings</h4>
+<h3 id="3-choose-your-desired-settings">3. Choose your desired settings</h3>
 <p><img src="../images/complete-setup/MoraMapGenInspectorSettings.PNG" alt="MoraMapGen inspector when settings are assigned"></p>
-<p>For detailed explanations of each setting and option see the Settings section below.</p>
-<p>Note: The MoraMapGen inspector allows you to change the settings without having to select the asset directly, but you can change the settings in either place.</p>
-<h4 id="4-create-a-new-area-options-asset">4. Create a new Area Options asset</h4>
+<p>For detailed explanations of each setting and option see <a href="inspector-reference/settings.html">Settings</a>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The MoraMapGen inspector allows you to change the settings without having to select the asset directly, but you can change the settings in either place.</p>
+</div>
+<h3 id="4-create-a-new-area-options-asset">4. Create a new Area Options asset</h3>
 <p><img src="../images/complete-setup/AreaOptionsIcon.PNG" alt="Area Options asset icon"></p>
 <p>The Area Options asset determines which Area Definitions will be assigned to the rooms and corridors of the generated map.</p>
 <p>Create and assign a new Area Options asset in the MapGenSettings &quot;Area Options&quot; field by either:</p>
@@ -105,16 +108,18 @@
 <li>Click the &quot;New&quot; button next to the &quot;Area Options&quot; field.</li>
 <li>Right-click in your project assets and select &quot;Create/MoraMapGen/Area Options&quot;, then assign the new asset to the &quot;Area Options&quot; field in the settings.</li>
 </ul>
-<h4 id="5-create-area-definition-assets">5. Create Area Definition Assets</h4>
+<p>See <a href="concepts/area-options.html">Area Options</a> for more info.</p>
+<h3 id="5-create-area-definition-assets">5. Create Area Definition Assets</h3>
 <p><img src="../images/complete-setup/AreaDefinitionIcon.PNG" alt="Area Definition asset icon"></p>
 <p>An Area Definition specifies which module prefabs are used to construct the walls, floors, and ceiling of the given room or corridor.</p>
 <p>Set up your RoomOptions asset by creating and assigning various Room Definition assets.
 To create a new Room Definition asset, right-click in your project assets and select &quot;Create/MoraMapGen/Area Definition&quot;</p>
 <p>At a minimum you must define the Default Room and Default Corridor in the Room Options asset inspector:</p>
-<p><img src="../images/complete-setup/AreaDefinitionDefaults.PNG" alt="Example of default Area Definition assets">
-<img src="../images/complete-setup/AreaOptionsInspector.PNG" alt="Area Options inspector with defaults assigned"></p>
+<p><img src="../images/complete-setup/AreaDefinitionDefaults.PNG" alt="Example of default Area Definition assets"></p>
+<p><img src="../images/complete-setup/AreaOptionsInspector.PNG" alt="Area Options inspector with defaults assigned"></p>
 <p>Note: The name of the Area Definition asset can be anything you'd like, but we suggest using something meaningful, especially for specific rooms. Consider that this name might be displayed in your game's UI to show players what room they are in.</p>
-<h4 id="6-create-tile-module-definitions">6. Create Tile Module Definitions</h4>
+<p>See <a href="concepts/area-definitions.html">Area Definitions</a> for more info.</p>
+<h3 id="6-create-tile-module-definitions">6. Create Tile Module Definitions</h3>
 <p>A Tile Module Definitions asset specifies which module prefabs are used when creating the 3D room or corridor for an Area Definition.</p>
 <p>At a minimum, you just need one Tile Module Definitions asset, and all of your Area Definition assets can use this same Tile Module Definitions asset. This means that all rooms and corridors will have the same walls, floors, ceilings, and doors.</p>
 <p>If you want specific rooms and/or corridors to have different looks, you'll need to give them different Tile Module Definitions. You could start by having one for all rooms and one for all corridors.</p>
@@ -122,7 +127,9 @@ To create a new Room Definition asset, right-click in your project assets and se
 <p>In the inspector for each of your Area Definition assets, you must assign a Tile Module Definitions asset.</p>
 <p><img src="../images/complete-setup/AreaDefinitionInspectorModulesAssigned.PNG" alt="AreaDefinition inspector with TileModuleDefinitions assigned"></p>
 <p>To create a new Tile Module Definitions asset, right-click in your project assets and select &quot;Create/MoraMapGen/Tile Module Definitions&quot;.</p>
-<h4 id="7-create-module-prefabs">7. Create Module prefabs</h4>
+<p>You’ll need to create and assign your module prefabs here in the TileModuleDefinition asset. See <a href="concepts/tile-module-definitions.html">Tile Module Definitions</a> for more info.</p>
+<p><img src="../images/complete-setup/TileModuleDefinitionSOInspector.PNG" alt="Tile Module Definitions inspector"></p>
+<h3 id="7-create-module-prefabs">7. Create Module prefabs</h3>
 <p>A module prefab is a GameObject prefab that has the 3D mesh you'd like to use to represent walls, floors, and ceilings.</p>
 <p>Your module prefabs need nothing more than the typical Mesh Filter, Mesh Renderer, and ideally some sort of Collider depending on your needs. Here's the inside corner wall from the demo assets, for example:</p>
 <p><img src="../images/complete-setup/ModulePrefabExample.png" alt="Module prefab example"></p>
@@ -132,28 +139,27 @@ To create a new Room Definition asset, right-click in your project assets and se
 <li>Prefab origins must all be in the same relative position. The meshes don't necessarily have to be the same size, but the origin should be in the middle of whatever module size you've defined. (Modules can have any Y height you want.)</li>
 </ul>
 <p>You'll need prefabs for the following:</p>
-<ol>
-<li><p>Straight walls: Used for straight wall segments.
-<img src="../images/complete-setup/Module_Example_Wall_Straight.PNG" alt="Straight wall module example"></p>
-</li>
-<li><p>Corner walls (inside): Convex corners, like you'd peek around when rounding a corridor corner.
-<img src="../images/complete-setup/Module_Example_Wall_Corner_Inside.PNG" alt="Inside corner wall module example"></p>
-</li>
-<li><p>Corner walls (outside): Concave corners, like the corner of a room.
-<img src="../images/complete-setup/Module_Example_Wall_Corner_Outside.PNG" alt="Outside corner wall module example"></p>
-</li>
-<li><p>Floors: Floor A is the main floor for rooms, and the edges of corridors. Floor B is the main path for corridors, and then entrance for rooms.
-<img src="../images/complete-setup/Module_Example_Floor.PNG" alt="Floor module example"></p>
-</li>
-<li><p>Exterior Ceilings: Visible from above (for top-down or third-person cameras.)
-<img src="../images/complete-setup/Module_Example_Exterior_Ceiling.PNG" alt="Exterior ceiling module example"></p>
-</li>
-<li><p>Interior Ceilings: Visible from inside (for first-person cameras.)
-<img src="../images/complete-setup/Module_Example_Interior_Ceiling.PNG" alt="Interior ceiling module example"></p>
-</li>
-<li><p>Doors: Placed where corridors connect to rooms. See <a href="xref:door-placement-settings">Door Placement Settings</a> for different door modes.</p>
-</li>
-</ol>
+<h4 id="straight-walls">Straight walls</h4>
+<p>Used for straight wall segments.</p>
+<p><img src="../images/complete-setup/Module_Example_Wall_Straight.PNG" alt="Straight wall module example"></p>
+<h4 id="corner-walls-inside">Corner walls (inside)</h4>
+<p>Convex corners, like you'd peek around when rounding a corridor corner.</p>
+<p><img src="../images/complete-setup/Module_Example_Wall_Corner_Inside.PNG" alt="Inside corner wall module example"></p>
+<h4 id="corner-walls-outside">Corner walls (outside)</h4>
+<p>Concave corners, like the corner of a room.</p>
+<p><img src="../images/complete-setup/Module_Example_Wall_Corner_Outside.PNG" alt="Outside corner wall module example"></p>
+<h4 id="floors">Floors</h4>
+<p>Floor A is the main floor for rooms, and the edges of corridors.
+Floor B is the main path for corridors, and then entrance for rooms.</p>
+<p><img src="../images/complete-setup/Module_Example_Floor.PNG" alt="Floor module example"></p>
+<h4 id="exterior-ceilings">Exterior Ceilings</h4>
+<p>Visible from above (for top-down or third-person cameras.)</p>
+<p><img src="../images/complete-setup/Module_Example_Exterior_Ceiling.PNG" alt="Exterior ceiling module example"></p>
+<h4 id="interior-ceilings">Interior Ceilings</h4>
+<p>Visible from inside (for first-person cameras.)</p>
+<p><img src="../images/complete-setup/Module_Example_Interior_Ceiling.PNG" alt="Interior ceiling module example"></p>
+<h4 id="doors">Doors</h4>
+<p>Placed where corridors connect to rooms. See <a href="inspector-reference/settings.html#door-placement-settings">Door Placement Settings</a> for different door modes.</p>
 
 </article>
           </div>
@@ -163,7 +169,7 @@ To create a new Room Definition asset, right-click in your project assets and se
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/Documentation/MoraMapGen_Documentation/docs/complete_setup.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/complete_setup.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

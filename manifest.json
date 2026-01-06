@@ -12,16 +12,212 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.AdvancedSettings.yml",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.IMapGenPostProcess.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MoraGames.MapGen.AdvancedSettings.html"
+          "relative_path": "api/MoraGames.MapGen.Advanced.IMapGenPostProcess.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MoraGames.MapGen.AdvancedSettings",
+      "Title": "MoraGames.MapGen.Advanced.IMapGenPostProcess",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.IMapGenPostProcess.yml\" sourcestartlinenumber=\"1\">Interface for components that perform post-processing operations after map generation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.PostProcessPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.PostProcessPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.PostProcessPhase",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.PostProcessPhase.yml\" sourcestartlinenumber=\"1\">Defines the execution order for post-processing operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.IPropPostPlacement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.IPropPostPlacement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.IPropPostPlacement",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.IPropPostPlacement.yml\" sourcestartlinenumber=\"1\">Interface for prop prefabs that need custom logic after being placed in the map.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.ProceduralPropSpot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.ProceduralPropSpot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.ProceduralPropSpot",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.ProceduralPropSpot.yml\" sourcestartlinenumber=\"1\">Represents an automatically generated location for prop placement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropCategories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropCategories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropCategories",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropCategories.yml\" sourcestartlinenumber=\"1\">Defines categorized groups of props used during area-specific prop placement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropDefinition",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropDefinition.yml\" sourcestartlinenumber=\"1\">Defines a prop prefab and its placement configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropOptionDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropOptionDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropOptionDefinition",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropOptionDefinition.yml\" sourcestartlinenumber=\"1\">Defines a single prop prefab option with rotation settings and selection weight.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropOptions",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropOptions.yml\" sourcestartlinenumber=\"1\">Defines a group of prop prefab options to choose from for &quot;always spawn&quot; props.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropPlacementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropPlacementType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropPlacementType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.PropPlacementTypeCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.PropPlacementTypeCache.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props.PropPlacementTypeCache",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.Props.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.Props",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.RNG.DistributionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.RNG.DistributionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.RNG.DistributionMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.RNG.MapGenRandom",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.RNG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.RNG.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced.RNG",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Advanced.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Advanced.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Advanced",
       "Summary": null
     },
     {
@@ -40,20 +236,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.AreaDefinitionsSOEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.AreaDefinitionsSOEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.AreaDefinitionsSOEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.AreaOptionsSO.yml",
       "output": {
         ".html": {
@@ -64,7 +246,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.AreaOptionsSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.AreaOptionsSO.yml\" sourcestartlinenumber=\"1\">The list of areas that can be used in the map, grouped by required/optional and unique/common.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +260,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedArea",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedArea.yml\" sourcestartlinenumber=\"1\">Represents a contiguous group of tiles forming either a room or corridor in the generated map.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -106,7 +288,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedAreaType",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedAreaType.yml\" sourcestartlinenumber=\"1\">Specifies whether a BakedArea represents a room or a corridor.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -120,7 +302,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedGridSpace",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedGridSpace.yml\" sourcestartlinenumber=\"1\">Represents a single tile in the generated map grid.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -134,7 +316,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedMap",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedMap.yml\" sourcestartlinenumber=\"1\">Represents the finalized, runtime-accessible structure of a generated map.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -180,132 +362,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.BasePropCategoriesEditor-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.BasePropCategoriesEditor-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.BasePropCategoriesEditor<T>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.BlueprintRotation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.BlueprintRotation.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.BlueprintRotation",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.BoundsOverlapCalculator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.BoundsOverlapCalculator.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.BoundsOverlapCalculator",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Chunk.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Chunk.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Chunk",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ChunkNeighborPair.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.ChunkNeighborPair.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.ChunkNeighborPair",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ChunkRoomConnectionMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.ChunkRoomConnectionMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.ChunkRoomConnectionMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Chunks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Chunks.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Chunks",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ChunksStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.ChunksStrategy.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.ChunksStrategy",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.CommonMapGen.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.CommonMapGen.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.CommonMapGen",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.ComplexFloor.yml",
       "output": {
         ".html": {
@@ -320,422 +376,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ConnectingTiles.yml",
+      "source_relative_path": "api/MoraGames.MapGen.ComplexFloorType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MoraGames.MapGen.ConnectingTiles.html"
+          "relative_path": "api/MoraGames.MapGen.ComplexFloorType.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MoraGames.MapGen.ConnectingTiles",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Corner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Corner.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Corner",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.DebugOutputWorldGenInput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.DebugOutputWorldGenInput.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.DebugOutputWorldGenInput",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.Demo3rdPersonCamRig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.Demo3rdPersonCamRig.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.Demo3rdPersonCamRig",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.Demo3rdPersonPlayer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.Demo3rdPersonPlayer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.Demo3rdPersonPlayer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonChest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonChest.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonChest",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonDoor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonDoor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonDoor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonFrustumCulling.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonFrustumCulling",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonKey.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonKey.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonKey",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonLockAndSwitch",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonPlayer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonPlayer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonPlayer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonPrompt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoDungeonPrompt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoDungeonPrompt",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoFPSPlayer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoFPSPlayer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoFPSPlayer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoFindFarthestAreas.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoFindFarthestAreas.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoFindFarthestAreas",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoFindFarthestGridSpaces.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoFindFarthestGridSpaces.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoFindFarthestGridSpaces",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoGridPathfinding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoGridPathfinding.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoGridPathfinding",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoLocationTrackingUI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoLocationTrackingUI.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoLocationTrackingUI",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoNPC.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoNPC.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoNPC",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoNPCSpawner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoNPCSpawner.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoNPCSpawner",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoOpenDoors.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoOpenDoors.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoOpenDoors",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoPropArray.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoPropArray.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoPropArray",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.DemoSceneInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.DemoSceneInfo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.DemoSceneInfo",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.Editor.DemoSceneInfoEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.Editor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.Editor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.Editor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.MarkingMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.MarkingMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo.MarkingMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Demo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Demo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Demo",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.DeterministicHashSet-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.DeterministicHashSet-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.DeterministicHashSet<T>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.DivideIntoChunks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.DivideIntoChunks.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.DivideIntoChunks",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.DoorPlacementMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.DoorPlacementMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.DoorPlacementMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Edge.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Edge.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Edge",
+      "Title": "MoraGames.MapGen.ComplexFloorType",
       "Summary": null
     },
     {
@@ -750,161 +400,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.EnvType",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.FloorType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.FloorType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.FloorType",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.GenArea.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.GenArea.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.GenArea",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.GenGridSpace.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.GenGridSpace.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.GenGridSpace",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.GenMap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.GenMap.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.GenMap",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Grid2D-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Grid2D-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Grid2D<T>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.HybridStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.HybridStrategy.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.HybridStrategy",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.IMapGenPostProcess.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.IMapGenPostProcess.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.IMapGenPostProcess",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.IMapGenStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.IMapGenStrategy.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.IMapGenStrategy",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapGenConstants.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapGenConstants.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapGenConstants",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapGenInspectorLibrary.GraphAxisData",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapGenInspectorLibrary.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapGenInspectorLibrary.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapGenInspectorLibrary",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.EnvType.yml\" sourcestartlinenumber=\"1\">Defines the type of environment for a pixel of a tile blueprint, or the general type of the entire tile determined by the center pixel.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -918,119 +414,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.MapGenSettingsSO",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapGenSettingsSOEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapGenSettingsSOEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapGenSettingsSOEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapGenStrategies.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapGenStrategies.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapGenStrategies",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapSizeUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapSizeUtility.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapSizeUtility",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapTileBlueprint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapTileBlueprint.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapTileBlueprint",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapTileFactory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapTileFactory.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapTileFactory",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MapTileManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MapTileManager.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MapTileManager",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Module.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Module.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Module",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ModuleType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.ModuleType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.ModuleType",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.MapGenSettingsSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset defining all parameters for procedural map generation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1044,147 +428,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.MoraMapGen",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.MoraMapGenEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.MoraMapGenEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.MoraMapGenEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.PostProcessPhase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.PostProcessPhase.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.PostProcessPhase",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.PotentialConnection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.PotentialConnection.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.PotentialConnection",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.PrefabSelectionBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.PrefabSelectionBase.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.PrefabSelectionBase",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.PriorityQueue-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.PriorityQueue-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.PriorityQueue<T>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.PropCategoriesEditorUI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.PropCategoriesEditorUI.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.PropCategoriesEditorUI",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.IMapGenPropPlacement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.IMapGenPropPlacement.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.IMapGenPropPlacement",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.IPropPostPlacement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.IPropPostPlacement.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.IPropPostPlacement",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.IPropSpot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.IPropSpot.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.IPropSpot",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.ProceduralPropSpot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.ProceduralPropSpot.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.ProceduralPropSpot",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.MoraMapGen.yml\" sourcestartlinenumber=\"1\">Main MonoBehaviour component for generating procedural grid-based dungeon maps.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1198,20 +442,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSOEditor",
       "Summary": null
     },
     {
@@ -1230,34 +460,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropAnchorOverrideEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropAnchorOverrideEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropAnchorOverrideEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropCategories.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropCategories.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropCategories",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.Props.PropChannelSO.yml",
       "output": {
         ".html": {
@@ -1272,44 +474,16 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropDefinition.yml",
+      "source_relative_path": "api/MoraGames.MapGen.Props.PropOffsetsExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropDefinition.html"
+          "relative_path": "api/MoraGames.MapGen.Props.PropOffsetsExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropDefinition",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropOptionDefinition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropOptionDefinition.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropOptionDefinition",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropOptions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropOptions",
+      "Title": "MoraGames.MapGen.Props.PropOffsetsExtensions",
       "Summary": null
     },
     {
@@ -1328,48 +502,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropPlacementType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropPlacementType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropPlacementType",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropPlacementTypeInt.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropPlacementTypeInt.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropPlacementTypeInt",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropPlacementTypeIntDrawer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropPlacementTypeIntDrawer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.Props.PropPlacementVolume.yml",
       "output": {
         ".html": {
@@ -1380,34 +512,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropPlacementVolume",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropPlacementVolumeEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropPlacementVolumeEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropPlacementVolumeEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropRotationSettingsEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropRotationSettingsEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropRotationSettingsEditor",
       "Summary": null
     },
     {
@@ -1454,20 +558,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.PropSpotEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.PropSpotEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.PropSpotEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.Props.ReflectionProbePlacement.yml",
       "output": {
         ".html": {
@@ -1478,20 +568,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.ReflectionProbePlacement",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.Props.ReflectionProbePlacementEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.Props.ReflectionProbePlacementEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.Props.ReflectionProbePlacementEditor",
       "Summary": null
     },
     {
@@ -1510,314 +586,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandom.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandom.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.Demo.DemoMapGenRandom",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.Demo.DemoMapGenRandomBar",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.Demo.DemoMapGenRandomEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.Demo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.Demo.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.Demo",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.DistributionMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.DistributionMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.DistributionMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.DistributionParams.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.DistributionParams.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.DistributionParams",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.DistributionParamsDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.DistributionParamsDrawer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.DistributionParamsDrawer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.DistributionParamsExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.DistributionParamsExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.DistributionParamsExtensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.FixedRandomProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.FixedRandomProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.FixedRandomProvider",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.IRandomProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.IRandomProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.IRandomProvider",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.MapGenRandom.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.MapGenRandom.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.MapGenRandom",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.MapGenRandomProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.MapGenRandomProvider.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.MapGenRandomProvider",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.PropOffsets.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.PropOffsets.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.PropOffsets",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.PropOffsetsDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.PropOffsetsDrawer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.PropOffsetsDrawer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.PropOffsetsExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.PropOffsetsExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.PropOffsetsExtensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.SeedKeys.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.SeedKeys.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.SeedKeys",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.SeedManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.SeedManager.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG.SeedManager",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RNG.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RNG.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RNG",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RandomStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RandomStrategy.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RandomStrategy",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.ReflectionProbeVisualization.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.ReflectionProbeVisualization.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.ReflectionProbeVisualization",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RoomCreationMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RoomCreationMode.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RoomCreationMode",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RoomShapeManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RoomShapeManager.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RoomShapeManager",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.RoomShapeSO.yml",
       "output": {
         ".html": {
@@ -1832,146 +600,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.RoomShapeSOEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.RoomShapeSOEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.RoomShapeSOEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SearchTile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SearchTile.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SearchTile",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SearchTileExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SearchTileExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SearchTileExtensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SerializableDictionary-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SerializableDictionary-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SerializableDictionary<TKey, TValue>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SerializableDictionaryEntry-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SerializableDictionaryEntry-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SerializableDictionaryEntry<TKey, TValue>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SerializableDictionaryEntryDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SerializableDictionaryEntryDrawer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SerializableDictionaryEntryDrawer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SingleReflectionProbeVisualization.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SingleReflectionProbeVisualization.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SingleReflectionProbeVisualization",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.SmartPrefabUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.SmartPrefabUtility.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.SmartPrefabUtility",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.TestOverlap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.TestOverlap.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.TestOverlap",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.TileEdgePair.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.TileEdgePair.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.TileEdgePair",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MoraGames.MapGen.TileModuleDefinitionsSO.yml",
       "output": {
         ".html": {
@@ -1982,48 +610,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.TileModuleDefinitionsSO",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.TileModuleDefinitionsSOEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.TileModuleDefinitionsSOEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.TileModuleDefinitionsSOEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.WeightedTileModule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.WeightedTileModule.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.WeightedTileModule",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MoraGames.MapGen.WeightedTileModuleDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MoraGames.MapGen.WeightedTileModuleDrawer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MoraGames.MapGen.WeightedTileModuleDrawer",
       "Summary": null
     },
     {
@@ -2105,6 +691,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/inspector-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/inspector-reference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/inspector-reference/advanced-settings.md",
       "output": {
         ".html": {
@@ -2165,20 +761,160 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
+      "source_relative_path": "docs/overview.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "docs/overview.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/overview.md",
+      "source_relative_path": "docs/post-processes.md",
       "output": {
         ".html": {
-          "relative_path": "docs/overview.html"
+          "relative_path": "docs/post-processes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/create-your-own-mapgen-post-processes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/create-your-own-mapgen-post-processes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/navmesh-surface-baking.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/navmesh-surface-baking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/procedural-prop-spot-offsets.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/procedural-prop-spot-offsets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/procedural-prop-spots.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/procedural-prop-spots.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-anchor-override.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-anchor-override.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-categories.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-categories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-channels.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-channels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-placement-component.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-placement-component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-placement-volume.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-placement-volume.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-prefabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-prefabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-rotation-settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-rotation-settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/prop-placement/prop-spots.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/prop-placement/prop-spots.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/post-processes/reflection-probe-placement.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/post-processes/reflection-probe-placement.html"
         }
       },
       "version": ""
@@ -2202,336 +938,6 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Corridor_Pixels.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Corridor_Pixels.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IMapGenPostProcess.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IMapGenPostProcess.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconProcPropSpotOffset.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconProcPropSpotOffset.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropAnchorOverride.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropAnchorOverride.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropChannel.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropChannel.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropPlacement.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropPlacement.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropPlacementVolume.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropPlacementVolume.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropRotation.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropRotation.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/IconPropSpot.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/IconPropSpot.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ProcSpotOffsets.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ProcSpotOffsets.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Categories.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Categories.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Category Always Spawn Props.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Category Always Spawn Props.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Category Optional Common Props.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Category Optional Common Props.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Category Optional Unique Props.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Category Optional Unique Props.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Category Required Common Props.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Category Required Common Props.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop Category Required Unique Props.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop Category Required Unique Props.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropAnchorOverride.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropAnchorOverride.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropChannels.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropChannels.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropPlacementComponentNew.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropPlacementComponentNew.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropRotationSettings.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropRotationSettings.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropSpotExamples.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropSpotExamples.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropSpotInspector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropSpotInspector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/PropSpotInspectorExample.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/PropSpotInspectorExample.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop_Anchor_Override_Example.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop_Anchor_Override_Example.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop_Barrel_Pivot.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop_Barrel_Pivot.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop_Bookshelf_PIvot.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop_Bookshelf_PIvot.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop_LIght_Pivot.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop_LIght_Pivot.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Prop_Volume_Example.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Prop_Volume_Example.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ReflectionProbePlacementInspector.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ReflectionProbePlacementInspector.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ReflectionProbePlacementScript.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ReflectionProbePlacementScript.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ReflectionProbeVisualization.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ReflectionProbeVisualization.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/ReflectionProbeVisualizationSingle.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/ReflectionProbeVisualizationSingle.png"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/Room_Pixels.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/Room_Pixels.png"
         }
       },
       "version": ""
@@ -2738,6 +1144,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/concepts/Corridor_Pixels.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/Corridor_Pixels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/Room_Pixels.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/Room_Pixels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/concepts/area-options-inspector.PNG",
       "output": {
         "resource": {
@@ -2758,10 +1184,30 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/generation-options/Generation Options.png",
       "output": {
         "resource": {
           "relative_path": "images/generation-options/Generation Options.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
         }
       },
       "version": ""
@@ -2928,6 +1374,316 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/post-processes/IMapGenPostProcess.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IMapGenPostProcess.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconProcPropSpotOffset.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconProcPropSpotOffset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropAnchorOverride.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropAnchorOverride.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropChannel.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropChannel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropPlacement.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropPlacement.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropPlacementVolume.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropPlacementVolume.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropRotation.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropRotation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/IconPropSpot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/IconPropSpot.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/ProcSpotOffsets.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/ProcSpotOffsets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Categories.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Categories.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Category-Always-Spawn-Props.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Category-Always-Spawn-Props.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Category-Optional-Common-Props.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Category-Optional-Common-Props.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Category-Optional-Unique-Props.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Category-Optional-Unique-Props.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Category-Required-Common-Props.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Category-Required-Common-Props.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop-Category-Required-Unique-Props.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop-Category-Required-Unique-Props.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropAnchorOverride.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropAnchorOverride.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropChannels.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropChannels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropPlacementComponentNew.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropPlacementComponentNew.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropRotationSettings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropRotationSettings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropSpotExamples.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropSpotExamples.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropSpotInspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropSpotInspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/PropSpotInspectorExample.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/PropSpotInspectorExample.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop_Anchor_Override_Example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop_Anchor_Override_Example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop_Barrel_Pivot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop_Barrel_Pivot.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop_Bookshelf_Pivot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop_Bookshelf_Pivot.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop_Light_Pivot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop_Light_Pivot.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/Prop_Volume_Example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/Prop_Volume_Example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/ReflectionProbePlacementInspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/ReflectionProbePlacementInspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/ReflectionProbePlacementScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/ReflectionProbePlacementScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/ReflectionProbeVisualization.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/ReflectionProbeVisualization.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/ReflectionProbeVisualizationSingle.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/ReflectionProbeVisualizationSingle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/quick-start/AddComponent.png",
       "output": {
         "resource": {
@@ -2988,6 +1744,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/settings/advanced-settings.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/settings/advanced-settings.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/settings/area-settings.png",
       "output": {
         "resource": {
@@ -3028,6 +1794,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/settings/debug-options.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/settings/debug-options.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/settings/door-placement-settings.png",
       "output": {
         "resource": {
@@ -3042,6 +1818,16 @@
       "output": {
         "resource": {
           "relative_path": "images/settings/hybrid-room-settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/settings/inspector_sections.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/settings/inspector_sections.PNG"
         }
       },
       "version": ""
@@ -3072,6 +1858,16 @@
       "output": {
         "resource": {
           "relative_path": "images/settings/randomness_settings.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/settings/unity-events.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/settings/unity-events.PNG"
         }
       },
       "version": ""

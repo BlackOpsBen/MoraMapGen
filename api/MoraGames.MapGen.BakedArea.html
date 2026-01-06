@@ -9,8 +9,8 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BakedArea | MoraMapGen ">
     
-    
-      <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="description" content="Represents a contiguous group of tiles forming either a room or corridor in the generated map.">
+      <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
       <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="MoraMapGen">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="MoraMapGen">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_BakedArea" data-uid="MoraGames.MapGen.BakedArea" class="text-break">Class BakedArea</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a contiguous group of tiles forming either a room or corridor in the generated map.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -113,18 +114,24 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a></h6>
-  <h6><strong>Assembly</strong>: MoraMapGen.dll</h6>
+  <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
   <h5 id="MoraGames_MapGen_BakedArea_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BakedArea</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_BakedArea_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>BakedArea provides access to the grid spaces, prop spots, and connection information
+for a room or corridor. Use this class to query area properties, place props,
+and understand how areas connect to each other.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
 
   <a id="MoraGames_MapGen_BakedArea__ctor_" data-uid="MoraGames.MapGen.BakedArea.#ctor*"></a>
-  <h4 id="MoraGames_MapGen_BakedArea__ctor_MoraGames_MapGen_BakedMap_MoraGames_MapGen_GenArea_MoraGames_MapGen_BakedAreaType_" data-uid="MoraGames.MapGen.BakedArea.#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.GenArea,MoraGames.MapGen.BakedAreaType)">BakedArea(BakedMap, GenArea, BakedAreaType)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedArea__ctor_MoraGames_MapGen_BakedMap_MoraGames_MapGen_Internal_GenArea_MoraGames_MapGen_BakedAreaType_" data-uid="MoraGames.MapGen.BakedArea.#ctor(MoraGames.MapGen.BakedMap,MoraGames.MapGen.Internal.GenArea,MoraGames.MapGen.BakedAreaType)">BakedArea(BakedMap, GenArea, BakedAreaType)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new BakedArea from the generated area data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,17 +150,20 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">bakedMap</span></td>
-        <td></td>
+        <td><p>The BakedMap this area belongs to.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.GenArea.html">GenArea</a></td>
+        <td><span class="xref">GenArea</span></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>The internal GenArea data to bake.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a></td>
         <td><span class="parametername">areaType</span></td>
-        <td></td>
+        <td><p>Whether this is a Room or Corridor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -180,7 +190,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.AreaDefinitionSO.html">AreaDefinitionSO</a></td>
-        <td></td>
+        <td><p>The ScriptableObject AreaDefinition asset that configured this area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,7 +216,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a></td>
-        <td></td>
+        <td><p>Whether this area is a Room or Corridor.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -230,7 +242,35 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
-        <td></td>
+        <td><p>The grid space closest to the geometric center of the area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MoraGames_MapGen_BakedArea_Centroid_" data-uid="MoraGames.MapGen.BakedArea.Centroid*"></a>
+  <h4 id="MoraGames_MapGen_BakedArea_Centroid" data-uid="MoraGames.MapGen.BakedArea.Centroid">Centroid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Centroid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>The world position on the ground in the center of the largest unbroken rect that fits in the room.
+This point is used for the procedural prop spot &quot;On Room Centers&quot;.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -255,7 +295,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
-        <td></td>
+        <td><p>IDs of all corridors directly connected to this area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,7 +321,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
-        <td></td>
+        <td><p>IDs of all rooms directly connected to this area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -305,7 +347,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
-        <td></td>
+        <td><p>Grid spaces that contain doors connecting to other areas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -317,7 +360,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BakedGridSpace[] GridSpaces { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;BakedGridSpace&gt; GridSpaces { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -329,8 +372,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>[]</td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
+        <td><p>All grid spaces that make up this area.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -355,7 +399,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The unique identifier for this area instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -380,7 +425,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>The name of the AreaDefinition asset this area was generated from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -390,7 +436,8 @@
 
   <a id="MoraGames_MapGen_BakedArea_GenerateGraphConnections_" data-uid="MoraGames.MapGen.BakedArea.GenerateGraphConnections*"></a>
   <h4 id="MoraGames_MapGen_BakedArea_GenerateGraphConnections_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.BakedArea.GenerateGraphConnections(MoraGames.MapGen.BakedMap)">GenerateGraphConnections(BakedMap)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates graph connections to neighboring areas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,15 +456,21 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap this area belongs to.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="MoraGames_MapGen_BakedArea_GenerateGraphConnections_MoraGames_MapGen_BakedMap__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Populates the ConnectedRoomIds and ConnectedCorridorIds lists by analyzing
+grid space connections. This should only be called once during baking.</p>
+</div>
 
 
   <a id="MoraGames_MapGen_BakedArea_GetAllProceduralPropSpots_" data-uid="MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots*"></a>
   <h4 id="MoraGames_MapGen_BakedArea_GetAllProceduralPropSpots_System_Boolean_System_Boolean_" data-uid="MoraGames.MapGen.BakedArea.GetAllProceduralPropSpots(System.Boolean,System.Boolean)">GetAllProceduralPropSpots(bool, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all procedural prop spots in this area.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -436,12 +489,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">randomOrder</span></td>
-        <td></td>
+        <td><p>If true, returns spots in random order.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">includeUsed</span></td>
-        <td></td>
+        <td><p>If true, includes spots that have already been used.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -455,8 +510,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Props.ProceduralPropSpot.html">ProceduralPropSpot</a>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Advanced.Props.ProceduralPropSpot.html">ProceduralPropSpot</a>&gt;</td>
+        <td><p>List of all ProceduralPropSpots matching the criteria.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -464,7 +520,8 @@
 
   <a id="MoraGames_MapGen_BakedArea_GetAllPropSpots_" data-uid="MoraGames.MapGen.BakedArea.GetAllPropSpots*"></a>
   <h4 id="MoraGames_MapGen_BakedArea_GetAllPropSpots_System_Boolean_System_Boolean_" data-uid="MoraGames.MapGen.BakedArea.GetAllPropSpots(System.Boolean,System.Boolean)">GetAllPropSpots(bool, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all prop spots in this area.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -483,12 +540,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">randomOrder</span></td>
-        <td></td>
+        <td><p>If true, returns spots in random order.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">includeUsed</span></td>
-        <td></td>
+        <td><p>If true, includes spots that have already been used.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -503,15 +562,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Props.PropSpot.html">PropSpot</a>&gt;</td>
-        <td></td>
+        <td><p>List of all PropSpots matching the criteria.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_BakedArea_GetProceduralPropSpotByType_" data-uid="MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType*"></a>
-  <h4 id="MoraGames_MapGen_BakedArea_GetProceduralPropSpotByType_MoraGames_MapGen_Props_PropPlacementType_System_Boolean_System_Boolean_" data-uid="MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Props.PropPlacementType,System.Boolean,System.Boolean)">GetProceduralPropSpotByType(PropPlacementType, bool, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_BakedArea_GetProceduralPropSpotByType_MoraGames_MapGen_Advanced_Props_PropPlacementType_System_Boolean_System_Boolean_" data-uid="MoraGames.MapGen.BakedArea.GetProceduralPropSpotByType(MoraGames.MapGen.Advanced.Props.PropPlacementType,System.Boolean,System.Boolean)">GetProceduralPropSpotByType(PropPlacementType, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Gets procedural prop spots filtered by placement type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -528,19 +589,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MoraGames.MapGen.Props.PropPlacementType.html">PropPlacementType</a></td>
+        <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropPlacementType.html">PropPlacementType</a></td>
         <td><span class="parametername">placementType</span></td>
-        <td></td>
+        <td><p>The placement type to filter by.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">randomOrder</span></td>
-        <td></td>
+        <td><p>If true, returns spots in random order.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">includeUsed</span></td>
-        <td></td>
+        <td><p>If true, includes spots that have already been used.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -554,8 +618,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Props.ProceduralPropSpot.html">ProceduralPropSpot</a>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Advanced.Props.ProceduralPropSpot.html">ProceduralPropSpot</a>&gt;</td>
+        <td><p>List of ProceduralPropSpots matching the criteria.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -563,7 +628,8 @@
 
   <a id="MoraGames_MapGen_BakedArea_GetPropSpotsByChannel_" data-uid="MoraGames.MapGen.BakedArea.GetPropSpotsByChannel*"></a>
   <h4 id="MoraGames_MapGen_BakedArea_GetPropSpotsByChannel_MoraGames_MapGen_Props_PropChannelSO_System_Boolean_System_Boolean_" data-uid="MoraGames.MapGen.BakedArea.GetPropSpotsByChannel(MoraGames.MapGen.Props.PropChannelSO,System.Boolean,System.Boolean)">GetPropSpotsByChannel(PropChannelSO, bool, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets prop spots in this area filtered by channel.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -582,17 +648,20 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Props.PropChannelSO.html">PropChannelSO</a></td>
         <td><span class="parametername">channel</span></td>
-        <td></td>
+        <td><p>The prop channel to filter by.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">randomOrder</span></td>
-        <td></td>
+        <td><p>If true, returns spots in random order.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">includeUsed</span></td>
-        <td></td>
+        <td><p>If true, includes spots that have already been used.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -607,7 +676,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.Props.PropSpot.html">PropSpot</a>&gt;</td>
-        <td></td>
+        <td><p>List of PropSpots matching the criteria.</p>
+</td>
       </tr>
     </tbody>
   </table>
