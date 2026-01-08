@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class PropAnchorOverride | MoraMapGen ">
     
-    
+    <meta name="description" content="Component attached to prop prefabs to override the spawn anchor point and rotation pivot.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_PropAnchorOverride" data-uid="MoraGames.MapGen.Props.PropAnchorOverride" class="text-break">Class PropAnchorOverride</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Component attached to prop prefabs to override the spawn anchor point and rotation pivot.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PropAnchorOverride : MonoBehaviour</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_PropAnchorOverride_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>By default, props spawn with their prefab root at the PropSpot position. Add this component
+to a child object in your prop prefab to use that child's position as the spawn anchor instead.
+Useful for aligning specific parts of props to the spawn point.
+Optionally specify a rotation pivot for applying rotation variance around a different point.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -129,7 +136,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Props.PropChannelSO.html">PropChannelSO</a></td>
-        <td></td>
+        <td><p>Channel this anchor applies to (used only if PropPlacementType includes OnPropSpot).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +162,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>This anchor's local position relative to the prefab root.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +188,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Quaternion</span></td>
-        <td></td>
+        <td><p>This anchor's local rotation relative to the prefab root.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -204,7 +214,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropPlacementType.html">PropPlacementType</a></td>
-        <td></td>
+        <td><p>Placement types this anchor applies to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -229,7 +240,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Transform</span></td>
-        <td></td>
+        <td><p>Transform used as the rotation pivot, or null to use prefab root.</p>
+</td>
       </tr>
     </tbody>
   </table>

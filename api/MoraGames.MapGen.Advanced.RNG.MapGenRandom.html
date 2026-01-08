@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class MapGenRandom | MoraMapGen ">
     
-    
+    <meta name="description" content="Provides deterministic random number generation utilities for map generation and prop placement.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom" class="text-break">Class MapGenRandom</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides deterministic random number generation utilities for map generation and prop placement.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -118,6 +119,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class MapGenRandom</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This static class offers various distribution modes (uniform, normal, biased) and convenience methods
+for common randomization tasks. All methods use seeded RNGs for deterministic, reproducible results.
+Initialize with Init(seed) before first use, or it will auto-initialize with seed 0.</p>
+</div>
   <h3 id="properties">Properties
 </h3>
 
@@ -314,7 +320,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_System_Random_System_Int32_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange(System.Random,System.Int32,System.Int32,System.Single,System.Boolean)">BiasedRange(Random, int, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a biased random integer within a range using an exponential distribution.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -333,27 +340,32 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Controls the strength of the bias toward minInclusive (or maxExclusive if flipped).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>If true, biases toward maxExclusive instead of minInclusive.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -368,7 +380,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A biased random integer in [minInclusive, maxExclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -376,7 +389,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_System_Random_System_Single_System_Single_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange(System.Random,System.Single,System.Single,System.Single,System.Boolean)">BiasedRange(Random, float, float, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a biased random float within a range using an exponential distribution.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -395,27 +409,32 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Controls the strength of the bias toward min (or max if flipped).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>If true, biases toward max instead of min.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -430,7 +449,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A biased random float in [min, max].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -438,7 +458,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_System_String_System_Int32_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange(System.String,System.Int32,System.Int32,System.Single,System.Boolean)">BiasedRange(string, int, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a biased random integer within a range using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -457,27 +478,32 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Controls the strength of the bias toward minInclusive (or maxExclusive if flipped).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>If true, biases toward maxExclusive instead of minInclusive.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -492,7 +518,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A biased random integer in [minInclusive, maxExclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -500,7 +527,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedRange_System_String_System_Single_System_Single_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedRange(System.String,System.Single,System.Single,System.Single,System.Boolean)">BiasedRange(string, float, float, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a biased random float within a range using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -519,27 +547,32 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Controls the strength of the bias toward min (or max if flipped).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>If true, biases toward max instead of min.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -554,7 +587,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A biased random float in [min, max].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -562,7 +596,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedValue01_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedValue01*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_BiasedValue01_System_Random_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.BiasedValue01(System.Random,System.Single,System.Boolean)">BiasedValue01(Random, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a biased random value in [0, 1] using an exponential distribution.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -581,17 +616,20 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Controls the strength of the bias toward 0 (or 1 if flipped).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>If true, biases toward 1 instead of 0.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -606,7 +644,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A biased random float in [0, 1].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -614,7 +653,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Chance_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Chance*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Chance_System_Random_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Chance(System.Random,System.Single)">Chance(Random, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns true with the specified probability.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -633,12 +673,14 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The Random instance to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">probability</span></td>
-        <td></td>
+        <td><p>Probability value in range [0, 1].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -653,7 +695,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if random value is less than probability; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -661,7 +704,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Chance_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Chance*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Chance_System_String_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Chance(System.String,System.Single)">Chance(string, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns true with the specified probability using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -680,12 +724,14 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">probability</span></td>
-        <td></td>
+        <td><p>Probability value in range [0, 1].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -700,7 +746,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if random value is less than probability; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -708,7 +755,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetRng_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetRng*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetRng_System_String_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetRng(System.String)">GetRng(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a seeded Random instance for the specified key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -727,7 +775,8 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key identifying this RNG stream.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -742,7 +791,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
-        <td></td>
+        <td><p>A System.Random instance seeded deterministically.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -750,7 +800,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetTotalWeight_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetTotalWeight*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetTotalWeight__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetTotalWeight``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})">GetTotalWeight&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates the sum of all weights in a collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -769,12 +820,14 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The collection of options.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
         <td><span class="parametername">getWeight</span></td>
-        <td></td>
+        <td><p>Function that returns the weight for each option.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -789,7 +842,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>The total sum of all weights.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -804,7 +858,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -812,7 +867,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedOption_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedOption*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedOption__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedOption``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single},System.Single)">GetWeightedOption&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects an element from a collection based on a specific weight threshold.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -831,17 +887,20 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The collection of options to choose from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
         <td><span class="parametername">getWeight</span></td>
-        <td></td>
+        <td><p>Function that returns the weight for each option.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">weight</span></td>
-        <td></td>
+        <td><p>The weight threshold to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -856,7 +915,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The first element whose cumulative weight meets or exceeds the threshold.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -871,7 +931,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -879,7 +940,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedRandom_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedRandom*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedRandom__1_System_Random_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedRandom``1(System.Random,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})">GetWeightedRandom&lt;T&gt;(Random, IEnumerable&lt;T&gt;, Func&lt;T, float&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects a random element from a collection based on weighted probabilities using a specified RNG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -898,17 +960,20 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The collection of options to choose from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
         <td><span class="parametername">getWeight</span></td>
-        <td></td>
+        <td><p>Function that returns the weight for each option.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -923,7 +988,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element, with higher-weight elements more likely to be chosen.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -938,7 +1004,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -946,7 +1013,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedRandom_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedRandom*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_GetWeightedRandom__1_System_String_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.GetWeightedRandom``1(System.String,System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Single})">GetWeightedRandom&lt;T&gt;(string, IEnumerable&lt;T&gt;, Func&lt;T, float&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Selects a random element from a collection based on weighted probabilities using a specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -965,17 +1033,20 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The collection of options to choose from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
         <td><span class="parametername">getWeight</span></td>
-        <td></td>
+        <td><p>Function that returns the weight for each option.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -990,7 +1061,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element, with higher-weight elements more likely to be chosen.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1005,7 +1077,8 @@ The larger the value, the stronger the bias towards picking results at the biase
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1013,7 +1086,8 @@ The larger the value, the stronger the bias towards picking results at the biase
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Init_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Init*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Init_System_Int32_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Init(System.Int32)">Init(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the random system with the specified seed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1032,7 +1106,8 @@ The larger the value, the stronger the bias towards picking results at the biase
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">seed</span></td>
-        <td></td>
+        <td><p>The base seed for all RNG streams.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1357,8 +1432,8 @@ After this limit is reached, the result is clamped into the range.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><p>An integer sampled from a normal distribution centered on the midpoint of the range,<br>
-constrained to lie between <code class="paramref">minInclusive</code> and <code class="paramref">maxInclusive</code>.</p>
+        <td><p>A float sampled from a normal distribution centered on the midpoint of the range,<br>
+constrained to lie between <code class="paramref">min</code> and <code class="paramref">max</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -1529,24 +1604,24 @@ After this limit is reached, the result is clamped into the range.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><p>An integer sampled from a normal distribution centered on the midpoint of the range,<br>
-constrained to lie between <code class="paramref">minInclusive</code> and <code class="paramref">maxInclusive</code>.</p>
+        <td><p>A float sampled from a normal distribution centered on the midpoint of the range,<br>
+constrained to lie between <code class="paramref">min</code> and <code class="paramref">max</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_NormalRange_System_String_System_Single_System_Single_System_Single_System_Int32__examples">Examples</h5>
   <p>Example usage:</p>
-<pre><code class="lang-csharp">var rng = new System.Random();
+<pre><code class="lang-csharp">string key = "MyRandomKey";
 
 // Produces numbers mostly clustered around 50
-float tightCluster = Normal(rng, 0f, 100f, spreadFactor: 0.2f);
+float tightCluster = NormalRange(key, 0f, 100f, spreadFactor: 0.2f);
 
 // Produces numbers more evenly spread, often near the extremes
-float wideSpread = Normal(rng, 0f, 100f, spreadFactor: 1.0f);
+float wideSpread = NormalRange(key, 0f, 100f, spreadFactor: 1.0f);
 
 // Faster but potentially less accurate (limits rerolls)
-float fastSample = Normal(rng, 0f, 100f, spreadFactor: 0.5f, maxRerolls: 2);</code></pre>
+float fastSample = NormalRange(key, 0f, 100f, spreadFactor: 0.5f, maxRerolls: 2);</code></pre>
 
 
 
@@ -1704,7 +1779,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick__1_System_Random_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Collections_Generic_IList___0__System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)">Pick&lt;T&gt;(Random, DistributionMode, IList&lt;T&gt;, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Picks a random element from a list using the specified distribution mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1723,37 +1799,44 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1768,7 +1851,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1783,7 +1867,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1791,7 +1876,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick__1_System_Random_MoraGames_MapGen_Internal_RNG_DistributionParams_System_Collections_Generic_IList___0__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick``1(System.Random,MoraGames.MapGen.Internal.RNG.DistributionParams,System.Collections.Generic.IList{``0})">Pick&lt;T&gt;(Random, DistributionParams, IList&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Picks a random element from a list using distribution parameters.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1810,17 +1896,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1835,7 +1924,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1850,7 +1940,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1858,7 +1949,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick__1_System_String_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Collections_Generic_IList___0__System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Collections.Generic.IList{``0},System.Single,System.Int32,System.Single,System.Boolean)">Pick&lt;T&gt;(string, DistributionMode, IList&lt;T&gt;, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Picks a random element from a list using the specified distribution mode and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1877,37 +1969,44 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1922,7 +2021,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1937,7 +2037,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1945,7 +2046,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Pick__1_System_String_MoraGames_MapGen_Internal_RNG_DistributionParams_System_Collections_Generic_IList___0__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Pick``1(System.String,MoraGames.MapGen.Internal.RNG.DistributionParams,System.Collections.Generic.IList{``0})">Pick&lt;T&gt;(string, DistributionParams, IList&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Picks a random element from a list using distribution parameters and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1964,17 +2066,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1989,7 +2094,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2004,7 +2110,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2012,7 +2119,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_Random_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Int32_System_Int32_System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)">Range(Random, DistributionMode, int, int, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random integer within a range using the specified distribution mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2031,42 +2139,50 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">normalMaxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2081,7 +2197,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A random integer in [minInclusive, maxExclusive) using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2089,7 +2206,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_Random_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Single_System_Single_System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)">Range(Random, DistributionMode, float, float, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random float within a range using the specified distribution mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2108,42 +2226,50 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">normalMaxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2158,7 +2284,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in [min, max] using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2166,7 +2293,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_Random_MoraGames_MapGen_Internal_RNG_DistributionParams_System_Single_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.Random,MoraGames.MapGen.Internal.RNG.DistributionParams,System.Single,System.Single)">Range(Random, DistributionParams, float, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random float within a range using distribution parameters from a DistributionParams object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2185,22 +2313,26 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2215,7 +2347,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in [min, max] using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2223,7 +2356,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_String_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Int32_System_Int32_System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Int32,System.Int32,System.Single,System.Int32,System.Single,System.Boolean)">Range(string, DistributionMode, int, int, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random integer within a range using the specified distribution mode and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2242,42 +2376,50 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">normalMaxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2292,7 +2434,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A random integer in [minInclusive, maxExclusive) using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2300,7 +2443,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_String_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Single_System_Single_System_Single_System_Int32_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Boolean)">Range(string, DistributionMode, float, float, float, int, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random float within a range using the specified distribution mode and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2319,42 +2463,50 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalSpreadFactor</span></td>
-        <td></td>
+        <td><p>Spread factor for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">normalMaxRerolls</span></td>
-        <td></td>
+        <td><p>Max rerolls for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2369,7 +2521,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in [min, max] using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2377,7 +2530,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Range_System_String_MoraGames_MapGen_Internal_RNG_DistributionParams_System_Single_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Range(System.String,MoraGames.MapGen.Internal.RNG.DistributionParams,System.Single,System.Single)">Range(string, DistributionParams, float, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random float within a range using distribution parameters and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2396,22 +2550,26 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">min</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">max</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2426,19 +2584,21 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in [min, max] using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
 
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Shuffle_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle*"></a>
-  <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Shuffle__1_System_Collections_Generic_List___0__System_String_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)">Shuffle&lt;T&gt;(List&lt;T&gt;, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Shuffle__1_System_String_System_Collections_Generic_List___0__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.String,System.Collections.Generic.List{``0})">Shuffle&lt;T&gt;(string, List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Shuffles a list in-place using the Fisher-Yates algorithm.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(List&lt;T&gt; list, string randomKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Shuffle&lt;T&gt;(string key, List&lt;T&gt; list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2451,14 +2611,16 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
-        <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">randomKey</span></td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The list to shuffle.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2473,7 +2635,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2481,7 +2644,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformPick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformPick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformPick__1_System_Random_System_Collections_Generic_IList___0__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformPick``1(System.Random,System.Collections.Generic.IList{``0})">UniformPick&lt;T&gt;(Random, IList&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Randomly selects an element from the list with uniform probability.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2500,12 +2664,14 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The Random instance to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2520,7 +2686,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2535,7 +2702,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2543,7 +2711,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformPick_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformPick*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformPick__1_System_String_System_Collections_Generic_IList___0__" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformPick``1(System.String,System.Collections.Generic.IList{``0})">UniformPick&lt;T&gt;(string, IList&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Randomly selects an element from the list with uniform probability using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2562,12 +2731,14 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td></td>
+        <td><p>The list to pick from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2582,7 +2753,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>A randomly selected element from the list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2597,7 +2769,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2605,7 +2778,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_System_Random_System_Int32_System_Int32_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange(System.Random,System.Int32,System.Int32)">UniformRange(Random, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random integer within the specified range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2624,17 +2798,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The Random instance to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2649,7 +2826,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A random integer in the range [minInclusive, maxExclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2657,7 +2835,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_System_Random_System_Single_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange(System.Random,System.Single,System.Single)">UniformRange(Random, float, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random float within the specified range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2676,17 +2855,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The Random instance to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">maxInclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2701,7 +2883,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in the range [minInclusive, maxInclusive].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2709,7 +2892,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_System_String_System_Int32_System_Int32_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange(System.String,System.Int32,System.Int32)">UniformRange(string, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random integer within the specified range using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2728,17 +2912,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">maxExclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (exclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2753,7 +2940,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A random integer in the range [minInclusive, maxExclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2761,7 +2949,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformRange_System_String_System_Single_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformRange(System.String,System.Single,System.Single)">UniformRange(string, float, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random float within the specified range using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2780,17 +2969,20 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">minInclusive</span></td>
-        <td></td>
+        <td><p>Minimum value (inclusive).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">maxInclusive</span></td>
-        <td></td>
+        <td><p>Maximum value (inclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2805,7 +2997,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float in the range [minInclusive, maxInclusive].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2813,7 +3006,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformValue_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformValue*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformValue_System_Random_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformValue(System.Random)">UniformValue(Random)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random float in the range [0, 1).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2832,7 +3026,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The Random instance to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2847,7 +3042,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float between 0.0 (inclusive) and 1.0 (exclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2855,7 +3051,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformValue_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformValue*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformValue_System_String_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformValue(System.String)">UniformValue(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a uniform random float in the range [0, 1) using the specified seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2874,7 +3071,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2889,7 +3087,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random float between 0.0 (inclusive) and 1.0 (exclusive).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2995,7 +3194,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_System_Random_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Single_System_Single_System_Single_System_Boolean_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Single,System.Single,System.Single,System.Boolean)">Value(Random, DistributionMode, float, float, float, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random value using the specified distribution mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -3014,32 +3214,38 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalMean</span></td>
-        <td></td>
+        <td><p>Mean for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalStdDev</span></td>
-        <td></td>
+        <td><p>Standard deviation for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">flipBias</span></td>
-        <td></td>
+        <td><p>Whether to flip the bias direction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3054,7 +3260,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random value generated using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3062,7 +3269,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_System_Random_MoraGames_MapGen_Internal_RNG_DistributionParams_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value(System.Random,MoraGames.MapGen.Internal.RNG.DistributionParams)">Value(Random, DistributionParams)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random value using distribution parameters from a DistributionParams object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -3081,12 +3289,14 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3101,7 +3311,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random value generated using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3109,7 +3320,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_System_String_MoraGames_MapGen_Advanced_RNG_DistributionMode_System_Single_System_Single_System_Single_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.Advanced.RNG.DistributionMode,System.Single,System.Single,System.Single)">Value(string, DistributionMode, float, float, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random value using the specified distribution mode and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -3128,27 +3340,32 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.RNG.DistributionMode.html">DistributionMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>The distribution mode (Uniform, Normal, or Biased).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalMean</span></td>
-        <td></td>
+        <td><p>Mean for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">normalStdDev</span></td>
-        <td></td>
+        <td><p>Standard deviation for normal distribution.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">biasStrength</span></td>
-        <td></td>
+        <td><p>Strength for biased distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3163,7 +3380,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random value generated using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3171,7 +3389,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
 
   <a id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value*"></a>
   <h4 id="MoraGames_MapGen_Advanced_RNG_MapGenRandom_Value_System_String_MoraGames_MapGen_Internal_RNG_DistributionParams_" data-uid="MoraGames.MapGen.Advanced.RNG.MapGenRandom.Value(System.String,MoraGames.MapGen.Internal.RNG.DistributionParams)">Value(string, DistributionParams)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Generates a random value using distribution parameters from a DistributionParams object and seed key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -3190,12 +3409,14 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The seed key for the RNG stream.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">DistributionParams</span></td>
         <td><span class="parametername">distributionParams</span></td>
-        <td></td>
+        <td><p>The distribution parameters to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3210,7 +3431,8 @@ float height = Normal(key, mean: 170f, stdDev: 10f);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>A random value generated using the specified distribution.</p>
+</td>
       </tr>
     </tbody>
   </table>

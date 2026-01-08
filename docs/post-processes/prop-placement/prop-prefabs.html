@@ -83,14 +83,14 @@
 <h2 id="creating-prop-prefabs">Creating Prop Prefabs</h2>
 <p>A prop prefab doesn’t strictly require any components.
 A Collider is only required if you want to prevent overlap with the environment and other props.
-The pivot point of the root prefab is important to consider. When a prop is placed, the pivot point is aligned and oriented with the PropSpot or ProceduralPropSpot its being placed on. If you want your prop to be placed on the ground, you need to make sure that the pivot of the prop prefab is at the base of the object:
-<img src="../../../images/post-processes/Prop_Barrel_Pivot.png" alt="Example Prop Prefab pivot resting on ground">
-Notice the barrel’s pivot is centered on the ground.
-If you want it placed against a wall, the pivot should not be in the center of the object because when placed it would be intersecting the wall. The solution is to either ensure the pivot is behind the object, or use a Prop Anchor Override component.
-<img src="../../../images/post-processes/Prop_Light_Pivot.png" alt="Example Prop Prefab pivot anchored to wall">
-Notice the light fixture’s pivot is at the point where it would be attached to a wall.
-<img src="../../../images/post-processes/Prop_Bookshelf_Pivot.png" alt="Example Prop Prefab pivot anchored to the floor and wall">
-Notice the bookshelf’s pivot is at the base of its back side so that it can be placed against the wall on the ground.</p>
+The pivot point of the root prefab is important to consider. When a prop is placed, the pivot point is aligned and oriented with the PropSpot or ProceduralPropSpot its being placed on. If you want your prop to be placed on the ground, you need to make sure that the pivot of the prop prefab is at the base of the object:</p>
+<p><img src="../../../images/post-processes/Prop_Barrel_Pivot.png" alt="Example Prop Prefab pivot resting on ground"></p>
+<p>Notice the barrel’s pivot is centered on the ground.
+If you want it placed against a wall, the pivot should not be in the center of the object because when placed it would be intersecting the wall. The solution is to either ensure the pivot is behind the object, or use a Prop Anchor Override component.</p>
+<p><img src="../../../images/post-processes/Prop_Light_Pivot.png" alt="Example Prop Prefab pivot anchored to wall"></p>
+<p>Notice the light fixture’s pivot is at the point where it would be attached to a wall.</p>
+<p><img src="../../../images/post-processes/Prop_Bookshelf_Pivot.png" alt="Example Prop Prefab pivot anchored to the floor and wall"></p>
+<p>Notice the bookshelf’s pivot is at the base of its back side so that it can be placed against the wall on the ground.</p>
 <h2 id="advanced-prop-components">Advanced Prop Components</h2>
 <p>These components are optional but very useful for controlling how and where prop prefabs get placed.</p>
 <ul>
@@ -108,7 +108,7 @@ Notice the bookshelf’s pivot is at the base of its back side so that it can be
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-prefabs.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/main/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-prefabs.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

@@ -964,15 +964,15 @@ references:
   commentId: Overload:MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle
   fullName: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle
   nameWithType: MapGenRandom.Shuffle
-- uid: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)
-  name: Shuffle<T>(List<T>, string)
-  href: api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.html#MoraGames_MapGen_Advanced_RNG_MapGenRandom_Shuffle__1_System_Collections_Generic_List___0__System_String_
-  commentId: M:MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.Collections.Generic.List{``0},System.String)
-  name.vb: Shuffle(Of T)(List(Of T), String)
-  fullName: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle<T>(System.Collections.Generic.List<T>, string)
-  fullName.vb: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle(Of T)(System.Collections.Generic.List(Of T), String)
-  nameWithType: MapGenRandom.Shuffle<T>(List<T>, string)
-  nameWithType.vb: MapGenRandom.Shuffle(Of T)(List(Of T), String)
+- uid: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.String,System.Collections.Generic.List{``0})
+  name: Shuffle<T>(string, List<T>)
+  href: api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.html#MoraGames_MapGen_Advanced_RNG_MapGenRandom_Shuffle__1_System_String_System_Collections_Generic_List___0__
+  commentId: M:MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle``1(System.String,System.Collections.Generic.List{``0})
+  name.vb: Shuffle(Of T)(String, List(Of T))
+  fullName: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle<T>(string, System.Collections.Generic.List<T>)
+  fullName.vb: MoraGames.MapGen.Advanced.RNG.MapGenRandom.Shuffle(Of T)(String, System.Collections.Generic.List(Of T))
+  nameWithType: MapGenRandom.Shuffle<T>(string, List<T>)
+  nameWithType.vb: MapGenRandom.Shuffle(Of T)(String, List(Of T))
 - uid: MoraGames.MapGen.Advanced.RNG.MapGenRandom.UniformPick*
   name: UniformPick
   href: api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.html#MoraGames_MapGen_Advanced_RNG_MapGenRandom_UniformPick_
@@ -1672,11 +1672,11 @@ references:
   commentId: Overload:MoraGames.MapGen.BakedGridSpace.GetDoorPosition
   fullName: MoraGames.MapGen.BakedGridSpace.GetDoorPosition
   nameWithType: BakedGridSpace.GetDoorPosition
-- uid: MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Internal.Edge)
+- uid: MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Edge)
   name: GetEdgeType(Edge)
-  href: api/MoraGames.MapGen.BakedGridSpace.html#MoraGames_MapGen_BakedGridSpace_GetEdgeType_MoraGames_MapGen_Internal_Edge_
-  commentId: M:MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Internal.Edge)
-  fullName: MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Internal.Edge)
+  href: api/MoraGames.MapGen.BakedGridSpace.html#MoraGames_MapGen_BakedGridSpace_GetEdgeType_MoraGames_MapGen_Edge_
+  commentId: M:MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Edge)
+  fullName: MoraGames.MapGen.BakedGridSpace.GetEdgeType(MoraGames.MapGen.Edge)
   nameWithType: BakedGridSpace.GetEdgeType(Edge)
 - uid: MoraGames.MapGen.BakedGridSpace.GetEdgeType*
   name: GetEdgeType
@@ -1966,17 +1966,17 @@ references:
   commentId: Overload:MoraGames.MapGen.BakedMap.GetLocalPosition
   fullName: MoraGames.MapGen.BakedMap.GetLocalPosition
   nameWithType: BakedMap.GetLocalPosition
-- uid: MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge)
+- uid: MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge)
   name: GetNeighbor(BakedGridSpace, Edge)
-  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighbor_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_
-  commentId: M:MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge)
-  fullName: MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Internal.Edge)
+  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighbor_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_
+  commentId: M:MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge)
+  fullName: MoraGames.MapGen.BakedMap.GetNeighbor(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Edge)
   nameWithType: BakedMap.GetNeighbor(BakedGridSpace, Edge)
-- uid: MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Internal.Edge)
+- uid: MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
   name: GetNeighbor(Vector2Int, Edge)
-  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighbor_UnityEngine_Vector2Int_MoraGames_MapGen_Internal_Edge_
-  commentId: M:MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Internal.Edge)
-  fullName: MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int, MoraGames.MapGen.Internal.Edge)
+  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighbor_UnityEngine_Vector2Int_MoraGames_MapGen_Edge_
+  commentId: M:MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int,MoraGames.MapGen.Edge)
+  fullName: MoraGames.MapGen.BakedMap.GetNeighbor(UnityEngine.Vector2Int, MoraGames.MapGen.Edge)
   nameWithType: BakedMap.GetNeighbor(Vector2Int, Edge)
 - uid: MoraGames.MapGen.BakedMap.GetNeighbor*
   name: GetNeighbor
@@ -1984,22 +1984,22 @@ references:
   commentId: Overload:MoraGames.MapGen.BakedMap.GetNeighbor
   fullName: MoraGames.MapGen.BakedMap.GetNeighbor
   nameWithType: BakedMap.GetNeighbor
-- uid: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@)
+- uid: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@)
   name: GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace)
-  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_MoraGames_MapGen_BakedGridSpace__
-  commentId: M:MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@)
+  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_BakedGridSpace__
+  commentId: M:MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@)
   name.vb: GetNeighborIsConnected(BakedGridSpace, Edge, BakedGridSpace)
-  fullName: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Internal.Edge, out MoraGames.MapGen.BakedGridSpace)
-  fullName.vb: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Internal.Edge, MoraGames.MapGen.BakedGridSpace)
+  fullName: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Edge, out MoraGames.MapGen.BakedGridSpace)
+  fullName.vb: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Edge, MoraGames.MapGen.BakedGridSpace)
   nameWithType: BakedMap.GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace)
   nameWithType.vb: BakedMap.GetNeighborIsConnected(BakedGridSpace, Edge, BakedGridSpace)
-- uid: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])
+- uid: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])
   name: GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace, params EnvType[])
-  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Internal_Edge_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_EnvType___
-  commentId: M:MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Internal.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])
+  href: api/MoraGames.MapGen.BakedMap.html#MoraGames_MapGen_BakedMap_GetNeighborIsConnected_MoraGames_MapGen_BakedGridSpace_MoraGames_MapGen_Edge_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_EnvType___
+  commentId: M:MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace,MoraGames.MapGen.Edge,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.EnvType[])
   name.vb: GetNeighborIsConnected(BakedGridSpace, Edge, BakedGridSpace, ParamArray EnvType())
-  fullName: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Internal.Edge, out MoraGames.MapGen.BakedGridSpace, params MoraGames.MapGen.EnvType[])
-  fullName.vb: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Internal.Edge, MoraGames.MapGen.BakedGridSpace, ParamArray MoraGames.MapGen.EnvType())
+  fullName: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Edge, out MoraGames.MapGen.BakedGridSpace, params MoraGames.MapGen.EnvType[])
+  fullName.vb: MoraGames.MapGen.BakedMap.GetNeighborIsConnected(MoraGames.MapGen.BakedGridSpace, MoraGames.MapGen.Edge, MoraGames.MapGen.BakedGridSpace, ParamArray MoraGames.MapGen.EnvType())
   nameWithType: BakedMap.GetNeighborIsConnected(BakedGridSpace, Edge, out BakedGridSpace, params EnvType[])
   nameWithType.vb: BakedMap.GetNeighborIsConnected(BakedGridSpace, Edge, BakedGridSpace, ParamArray EnvType())
 - uid: MoraGames.MapGen.BakedMap.GetNeighborIsConnected*
@@ -2458,6 +2458,42 @@ references:
   commentId: F:MoraGames.MapGen.ComplexFloorType.X
   fullName: MoraGames.MapGen.ComplexFloorType.X
   nameWithType: ComplexFloorType.X
+- uid: MoraGames.MapGen.Edge
+  name: Edge
+  href: api/MoraGames.MapGen.Edge.html
+  commentId: T:MoraGames.MapGen.Edge
+  fullName: MoraGames.MapGen.Edge
+  nameWithType: Edge
+- uid: MoraGames.MapGen.Edge.Bottom
+  name: Bottom
+  href: api/MoraGames.MapGen.Edge.html#MoraGames_MapGen_Edge_Bottom
+  commentId: F:MoraGames.MapGen.Edge.Bottom
+  fullName: MoraGames.MapGen.Edge.Bottom
+  nameWithType: Edge.Bottom
+- uid: MoraGames.MapGen.Edge.Left
+  name: Left
+  href: api/MoraGames.MapGen.Edge.html#MoraGames_MapGen_Edge_Left
+  commentId: F:MoraGames.MapGen.Edge.Left
+  fullName: MoraGames.MapGen.Edge.Left
+  nameWithType: Edge.Left
+- uid: MoraGames.MapGen.Edge.Right
+  name: Right
+  href: api/MoraGames.MapGen.Edge.html#MoraGames_MapGen_Edge_Right
+  commentId: F:MoraGames.MapGen.Edge.Right
+  fullName: MoraGames.MapGen.Edge.Right
+  nameWithType: Edge.Right
+- uid: MoraGames.MapGen.Edge.Top
+  name: Top
+  href: api/MoraGames.MapGen.Edge.html#MoraGames_MapGen_Edge_Top
+  commentId: F:MoraGames.MapGen.Edge.Top
+  fullName: MoraGames.MapGen.Edge.Top
+  nameWithType: Edge.Top
+- uid: MoraGames.MapGen.Edge.Uninitialized
+  name: Uninitialized
+  href: api/MoraGames.MapGen.Edge.html#MoraGames_MapGen_Edge_Uninitialized
+  commentId: F:MoraGames.MapGen.Edge.Uninitialized
+  fullName: MoraGames.MapGen.Edge.Uninitialized
+  nameWithType: Edge.Uninitialized
 - uid: MoraGames.MapGen.EnvType
   name: EnvType
   href: api/MoraGames.MapGen.EnvType.html
@@ -3241,24 +3277,6 @@ references:
   commentId: Overload:MoraGames.MapGen.MoraMapGen.ValidateMapsLoop
   fullName: MoraGames.MapGen.MoraMapGen.ValidateMapsLoop
   nameWithType: MoraMapGen.ValidateMapsLoop
-- uid: MoraGames.MapGen.MoraMapGen._averageGenTimeMS
-  name: _averageGenTimeMS
-  href: api/MoraGames.MapGen.MoraMapGen.html#MoraGames_MapGen_MoraMapGen__averageGenTimeMS
-  commentId: F:MoraGames.MapGen.MoraMapGen._averageGenTimeMS
-  fullName: MoraGames.MapGen.MoraMapGen._averageGenTimeMS
-  nameWithType: MoraMapGen._averageGenTimeMS
-- uid: MoraGames.MapGen.MoraMapGen._iterations
-  name: _iterations
-  href: api/MoraGames.MapGen.MoraMapGen.html#MoraGames_MapGen_MoraMapGen__iterations
-  commentId: F:MoraGames.MapGen.MoraMapGen._iterations
-  fullName: MoraGames.MapGen.MoraMapGen._iterations
-  nameWithType: MoraMapGen._iterations
-- uid: MoraGames.MapGen.MoraMapGen._skipIterations
-  name: _skipIterations
-  href: api/MoraGames.MapGen.MoraMapGen.html#MoraGames_MapGen_MoraMapGen__skipIterations
-  commentId: F:MoraGames.MapGen.MoraMapGen._skipIterations
-  fullName: MoraGames.MapGen.MoraMapGen._skipIterations
-  nameWithType: MoraMapGen._skipIterations
 - uid: MoraGames.MapGen.Props
   name: MoraGames.MapGen.Props
   href: api/MoraGames.MapGen.Props.html
@@ -3547,18 +3565,6 @@ references:
   fullName.vb: MoraGames.MapGen.Props.PropPlacement.New
   nameWithType: PropPlacement.PropPlacement
   nameWithType.vb: PropPlacement.New
-- uid: MoraGames.MapGen.Props.PropPlacement.BakedMap
-  name: BakedMap
-  href: api/MoraGames.MapGen.Props.PropPlacement.html#MoraGames_MapGen_Props_PropPlacement_BakedMap
-  commentId: P:MoraGames.MapGen.Props.PropPlacement.BakedMap
-  fullName: MoraGames.MapGen.Props.PropPlacement.BakedMap
-  nameWithType: PropPlacement.BakedMap
-- uid: MoraGames.MapGen.Props.PropPlacement.BakedMap*
-  name: BakedMap
-  href: api/MoraGames.MapGen.Props.PropPlacement.html#MoraGames_MapGen_Props_PropPlacement_BakedMap_
-  commentId: Overload:MoraGames.MapGen.Props.PropPlacement.BakedMap
-  fullName: MoraGames.MapGen.Props.PropPlacement.BakedMap
-  nameWithType: PropPlacement.BakedMap
 - uid: MoraGames.MapGen.Props.PropPlacement.CheckIfOverlapping(UnityEngine.GameObject,System.Single)
   name: CheckIfOverlapping(GameObject, float)
   href: api/MoraGames.MapGen.Props.PropPlacement.html#MoraGames_MapGen_Props_PropPlacement_CheckIfOverlapping_UnityEngine_GameObject_System_Single_

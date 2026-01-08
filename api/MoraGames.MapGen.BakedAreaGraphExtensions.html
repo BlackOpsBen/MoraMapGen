@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BakedAreaGraphExtensions | MoraMapGen ">
     
-    
+    <meta name="description" content="Extension methods for graph traversal and pathfinding operations on BakedAreas.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_BakedAreaGraphExtensions" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions" class="text-break">Class BakedAreaGraphExtensions</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods for graph traversal and pathfinding operations on BakedAreas.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -243,7 +244,7 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@)">TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List&lt;BakedArea&gt;)</h4>
-  <div class="markdown level1 summary"><p>Returns a list of BakedAreas representing the areas in sequence from this area to the given area.</p>
+  <div class="markdown level1 summary"><p>Finds a path from this area to the target area through the area graph.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -263,22 +264,26 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">thisArea</span></td>
-        <td></td>
+        <td><p>The starting area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap containing both areas.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>The target area to reach.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">graph</span></td>
-        <td></td>
+        <td><p>The list of areas forming the path from start to target.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -293,7 +298,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if a path was found; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +307,7 @@
 
   <a id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea*"></a>
   <h4 id="MoraGames_MapGen_BakedAreaGraphExtensions_TryGetGraphToArea_MoraGames_MapGen_BakedArea_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedArea_System_Collections_Generic_List_MoraGames_MapGen_BakedArea___System_Collections_Generic_List_MoraGames_MapGen_BakedArea__" data-uid="MoraGames.MapGen.BakedAreaGraphExtensions.TryGetGraphToArea(MoraGames.MapGen.BakedArea,MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedArea,System.Collections.Generic.List{MoraGames.MapGen.BakedArea}@,System.Collections.Generic.List{MoraGames.MapGen.BakedArea})">TryGetGraphToArea(BakedArea, BakedMap, BakedArea, out List&lt;BakedArea&gt;, List&lt;BakedArea&gt;)</h4>
-  <div class="markdown level1 summary"><p>Returns a list of BakedAreas representing the areas in sequence from this area to the given area which does not go through any of the areasToAvoid.</p>
+  <div class="markdown level1 summary"><p>Finds a path from this area to the target area while avoiding specified areas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -321,27 +327,32 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">thisArea</span></td>
-        <td></td>
+        <td><p>The starting area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">context</span></td>
-        <td></td>
+        <td><p>The BakedMap containing all areas.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">area</span></td>
-        <td></td>
+        <td><p>The target area to reach.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">graph</span></td>
-        <td></td>
+        <td><p>The list of areas forming the path from start to target.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">areasToAvoid</span></td>
-        <td></td>
+        <td><p>Areas that should not be included in the path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -356,7 +367,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if a valid path was found; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>

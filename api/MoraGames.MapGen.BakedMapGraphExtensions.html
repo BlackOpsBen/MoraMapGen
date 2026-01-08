@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BakedMapGraphExtensions | MoraMapGen ">
     
-    
+    <meta name="description" content="Extension methods for graph-based distance calculations and area finding on BakedMap.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_BakedMapGraphExtensions" data-uid="MoraGames.MapGen.BakedMapGraphExtensions" class="text-break">Class BakedMapGraphExtensions</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods for graph-based distance calculations and area finding on BakedMap.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -124,7 +125,8 @@
 
   <a id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestAreas_" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestAreas_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__MoraGames_MapGen_BakedArea__MoraGames_MapGen_BakedArea__System_Random_System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestAreas(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea},MoraGames.MapGen.BakedArea@,MoraGames.MapGen.BakedArea@,System.Random,System.Nullable{MoraGames.MapGen.BakedAreaType})">Find2FarthestAreas(BakedMap, List&lt;BakedArea&gt;, out BakedArea, out BakedArea, Random, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the two areas in the map that are farthest apart from each other using a specified RNG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,32 +145,38 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">map</span></td>
-        <td></td>
+        <td><p>The baked map to search.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">validAreas</span></td>
-        <td></td>
+        <td><p>The list of areas to consider.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first farthest area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second farthest area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use for selection. (Used for breaking ties.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>Optional filter to restrict results to specific area types.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -183,7 +191,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The graph distance between the two farthest areas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -191,7 +200,8 @@
 
   <a id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestAreas_" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestAreas*"></a>
   <h4 id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestAreas_MoraGames_MapGen_BakedMap_System_Collections_Generic_List_MoraGames_MapGen_BakedArea__MoraGames_MapGen_BakedArea__MoraGames_MapGen_BakedArea__System_String_System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestAreas(MoraGames.MapGen.BakedMap,System.Collections.Generic.List{MoraGames.MapGen.BakedArea},MoraGames.MapGen.BakedArea@,MoraGames.MapGen.BakedArea@,System.String,System.Nullable{MoraGames.MapGen.BakedAreaType})">Find2FarthestAreas(BakedMap, List&lt;BakedArea&gt;, out BakedArea, out BakedArea, string, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the two areas in the map that are farthest apart from each other.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,32 +220,38 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">map</span></td>
-        <td></td>
+        <td><p>The baked map to search.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a>&gt;</td>
         <td><span class="parametername">validAreas</span></td>
-        <td></td>
+        <td><p>The list of areas to consider.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first farthest area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedArea.html">BakedArea</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second farthest area.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">seedKey</span></td>
-        <td></td>
+        <td><p>The seed key for random selection. (Used for breaking ties.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>Optional filter to restrict results to specific area types.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -250,7 +266,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The graph distance between the two farthest areas.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,7 +275,8 @@
 
   <a id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestGridSpaces_" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestGridSpaces*"></a>
   <h4 id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestGridSpaces_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_BakedGridSpace__System_Random_System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestGridSpaces(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.BakedGridSpace@,System.Random,System.Nullable{MoraGames.MapGen.BakedAreaType})">Find2FarthestGridSpaces(BakedMap, out BakedGridSpace, out BakedGridSpace, Random, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the two grid spaces in the map that are farthest apart from each other using a specified RNG.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -277,27 +295,32 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">map</span></td>
-        <td></td>
+        <td><p>The baked map to search.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first farthest grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second farthest grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></td>
         <td><span class="parametername">rng</span></td>
-        <td></td>
+        <td><p>The random number generator to use for selection. (Used for breaking ties.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>Optional filter to restrict results to specific area types.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -312,7 +335,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The graph distance between the two farthest grid spaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -320,7 +344,8 @@
 
   <a id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestGridSpaces_" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestGridSpaces*"></a>
   <h4 id="MoraGames_MapGen_BakedMapGraphExtensions_Find2FarthestGridSpaces_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedGridSpace__MoraGames_MapGen_BakedGridSpace__System_String_System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.Find2FarthestGridSpaces(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedGridSpace@,MoraGames.MapGen.BakedGridSpace@,System.String,System.Nullable{MoraGames.MapGen.BakedAreaType})">Find2FarthestGridSpaces(BakedMap, out BakedGridSpace, out BakedGridSpace, string, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Finds the two grid spaces in the map that are farthest apart from each other.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,27 +364,32 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">map</span></td>
-        <td></td>
+        <td><p>The baked map to search.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">a</span></td>
-        <td></td>
+        <td><p>The first farthest grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The second farthest grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">seedKey</span></td>
-        <td></td>
+        <td><p>The seed key for random selection. (Used for breaking ties.)</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>Optional filter to restrict results to specific area types.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -374,7 +404,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The graph distance between the two farthest grid spaces.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -382,7 +413,7 @@
 
   <a id="MoraGames_MapGen_BakedMapGraphExtensions_GetFarthestGridSpaces_" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.GetFarthestGridSpaces*"></a>
   <h4 id="MoraGames_MapGen_BakedMapGraphExtensions_GetFarthestGridSpaces_MoraGames_MapGen_BakedMap_MoraGames_MapGen_BakedGridSpace_System_Collections_Generic_List_MoraGames_MapGen_BakedGridSpace___System_Nullable_MoraGames_MapGen_BakedAreaType__" data-uid="MoraGames.MapGen.BakedMapGraphExtensions.GetFarthestGridSpaces(MoraGames.MapGen.BakedMap,MoraGames.MapGen.BakedGridSpace,System.Collections.Generic.List{MoraGames.MapGen.BakedGridSpace}@,System.Nullable{MoraGames.MapGen.BakedAreaType})">GetFarthestGridSpaces(BakedMap, BakedGridSpace, out List&lt;BakedGridSpace&gt;, BakedAreaType?)</h4>
-  <div class="markdown level1 summary"><p>Returns the distance in number of grid spaces traveled to get from the &quot;fromSpace&quot; to the out parameter &quot;farthestSpace.&quot; This distance represents the path of contiguous rooms and corridors between them.</p>
+  <div class="markdown level1 summary"><p>Finds the grid spaces farthest from the starting space in terms of graph traversal distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -402,22 +433,26 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">map</span></td>
-        <td></td>
+        <td><p>The baked map to search.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a></td>
         <td><span class="parametername">fromSpace</span></td>
-        <td></td>
+        <td><p>The starting grid space.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MoraGames.MapGen.BakedGridSpace.html">BakedGridSpace</a>&gt;</td>
         <td><span class="parametername">farthestGridSpaces</span></td>
-        <td></td>
+        <td><p>The list of farthest grid spaces found.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedAreaType.html">BakedAreaType</a>?</td>
         <td><span class="parametername">typeFilter</span></td>
-        <td></td>
+        <td><p>Optional filter to restrict results to specific area types.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -432,7 +467,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The graph distance (number of steps) to the farthest spaces.</p>
+</td>
       </tr>
     </tbody>
   </table>

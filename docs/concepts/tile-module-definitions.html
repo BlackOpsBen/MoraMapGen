@@ -84,29 +84,33 @@
 <h2 id="creating-a-tile-module-definitions-asset">Creating a Tile Module Definitions asset</h2>
 <p>To create a new Tile Module Definitions asset, right click in your Project Assets and select “Create/MoraMapGen/Tile Module Definition.”</p>
 <h2 id="defining-the-tile-module-definitions">Defining the Tile Module Definitions</h2>
-<p>Generally you will want at least 1 prefab assigned to each category, but they aren’t required.
-<img src="../../images/complete-setup/TileModuleDefinitionSOInspector.PNG" alt="Tile Module Definitions inspector"></p>
-<h3 id="floor-a">Floor A</h3>
+<p>Generally you will want at least 1 prefab assigned to each category, but they aren’t required.</p>
+<p><img src="../../images/complete-setup/TileModuleDefinitionSOInspector.PNG" alt="Tile Module Definitions inspector"></p>
+<h3 id="floors">Floors</h3>
+<p>Specify the ground prefabs.</p>
+<p><img src="../../images/concepts/module-floor.png" alt="Floor module example"></p>
+<p>Rooms and Corridors each use two different floors:</p>
+<h4 id="floor-a">Floor A</h4>
 <p>Used where the sprite templates have room pixels (red by default) and wall pixels (blue by default). Eg: Main floor in rooms, and under walls in rooms and corridors.</p>
-<h3 id="floor-b">Floor B</h3>
-<p>Used where the sprite templates have corridor pixels (black by default), Eg: Main paths in corridors and the entrances of rooms.
-<img src="../../images/concepts/Room_Pixels.png" alt="Sprite template room floor pixels">
-<img src="../../images/concepts/Corridor_Pixels.png" alt="Sprite template corridor floor pixels"></p>
+<h4 id="floor-b">Floor B</h4>
+<p>Used where the sprite templates have corridor pixels (black by default), Eg: Main paths in corridors and the entrances of rooms.</p>
+<p><img src="../../images/concepts/Room_Pixels.png" alt="Sprite template room floor pixels"></p>
+<p><img src="../../images/concepts/Corridor_Pixels.png" alt="Sprite template corridor floor pixels"></p>
 <h3 id="walls-straight">Walls Straight</h3>
-<p>Specify the straight wall prefabs. Used for straight wall segments.
-<img src="../../images/concepts/module-wall-straight.png" alt="Wall Straight module example"></p>
+<p>Specify the straight wall prefabs. Used for straight wall segments.</p>
+<p><img src="../../images/concepts/module-wall-straight.png" alt="Wall Straight module example"></p>
 <h3 id="walls-corner-inside">Walls Corner Inside</h3>
-<p>Specify the inside corner wall prefabs. These are the convex corners, like when rounding a corner in a hallway.
-<img src="../../images/concepts/module-wall-corner-inside.png" alt="Wall Corner Inside module example"></p>
+<p>Specify the inside corner wall prefabs. These are the convex corners, like when rounding a corner in a hallway.</p>
+<p><img src="../../images/concepts/module-wall-corner-inside.png" alt="Wall Corner Inside module example"></p>
 <h3 id="walls-corner-outside">Walls Corner Outside</h3>
-<p>Specify the outside corner wall prefabs. These are the concave corners, like the corner of a room.
-<img src="../../images/concepts/module-wall-corner-outside.png" alt="Wall Corner Outside module example"></p>
+<p>Specify the outside corner wall prefabs. These are the concave corners, like the corner of a room.</p>
+<p><img src="../../images/concepts/module-wall-corner-outside.png" alt="Wall Corner Outside module example"></p>
 <h3 id="exterior-ceiling">Exterior Ceiling</h3>
-<p>Specify the exterior ceiling prefabs. These are visible from above and outside the rooms/corridors. Used when &quot;Use Exterior Ceiling&quot; is enabled.
-<img src="../../images/concepts/module-exterior-ceiling.png" alt="Exterior Ceiling module example"></p>
+<p>Specify the exterior ceiling prefabs. These are visible from above and outside the rooms/corridors. Used when &quot;Use Exterior Ceiling&quot; is enabled.</p>
+<p><img src="../../images/concepts/module-ceiling-exterior.png" alt="Exterior Ceiling module example"></p>
 <h3 id="interior-ceiling">Interior Ceiling</h3>
-<p>Specify the interior ceiling prefabs. These are visible from inside the rooms/corridors. Used when &quot;Use Interior Ceiling&quot; is enabled.
-<img src="../../images/concepts/module-interior-ceiling.png" alt="Interior Ceiling module example"></p>
+<p>Specify the interior ceiling prefabs. These are visible from inside the rooms/corridors. Used when &quot;Use Interior Ceiling&quot; is enabled.</p>
+<p><img src="../../images/concepts/module-ceiling-interior.png" alt="Interior Ceiling module example"></p>
 <h3 id="whole-doors">Whole Doors</h3>
 <p>Specify the door prefabs you want to use when using the Whole Door placement mode. This should include the door frame and the opening/animating and/or logical components of your doors.
 The entire door (frame + panel) is a single prefab in this mode.</p>
@@ -126,7 +130,7 @@ This allows each side of the door to use a different style matching the room or 
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/concepts/tile-module-definitions.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/main/MoraMapGen_Documentation/docs/concepts/tile-module-definitions.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

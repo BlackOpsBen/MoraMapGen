@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class ProceduralPropSpotOffsetsSO | MoraMapGen ">
     
-    
+    <meta name="description" content="ScriptableObject asset defining position variance for Procedural Prop Spots.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSO" data-uid="MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO" class="text-break">Class ProceduralPropSpotOffsetsSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>ScriptableObject asset defining position variance for Procedural Prop Spots.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ProceduralPropSpotOffsetsSO : ScriptableObject</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSO_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Configure different position offset ranges for each type of procedural placement location
+(dead-ends, corners, intersections, etc.). Assign to PropPlacement component or override
+per PropDefinition in your Prop Categories. Create via Assets &gt; Create &gt; MoraMapGen &gt; Props &gt; Procedural Prop Spot Offsets.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -129,7 +135,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets used when _sameForAll is enabled.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +161,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for corridor corner tiles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +187,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for corridor intersection tiles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -204,7 +213,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for straight corridor tiles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -229,7 +239,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for dead-end tiles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,7 +265,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for door tiles (both rooms and corridors).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -279,7 +291,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for room centers.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -304,7 +317,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Offsets for room corner tiles.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -314,7 +328,8 @@
 
   <a id="MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSO_GetOffsets_" data-uid="MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO.GetOffsets*"></a>
   <h4 id="MoraGames_MapGen_Props_ProceduralPropSpotOffsetsSO_GetOffsets_MoraGames_MapGen_Advanced_Props_PropPlacementType_" data-uid="MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO.GetOffsets(MoraGames.MapGen.Advanced.Props.PropPlacementType)">GetOffsets(PropPlacementType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the position offsets for a specific procedural placement type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -333,7 +348,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropPlacementType.html">PropPlacementType</a></td>
         <td><span class="parametername">propPlacementType</span></td>
-        <td></td>
+        <td><p>The placement type to get offsets for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -348,7 +364,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>PropOffsets configured for the placement type, or a default if not configured.</p>
+</td>
       </tr>
     </tbody>
   </table>

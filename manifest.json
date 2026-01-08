@@ -134,7 +134,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Advanced.Props.PropPlacementType",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropPlacementType.yml\" sourcestartlinenumber=\"1\">Flags enum defining where props can be placed in the generated map.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -148,7 +148,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Advanced.Props.PropPlacementTypeCache",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.Props.PropPlacementTypeCache.yml\" sourcestartlinenumber=\"1\">Provides cached arrays of PropPlacementType values for performance.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -176,7 +176,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Advanced.RNG.DistributionMode",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.RNG.DistributionMode.yml\" sourcestartlinenumber=\"1\">The different types of random selection to perform.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -190,7 +190,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Advanced.RNG.MapGenRandom",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Advanced.RNG.MapGenRandom.yml\" sourcestartlinenumber=\"1\">Provides deterministic random number generation utilities for map generation and prop placement.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -232,7 +232,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.AreaDefinitionSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.AreaDefinitionSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset that defines the name, tile modules, and props and their placement rules for a map area.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -274,7 +274,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedAreaGraphExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedAreaGraphExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for graph traversal and pathfinding operations on BakedAreas.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -330,7 +330,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedMapExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedMapExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods providing utility operations for BakedMap instances.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -344,7 +344,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedMapGraphExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedMapGraphExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for graph-based distance calculations and area finding on BakedMap.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -358,7 +358,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.BakedMapPathExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.BakedMapPathExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for A* pathfinding operations on BakedMap grid spaces.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -372,7 +372,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.ComplexFloor",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.ComplexFloor.yml\" sourcestartlinenumber=\"1\">Component that procedurally selects and instantiates corridor floor prefabs based on tile configuration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -386,7 +386,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.ComplexFloorType",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.ComplexFloorType.yml\" sourcestartlinenumber=\"1\">Specifies the type of corridor floor configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MoraGames.MapGen.Edge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MoraGames.MapGen.Edge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MoraGames.MapGen.Edge",
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Edge.yml\" sourcestartlinenumber=\"1\">Defines the edges of a tile in the grid.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -442,7 +456,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.ProceduralPropSpotOffsetsSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset defining position variance for Procedural Prop Spots.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -456,7 +470,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropAnchorOverride",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropAnchorOverride.yml\" sourcestartlinenumber=\"1\">Component attached to prop prefabs to override the spawn anchor point and rotation pivot.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -470,7 +484,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropChannelSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropChannelSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset used as a channel to assign prop definitions and prop spots.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -484,7 +498,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropOffsetsExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropOffsetsExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for validating and working with PropOffsets.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -498,7 +512,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropPlacement",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropPlacement.yml\" sourcestartlinenumber=\"1\">Component that handles prop placement as a post-processing step after map generation.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -512,7 +526,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropPlacementVolume",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropPlacementVolume.yml\" sourcestartlinenumber=\"1\">Uses a collider to temporarily block any subsequent props from being placed inside the collider, then destroys itself and the collider on Start.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -526,7 +540,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropRotationSettingsExtensions",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropRotationSettingsExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for generating random rotations from PropRotationSettingsSO.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -540,7 +554,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropRotationSettingsSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropRotationSettingsSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset defining rotation variance for prop placement.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -554,7 +568,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.PropSpot",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.PropSpot.yml\" sourcestartlinenumber=\"1\">MonoBehaviour component that marks a specific position in a tile module where props can be placed.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -568,7 +582,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.Props.ReflectionProbePlacement",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.Props.ReflectionProbePlacement.yml\" sourcestartlinenumber=\"1\">Post-processing component that automatically places Unity ReflectionProbes in generated maps.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -596,7 +610,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.RoomShapeSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.RoomShapeSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset defining a room shape template using sprite tiles.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -610,7 +624,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MoraGames.MapGen.TileModuleDefinitionsSO",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/MoraGames.MapGen.TileModuleDefinitionsSO.yml\" sourcestartlinenumber=\"1\">ScriptableObject asset defining tile module prefabs to use when assigned to an Area Definition asset.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -944,6 +958,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/MoraMapGen_Banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/MoraMapGen_Banner.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/complete-setup/AreaDefinitionDefaults.PNG",
       "output": {
         "resource": {
@@ -1168,6 +1192,66 @@
       "output": {
         "resource": {
           "relative_path": "images/concepts/area-options-inspector.PNG"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-ceiling-exterior.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-ceiling-exterior.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-ceiling-interior.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-ceiling-interior.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-floor.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-floor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-wall-corner-inside.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-wall-corner-inside.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-wall-corner-outside.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-wall-corner-outside.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/concepts/module-wall-straight.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/concepts/module-wall-straight.png"
         }
       },
       "version": ""
@@ -1678,6 +1762,126 @@
       "output": {
         "resource": {
           "relative_path": "images/post-processes/ReflectionProbeVisualizationSingle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/always-spawn-props-options-inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/always-spawn-props-options-inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/navmesh-agents.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/navmesh-agents.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/navmesh-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/navmesh-example.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-corridor-corner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-corridor-corner.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-corridor-door.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-corridor-door.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-corridor-intersection.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-corridor-intersection.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-corridor-straight.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-corridor-straight.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-dead-end.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-dead-end.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-room-center.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-room-center.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-room-corner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-room-corner.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/proc-room-door.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/proc-room-door.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/post-processes/prop-definition_inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/post-processes/prop-definition_inspector.png"
         }
       },
       "version": ""

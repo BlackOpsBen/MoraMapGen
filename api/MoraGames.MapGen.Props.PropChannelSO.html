@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class PropChannelSO | MoraMapGen ">
     
-    
+    <meta name="description" content="ScriptableObject asset used as a channel to assign prop definitions and prop spots.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_PropChannelSO" data-uid="MoraGames.MapGen.Props.PropChannelSO" class="text-break">Class PropChannelSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>ScriptableObject asset used as a channel to assign prop definitions and prop spots.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PropChannelSO : ScriptableObject</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_PropChannelSO_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Create multiple PropChannel assets to indicate different placements (e.g., &quot;Wall Center&quot;, &quot;Wall Floor&quot;, &quot;Floor&quot;, etc).
+Assign channels to both PropSpots in tile modules and PropDefinitions to control where specific props can spawn.
+Channels also allow per-area density multipliers in AreaDefinitionSO.
+Create via Assets &gt; Create &gt; MoraMapGen &gt; Props &gt; Prop Channel.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 

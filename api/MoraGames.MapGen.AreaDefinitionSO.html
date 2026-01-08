@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AreaDefinitionSO | MoraMapGen ">
     
-    
+    <meta name="description" content="ScriptableObject asset that defines the name, tile modules, and props and their placement rules for a map area.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_AreaDefinitionSO" data-uid="MoraGames.MapGen.AreaDefinitionSO" class="text-break">Class AreaDefinitionSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>ScriptableObject asset that defines the name, tile modules, and props and their placement rules for a map area.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AreaDefinitionSO : ScriptableObject</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_AreaDefinitionSO_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Create area definitions for general types of rooms and corridors (e.g: &quot;Castle Hall&quot;, or &quot;Technical Corridor&quot;), as well as specific named ones (e.g: &quot;Throne Room&quot;, or &quot;Command Bridge&quot;).
+Create via Assets &gt; Create &gt; MoraMapGen &gt; Area Definition.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -129,7 +134,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropCategories.html">PropCategories</a></td>
-        <td><p>The groups of props that could/should be placed in this area. (Required/Optional, Unique/Common)</p>
+        <td><p>Prop categories defining which props should be placed in this area (Required/Optional, Unique/Common).</p>
 </td>
       </tr>
     </tbody>
@@ -138,8 +143,7 @@
 
   <a id="MoraGames_MapGen_AreaDefinitionSO_PropDensity_" data-uid="MoraGames.MapGen.AreaDefinitionSO.PropDensity*"></a>
   <h4 id="MoraGames_MapGen_AreaDefinitionSO_PropDensity" data-uid="MoraGames.MapGen.AreaDefinitionSO.PropDensity">PropDensity</h4>
-  <div class="markdown level1 summary"><p>A value between 0 and 1 representing a multiplier for how likely props are to be spawned in this area.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +160,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>Overall prop density multiplier for this area (0 = only required props, 1 = maximum props).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -192,7 +197,7 @@
 
   <a id="MoraGames_MapGen_AreaDefinitionSO_GetPropChannelDensity_" data-uid="MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity*"></a>
   <h4 id="MoraGames_MapGen_AreaDefinitionSO_GetPropChannelDensity_MoraGames_MapGen_Props_PropChannelSO_" data-uid="MoraGames.MapGen.AreaDefinitionSO.GetPropChannelDensity(MoraGames.MapGen.Props.PropChannelSO)">GetPropChannelDensity(PropChannelSO)</h4>
-  <div class="markdown level1 summary"><p>Returns the prop-density multiplier for a specific prop channel in this area.</p>
+  <div class="markdown level1 summary"><p>Gets the prop density multiplier for a specific prop channel in this area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -212,7 +217,7 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Props.PropChannelSO.html">PropChannelSO</a></td>
         <td><span class="parametername">channel</span></td>
-        <td><p>The prop channel to look up.</p>
+        <td><p>The prop channel to query.</p>
 </td>
       </tr>
     </tbody>
@@ -228,7 +233,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><p>The multiplier assigned to <code class="paramref">channel</code>; returns 1.0 if the channel has no override.</p>
+        <td><p>The density multiplier for the specified channel, or 1.0 if no override is configured.</p>
 </td>
       </tr>
     </tbody>

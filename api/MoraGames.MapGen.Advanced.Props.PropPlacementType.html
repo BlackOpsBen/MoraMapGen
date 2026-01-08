@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Enum PropPlacementType | MoraMapGen ">
     
-    
+    <meta name="description" content="Flags enum defining where props can be placed in the generated map.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -82,7 +82,8 @@
 
 
   <h1 id="MoraGames_MapGen_Advanced_Props_PropPlacementType" data-uid="MoraGames.MapGen.Advanced.Props.PropPlacementType" class="text-break">Enum PropPlacementType</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Flags enum defining where props can be placed in the generated map.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MoraGames.html">MoraGames</a>.<a class="xref" href="MoraGames.MapGen.html">MapGen</a>.<a class="xref" href="MoraGames.MapGen.Advanced.html">Advanced</a>.<a class="xref" href="MoraGames.MapGen.Advanced.Props.html">Props</a></h6>
   <h6><strong>Assembly</strong>: MoraMapGen.Runtime.dll</h6>
@@ -91,6 +92,10 @@
     <pre><code class="lang-csharp hljs">[Flags]
 public enum PropPlacementType</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Advanced_Props_PropPlacementType_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Multiple flags can be combined to allow a prop to spawn at different types of locations.
+Use bitwise operations to check for specific placement types.</p>
+</div>
   <h3 id="fields">Fields
 </h3>
   <table class="table table-bordered table-condensed">
@@ -103,43 +108,53 @@ public enum PropPlacementType</code></pre>
     </thead></thead><tbody>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_None">None</td>
-        <td></td>
+        <td><p>No placement type specified.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnCorridorCorners">OnCorridorCorners</td>
-        <td></td>
+        <td><p>Place on corridor corner tiles.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnCorridorDoorSpaces">OnCorridorDoorSpaces</td>
-        <td></td>
+        <td><p>Place on corridor tiles containing doors.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnCorridorIntersections">OnCorridorIntersections</td>
-        <td></td>
+        <td><p>Place on corridor intersection tiles (3-way &quot;T&quot; and 4-way X intersections).</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnCorridorStraights">OnCorridorStraights</td>
-        <td></td>
+        <td><p>Place on straight corridor tiles.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnDeadEnds">OnDeadEnds</td>
-        <td></td>
+        <td><p>Place on dead-end tiles.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnPropSpot">OnPropSpot</td>
-        <td></td>
+        <td><p>Place on manually positioned PropSpot components in tile modules.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnRoomCenters">OnRoomCenters</td>
-        <td></td>
+        <td><p>Place on room centroid.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnRoomCorners">OnRoomCorners</td>
-        <td></td>
+        <td><p>Place on room corner tiles.</p>
+</td>
       </tr>
       <tr>
         <td id="MoraGames_MapGen_Advanced_Props_PropPlacementType_OnRoomDoorSpaces">OnRoomDoorSpaces</td>
-        <td></td>
+        <td><p>Place on room tiles containing doors.</p>
+</td>
       </tr>
     </tbody>
   </table>

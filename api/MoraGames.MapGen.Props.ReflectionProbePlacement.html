@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class ReflectionProbePlacement | MoraMapGen ">
     
-    
+    <meta name="description" content="Post-processing component that automatically places Unity ReflectionProbes in generated maps.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_ReflectionProbePlacement" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement" class="text-break">Class ReflectionProbePlacement</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Post-processing component that automatically places Unity ReflectionProbes in generated maps.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -116,7 +117,7 @@
 
   <a id="MoraGames_MapGen_Props_ReflectionProbePlacement_GetPhase_" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.GetPhase*"></a>
   <h4 id="MoraGames_MapGen_Props_ReflectionProbePlacement_GetPhase" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.GetPhase">GetPhase()</h4>
-  <div class="markdown level1 summary"><p>Gets the phase during which this post-processor should execute.</p>
+  <div class="markdown level1 summary"><p>Returns the post-processing phase when this component should execute.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -134,7 +135,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.PostProcessPhase.html">PostProcessPhase</a></td>
-        <td><p>The PostProcessPhase when this processor runs.</p>
+        <td><p>The configured post-processing phase.</p>
 </td>
       </tr>
     </tbody>
@@ -143,7 +144,7 @@
 
   <a id="MoraGames_MapGen_Props_ReflectionProbePlacement_OnMapBaked_" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.OnMapBaked*"></a>
   <h4 id="MoraGames_MapGen_Props_ReflectionProbePlacement_OnMapBaked_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.OnMapBaked(MoraGames.MapGen.BakedMap)">OnMapBaked(BakedMap)</h4>
-  <div class="markdown level1 summary"><p>Called when the map has been baked and is ready for post-processing.</p>
+  <div class="markdown level1 summary"><p>Called when the map is fully baked. Places reflection probes at calculated positions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -163,7 +164,7 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">bakedMap</span></td>
-        <td><p>The finalized BakedMap to process.</p>
+        <td><p>The generated map data.</p>
 </td>
       </tr>
     </tbody>
@@ -172,7 +173,7 @@
 
   <a id="MoraGames_MapGen_Props_ReflectionProbePlacement_Reset_" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.Reset*"></a>
   <h4 id="MoraGames_MapGen_Props_ReflectionProbePlacement_Reset" data-uid="MoraGames.MapGen.Props.ReflectionProbePlacement.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Called when the map is cleared to reset the post-processor's state.</p>
+  <div class="markdown level1 summary"><p>Cleans up placed reflection probes when the map is reset or regenerated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

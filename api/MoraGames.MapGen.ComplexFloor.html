@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class ComplexFloor | MoraMapGen ">
     
-    
+    <meta name="description" content="Component that procedurally selects and instantiates corridor floor prefabs based on tile configuration.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_ComplexFloor" data-uid="MoraGames.MapGen.ComplexFloor" class="text-break">Class ComplexFloor</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Component that procedurally selects and instantiates corridor floor prefabs based on tile configuration.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ComplexFloor : MonoBehaviour</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_ComplexFloor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Place this component on tile modules to automatically spawn the appropriate floor variant
+(dead-end, straight, corner, T-intersection, or X-intersection) based on surrounding corridor tiles.
+Used for creating continuous corridor floor meshes that follow the path layout.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -112,7 +118,8 @@
 
   <a id="MoraGames_MapGen_ComplexFloor_Initialize_" data-uid="MoraGames.MapGen.ComplexFloor.Initialize*"></a>
   <h4 id="MoraGames_MapGen_ComplexFloor_Initialize_MoraGames_MapGen_Internal_MapTileBlueprint_System_Int32_" data-uid="MoraGames.MapGen.ComplexFloor.Initialize(MoraGames.MapGen.Internal.MapTileBlueprint,System.Int32)">Initialize(MapTileBlueprint, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes the complex floor by spawning the appropriate prefab variant.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,12 +138,14 @@
       <tr>
         <td><span class="xref">MapTileBlueprint</span></td>
         <td><span class="parametername">blueprint</span></td>
-        <td></td>
+        <td><p>The tile blueprint containing environment type data.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The pixel index (0-8) to analyze for determining floor type.</p>
+</td>
       </tr>
     </tbody>
   </table>

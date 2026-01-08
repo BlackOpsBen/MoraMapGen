@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class PropSpot | MoraMapGen ">
     
-    
+    <meta name="description" content="MonoBehaviour component that marks a specific position in a tile module where props can be placed.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_PropSpot" data-uid="MoraGames.MapGen.Props.PropSpot" class="text-break">Class PropSpot</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>MonoBehaviour component that marks a specific position in a tile module where props can be placed.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PropSpot : MonoBehaviour</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_PropSpot_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Place this component in your tile module prefabs to define prop spawn points.
+Configure placement variance and assign a PropChannel to control which props spawn here.
+Note that the PropPlacement component only looks for these in module prefabs spawned as part of the map generation process.
+If you manually place them anywhere else you should create a custom IMapGenPostProcess that eithe processes them in a different way,
+or makes them children of tile objects in the Before Props phase.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -129,7 +137,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></td>
-        <td></td>
+        <td><p>The environment type (Room, Corridor, Wall) at this spot's location.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +163,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Position and rotation variance settings for props placed here.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +189,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Props.PropChannelSO.html">PropChannelSO</a></td>
-        <td></td>
+        <td><p>The channel that determines which props can spawn at this spot.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -204,7 +215,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.Props.PropPlacementType.html">PropPlacementType</a></td>
-        <td></td>
+        <td><p>Always returns OnPropSpot since these are PropSpots.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -214,7 +226,8 @@
 
   <a id="MoraGames_MapGen_Props_PropSpot_CheckIfUsed_" data-uid="MoraGames.MapGen.Props.PropSpot.CheckIfUsed*"></a>
   <h4 id="MoraGames_MapGen_Props_PropSpot_CheckIfUsed" data-uid="MoraGames.MapGen.Props.PropSpot.CheckIfUsed">CheckIfUsed()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks whether this spot has already been used by a prop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +244,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if a prop has been placed here; false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -239,7 +253,8 @@
 
   <a id="MoraGames_MapGen_Props_PropSpot_GetRandomOffset_" data-uid="MoraGames.MapGen.Props.PropSpot.GetRandomOffset*"></a>
   <h4 id="MoraGames_MapGen_Props_PropSpot_GetRandomOffset" data-uid="MoraGames.MapGen.Props.PropSpot.GetRandomOffset">GetRandomOffset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a random position offset based on configured variance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -256,7 +271,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>A random offset Vector3.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -264,7 +280,8 @@
 
   <a id="MoraGames_MapGen_Props_PropSpot_GetTransform_" data-uid="MoraGames.MapGen.Props.PropSpot.GetTransform*"></a>
   <h4 id="MoraGames_MapGen_Props_PropSpot_GetTransform" data-uid="MoraGames.MapGen.Props.PropSpot.GetTransform">GetTransform()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Transform of this PropSpot.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -281,7 +298,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Transform</span></td>
-        <td></td>
+        <td><p>This component's Transform.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -289,7 +307,8 @@
 
   <a id="MoraGames_MapGen_Props_PropSpot_SetEnvType_" data-uid="MoraGames.MapGen.Props.PropSpot.SetEnvType*"></a>
   <h4 id="MoraGames_MapGen_Props_PropSpot_SetEnvType_MoraGames_MapGen_EnvType_" data-uid="MoraGames.MapGen.Props.PropSpot.SetEnvType(MoraGames.MapGen.EnvType)">SetEnvType(EnvType)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the environment type for this prop spot.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,7 +327,8 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.EnvType.html">EnvType</a></td>
         <td><span class="parametername">type</span></td>
-        <td></td>
+        <td><p>The EnvType to assign.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -316,7 +336,8 @@
 
   <a id="MoraGames_MapGen_Props_PropSpot_Use_" data-uid="MoraGames.MapGen.Props.PropSpot.Use*"></a>
   <h4 id="MoraGames_MapGen_Props_PropSpot_Use_UnityEngine_GameObject_" data-uid="MoraGames.MapGen.Props.PropSpot.Use(UnityEngine.GameObject)">Use(GameObject)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Marks this spot as used by the specified prop GameObject.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -335,7 +356,8 @@
       <tr>
         <td><span class="xref">GameObject</span></td>
         <td><span class="parametername">prop</span></td>
-        <td></td>
+        <td><p>The GameObject that was placed here.</p>
+</td>
       </tr>
     </tbody>
   </table>

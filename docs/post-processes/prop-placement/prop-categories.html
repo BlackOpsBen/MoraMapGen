@@ -93,12 +93,14 @@
 <h3 id="always-spawn-props">Always Spawn Props</h3>
 <p>This category functions differently from the other categories. Prop Density is ignored. Each entry is like a layer with its own list of possible props. Each entry/layer is assigned a placement type, and will do a weighted random selection of one of its prefab options for each Prop Spot and Procedural Prop Spot in the area that matches the placement type, regardless of whether the spot was already used for another prop from another category. It will still respect the overlap threshold though.
 Example: If you want a light to be placed at each room corner, and you have 3 different light options, you can guarantee that each room corner will have 1 of the 3 light options.</p>
+<p><img src="../../../images/post-processes/always-spawn-props-options-inspector.png" alt="Always Spawn Props inspector example"></p>
 <h2 id="defining-props">Defining Props</h2>
 <p>Each entry in a list defines a prop and how/where it can be placed. Each category generally uses the same settings, but note that the Required Unique props do not have “weight” as they are each spawned exactly once, whereas the other categories use weight to affect their chance of being spawned.</p>
+<p><img src="../../../images/post-processes/prop-definition_inspector.png" alt="Prop Definition inspector example"></p>
 <h3 id="prefab">Prefab</h3>
 <p>The prefab that will be spawned.</p>
 <h3 id="placement">Placement</h3>
-<p>Specify where this prop can be placed from a list which includes <a href="prop-spots.html">Prop Spots</a>, or any of the <a href="prop-categories.html">Procedural Prop Spots</a>.</p>
+<p>Specify where this prop can be placed from a list which includes <a href="prop-spots.html">Prop Spots</a>, or any of the <a href="procedural-prop-spot-offsets.html">Procedural Prop Spots</a>.</p>
 <h3 id="prop-channel">Prop Channel</h3>
 <p>(Only shown if On Prop Spot is enabled in Placement)
 Specify a <a href="prop-channels.html">Prop Channel</a> to determine which <a href="prop-spots.html">Prop Spots</a> are valid for use by this prop.</p>
@@ -118,7 +120,7 @@ Specify a <a href="procedural-prop-spot-offsets.html">Procedural Prop Spot Offse
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/feature/XML_Comments/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-categories.md/#L1" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/BlackOpsBen/Nemesis/blob/main/MoraMapGen_Documentation/docs/post-processes/prop-placement/prop-categories.md/#L1" class="contribution-link">Edit this page</a>
                   </li>
                 </ul>
               </div>

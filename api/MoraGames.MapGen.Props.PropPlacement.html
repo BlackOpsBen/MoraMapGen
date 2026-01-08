@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class PropPlacement | MoraMapGen ">
     
-    
+    <meta name="description" content="Component that handles prop placement as a post-processing step after map generation.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_PropPlacement" data-uid="MoraGames.MapGen.Props.PropPlacement" class="text-break">Class PropPlacement</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Component that handles prop placement as a post-processing step after map generation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -98,6 +99,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PropPlacement : MonoBehaviour, IMapGenPostProcess</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_PropPlacement_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Attach this component to the same GameObject as your MoraMapGen component to automatically place props
+based on the Prop Categories in your Area Definitions and Tile Module Definitions. Handles required props, optional props,
+and always-spawn props with collision checking and variance.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -110,40 +116,14 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public PropPlacement()</code></pre>
   </div>
-  <h3 id="properties">Properties
-</h3>
-
-
-  <a id="MoraGames_MapGen_Props_PropPlacement_BakedMap_" data-uid="MoraGames.MapGen.Props.PropPlacement.BakedMap*"></a>
-  <h4 id="MoraGames_MapGen_Props_PropPlacement_BakedMap" data-uid="MoraGames.MapGen.Props.PropPlacement.BakedMap">BakedMap</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BakedMap BakedMap { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
 </h3>
 
 
   <a id="MoraGames_MapGen_Props_PropPlacement_CheckIfOverlapping_" data-uid="MoraGames.MapGen.Props.PropPlacement.CheckIfOverlapping*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_CheckIfOverlapping_UnityEngine_GameObject_System_Single_" data-uid="MoraGames.MapGen.Props.PropPlacement.CheckIfOverlapping(UnityEngine.GameObject,System.Single)">CheckIfOverlapping(GameObject, float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a newly placed prop overlaps with existing colliders beyond the tolerance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,12 +142,14 @@
       <tr>
         <td><span class="xref">GameObject</span></td>
         <td><span class="parametername">newProp</span></td>
-        <td></td>
+        <td><p>The prop GameObject to check.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">overlapTolorance</span></td>
-        <td></td>
+        <td><p>Maximum allowed penetration distance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -182,7 +164,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if overlapping too much; false if acceptable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -190,7 +173,8 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_GetAllColliders_" data-uid="MoraGames.MapGen.Props.PropPlacement.GetAllColliders*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_GetAllColliders_UnityEngine_GameObject_" data-uid="MoraGames.MapGen.Props.PropPlacement.GetAllColliders(UnityEngine.GameObject)">GetAllColliders(GameObject)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets all Collider components from a GameObject and its children.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -209,7 +193,8 @@
       <tr>
         <td><span class="xref">GameObject</span></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The GameObject to search.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,7 +209,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Collider</span>&gt;</td>
-        <td></td>
+        <td><p>List of all Colliders found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -232,7 +218,8 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_GetEncapsulatingBounds_" data-uid="MoraGames.MapGen.Props.PropPlacement.GetEncapsulatingBounds*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_GetEncapsulatingBounds_System_Collections_Generic_List_UnityEngine_Collider__" data-uid="MoraGames.MapGen.Props.PropPlacement.GetEncapsulatingBounds(System.Collections.Generic.List{UnityEngine.Collider})">GetEncapsulatingBounds(List&lt;Collider&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calculates an AABB that encapsulates all provided colliders.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,7 +238,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Collider</span>&gt;</td>
         <td><span class="parametername">allColliders</span></td>
-        <td></td>
+        <td><p>The colliders to encapsulate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -266,7 +254,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Bounds</span></td>
-        <td></td>
+        <td><p>A Bounds containing all colliders.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -274,7 +263,7 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_GetPhase_" data-uid="MoraGames.MapGen.Props.PropPlacement.GetPhase*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_GetPhase" data-uid="MoraGames.MapGen.Props.PropPlacement.GetPhase">GetPhase()</h4>
-  <div class="markdown level1 summary"><p>Gets the phase during which this post-processor should execute.</p>
+  <div class="markdown level1 summary"><p>Gets the post-processing phase for prop placement.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -292,7 +281,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.Advanced.PostProcessPhase.html">PostProcessPhase</a></td>
-        <td><p>The PostProcessPhase when this processor runs.</p>
+        <td><p>PostProcessPhase.Props.</p>
 </td>
       </tr>
     </tbody>
@@ -301,7 +290,7 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_OnMapBaked_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnMapBaked*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_OnMapBaked_MoraGames_MapGen_BakedMap_" data-uid="MoraGames.MapGen.Props.PropPlacement.OnMapBaked(MoraGames.MapGen.BakedMap)">OnMapBaked(BakedMap)</h4>
-  <div class="markdown level1 summary"><p>Called when the map has been baked and is ready for post-processing.</p>
+  <div class="markdown level1 summary"><p>Called after map generation completes to place all props.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -321,7 +310,7 @@
       <tr>
         <td><a class="xref" href="MoraGames.MapGen.BakedMap.html">BakedMap</a></td>
         <td><span class="parametername">bakedMap</span></td>
-        <td><p>The finalized BakedMap to process.</p>
+        <td><p>The finalized map to populate with props.</p>
 </td>
       </tr>
     </tbody>
@@ -330,7 +319,7 @@
 
   <a id="MoraGames_MapGen_Props_PropPlacement_Reset_" data-uid="MoraGames.MapGen.Props.PropPlacement.Reset*"></a>
   <h4 id="MoraGames_MapGen_Props_PropPlacement_Reset" data-uid="MoraGames.MapGen.Props.PropPlacement.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Called when the map is cleared to reset the post-processor's state.</p>
+  <div class="markdown level1 summary"><p>Resets the prop placement state when the map is cleared.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

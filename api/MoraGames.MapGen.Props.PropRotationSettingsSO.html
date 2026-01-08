@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class PropRotationSettingsSO | MoraMapGen ">
     
-    
+    <meta name="description" content="ScriptableObject asset defining rotation variance for prop placement.">
       <link rel="shortcut icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="MoraGames_MapGen_Props_PropRotationSettingsSO" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO" class="text-break">Class PropRotationSettingsSO</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>ScriptableObject asset defining rotation variance for prop placement.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -94,6 +95,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class PropRotationSettingsSO : ScriptableObject</code></pre>
   </div>
+  <h5 id="MoraGames_MapGen_Props_PropRotationSettingsSO_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Configure how props can be randomly rotated when placed, including min/max ranges per axis,
+incremental snapping, and random deviation. Assign to PropDefinitions or PropOptions
+to control random rotation. Create via Assets &gt; Create &gt; MoraMapGen &gt; Props &gt; Prop Rotation Settings.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
 
@@ -129,7 +135,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Vector3</span></td>
-        <td></td>
+        <td><p>Random deviation range applied after snapping.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -154,7 +161,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
+        <td><p>Incremental snapping value in degrees (0 disables snapping).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -179,7 +187,8 @@
     <tbody>
       <tr>
         <td><span class="xref">PropOffsets</span></td>
-        <td></td>
+        <td><p>Min/max rotation ranges per axis in degrees.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -187,7 +196,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_XMax_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.XMax*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_XMax" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.XMax">XMax</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum X rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,7 +222,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_XMin_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.XMin*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_XMin" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.XMin">XMin</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum X rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,7 +248,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_YMax_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.YMax*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_YMax" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.YMax">YMax</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum Y rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -262,7 +274,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_YMin_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.YMin*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_YMin" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.YMin">YMin</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum Y rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -287,7 +300,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_ZMax_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_ZMax" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.ZMax">ZMax</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum Z rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -312,7 +326,8 @@
 
   <a id="MoraGames_MapGen_Props_PropRotationSettingsSO_ZMin_" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin*"></a>
   <h4 id="MoraGames_MapGen_Props_PropRotationSettingsSO_ZMin" data-uid="MoraGames.MapGen.Props.PropRotationSettingsSO.ZMin">ZMin</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum Z rotation offset in degrees.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
