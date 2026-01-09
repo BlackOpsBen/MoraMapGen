@@ -998,6 +998,16 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/complete-setup/AreaOptionsField.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/complete-setup/AreaOptionsField.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/complete-setup/AreaOptionsIcon.PNG",
       "output": {
         "resource": {
@@ -1292,6 +1302,16 @@
       "output": {
         "resource": {
           "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/overview/Example-Layouts.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/overview/Example-Layouts.png"
         }
       },
       "version": ""
