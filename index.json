@@ -302,7 +302,7 @@
   "docs/post-processes/navmesh-surface-baking.html": {
     "href": "docs/post-processes/navmesh-surface-baking.html",
     "title": "NavMesh Surface Baking | MoraMapGen",
-    "summary": "NavMesh Surface Baking To use Unity’s Navigation system, simply add a NavMeshSurface component to the same GameObject as your MoraMapGen component, and when you generate a map, the NavMesh will bake automatically, whether in editor, or at runtime."
+    "summary": "NavMesh Surface Baking To use Unity’s Navigation system, simply add a NavMeshSurface component to the same GameObject as your MoraMapGen component, and when you generate a map, the NavMesh will bake automatically, whether in editor, or at runtime. The 3rd-Person Demo and FPS Demo scenes feature nav mesh agents exploring the map."
   },
   "docs/post-processes/prop-placement.html": {
     "href": "docs/post-processes/prop-placement.html",
