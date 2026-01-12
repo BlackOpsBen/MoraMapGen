@@ -80,10 +80,10 @@
 <h1 id="reflection-probe-placement">Reflection Probe Placement</h1>
 
 <p>While you could just use the prop placement system to place probes around your level, it wouldn’t be ideal, as the probes would just have arbitrary sizes. As an added convenience you can use the Reflection Probe Placement component which dynamically sizes the probes based on where they are placed in the generated map. The component script is located in the Scripts/PostProcesses/Reflection Probe Placement folder:</p>
-<p><img src="/images/post-processes/ReflectionProbePlacementScript.png" alt="Reflection Probe Placement script location within Assets"></p>
+<p><img src="../../images/post-processes/ReflectionProbePlacementScript.png" alt="Reflection Probe Placement script location within Assets"></p>
 <h2 id="setting-up-reflection-probe-placement">Setting up Reflection Probe Placement</h2>
 <p>Add the Reflection Probe Placement component to the same GameObject as your MoraMapGen component. This component implements the IMapGenPostProcess interface which the MapGen process will trigger at the specified Post-Process Phase.</p>
-<p><img src="/images/post-processes/ReflectionProbePlacementInspector.png" alt="Reflection Probe Placement inspector"></p>
+<p><img src="../../images/post-processes/ReflectionProbePlacementInspector.png" alt="Reflection Probe Placement inspector"></p>
 <h3 id="post-process-phase">Post Process Phase</h3>
 <p>Specify what phase of the post-process step the Reflection Probe Placement happens. (See <a href="create-your-own-mapgen-post-processes.html">Create Your Own MapGen Post-Processes</a> to learn more about Post Process Phases.)</p>
 <h3 id="reflection-probe-prefab">Reflection Probe Prefab</h3>
@@ -97,9 +97,9 @@
 Specify the Prop Channel to determine which Prop Spots probes should be placed on.</p>
 <h2 id="visualizing-reflection-probe-placement">Visualizing Reflection Probe Placement</h2>
 <p>If you select the generated “Reflection Probes” GameObject in the hierarchy, which is a child of your MoraMapGen GameObject, you can see a visualization of where reflection probes and their bounds are in the Scene view:</p>
-<p><img src="/images/post-processes/ReflectionProbeVisualization.png" alt="Visualization of all reflection probes"></p>
+<p><img src="../../images/post-processes/ReflectionProbeVisualization.png" alt="Visualization of all reflection probes"></p>
 <p>If you select one of the child probe instances, you can see a visualization of just that probe:</p>
-<p><img src="/images/post-processes/ReflectionProbeVisualizationSingle.png" alt="Visualization of one reflection probe"></p>
+<p><img src="../../images/post-processes/ReflectionProbeVisualizationSingle.png" alt="Visualization of one reflection probe"></p>
 
 </article>
           </div>
